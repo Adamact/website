@@ -18,8 +18,8 @@
         <span class="logo-fallback">ÄLGAMO Software AB</span>
       </a>
       <nav class="nav">
-        <a href="index.html#solutions" data-i18n="navSolutions">Funktioner</a>
-        <a href="index.html#about" data-i18n="navAbout">Om oss</a>
+        <a href="index.html#process" data-i18n="navSolutions">Funktioner</a>
+        <a href="about.html" data-i18n="navAbout">Om oss</a>
         <a href="pricing.html" data-i18n="navPricing">Priser</a>
         <a href="index.html#contact" data-i18n="navContact">Kontakt</a>
       </nav>
@@ -37,40 +37,67 @@
       <div class="container">
         <h1 class="section-title" data-i18n="pricingHeading">Priser för Attestro</h1>
         <p class="section-lead" data-i18n="pricingLead">Välj plan utifrån er volym och behov. Alla planer inkluderar omvandling till strukturerad data, validering och felflaggor.</p>
+        <div class="pricing-toggle-wrap">
+          <span class="pricing-toggle-label" id="pricing-binding-label" data-i18n="pricingBindingLabel">12 månaders bindningstid</span>
+          <button type="button" class="pricing-toggle" id="pricing-binding-toggle" role="switch" aria-checked="false" aria-labelledby="pricing-binding-label">
+            <span class="pricing-toggle-track">
+              <span class="pricing-toggle-thumb"></span>
+            </span>
+          </button>
+        </div>
         <ul class="pricing-grid">
           <li class="pricing-card">
-            <h2 class="pricing-name" data-i18n="planStarter">Starter</h2>
-            <p class="pricing-price" data-i18n="priceCustom">Eget pris</p>
-            <p class="pricing-desc" data-i18n="planStarterDesc">För mindre volymer. Kärnfunktioner: export till Excel och validering.</p>
+            <h2 class="pricing-name" data-i18n="planMinimum">Minimum</h2>
+            <div class="pricing-price-wrap">
+              <span class="pricing-price-default" data-i18n="priceMinimumDefault">1 590 kr/mån</span>
+              <span class="pricing-price-binding" data-i18n="priceMinimumBinding">1 350 kr/mån</span>
+            </div>
+            <p class="pricing-binding-hint" data-i18n="pricingBindingLabel">12 månaders bindningstid</p>
+            <p class="pricing-setup" data-i18n="setupMinimum">Engångsimplementation 5 000 kr</p>
             <ul class="pricing-features">
-              <li data-i18n="featureWebApp">Export till Excel och strukturerade format</li>
-              <li data-i18n="featureIterations">Logikvalidering och felflaggor</li>
-              <li data-i18n="featureDocs">Dokumentation</li>
+              <li data-i18n="featMin1">100 fakturor / mån</li>
+              <li data-i18n="featMin2">OCR extraction</li>
+              <li data-i18n="featMin3">Excel-export</li>
+              <li data-i18n="featMin4">Grundläggande fältvalidering</li>
+              <li data-i18n="featMin5">E-postsupport</li>
             </ul>
-            <a href="mailto:sales@algamo.se?subject=Attestro%20-%20Starter%20plan" class="btn btn-ghost" data-i18n="contactUs">Kontakta oss</a>
+            <a href="mailto:sales@algamo.se?subject=Attestro%20-%20Minimum" class="btn btn-ghost" data-i18n="contactUs">Kontakta oss</a>
           </li>
           <li class="pricing-card pricing-card-featured">
-            <h2 class="pricing-name" data-i18n="planProfessional">Professional</h2>
-            <p class="pricing-price" data-i18n="priceCustom">Eget pris</p>
-            <p class="pricing-desc" data-i18n="planProfessionalDesc">För växande behov. Inkluderar kontroll mot avtal och projekt samt högre volym.</p>
+            <span class="pricing-badge" data-i18n="pricingRecommended">Rekommenderad</span>
+            <h2 class="pricing-name" data-i18n="planSaker">Säker</h2>
+            <div class="pricing-price-wrap">
+              <span class="pricing-price-default" data-i18n="priceSakerDefault">4 990 kr/mån</span>
+              <span class="pricing-price-binding" data-i18n="priceSakerBinding">4 240 kr/mån</span>
+            </div>
+            <p class="pricing-binding-hint" data-i18n="pricingBindingLabel">12 månaders bindningstid</p>
+            <p class="pricing-setup" data-i18n="setupSaker">Engångsimplementation 15 000 kr</p>
             <ul class="pricing-features">
-              <li data-i18n="featureFullstack">Större fakturavolym</li>
-              <li data-i18n="featureSupport">Kontroll mot avtal och projekt</li>
-              <li data-i18n="featureIntegrations">Löpande support</li>
-              <li data-i18n="featureStrategy">API och integrationer</li>
+              <li data-i18n="featSakerVolume">500 fakturor / mån</li>
+              <li data-i18n="featSaker1">Allt i Minimum</li>
+              <li data-i18n="featSaker2">Anpassad export</li>
+              <li data-i18n="featSaker3">Automatisk prisverifiering mot avtal</li>
+              <li data-i18n="featSaker4">Identifierar överdebitering</li>
+              <li data-i18n="featSaker5">Historik och spårbarhet</li>
+              <li data-i18n="featSaker6">Prioriterad support</li>
+              <li data-i18n="featSaker7">Databaslagring & historik</li>
             </ul>
-            <a href="mailto:sales@algamo.se?subject=Attestro%20-%20Professional%20plan" class="btn btn-primary" data-i18n="contactUs">Kontakta oss</a>
+            <a href="mailto:sales@algamo.se?subject=Attestro%20-%20Boka%20demo" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
           </li>
           <li class="pricing-card">
             <h2 class="pricing-name" data-i18n="planEnterprise">Enterprise</h2>
-            <p class="pricing-price" data-i18n="priceCustom">Eget pris</p>
-            <p class="pricing-desc" data-i18n="planEnterpriseDesc">Dedikerad kapacitet, SLA och anpassade krav.</p>
+            <p class="pricing-price pricing-price-enterprise" data-i18n="priceEnterprise">Pris enligt offert</p>
+            <p class="pricing-note" data-i18n="enterpriseNote">Minimiavtal på 12 månader</p>
             <ul class="pricing-features">
-              <li data-i18n="featureDedicated">Dedikerat team</li>
-              <li data-i18n="featureSla">SLA och support</li>
-              <li data-i18n="featureScope">Anpassat omfång</li>
+              <li data-i18n="featEntVolume">1000+ fakturor / mån</li>
+              <li data-i18n="featEnt1">Allt i Säker</li>
+              <li data-i18n="featEnt2">API-integration</li>
+              <li data-i18n="featEnt3">Dashboard / BI-export</li>
+              <li data-i18n="featEnt4">Multi-entity support</li>
+              <li data-i18n="featEnt5">SLA</li>
+              <li data-i18n="featEnt6">Dedikerad kontakt</li>
             </ul>
-            <a href="mailto:sales@algamo.se?subject=Attestro%20-%20Enterprise%20plan" class="btn btn-ghost" data-i18n="contactUs">Kontakta oss</a>
+            <a href="mailto:sales@algamo.se?subject=Attestro%20-%20Enterprise" class="btn btn-ghost" data-i18n="contactUs">Kontakta oss</a>
           </li>
         </ul>
       </div>

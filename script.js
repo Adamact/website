@@ -8,6 +8,8 @@ const translations = {
     pageDescription: "Attestro gör fakturor till strukturerad data (t.ex. Excel), med logikvalidering, felflaggor och automatisk kontroll mot avtal och projekt. Från Älgamo Software AB.",
     pricingTitle: "Priser för Attestro — Älgamo Software AB",
     pricingDescription: "Prisplaner för Attestro. Fakturor till strukturerad data med validering och kontroll mot avtal och projekt.",
+    aboutPageTitle: "Om oss — Älgamo Software AB",
+    aboutPageDescription: "Älgamo Software AB bygger Attestro — ett verktyg för att få ordning på fakturor. Vi värderar tydlighet, kvalitet och långsiktighet.",
     // Nav
     navSolutions: "Funktioner",
     navAbout: "Om oss",
@@ -16,24 +18,33 @@ const translations = {
     ctaHeader: "Boka demo",
     // Hero
     heroBadge: "Svenskt verktyg för fakturahantering",
-    heroTitle: "Attestro — fakturor till <em>strukturerad data</em>",
-    heroLead: "Attestro omvandlar fakturor automatiskt till strukturerade format som Excel, med logikvalidering och felflaggor. Verktyget kontrollerar även värden mot era kunders avtal och projekt.",
+    heroTitle: "Automatisera fakturakontroll och stoppa fel innan de kostar pengar.",
+    heroLead: "Attestro omvandlar leverantörsfakturor till strukturerad data, validerar mot avtal och flaggar avvikelser automatiskt.",
     heroNoChange: "Attestro fungerar vid sidan av ert befintliga ekonomisystem — ni behöver inte byta.",
     heroCtaPrimary: "Boka en demo",
-    heroCtaSecondary: "Se funktioner",
+    heroCtaSecondary: "Se priser",
     // Features (ex-Solutions)
-    solutionsTitle: "Vad Attestro gör",
-    solutionsLead: "Strukturerad data, validering och kontroll — så att era fakturor blir tydliga och styrda. Verktyget fungerar vid sidan av ert ekonomisystem.",
-    sol1Title: "Strukturerade format",
-    sol1Text: "Fakturor omvandlas automatiskt till Excel och andra strukturerade format. Ni får enhetliga, användbara data istället för lösa PDF:er och papper.",
-    sol2Title: "Validering och felflaggor",
-    sol2Text: "Logikvalidering genomgår data och flaggar potentiella fel. Ni ser direkt vad som behöver dubbelkollas innan det når bokföringen.",
-    sol3Title: "Kontroll mot avtal och projekt",
-    sol3Text: "Attestro kontrollerar automatiskt värden mot era kunders avtal och projekt, så att fakturorna stämmer med det som är avtalat.",
+    solutionsTitle: "Så fungerar det",
+    solutionsLead: "Tre enkla steg från faktura till tydlig kontroll.",
+    step1: "Ladda upp faktura",
+    step2: "Automatisk validering mot avtal",
+    step3: "Få tydliga avvikelser och rapporter",
+    processTitle: "Från faktura till verifierad data",
+    process1Title: "Import",
+    process1Desc: "Ladda upp faktura i PDF eller bildformat. Attestro extraherar automatiskt relevant data såsom leverantör, artikelrader, priser och projektkoppling.",
+    process2Title: "Validering",
+    process2Desc: "Systemet kontrollerar fakturans innehåll mot avtalade priser, projektvillkor och interna regler. Avvikelser identifieras direkt.",
+    process3Title: "Struktur och export",
+    process3Desc: "Ni får strukturerad data i Excel-format eller integrerat mot ert ekonomisystem. Avvikelser och kontrollhistorik är spårbara.",
+    processResult: "Resultatet är färre fel, minskat manuellt arbete och full kontroll över kostnader per projekt.",
     // About
-    aboutTitle: "Bakom Attestro",
-    aboutText1: "Älgamo Software AB är ett svenskt mjukvaruföretag som bygger Attestro — ett verktyg för att få ordning på fakturor. Vi värderar tydlighet, kvalitet och långsiktighet.",
-    aboutText2: "Attestro riktar sig till er som vill automatisera fakturahantering, minska fel och styra mot avtal och projekt. Kontakta oss för en demo eller mer information.",
+    aboutTitle: "Varför Attestro finns",
+    aboutText1: "Felaktiga fakturor, bristande kontroll och manuella processer kostar mer än man tror. Attestro ger er strukturerad data, automatisk validering mot avtal och tydliga avvikelser innan fel påverkar resultatet.",
+    aboutText2: "Ni minskar manuellt arbete, ökar spårbarheten och säkerställer att varje faktura matchar era villkor och projekt.",
+    aboutSubtitleCompany: "Om Älgamo Software",
+    aboutText3: "Älgamo Software AB utvecklar Attestro, ett verktyg för strukturerad fakturahantering och automatisk validering mot avtal och projekt. Bolaget grundades för att lösa ett konkret problem i projektintensiva verksamheter där manuella kontroller skapar risk och ineffektivitet.",
+    aboutSubtitleFounder: "Grundare",
+    aboutText4: "Bolaget drivs av Adam Älgamo, civilingenjörsstudent inom teknisk fysik och elektroteknik. Arbetet med Attestro bygger på teknisk precision, strukturerad problemlösning och ett långsiktigt produktperspektiv.",
     stat1Value: "Kvalitet först",
     stat1Label: "Så bygger vi",
     stat2Value: "Sverige",
@@ -48,23 +59,39 @@ const translations = {
     // Pricing page
     pricingHeading: "Priser för Attestro",
     pricingLead: "Välj plan utifrån er volym och behov. Alla planer inkluderar omvandling till strukturerad data, validering och felflaggor.",
-    planStarter: "Starter",
-    planProfessional: "Professional",
+    pricingBindingLabel: "12 månaders bindningstid",
+    pricingRecommended: "Rekommenderad",
+    planMinimum: "Minimum",
+    planSaker: "Säker",
     planEnterprise: "Enterprise",
-    priceCustom: "Eget pris",
-    planStarterDesc: "För mindre volymer. Kärnfunktioner: export till Excel och validering.",
-    planProfessionalDesc: "För växande behov. Inkluderar kontroll mot avtal och projekt samt högre volym.",
-    planEnterpriseDesc: "Dedikerad kapacitet, SLA och anpassade krav.",
-    featureWebApp: "Export till Excel och strukturerade format",
-    featureIterations: "Logikvalidering och felflaggor",
-    featureDocs: "Dokumentation",
-    featureFullstack: "Större fakturavolym",
-    featureSupport: "Kontroll mot avtal och projekt",
-    featureIntegrations: "Löpande support",
-    featureStrategy: "API och integrationer",
-    featureDedicated: "Dedikerat team",
-    featureSla: "SLA och support",
-    featureScope: "Anpassat omfång",
+    priceMinimumDefault: "1 590 kr/mån",
+    priceMinimumBinding: "1 350 kr/mån",
+    priceSakerDefault: "4 990 kr/mån",
+    priceSakerBinding: "4 240 kr/mån",
+    priceEnterprise: "Pris enligt offert",
+    enterpriseNote: "Minimiavtal på 12 månader",
+    setupMinimum: "Engångsimplementation 5 000 kr",
+    setupSaker: "Engångsimplementation 15 000 kr",
+    featMin1: "100 fakturor / mån",
+    featMin2: "OCR extraction",
+    featMin3: "Excel-export",
+    featMin4: "Grundläggande fältvalidering",
+    featMin5: "E-postsupport",
+    featSakerVolume: "500 fakturor / mån",
+    featSaker1: "Allt i Minimum",
+    featSaker2: "Anpassad export",
+    featSaker3: "Automatisk prisverifiering mot avtal",
+    featSaker4: "Identifierar överdebitering",
+    featSaker5: "Historik och spårbarhet",
+    featSaker6: "Prioriterad support",
+    featSaker7: "Databaslagring & historik",
+    featEntVolume: "1000+ fakturor / mån",
+    featEnt1: "Allt i Säker",
+    featEnt2: "API-integration",
+    featEnt3: "Dashboard / BI-export",
+    featEnt4: "Multi-entity support",
+    featEnt5: "SLA",
+    featEnt6: "Dedikerad kontakt",
     contactUs: "Kontakta oss",
     langSv: "Svenska",
     langEn: "English",
@@ -74,28 +101,39 @@ const translations = {
     pageDescription: "Attestro turns invoices into structured formats like Excel, with logic validation, error flagging, and automatic control against contracts and projects. From Älgamo Software AB.",
     pricingTitle: "Attestro pricing — Älgamo Software AB",
     pricingDescription: "Pricing plans for Attestro. Invoices to structured data with validation and contract and project control.",
+    aboutPageTitle: "About us — Älgamo Software AB",
+    aboutPageDescription: "Älgamo Software AB builds Attestro — a tool to get invoices in order. We value clarity, quality, and long-term thinking.",
     navSolutions: "Features",
     navAbout: "About",
     navPricing: "Pricing",
     navContact: "Contact",
     ctaHeader: "Book a demo",
     heroBadge: "Invoice intelligence from Sweden",
-    heroTitle: "Attestro — invoices into <em>structured data</em>",
-    heroLead: "Attestro automatically turns invoices into structured formats such as Excel, with logic validation and error flagging. It also controls values against your customers' contracts and projects.",
+    heroTitle: "Automate invoice control and stop errors before they cost you money.",
+    heroLead: "Attestro converts supplier invoices to structured data, validates against contracts, and flags discrepancies automatically.",
     heroNoChange: "Attestro works alongside your existing economy system — no change required.",
     heroCtaPrimary: "Book a demo",
-    heroCtaSecondary: "See features",
-    solutionsTitle: "What Attestro does",
-    solutionsLead: "Structured data, validation, and control — so your invoices stay clear and governed. The tool works alongside your existing economy system.",
-    sol1Title: "Structured formats",
-    sol1Text: "Invoices are converted automatically to Excel and other structured formats. You get consistent, usable data instead of loose PDFs and paper.",
-    sol2Title: "Validation & error flagging",
-    sol2Text: "Logic validation runs through the data and flags potential errors. You see what needs a double-check before it reaches the books.",
-    sol3Title: "Contract & project control",
-    sol3Text: "Attestro automatically checks values against your customers' contracts and projects, so invoices match what was agreed.",
-    aboutTitle: "Behind Attestro",
-    aboutText1: "Älgamo Software AB is a Swedish software company that builds Attestro — a tool to get invoices in order. We value clarity, quality, and long-term thinking.",
-    aboutText2: "Attestro is for teams who want to automate invoice handling, reduce errors, and control against contracts and projects. Get in touch for a demo or more information.",
+    heroCtaSecondary: "See pricing",
+    solutionsTitle: "How it works",
+    solutionsLead: "Three simple steps from invoice to clear control.",
+    step1: "Upload invoice",
+    step2: "Automatic validation against contracts",
+    step3: "Get clear discrepancies and reports",
+    processTitle: "From invoice to verified data",
+    process1Title: "Import",
+    process1Desc: "Upload invoices as PDF or image. Attestro automatically extracts relevant data such as supplier, line items, prices and project links.",
+    process2Title: "Validation",
+    process2Desc: "The system checks invoice content against agreed prices, project terms and internal rules. Deviations are identified immediately.",
+    process3Title: "Structure and export",
+    process3Desc: "You get structured data in Excel format or integrated with your accounting system. Deviations and control history are traceable.",
+    processResult: "The result is fewer errors, less manual work and full control over costs per project.",
+    aboutTitle: "Why Attestro exists",
+    aboutText1: "Incorrect invoices, lack of control, and manual processes cost more than you think. Attestro gives you structured data, automatic validation against contracts, and clear discrepancies before errors affect the bottom line.",
+    aboutText2: "You reduce manual work, increase traceability, and ensure every invoice matches your terms and projects.",
+    aboutSubtitleCompany: "About Älgamo Software",
+    aboutText3: "Älgamo Software AB develops Attestro, a tool for structured invoice handling and automatic validation against contracts and projects. The company was founded to solve a concrete problem in project-intensive businesses where manual controls create risk and inefficiency.",
+    aboutSubtitleFounder: "Founder",
+    aboutText4: "The company is run by Adam Älgamo, engineering student in technical physics and electrical engineering. The work on Attestro is built on technical precision, structured problem-solving, and a long-term product perspective.",
     stat1Value: "Quality first",
     stat1Label: "How we build",
     stat2Value: "Sweden",
@@ -107,23 +145,39 @@ const translations = {
     footerSupport: "Support:",
     pricingHeading: "Attestro pricing",
     pricingLead: "Choose a plan based on your volume and needs. All plans include conversion to structured data, validation, and error flagging.",
-    planStarter: "Starter",
-    planProfessional: "Professional",
+    pricingBindingLabel: "12 month commitment",
+    pricingRecommended: "Recommended",
+    planMinimum: "Minimum",
+    planSaker: "Säker",
     planEnterprise: "Enterprise",
-    priceCustom: "Custom",
-    planStarterDesc: "For smaller volumes. Core features: Excel export and validation.",
-    planProfessionalDesc: "For growing needs. Includes contract and project control and higher volume.",
-    planEnterpriseDesc: "Dedicated capacity, SLA, and custom requirements.",
-    featureWebApp: "Export to Excel and structured formats",
-    featureIterations: "Logic validation and error flagging",
-    featureDocs: "Documentation",
-    featureFullstack: "Higher invoice volume",
-    featureSupport: "Contract & project control",
-    featureIntegrations: "Ongoing support",
-    featureStrategy: "API and integrations",
-    featureDedicated: "Dedicated team",
-    featureSla: "SLA & support",
-    featureScope: "Custom scope",
+    priceMinimumDefault: "1,590 SEK/month",
+    priceMinimumBinding: "1,350 SEK/month",
+    priceSakerDefault: "4,990 SEK/month",
+    priceSakerBinding: "4,240 SEK/month",
+    priceEnterprise: "Price by quote",
+    enterpriseNote: "Minimum 12-month agreement",
+    setupMinimum: "One-time implementation 5,000 SEK",
+    setupSaker: "One-time implementation 15,000 SEK",
+    featMin1: "100 invoices / month",
+    featMin2: "OCR extraction",
+    featMin3: "Excel export",
+    featMin4: "Basic field validation",
+    featMin5: "Email support",
+    featSakerVolume: "500 invoices / month",
+    featSaker1: "Everything in Minimum",
+    featSaker2: "Custom export",
+    featSaker3: "Automatic price verification against contracts",
+    featSaker4: "Identifies overcharging",
+    featSaker5: "History and traceability",
+    featSaker6: "Priority support",
+    featSaker7: "Database storage & history",
+    featEntVolume: "1000+ invoices / month",
+    featEnt1: "Everything in Säker",
+    featEnt2: "API integration",
+    featEnt3: "Dashboard / BI export",
+    featEnt4: "Multi-entity support",
+    featEnt5: "SLA",
+    featEnt6: "Dedicated contact",
     contactUs: "Contact us",
     langSv: "Svenska",
     langEn: "English",
@@ -170,9 +224,19 @@ function updateMeta(lang) {
   const t = translations[lang];
   if (!t) return;
   const isPricing = document.body.querySelector(".pricing") != null;
-  document.title = isPricing ? t.pricingTitle : t.pageTitle;
+  const isAbout = document.body.querySelector(".about") != null;
+  let title = t.pageTitle;
+  let desc = t.pageDescription;
+  if (isPricing) {
+    title = t.pricingTitle;
+    desc = t.pricingDescription;
+  } else if (isAbout) {
+    title = t.aboutPageTitle;
+    desc = t.aboutPageDescription;
+  }
+  document.title = title;
   const metaDesc = document.querySelector('meta[name="description"]');
-  if (metaDesc) metaDesc.setAttribute("content", isPricing ? t.pricingDescription : t.pageDescription);
+  if (metaDesc) metaDesc.setAttribute("content", desc);
 }
 
 function updateLangSwitcher(lang) {
@@ -226,8 +290,26 @@ function initLangSwitcher() {
   });
 }
 
+function initPricingToggle() {
+  const section = document.querySelector(".pricing");
+  const toggle = document.getElementById("pricing-binding-toggle");
+  if (!section || !toggle) return;
+  toggle.addEventListener("click", () => {
+    const on = toggle.getAttribute("aria-checked") === "true";
+    toggle.setAttribute("aria-checked", !on);
+    if (on) {
+      section.classList.add("pricing-binding-leaving");
+      section.classList.remove("pricing-binding-on");
+      setTimeout(() => section.classList.remove("pricing-binding-leaving"), 720);
+    } else {
+      section.classList.add("pricing-binding-on");
+    }
+  });
+}
+
 // Init language (default Swedish)
 document.addEventListener("DOMContentLoaded", () => {
   initLang();
   initLangSwitcher();
+  initPricingToggle();
 });

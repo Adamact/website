@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Om oss — Älgamo Software AB</title>
+  <meta name="description" content="Älgamo Software AB bygger Attestro — ett verktyg för att få ordning på fakturor. Vi värderar tydlighet, kvalitet och långsiktighet." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img" width="180" height="48" />
+        <span class="logo-fallback">ÄLGAMO Software AB</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#process" data-i18n="navSolutions">Funktioner</a>
+        <a href="about.html" data-i18n="navAbout">Om oss</a>
+        <a href="pricing.html" data-i18n="navPricing">Priser</a>
+        <a href="index.html#contact" data-i18n="navContact">Kontakt</a>
+      </nav>
+      <div class="lang-switcher" role="group" aria-label="Språk">
+        <button type="button" class="lang-btn" data-lang-btn="sv" aria-pressed="true">Svenska</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">English</button>
+      </div>
+      <a href="index.html#contact" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section about">
+      <div class="container about-inner">
+        <div class="about-content">
+          <h1 class="section-title" data-i18n="aboutTitle">Varför Attestro finns</h1>
+          <p class="about-text" data-i18n="aboutText1">Felaktiga fakturor, bristande kontroll och manuella processer kostar mer än man tror. Attestro ger er strukturerad data, automatisk validering mot avtal och tydliga avvikelser innan fel påverkar resultatet.</p>
+          <p class="about-text" data-i18n="aboutText2">Ni minskar manuellt arbete, ökar spårbarheten och säkerställer att varje faktura matchar era villkor och projekt.</p>
+
+          <h2 class="about-subtitle" data-i18n="aboutSubtitleCompany">Om Älgamo Software</h2>
+          <p class="about-text" data-i18n="aboutText3">Älgamo Software AB utvecklar Attestro, ett verktyg för strukturerad fakturahantering och automatisk validering mot avtal och projekt. Bolaget grundades för att lösa ett konkret problem i projektintensiva verksamheter där manuella kontroller skapar risk och ineffektivitet.</p>
+
+          <h2 class="about-subtitle" data-i18n="aboutSubtitleFounder">Grundare</h2>
+          <p class="about-text" data-i18n="aboutText4">Bolaget drivs av Adam Älgamo, civilingenjörsstudent inom teknisk fysik och elektroteknik. Arbetet med Attestro bygger på teknisk precision, strukturerad problemlösning och ett långsiktigt produktperspektiv.</p>
+        </div>
+        <div class="about-visual">
+          <img src="assets/algamo-moose.png" alt="" class="about-image" width="380" height="380" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-link logo-link-footer">
+          <img src="assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" />
+          <span class="logo-fallback">ÄLGAMO Software AB</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footerTagline">Attestro — fakturor i ordning.</p>
+      </div>
+      <div class="footer-legal">
+        <p data-i18n="footerLegal">Älgamo Software AB — Sverige</p>
+        <p class="footer-support"><span data-i18n="footerSupport">Kundsupport:</span> <a href="mailto:support@algamo.se">support@algamo.se</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
