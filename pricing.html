@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priser för Attestro — Älgamo Software AB</title>
+  <meta name="description" content="Prisplaner för Attestro. Fakturor till strukturerad data med validering och kontroll mot avtal och projekt." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img" width="180" height="48" />
+        <span class="logo-fallback">ÄLGAMO Software AB</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#solutions" data-i18n="navSolutions">Funktioner</a>
+        <a href="index.html#about" data-i18n="navAbout">Om oss</a>
+        <a href="pricing.html" data-i18n="navPricing">Priser</a>
+        <a href="index.html#contact" data-i18n="navContact">Kontakt</a>
+      </nav>
+      <div class="lang-switcher" role="group" aria-label="Språk">
+        <button type="button" class="lang-btn" data-lang-btn="sv" aria-pressed="true">Svenska</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">English</button>
+      </div>
+      <a href="index.html#contact" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section pricing">
+      <div class="container">
+        <h1 class="section-title" data-i18n="pricingHeading">Priser för Attestro</h1>
+        <p class="section-lead" data-i18n="pricingLead">Välj plan utifrån er volym och behov. Alla planer inkluderar omvandling till strukturerad data, validering och felflaggor.</p>
+        <ul class="pricing-grid">
+          <li class="pricing-card">
+            <h2 class="pricing-name" data-i18n="planStarter">Starter</h2>
+            <p class="pricing-price" data-i18n="priceCustom">Eget pris</p>
+            <p class="pricing-desc" data-i18n="planStarterDesc">För mindre volymer. Kärnfunktioner: export till Excel och validering.</p>
+            <ul class="pricing-features">
+              <li data-i18n="featureWebApp">Export till Excel och strukturerade format</li>
+              <li data-i18n="featureIterations">Logikvalidering och felflaggor</li>
+              <li data-i18n="featureDocs">Dokumentation</li>
+            </ul>
+            <a href="mailto:sales@algamo.se?subject=Attestro%20-%20Starter%20plan" class="btn btn-ghost" data-i18n="contactUs">Kontakta oss</a>
+          </li>
+          <li class="pricing-card pricing-card-featured">
+            <h2 class="pricing-name" data-i18n="planProfessional">Professional</h2>
+            <p class="pricing-price" data-i18n="priceCustom">Eget pris</p>
+            <p class="pricing-desc" data-i18n="planProfessionalDesc">För växande behov. Inkluderar kontroll mot avtal och projekt samt högre volym.</p>
+            <ul class="pricing-features">
+              <li data-i18n="featureFullstack">Större fakturavolym</li>
+              <li data-i18n="featureSupport">Kontroll mot avtal och projekt</li>
+              <li data-i18n="featureIntegrations">Löpande support</li>
+              <li data-i18n="featureStrategy">API och integrationer</li>
+            </ul>
+            <a href="mailto:sales@algamo.se?subject=Attestro%20-%20Professional%20plan" class="btn btn-primary" data-i18n="contactUs">Kontakta oss</a>
+          </li>
+          <li class="pricing-card">
+            <h2 class="pricing-name" data-i18n="planEnterprise">Enterprise</h2>
+            <p class="pricing-price" data-i18n="priceCustom">Eget pris</p>
+            <p class="pricing-desc" data-i18n="planEnterpriseDesc">Dedikerad kapacitet, SLA och anpassade krav.</p>
+            <ul class="pricing-features">
+              <li data-i18n="featureDedicated">Dedikerat team</li>
+              <li data-i18n="featureSla">SLA och support</li>
+              <li data-i18n="featureScope">Anpassat omfång</li>
+            </ul>
+            <a href="mailto:sales@algamo.se?subject=Attestro%20-%20Enterprise%20plan" class="btn btn-ghost" data-i18n="contactUs">Kontakta oss</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-link logo-link-footer">
+          <img src="assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" />
+          <span class="logo-fallback">ÄLGAMO Software AB</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footerTagline">Attestro — fakturor i ordning.</p>
+      </div>
+      <div class="footer-legal">
+        <p data-i18n="footerLegal">Älgamo Software AB — Sverige</p>
+        <p class="footer-support"><span data-i18n="footerSupport">Kundsupport:</span> <a href="mailto:support@algamo.se">support@algamo.se</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
