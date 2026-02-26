@@ -917,6 +917,12 @@ body {
 @media (max-width: 768px) {
   .header-inner {
     flex-wrap: wrap;
+    padding: var(--space-sm) var(--space-md);
+    gap: var(--space-md);
+  }
+
+  .site-header .logo-img {
+    height: 2.25rem;
   }
 
   .nav {

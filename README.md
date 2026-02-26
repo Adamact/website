@@ -1,27 +1,47 @@
 # Website
 
-Static site (HTML, CSS, JS). This repo is intended for GitHub Pages (see `CNAME`).
+Static site (HTML, CSS, TypeScript) built with Vite. Intended for GitHub Pages (see `CNAME`).
 
-## Host locally
-
-Serve the project folder with any static file server so links and assets load correctly (avoid opening `index.html` directly with `file://`).
-
-**Option 1 — Python (no install if you have Python):**
+## Setup
 
 ```bash
-# Python 3
-python -m http.server 8000
+npm install
 ```
 
-Then open **http://localhost:8000** in your browser.
-
-**Option 2 — Node (npx):**
+## Development
 
 ```bash
-npx serve .
+npm run dev
 ```
 
-Then open the URL shown in the terminal (e.g. http://localhost:3000).
+Opens a dev server with hot reload (e.g. http://localhost:5173). Use this instead of opening `index.html` with `file://`.
 
-**Option 3 — VS Code / Cursor:**  
-Use an extension like “Live Server” and “Open with Live Server” on `index.html`.
+## Build
+
+```bash
+npm run build
+```
+
+Output goes to `dist/`. Deploy the contents of `dist/` to GitHub Pages (or any static host).
+
+If your site is served from a subpath (e.g. `https://username.github.io/repo/`), set `base: '/repo/'` in `vite.config.ts` before building.
+
+## Host locally (without Node)
+
+If you don’t run the dev server, you can still serve the **built** site:
+
+```bash
+npm run build
+npx serve dist
+```
+
+Or serve the repo root with Python: `python -m http.server 8000` — then open `index.html`; note that `/src/main.ts` won’t work without a build, so use `npm run dev` for full behavior.
+
+## Structure
+
+- `index.html`, `pricing.html`, `about.html` — pages
+- `styles.css` — global styles
+- `src/main.ts` — i18n, language switcher, pricing toggle, smooth scroll (TypeScript, compiled by Vite)
+- `public/assets/` — images (logo, etc.); copied as-is into `dist/` on build
+
+The old `script.js` is replaced by `src/main.ts`; you can remove `script.js` after confirming the build works.
