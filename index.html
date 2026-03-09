@@ -11,18 +11,23 @@
   <meta property="og:url" content="https://algamo.se/" />
   <meta property="og:title" content="Attestro — Fakturor i strukturerat format | Älgamo Software AB" />
   <meta property="og:description" content="Attestro gör fakturor till strukturerad data (t.ex. Excel), med logikvalidering, felflaggor och automatisk kontroll mot avtal och projekt. Från Älgamo Software AB." />
+  <!-- TODO: Replace og:image with a proper OG image (1200x630) when design is ready -->
   <meta property="og:image" content="https://algamo.se/assets/logo.png" />
   <meta property="og:locale" content="sv_SE" />
+  <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:site_name" content="Älgamo Software AB" />
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="sv" href="https://algamo.se/" />
+  <link rel="alternate" hreflang="en" href="https://algamo.se/" />
+  <link rel="alternate" hreflang="x-default" href="https://algamo.se/" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Attestro — Fakturor i strukturerat format | Älgamo Software AB" />
   <meta name="twitter:description" content="Attestro gör fakturor till strukturerad data (t.ex. Excel), med logikvalidering, felflaggor och automatisk kontroll mot avtal och projekt. Från Älgamo Software AB." />
   <meta name="twitter:image" content="https://algamo.se/assets/logo.png" />
   <meta name="theme-color" content="#1a2744" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/assets/logo.png" />
+  <link rel="apple-touch-icon" href="/assets/logo.png" />
   <link rel="stylesheet" href="styles.css" />
   <script type="application/ld+json">
   {
@@ -30,43 +35,73 @@
     "@type": "Organization",
     "@id": "https://algamo.se/#organization",
     "name": "Älgamo Software AB",
+    "alternateName": "Algamo Software",
     "url": "https://algamo.se",
     "logo": "https://algamo.se/assets/logo.png",
     "email": ["sales@algamo.se", "support@algamo.se"],
     "sameAs": ["https://www.linkedin.com/company/%C3%A4lgamo-software-ab/"],
     "founder": {
       "@type": "Person",
-      "name": "Adam Älgamo"
+      "name": "Adam Älgamo",
+      "jobTitle": "Grundare"
+    },
+    "description": "Älgamo Software AB utvecklar Attestro, ett svenskt verktyg för automatiserad fakturakontroll med validering mot avtal och strukturerad dataexport för bygg-, transport- och projektintensiva branscher.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "SE"
+    },
+    "knowsLanguage": ["sv", "en"],
+    "areaServed": {
+      "@type": "Country",
+      "name": "Sweden"
     }
   }
   </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://algamo.se/#website",
+    "name": "Attestro — Älgamo Software AB",
+    "url": "https://algamo.se",
+    "description": "Attestro omvandlar leverantörsfakturor till strukturerad data, validerar mot avtal och flaggar avvikelser automatiskt.",
+    "publisher": { "@id": "https://algamo.se/#organization" },
+    "inLanguage": ["sv", "en"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
     "@type": "SoftwareApplication",
+    "@id": "https://algamo.se/#software",
     "name": "Attestro",
     "applicationCategory": "BusinessApplication",
+    "applicationSubCategory": "Invoice Processing",
     "operatingSystem": "Web",
-    "description": "Attestro gör fakturor till strukturerad data med logikvalidering, felflaggor och automatisk kontroll mot avtal och projekt.",
+    "description": "Attestro omvandlar leverantörsfakturor till strukturerad data (t.ex. Excel), validerar automatiskt mot avtal, projektprislistor och ÄTA, och flaggar avvikelser innan attestering. Byggt för bygg-, anläggnings- och transportbranschen i Sverige.",
+    "url": "https://algamo.se",
     "offers": {
       "@type": "AggregateOffer",
       "priceCurrency": "SEK",
       "lowPrice": "1590",
       "highPrice": "4990",
-      "offerCount": "3"
+      "offerCount": "3",
+      "availability": "https://schema.org/OnlineOnly"
     },
     "featureList": [
       "OCR-extraktion av fakturadata",
       "Validering mot avtal och projekt",
       "Excel-export av strukturerad data",
-      "Automatisk prisverifiering",
+      "Automatisk prisverifiering mot avtalade priser",
       "Identifiering av överdebitering",
-      "Historik och spårbarhet"
+      "Historik och spårbarhet",
+      "API-integration",
+      "Multi-entity support"
     ],
-    "publisher": {
-      "@type": "Organization",
-      "@id": "https://algamo.se/#organization"
-    }
+    "image": "https://algamo.se/assets/logo.png",
+    "inLanguage": ["sv", "en"],
+    "publisher": { "@id": "https://algamo.se/#organization" },
+    "isPartOf": { "@id": "https://algamo.se/#website" }
   }
   </script>
   <script type="application/ld+json">
@@ -76,42 +111,50 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Vad gör Attestro?",
+        "name": "Vad är Attestro?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Attestro omvandlar leverantörsfakturor till strukturerad data, validerar mot avtal och flaggar avvikelser automatiskt. Resultatet levereras i Excel-format eller integrerat mot ert ekonomisystem."
+          "text": "Attestro är ett verktyg som automatiskt analyserar leverantörsfakturor i entreprenadprojekt. Systemet extraherar fakturadata, jämför mot avtal och projektprislistor och flaggar avvikelser innan fakturan attesteras."
         }
       },
       {
         "@type": "Question",
-        "name": "Vilka branscher passar Attestro för?",
+        "name": "Vilka företag passar Attestro för?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Attestro är byggt för projektintensiva branscher som bygg och anläggning, transport och logistik, samt tjänsteföretag med underleverantörer — där fakturor är många, avtal komplexa och manuell kontroll inte räcker till."
+          "text": "Attestro är främst utvecklat för: entreprenadföretag, byggbolag, transport- och materialleverantörer, och projektorganisationer med många leverantörsfakturor."
         }
       },
       {
         "@type": "Question",
-        "name": "Behöver vi byta ekonomisystem för att använda Attestro?",
+        "name": "Vad kontrolleras och vilken data extraheras?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Nej. Attestro fungerar vid sidan av ert befintliga ekonomisystem — ni behöver inte byta."
+          "text": "Attestro extraherar leverantör, fakturanummer, datum, projekt/littra, transaktioner, mängd och pris per enhet. Systemet kontrollerar pris mot projektets prislista, projekt- eller littra-koppling och avvikelser mot avtal."
         }
       },
       {
         "@type": "Question",
-        "name": "Vad kostar Attestro?",
+        "name": "Hur börjar man använda Attestro?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Attestro erbjuds i tre planer: Minimum från 1 590 kr/mån (100 fakturor), Säker från 4 990 kr/mån (500 fakturor) och Enterprise (1000+ fakturor, pris enligt offert)."
+          "text": "Ladda upp exempel på fakturor från era leverantörer, systemet konfigureras för era mallar, och Attestro börjar analysera nya fakturor automatiskt."
         }
       },
       {
         "@type": "Question",
-        "name": "Hur fungerar Attestro steg för steg?",
+        "name": "Behöver vi ändra vårt ekonomisystem?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "1. Import: Ladda upp faktura i PDF eller bildformat — Attestro extraherar data automatiskt. 2. Validering: Systemet kontrollerar innehållet mot avtalade priser, projektvillkor och interna regler. 3. Struktur och export: Ni får strukturerad data i Excel-format eller integrerat mot ert ekonomisystem med spårbar kontrollhistorik."
+          "text": "Nej. Attestro är byggt som ett komplement till befintliga ekonomisystem."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan vi testa innan vi bestämmer oss?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Vi erbjuder pilotprojekt och demo så att ni kan utvärdera Attestro innan ni binder er."
         }
       }
     ]
@@ -119,6 +162,7 @@
   </script>
 </head>
 <body>
+  <a href="#main" class="skip-link" data-i18n="skipToContent">Hoppa till innehåll</a>
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="logo-link">
@@ -136,6 +180,7 @@
           <a href="about.html" data-i18n="navAbout">Om oss</a>
           <a href="pricing.html" data-i18n="navPricing">Priser</a>
           <a href="#contact" data-i18n="navContact">Kontakt</a>
+          <a href="blog.html" data-i18n="navBlog">Nyheter</a>
         </nav>
         <div class="lang-switcher" role="group" aria-label="Språk">
           <button type="button" class="lang-btn" data-lang-btn="sv" aria-pressed="true">Svenska</button>
@@ -147,13 +192,13 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero">
       <div class="container hero-inner">
         <p class="hero-badge" data-i18n="heroBadge">Svenskt verktyg för fakturahantering</p>
         <h1 class="hero-title" data-i18n="heroTitle">Automatisera fakturakontroll och stoppa fel innan de kostar pengar.</h1>
         <p class="hero-lead" data-i18n="heroLead">Attestro omvandlar leverantörsfakturor till strukturerad data, validerar mot avtal och flaggar avvikelser automatiskt.</p>
-        <p class="hero-note" data-i18n="heroNoChange">Attestro fungerar vid sidan av ert befintliga ekonomisystem — ni behöver inte byta.</p>
+        <p class="hero-note" data-i18n="heroNoChange">Ni behöver inte byta ekonomisystem. Attestro fungerar vid sidan av det ni har idag.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary btn-lg" data-i18n="heroCtaPrimary">Boka en demo</a>
           <a href="pricing.html" class="btn btn-ghost btn-lg" data-i18n="heroCtaSecondary">Se priser</a>
@@ -170,20 +215,31 @@
       </div>
     </div>
 
+    <section class="section pilot-cta">
+      <div class="container pilot-cta-inner">
+        <h2 class="section-title" data-i18n="pilotTitle">Vi söker pilotpartners</h2>
+        <p class="section-lead" data-i18n="pilotLead">Vi bygger Attestro tillsammans med tidiga användare. Bli en av de första att testa och var med och påverka hur produkten utvecklas.</p>
+        <a href="#contact" class="btn btn-primary btn-lg btn-on-light" data-i18n="pilotCta">Ansök om pilotplats</a>
+      </div>
+    </section>
+
     <section class="section audience">
       <div class="container">
         <h2 class="section-title" data-i18n="audienceTitle">Automatisera fakturakontroll i bygg- och transportprojekt</h2>
-        <p class="section-lead" data-i18n="audienceLead">Attestro är byggt för projektintensiva branscher där fakturor är många, avtal komplexa och manuell kontroll inte räcker till.</p>
+        <p class="section-lead" data-i18n="audienceLead">Attestro är byggt för projektintensiva branscher med många fakturor och komplexa avtal, där manuell kontroll helt enkelt inte räcker till.</p>
         <ul class="audience-grid">
           <li class="audience-card">
+            <span class="audience-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg></span>
             <h3 data-i18n="audienceConstructionTitle">Bygg och anläggning</h3>
             <p data-i18n="audienceConstructionDesc">Kontrollera fakturor mot projektavtal, ÄTA och à-prislistor. Fånga avvikelser innan de påverkar projektresultatet.</p>
           </li>
           <li class="audience-card">
+            <span class="audience-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span>
             <h3 data-i18n="audienceTransportTitle">Transport och logistik</h3>
             <p data-i18n="audienceTransportDesc">Verifiera fraktfakturor mot avtalade priser, zoner och volymer. Identifiera överdebitering automatiskt.</p>
           </li>
           <li class="audience-card">
+            <span class="audience-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/></svg></span>
             <h3 data-i18n="audienceServicesTitle">Tjänsteföretag med underleverantörer</h3>
             <p data-i18n="audienceServicesDesc">Matcha fakturor mot timavtal och ramavtal. Säkerställ att varje rad stämmer innan betalning.</p>
           </li>
@@ -196,58 +252,164 @@
         <h2 class="section-title" data-i18n="processTitle">Från faktura till verifierad data</h2>
         <ol class="process-grid">
           <li class="process-card">
+            <span class="process-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></span>
             <span class="process-num" aria-hidden="true">1</span>
             <h3 class="process-title" data-i18n="process1Title">Import</h3>
-            <p class="process-desc" data-i18n="process1Desc">Ladda upp faktura i PDF eller bildformat. Attestro extraherar automatiskt relevant data såsom leverantör, artikelrader, priser och projektkoppling.</p>
+            <p class="process-desc" data-i18n="process1Desc">Ladda upp fakturan som PDF eller bild. Attestro läser av leverantör, artikelrader, priser och projektkoppling.</p>
           </li>
           <li class="process-card">
+            <span class="process-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
             <span class="process-num" aria-hidden="true">2</span>
             <h3 class="process-title" data-i18n="process2Title">Validering</h3>
-            <p class="process-desc" data-i18n="process2Desc">Systemet kontrollerar fakturans innehåll mot avtalade priser, projektvillkor och interna regler. Avvikelser identifieras direkt.</p>
+            <p class="process-desc" data-i18n="process2Desc">Fakturans innehåll kontrolleras mot avtalade priser, projektvillkor och interna regler. Avvikelser flaggas direkt.</p>
           </li>
           <li class="process-card">
+            <span class="process-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
             <span class="process-num" aria-hidden="true">3</span>
             <h3 class="process-title" data-i18n="process3Title">Struktur och export</h3>
-            <p class="process-desc" data-i18n="process3Desc">Ni får strukturerad data i Excel-format eller integrerat mot ert ekonomisystem. Avvikelser och kontrollhistorik är spårbara.</p>
+            <p class="process-desc" data-i18n="process3Desc">Ni får ut strukturerad data i Excel eller integrerat mot ert ekonomisystem, med full historik och spårbarhet.</p>
           </li>
         </ol>
-        <p class="process-result" data-i18n="processResult">Resultatet är färre fel, minskat manuellt arbete och full kontroll över kostnader per projekt.</p>
+        <p class="process-result" data-i18n="processResult">Färre fel, mindre manuellt arbete och bättre kontroll över kostnaderna i varje projekt.</p>
+      </div>
+    </section>
+
+    <section class="section calculator">
+      <div class="container">
+        <h2 class="section-title" data-i18n="calcTitle">Hur mycket tid kan ni spara?</h2>
+        <p class="section-lead" data-i18n="calcLead">Uppskatta hur många timmar per månad Attestro kan frigöra åt ert team.</p>
+        <div class="calculator-sliders">
+          <div class="calculator-slider-group">
+            <label for="calc-invoices"><span data-i18n="calcInvoicesLabel">Antal fakturor/mån</span>: <output id="calc-invoices-value">200</output></label>
+            <input type="range" id="calc-invoices" min="50" max="2000" step="50" value="200" />
+          </div>
+          <div class="calculator-slider-group">
+            <label for="calc-minutes"><span data-i18n="calcMinutesLabel">Tid per faktura (min)</span>: <output id="calc-minutes-value">10</output></label>
+            <input type="range" id="calc-minutes" min="1" max="30" step="1" value="10" />
+          </div>
+          <div class="calculator-slider-group">
+            <label for="calc-cost"><span data-i18n="calcCostLabel">Kostnad per timme</span>: <output id="calc-cost-value">450</output> <span data-i18n="calcCostUnit">kr</span></label>
+            <input type="range" id="calc-cost" min="200" max="1200" step="50" value="450" />
+          </div>
+          <div class="calculator-slider-group">
+            <label for="calc-error-rate"><span data-i18n="calcErrorRateLabel">Andel fakturor med fel</span>: <output id="calc-error-rate-value">5</output>%</label>
+            <input type="range" id="calc-error-rate" min="1" max="20" step="1" value="5" />
+          </div>
+          <div class="calculator-slider-group">
+            <label for="calc-error-cost"><span data-i18n="calcErrorCostLabel">Snittförlust per felaktig faktura</span>: <output id="calc-error-cost-value">2 000</output> <span data-i18n="calcCostUnit">kr</span></label>
+            <input type="range" id="calc-error-cost" min="500" max="20000" step="500" value="2000" />
+          </div>
+        </div>
+        <div class="calculator-results">
+          <div class="calculator-breakdown">
+            <div class="calculator-breakdown-item">
+              <span class="calculator-breakdown-label" data-i18n="calcTimeSavings">Tidsbesparingar</span>
+              <span class="calculator-breakdown-value"><strong id="calc-result-time">9 000</strong> <span data-i18n="calcCostUnit">kr</span></span>
+            </div>
+            <div class="calculator-breakdown-item">
+              <span class="calculator-breakdown-label" data-i18n="calcErrorSavings">Minskade felkostnader</span>
+              <span class="calculator-breakdown-value"><strong id="calc-result-errors">15 000</strong> <span data-i18n="calcCostUnit">kr</span></span>
+            </div>
+          </div>
+          <p class="calculator-result calculator-result-total">
+            <span data-i18n="calcTotalPrefix">Total besparing</span>
+            <strong id="calc-result-total">24 000</strong>
+            <span data-i18n="calcTotalSuffix">kr per månad</span>
+          </p>
+        </div>
+        <p class="calculator-assumption" data-i18n="calcAssumption">Uppskattning baserad på 60 % minskad granskningstid och 80 % minskad risk för att felaktiga fakturor passerar.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section cta">
+      <div class="container cta-contact">
+        <div class="cta-contact-text">
+          <h2 class="cta-title" data-i18n="ctaTitle">Prova Attestro</h2>
+          <p class="cta-lead" data-i18n="ctaLead">Boka en demo eller skicka en fråga. Vi berättar gärna mer om hur Attestro kan hjälpa er.</p>
+          <p class="cta-email">sales@algamo.se</p>
+        </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="cf-company" data-i18n="formCompany">Företagsnamn</label>
+            <input type="text" id="cf-company" name="company" autocomplete="organization" />
+          </div>
+          <div class="form-group">
+            <label for="cf-email" data-i18n="formEmail">E-post</label>
+            <input type="email" id="cf-email" name="email" required autocomplete="email" aria-required="true" aria-describedby="cf-email-error" />
+            <span class="form-error-message" id="cf-email-error" data-i18n="formEmailRequired" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="cf-volume" data-i18n="formVolume">Antal fakturor/mån</label>
+            <select id="cf-volume" name="volume">
+              <option value="" data-i18n="formVolumeDefault">Välj…</option>
+              <option value="<100" data-i18n="formVolume1">&lt;100</option>
+              <option value="100-500" data-i18n="formVolume2">100–500</option>
+              <option value="500-1000" data-i18n="formVolume3">500–1 000</option>
+              <option value="1000+" data-i18n="formVolume4">1 000+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="cf-message" data-i18n="formMessage">Meddelande</label>
+            <textarea id="cf-message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-form-submit" data-i18n="formSubmit">Skicka förfrågan</button>
+          <p class="form-privacy-notice" data-i18n="formPrivacyNotice">Formuläret öppnar ditt e-postprogram. Ingen data lagras på våra servrar.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section trust-strip">
+      <div class="container">
+        <ul class="trust-grid">
+          <li class="trust-badge">
+            <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+            <span data-i18n="trustSweden">Data lagras i Sverige</span>
+          </li>
+          <li class="trust-badge">
+            <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2L3 7v6c0 5.25 3.75 10.15 9 11.35C17.25 23.15 21 18.25 21 13V7l-9-5z"/><path d="M9 12l2 2 4-4"/></svg></span>
+            <span data-i18n="trustGdpr">GDPR-kompatibelt</span>
+          </li>
+          <li class="trust-badge">
+            <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
+            <span data-i18n="trustEncryption">Krypterad dataöverföring</span>
+          </li>
+          <li class="trust-badge">
+            <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><path d="M14.12 14.12a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg></span>
+            <span data-i18n="trustNoSharing">Ingen delning utan samtycke</span>
+          </li>
+        </ul>
       </div>
     </section>
 
     <section id="faq" class="section faq">
       <div class="container">
         <h2 class="section-title" data-i18n="faqTitle">Vanliga frågor</h2>
-        <dl class="faq-list">
-          <div class="faq-item">
-            <dt class="faq-question" data-i18n="faqQ1">Vad gör Attestro?</dt>
-            <dd class="faq-answer" data-i18n="faqA1">Attestro omvandlar leverantörsfakturor till strukturerad data, validerar mot avtal och flaggar avvikelser automatiskt. Resultatet levereras i Excel-format eller integrerat mot ert ekonomisystem.</dd>
-          </div>
-          <div class="faq-item">
-            <dt class="faq-question" data-i18n="faqQ2">Vilka branscher passar Attestro för?</dt>
-            <dd class="faq-answer" data-i18n="faqA2">Attestro är byggt för projektintensiva branscher som bygg och anläggning, transport och logistik, samt tjänsteföretag med underleverantörer — där fakturor är många, avtal komplexa och manuell kontroll inte räcker till.</dd>
-          </div>
-          <div class="faq-item">
-            <dt class="faq-question" data-i18n="faqQ3">Behöver vi byta ekonomisystem för att använda Attestro?</dt>
-            <dd class="faq-answer" data-i18n="faqA3">Nej. Attestro fungerar vid sidan av ert befintliga ekonomisystem — ni behöver inte byta.</dd>
-          </div>
-          <div class="faq-item">
-            <dt class="faq-question" data-i18n="faqQ4">Vad kostar Attestro?</dt>
-            <dd class="faq-answer" data-i18n="faqA4">Attestro erbjuds i tre planer: Minimum från 1 590 kr/mån (100 fakturor), Säker från 4 990 kr/mån (500 fakturor) och Enterprise (1000+ fakturor, pris enligt offert).</dd>
-          </div>
-          <div class="faq-item">
-            <dt class="faq-question" data-i18n="faqQ5">Hur fungerar Attestro steg för steg?</dt>
-            <dd class="faq-answer" data-i18n="faqA5">1. Import: Ladda upp faktura i PDF eller bildformat — Attestro extraherar data automatiskt. 2. Validering: Systemet kontrollerar innehållet mot avtalade priser, projektvillkor och interna regler. 3. Struktur och export: Ni får strukturerad data i Excel-format eller integrerat mot ert ekonomisystem med spårbar kontrollhistorik.</dd>
-          </div>
-        </dl>
-      </div>
-    </section>
-
-    <section id="contact" class="section cta">
-      <div class="container cta-inner">
-        <h2 class="cta-title" data-i18n="ctaTitle">Prova Attestro</h2>
-        <p class="cta-lead" data-i18n="ctaLead">Boka en demo eller skicka en fråga. Vi berättar gärna mer om hur Attestro kan hjälpa er med fakturor, validering och kontroll mot avtal och projekt.</p>
-        <a href="mailto:sales@algamo.se?subject=Attestro%20demo" class="btn btn-primary btn-lg">sales@algamo.se</a>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-question" data-i18n="faqQ1">Vad är Attestro?</summary>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA1">Attestro är ett verktyg som automatiskt analyserar leverantörsfakturor i entreprenadprojekt. Systemet extraherar fakturadata, jämför mot avtal och projektprislistor och flaggar avvikelser innan fakturan attesteras.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question" data-i18n="faqQ2">Vilka företag passar Attestro för?</summary>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA2" data-i18n-html>Attestro är främst utvecklat för:<br>• entreprenadföretag<br>• byggbolag<br>• transport- och materialleverantörer<br>• projektorganisationer med många leverantörsfakturor</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question" data-i18n="faqQ3">Vad kontrolleras och vilken data extraheras?</summary>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA3" data-i18n-html>Attestro extraherar leverantör, fakturanummer, datum, projekt/littra, transaktioner, mängd och pris per enhet. Systemet kontrollerar:<br>• pris mot projektets prislista<br>• projekt- eller littra-koppling<br>• avvikelser mot avtal</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question" data-i18n="faqQ4">Hur börjar man använda Attestro?</summary>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA4" data-i18n-html>• Ladda upp exempel på fakturor från era leverantörer<br>• Systemet konfigureras för era mallar<br>• Attestro börjar analysera nya fakturor automatiskt</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question" data-i18n="faqQ5">Behöver vi ändra vårt ekonomisystem?</summary>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA5">Nej. Attestro är byggt som ett komplement till befintliga ekonomisystem.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question" data-i18n="faqQ6">Kan vi testa innan vi bestämmer oss?</summary>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA6">Ja. Vi erbjuder pilotprojekt och demo så att ni kan utvärdera Attestro innan ni binder er.</p></div>
+          </details>
+        </div>
       </div>
     </section>
   </main>
@@ -259,15 +421,29 @@
           <img src="assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" />
           <span class="logo-fallback">ÄLGAMO Software AB</span>
         </a>
-        <p class="footer-tagline" data-i18n="footerTagline">Attestro — fakturor i ordning.</p>
+        <p class="footer-tagline" data-i18n="footerTagline">Attestro. Fakturor i ordning.</p>
       </div>
       <div class="footer-legal">
         <p data-i18n="footerLegal">Älgamo Software AB — Sverige</p>
         <p class="footer-support"><span data-i18n="footerSupport">Kundsupport:</span> <a href="mailto:support@algamo.se">support@algamo.se</a></p>
         <p class="footer-social"><a href="https://www.linkedin.com/company/%C3%A4lgamo-software-ab/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <p class="footer-blog"><a href="blog.html" data-i18n="footerBlog">Nyheter</a></p>
+        <p class="footer-security"><a href="security.html" data-i18n="footerSecurity">Säkerhet</a></p>
+        <p class="footer-privacy"><a href="privacy.html" data-i18n="footerPrivacy">Integritetspolicy</a></p>
+        <p class="footer-cookies"><a href="#" id="cookie-settings-link" data-i18n="footerCookies">Cookie-inställningar</a></p>
       </div>
     </div>
   </footer>
+
+  <div id="cookie-consent" class="cookie-consent" role="dialog" aria-label="Cookie-samtycke" hidden>
+    <div class="container cookie-consent-inner">
+      <p class="cookie-consent-text"><span data-i18n="consentText">Vi använder cookies för anonym webbplatsstatistik (Google Analytics). Ingen data används för marknadsföring.</span> <a href="privacy.html#cookies" data-i18n="consentPrivacyLink">Läs mer i vår integritetspolicy</a></p>
+      <div class="cookie-consent-actions">
+        <button type="button" id="consent-accept" class="btn btn-primary btn-consent" data-i18n="consentAccept">Acceptera</button>
+        <button type="button" id="consent-reject" class="btn btn-ghost btn-consent" data-i18n="consentReject">Avvisa</button>
+      </div>
+    </div>
+  </div>
 
   <script type="module" src="/src/main.ts"></script>
 </body>

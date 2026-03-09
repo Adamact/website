@@ -13,17 +13,31 @@
   <meta property="og:description" content="Prisplaner för Attestro. Fakturor till strukturerad data med validering och kontroll mot avtal och projekt." />
   <meta property="og:image" content="https://algamo.se/assets/logo.png" />
   <meta property="og:locale" content="sv_SE" />
+  <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:site_name" content="Älgamo Software AB" />
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="sv" href="https://algamo.se/pricing.html" />
+  <link rel="alternate" hreflang="en" href="https://algamo.se/pricing.html" />
+  <link rel="alternate" hreflang="x-default" href="https://algamo.se/pricing.html" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Priser för Attestro — Älgamo Software AB" />
   <meta name="twitter:description" content="Prisplaner för Attestro. Fakturor till strukturerad data med validering och kontroll mot avtal och projekt." />
   <meta name="twitter:image" content="https://algamo.se/assets/logo.png" />
   <meta name="theme-color" content="#1a2744" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/assets/logo.png" />
+  <link rel="apple-touch-icon" href="/assets/logo.png" />
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Hem", "item": "https://algamo.se/" },
+      { "@type": "ListItem", "position": 2, "name": "Priser" }
+    ]
+  }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -65,14 +79,50 @@
         "description": "1000+ fakturor/mån, allt i Säker, API-integration, Dashboard/BI-export, multi-entity support, SLA, dedikerad kontakt"
       }
     ],
+    "@id": "https://algamo.se/#software",
     "publisher": {
       "@type": "Organization",
-      "@id": "https://algamo.se/#organization"
+      "@id": "https://algamo.se/#organization",
+      "name": "Älgamo Software AB",
+      "url": "https://algamo.se"
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Kan jag byta plan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Ni kan uppgradera eller nedgradera er plan när som helst. Ändringen träder i kraft vid nästa faktureringsperiod."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Vad händer om vi överskrider fakturagränsen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vi hör av oss innan gränsen nås så att ni kan uppgradera. Inga dolda avgifter."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ingår implementation i priset?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Implementation debiteras som en engångskostnad utöver månadspriset. Den omfattar konfigurering av era faktureringsmallar och avtalsinställningar."
+        }
+      }
+    ]
   }
   </script>
 </head>
 <body>
+  <a href="#main" class="skip-link" data-i18n="skipToContent">Hoppa till innehåll</a>
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="logo-link">
@@ -90,6 +140,7 @@
           <a href="about.html" data-i18n="navAbout">Om oss</a>
           <a href="pricing.html" data-i18n="navPricing">Priser</a>
           <a href="index.html#contact" data-i18n="navContact">Kontakt</a>
+          <a href="blog.html" data-i18n="navBlog">Nyheter</a>
         </nav>
         <div class="lang-switcher" role="group" aria-label="Språk">
           <button type="button" class="lang-btn" data-lang-btn="sv" aria-pressed="true">Svenska</button>
@@ -101,7 +152,13 @@
     </div>
   </header>
 
-  <main>
+  <nav class="breadcrumb container" aria-label="Breadcrumb">
+    <a href="index.html" data-i18n="breadcrumbHome">Hem</a>
+    <span aria-hidden="true">&gt;</span>
+    <span data-i18n="navPricing">Priser</span>
+  </nav>
+
+  <main id="main">
     <section class="section pricing">
       <div class="container">
         <h1 class="section-title" data-i18n="pricingHeading">Priser för Attestro</h1>
@@ -171,6 +228,120 @@
         </ul>
       </div>
     </section>
+
+    <section class="section pricing-comparison">
+      <div class="container">
+        <h2 class="section-title" data-i18n="comparisonTitle">Jämför planer</h2>
+        <div class="feature-table-wrap">
+          <table class="feature-table">
+            <thead>
+              <tr>
+                <th scope="col" data-i18n="comparisonFeature">Funktion</th>
+                <th scope="col" data-i18n="planMinimum">Minimum</th>
+                <th scope="col" data-i18n="planSaker">Säker</th>
+                <th scope="col" data-i18n="planEnterprise">Enterprise</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="compOcr">OCR-extraktion</td>
+                <td aria-label="Ja">&#x2713;</td>
+                <td aria-label="Ja">&#x2713;</td>
+                <td aria-label="Ja">&#x2713;</td>
+              </tr>
+              <tr>
+                <td data-i18n="compExcel">Excel-export</td>
+                <td aria-label="Ja">&#x2713;</td>
+                <td aria-label="Ja">&#x2713;</td>
+                <td aria-label="Ja">&#x2713;</td>
+              </tr>
+              <tr>
+                <td data-i18n="compValidation">Grundläggande fältvalidering</td>
+                <td aria-label="Ja">&#x2713;</td>
+                <td aria-label="Ja">&#x2713;</td>
+                <td aria-label="Ja">&#x2713;</td>
+              </tr>
+              <tr>
+                <td data-i18n="compCustomExport">Anpassad export</td>
+                <td aria-label="Nej">—</td>
+                <td aria-label="Ja">&#x2713;</td>
+                <td aria-label="Ja">&#x2713;</td>
+              </tr>
+              <tr>
+                <td data-i18n="compPriceVerify">Prisverifiering mot avtal</td>
+                <td aria-label="Nej">—</td>
+                <td aria-label="Ja">&#x2713;</td>
+                <td aria-label="Ja">&#x2713;</td>
+              </tr>
+              <tr>
+                <td data-i18n="compOvercharge">Identifiering av överdebitering</td>
+                <td aria-label="Nej">—</td>
+                <td aria-label="Ja">&#x2713;</td>
+                <td aria-label="Ja">&#x2713;</td>
+              </tr>
+              <tr>
+                <td data-i18n="compHistory">Historik och spårbarhet</td>
+                <td aria-label="Nej">—</td>
+                <td aria-label="Ja">&#x2713;</td>
+                <td aria-label="Ja">&#x2713;</td>
+              </tr>
+              <tr>
+                <td data-i18n="compApi">API-integration</td>
+                <td aria-label="Nej">—</td>
+                <td aria-label="Nej">—</td>
+                <td aria-label="Ja">&#x2713;</td>
+              </tr>
+              <tr>
+                <td data-i18n="compDashboard">Dashboard / BI-export</td>
+                <td aria-label="Nej">—</td>
+                <td aria-label="Nej">—</td>
+                <td aria-label="Ja">&#x2713;</td>
+              </tr>
+              <tr>
+                <td data-i18n="compMultiEntity">Multi-entity support</td>
+                <td aria-label="Nej">—</td>
+                <td aria-label="Nej">—</td>
+                <td aria-label="Ja">&#x2713;</td>
+              </tr>
+              <tr>
+                <td data-i18n="compSla">SLA</td>
+                <td aria-label="Nej">—</td>
+                <td aria-label="Nej">—</td>
+                <td aria-label="Ja">&#x2713;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq pricing-faq">
+      <div class="container">
+        <h2 class="section-title" data-i18n="pricingFaqTitle">Vanliga frågor om priser</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-question" data-i18n="pricingFaqQ1">Kan jag byta plan?</summary>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="pricingFaqA1">Ja. Ni kan uppgradera eller nedgradera er plan när som helst. Ändringen träder i kraft vid nästa faktureringsperiod.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question" data-i18n="pricingFaqQ2">Vad händer om vi överskrider fakturagränsen?</summary>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="pricingFaqA2">Vi hör av oss innan gränsen nås så att ni kan uppgradera. Inga dolda avgifter.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question" data-i18n="pricingFaqQ3">Ingår implementation i priset?</summary>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="pricingFaqA3">Implementation debiteras som en engångskostnad utöver månadspriset. Den omfattar konfigurering av era faktureringsmallar och avtalsinställningar.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="container"><div class="cta-inner">
+        <h2 class="cta-title" data-i18n="pricingCtaTitle">Redo att testa?</h2>
+        <p class="cta-lead" data-i18n="pricingCtaLead">Kontakta oss för en demo eller fråga om hur Attestro kan hjälpa er verksamhet.</p>
+        <a href="index.html#contact" class="btn btn-primary btn-lg" data-i18n="pricingCtaCta">Kontakta oss</a>
+      </div></div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -180,15 +351,29 @@
           <img src="assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" />
           <span class="logo-fallback">ÄLGAMO Software AB</span>
         </a>
-        <p class="footer-tagline" data-i18n="footerTagline">Attestro — fakturor i ordning.</p>
+        <p class="footer-tagline" data-i18n="footerTagline">Attestro. Fakturor i ordning.</p>
       </div>
       <div class="footer-legal">
         <p data-i18n="footerLegal">Älgamo Software AB — Sverige</p>
         <p class="footer-support"><span data-i18n="footerSupport">Kundsupport:</span> <a href="mailto:support@algamo.se">support@algamo.se</a></p>
         <p class="footer-social"><a href="https://www.linkedin.com/company/%C3%A4lgamo-software-ab/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <p class="footer-blog"><a href="blog.html" data-i18n="footerBlog">Nyheter</a></p>
+        <p class="footer-security"><a href="security.html" data-i18n="footerSecurity">Säkerhet</a></p>
+        <p class="footer-privacy"><a href="privacy.html" data-i18n="footerPrivacy">Integritetspolicy</a></p>
+        <p class="footer-cookies"><a href="#" id="cookie-settings-link" data-i18n="footerCookies">Cookie-inställningar</a></p>
       </div>
     </div>
   </footer>
+
+  <div id="cookie-consent" class="cookie-consent" role="dialog" aria-label="Cookie-samtycke" hidden>
+    <div class="container cookie-consent-inner">
+      <p class="cookie-consent-text"><span data-i18n="consentText">Vi använder cookies för anonym webbplatsstatistik (Google Analytics). Ingen data används för marknadsföring.</span> <a href="privacy.html#cookies" data-i18n="consentPrivacyLink">Läs mer i vår integritetspolicy</a></p>
+      <div class="cookie-consent-actions">
+        <button type="button" id="consent-accept" class="btn btn-primary btn-consent" data-i18n="consentAccept">Acceptera</button>
+        <button type="button" id="consent-reject" class="btn btn-ghost btn-consent" data-i18n="consentReject">Avvisa</button>
+      </div>
+    </div>
+  </div>
 
   <script type="module" src="/src/main.ts"></script>
 </body>

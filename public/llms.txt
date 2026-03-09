@@ -1,0 +1,45 @@
+# Attestro — by Älgamo Software AB
+
+> Attestro is an invoice processing tool that converts supplier invoices into structured data, validates against contracts and project price lists, and flags discrepancies automatically. Built for construction, infrastructure, and transport companies in Sweden.
+
+## Company
+
+Älgamo Software AB is a Swedish software company founded by Adam Älgamo. The company builds Attestro to solve invoice control problems in project-intensive industries.
+
+- Website: https://algamo.se
+- Sales: sales@algamo.se
+- Support: support@algamo.se
+- LinkedIn: https://www.linkedin.com/company/älgamo-software-ab/
+
+## Product: Attestro
+
+Attestro automates invoice control for construction, transport, and project-based businesses:
+
+- **OCR extraction**: Upload invoices as PDF or image; Attestro extracts supplier, line items, prices, and project links automatically.
+- **Contract validation**: Checks invoice content against agreed prices, project terms, change orders (ÄTA), and unit price lists.
+- **Discrepancy flagging**: Identifies overcharging and deviations before invoice approval.
+- **Structured export**: Outputs verified data in Excel or integrates with existing accounting systems.
+- **History and traceability**: Full audit trail of all validations and discrepancies.
+
+Attestro works alongside existing accounting systems — no migration required.
+
+## Pricing
+
+- **Minimum**: 1,590 SEK/month — 100 invoices/month, OCR, Excel export, basic validation
+- **Säker** (Recommended): 4,990 SEK/month — 500 invoices/month, contract price verification, overcharge detection, priority support
+- **Enterprise**: Custom pricing — 1,000+ invoices/month, API integration, BI export, multi-entity, SLA
+
+12-month commitment discounts available (approx. 15% off).
+
+## Target Industries
+
+- Construction and infrastructure
+- Transport and logistics
+- Service companies with subcontractors
+- Project organizations with high invoice volumes
+
+## Pages
+
+- [Home](https://algamo.se/): Product overview, features, FAQ
+- [Pricing](https://algamo.se/pricing.html): Detailed plan comparison
+- [About](https://algamo.se/about.html): Company and founder information

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sidan hittades inte — Älgamo Software AB</title>
+  <meta name="description" content="Sidan du söker finns inte. Gå tillbaka till startsidan." />
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#1a2744" />
+  <link rel="icon" type="image/png" href="/assets/logo.png" />
+  <link rel="apple-touch-icon" href="/assets/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link" data-i18n="skipToContent">Hoppa till innehåll</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img" width="180" height="48" />
+        <span class="logo-fallback">ÄLGAMO Software AB</span>
+      </a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Meny">
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+      </button>
+      <div id="mobile-menu" class="menu-panel">
+        <nav class="nav">
+          <a href="index.html#process" data-i18n="navSolutions">Funktioner</a>
+          <a href="about.html" data-i18n="navAbout">Om oss</a>
+          <a href="pricing.html" data-i18n="navPricing">Priser</a>
+          <a href="index.html#contact" data-i18n="navContact">Kontakt</a>
+          <a href="blog.html" data-i18n="navBlog">Nyheter</a>
+        </nav>
+        <div class="lang-switcher" role="group" aria-label="Språk">
+          <button type="button" class="lang-btn" data-lang-btn="sv" aria-pressed="true">Svenska</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">English</button>
+        </div>
+        <a href="index.html#contact" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section notfound">
+      <div class="container notfound-inner">
+        <h1 class="section-title" data-i18n="notfoundTitle">Sidan hittades inte</h1>
+        <p class="section-lead" data-i18n="notfoundText">Sidan du letar efter finns inte eller har flyttats.</p>
+        <a href="index.html" class="btn btn-primary btn-lg btn-on-light" data-i18n="notfoundLink">Tillbaka till startsidan</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-link logo-link-footer">
+          <img src="assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" />
+          <span class="logo-fallback">ÄLGAMO Software AB</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footerTagline">Attestro. Fakturor i ordning.</p>
+      </div>
+      <div class="footer-legal">
+        <p data-i18n="footerLegal">Älgamo Software AB — Sverige</p>
+        <p class="footer-support"><span data-i18n="footerSupport">Kundsupport:</span> <a href="mailto:support@algamo.se">support@algamo.se</a></p>
+        <p class="footer-social"><a href="https://www.linkedin.com/company/%C3%A4lgamo-software-ab/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <p class="footer-blog"><a href="blog.html" data-i18n="footerBlog">Nyheter</a></p>
+        <p class="footer-security"><a href="security.html" data-i18n="footerSecurity">Säkerhet</a></p>
+        <p class="footer-privacy"><a href="privacy.html" data-i18n="footerPrivacy">Integritetspolicy</a></p>
+        <p class="footer-cookies"><a href="#" id="cookie-settings-link" data-i18n="footerCookies">Cookie-inställningar</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cookie-consent" class="cookie-consent" role="dialog" aria-label="Cookie-samtycke" hidden>
+    <div class="container cookie-consent-inner">
+      <p class="cookie-consent-text"><span data-i18n="consentText">Vi använder cookies för anonym webbplatsstatistik (Google Analytics). Ingen data används för marknadsföring.</span> <a href="privacy.html#cookies" data-i18n="consentPrivacyLink">Läs mer i vår integritetspolicy</a></p>
+      <div class="cookie-consent-actions">
+        <button type="button" id="consent-accept" class="btn btn-primary btn-consent" data-i18n="consentAccept">Acceptera</button>
+        <button type="button" id="consent-reject" class="btn btn-ghost btn-consent" data-i18n="consentReject">Avvisa</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
