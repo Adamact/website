@@ -344,6 +344,20 @@ body {
   padding: var(--space-4xl) 0;
 }
 
+.hero-collab {
+  padding: var(--space-lg) 0;
+  background: var(--color-bg-alt);
+  text-align: center;
+}
+
+.hero-collab p {
+  margin: 0;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  letter-spacing: 0.02em;
+}
+
 .section-title {
   font-family: var(--font-heading);
   font-size: clamp(1.75rem, 3vw, 2.25rem);
@@ -451,6 +465,42 @@ body {
     grid-template-columns: 1fr;
     max-width: 20rem;
     margin-inline: auto;
+  }
+}
+
+/* Audience (target industries) */
+.audience-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+.audience-card {
+  padding: var(--space-xl);
+  background: var(--color-bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+}
+
+.audience-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 0 0 var(--space-sm);
+}
+
+.audience-card p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+}
+
+@media (max-width: 768px) {
+  .audience-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -990,10 +1040,15 @@ body {
 
   .menu-panel {
     display: none;
+    flex: none;
     width: 100%;
     flex-direction: column;
-    gap: var(--space-md);
-    padding: var(--space-md) 0;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0;
+    padding: var(--space-md) 0 var(--space-sm);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin-top: var(--space-sm);
   }
 
   .menu-panel.is-open {
@@ -1003,16 +1058,21 @@ body {
   .site-header .btn-primary {
     display: inline-flex;
     align-self: flex-start;
+    margin-top: var(--space-sm);
+  }
+
+  .menu-panel .lang-switcher {
+    margin-top: var(--space-md);
   }
 
   .nav {
     flex-direction: column;
-    gap: var(--space-sm);
+    gap: 0;
   }
 
   .nav a {
     font-size: 1rem;
-    padding: var(--space-xs) 0;
+    padding: 0.625rem 0;
   }
 
   .about-inner {
