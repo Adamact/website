@@ -786,7 +786,7 @@ function initCalculator(): void {
 }
 
 // Cookie consent + GA4 via GTM
-const GTM_ID = "GTM-MBGBT8WT";
+const GA_ID = "G-N1YY4NV0YC";
 
 function getConsent(): ConsentData | null {
   try {
@@ -815,20 +815,21 @@ function clearConsent(): void {
   }
 }
 
-let gtmLoaded = false;
-function loadGTM(): void {
-  if (gtmLoaded) return;
-  gtmLoaded = true;
+let gaLoaded = false;
+function loadGA(): void {
+  if (gaLoaded) return;
+  gaLoaded = true;
 
-  // GTM script injection
+  const script = document.createElement("script");
+  script.async = true;
+  script.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+  document.head.appendChild(script);
+
   const w = window as any;
   w.dataLayer = w.dataLayer || [];
-  w.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-  const f = document.getElementsByTagName("script")[0];
-  const j = document.createElement("script");
-  j.async = true;
-  j.src = "https://www.googletagmanager.com/gtm.js?id=" + GTM_ID;
-  f.parentNode!.insertBefore(j, f);
+  function gtag(...args: any[]) { w.dataLayer.push(args); }
+  gtag("js", new Date());
+  gtag("config", GA_ID);
 }
 
 function deleteGaCookies(): void {
@@ -863,14 +864,14 @@ function initCookieConsent(): void {
     showConsentBanner();
   } else if (consent.analytics) {
     // Previously accepted — load GTM silently
-    loadGTM();
+    loadGA();
   }
   // Previously rejected — do nothing
 
   // Accept button
   document.getElementById("consent-accept")?.addEventListener("click", () => {
     setConsent(true);
-    loadGTM();
+    loadGA();
     hideConsentBanner();
   });
 
@@ -887,7 +888,7 @@ function initCookieConsent(): void {
       e.preventDefault();
       clearConsent();
       deleteGaCookies();
-      gtmLoaded = false;
+      gaLoaded = false;
       showConsentBanner();
       // Scroll banner into view
       const banner = document.getElementById("cookie-consent");
