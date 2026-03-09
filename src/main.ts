@@ -258,7 +258,7 @@ function initLang(): void {
 document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     const href = this.getAttribute("href");
-    if (href === "#") return;
+    if (!href || href === "#") return;
     const target = document.querySelector(href);
     if (target) {
       e.preventDefault();
@@ -304,8 +304,33 @@ function initPricingToggle(): void {
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  initLang();
-  initLangSwitcher();
-  initPricingToggle();
-});
+function initMobileMenu(): void {
+  const toggle = document.querySelector<HTMLButtonElement>(".menu-toggle");
+  const panel = document.getElementById("mobile-menu");
+  if (!toggle || !panel) return;
+
+  toggle.addEventListener("click", () => {
+    const open = panel.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", String(open));
+  });
+
+  panel.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      panel.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && panel.classList.contains("is-open")) {
+      panel.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.focus();
+    }
+  });
+}
+
+initLang();
+initLangSwitcher();
+initPricingToggle();
+initMobileMenu();

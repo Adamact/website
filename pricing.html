@@ -17,18 +17,25 @@
         <img src="assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img" width="180" height="48" />
         <span class="logo-fallback">ÄLGAMO Software AB</span>
       </a>
-      <nav class="nav">
-        <a href="index.html#process" data-i18n="navSolutions">Funktioner</a>
-        <a href="about.html" data-i18n="navAbout">Om oss</a>
-        <a href="pricing.html" data-i18n="navPricing">Priser</a>
-        <a href="index.html#contact" data-i18n="navContact">Kontakt</a>
-      </nav>
-      <div class="lang-switcher" role="group" aria-label="Språk">
-        <button type="button" class="lang-btn" data-lang-btn="sv" aria-pressed="true">Svenska</button>
-        <span class="lang-sep" aria-hidden="true">|</span>
-        <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">English</button>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Meny">
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+      </button>
+      <div id="mobile-menu" class="menu-panel">
+        <nav class="nav">
+          <a href="index.html#process" data-i18n="navSolutions">Funktioner</a>
+          <a href="about.html" data-i18n="navAbout">Om oss</a>
+          <a href="pricing.html" data-i18n="navPricing">Priser</a>
+          <a href="index.html#contact" data-i18n="navContact">Kontakt</a>
+        </nav>
+        <div class="lang-switcher" role="group" aria-label="Språk">
+          <button type="button" class="lang-btn" data-lang-btn="sv" aria-pressed="true">Svenska</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">English</button>
+        </div>
+        <a href="index.html#contact" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
       </div>
-      <a href="index.html#contact" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
     </div>
   </header>
 
@@ -116,6 +123,7 @@
       <div class="footer-legal">
         <p data-i18n="footerLegal">Älgamo Software AB — Sverige</p>
         <p class="footer-support"><span data-i18n="footerSupport">Kundsupport:</span> <a href="mailto:support@algamo.se">support@algamo.se</a></p>
+        <p class="footer-social"><a href="https://www.linkedin.com/company/%C3%A4lgamo-software-ab/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
       </div>
     </div>
   </footer>

@@ -148,6 +148,7 @@ body {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
+  white-space: nowrap;
 }
 
 .nav a:hover {
@@ -215,6 +216,7 @@ body {
 
 .site-header .btn-primary {
   border: 1px solid rgba(255, 255, 255, 0.35);
+  white-space: nowrap;
 }
 
 .site-header .btn-primary:hover {
@@ -913,22 +915,104 @@ body {
   text-decoration: underline;
 }
 
+.footer-social {
+  margin-top: var(--space-sm);
+}
+
+.footer-social a {
+  color: var(--color-grey-light);
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+/* Hamburger menu toggle */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-sm);
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-toggle-bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--color-white);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Desktop: menu-panel mirrors header-inner layout */
+.menu-panel {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  flex: 1;
+  min-width: 0;
+  justify-content: space-between;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .header-inner {
     flex-wrap: wrap;
     padding: var(--space-sm) var(--space-md);
-    gap: var(--space-md);
+    gap: 0;
+    justify-content: space-between;
   }
 
   .site-header .logo-img {
     height: 2.25rem;
   }
 
-  .nav {
-    order: 3;
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu-panel {
+    display: none;
     width: 100%;
-    justify-content: flex-start;
+    flex-direction: column;
+    gap: var(--space-md);
+    padding: var(--space-md) 0;
+  }
+
+  .menu-panel.is-open {
+    display: flex;
+  }
+
+  .site-header .btn-primary {
+    display: inline-flex;
+    align-self: flex-start;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .nav a {
+    font-size: 1rem;
+    padding: var(--space-xs) 0;
   }
 
   .about-inner {
