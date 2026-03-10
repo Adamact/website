@@ -303,7 +303,7 @@ const translations: Translations = {
     aboutSubtitleCompany: "About Älgamo Software",
     aboutText3: "Älgamo Software AB develops Attestro, a tool for structured invoice handling and automatic validation against contracts. The company was started to solve a problem we've seen up close: manual invoice checks in project-heavy businesses take too much time and create unnecessary risk.",
     aboutSubtitleFounder: "Founder",
-    aboutText4: "The company is run by Adam Älgamo, engineering student in technical physics and electrical engineering.",
+    aboutText4: "The company is run by Adam Älgamo, engineering student in applied physics and electrical engineering.",
     ctaTitle: "Try Attestro",
     ctaLead: "Book a demo or send us a question. We're happy to tell you more about how Attestro can help.",
     footerTagline: "Attestro. Invoices in order.",

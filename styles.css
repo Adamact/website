@@ -1075,19 +1075,22 @@ body > main {
     align-items: stretch;
     justify-content: flex-start;
     gap: 0;
-    padding: var(--space-md) 0 var(--space-sm);
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    margin-top: var(--space-sm);
+    padding: 0;
+    border-top: none;
+    margin-top: 0;
     opacity: 0;
     max-height: 0;
     overflow: hidden;
     pointer-events: none;
-    transition: opacity 0.3s, max-height 0.3s;
+    transition: opacity 0.3s, max-height 0.3s, padding 0.3s, margin-top 0.3s;
   }
 
   .menu-panel.is-open {
     opacity: 1;
     max-height: 30rem;
+    padding: var(--space-md) 0 var(--space-sm);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin-top: var(--space-sm);
     pointer-events: auto;
   }
 
