@@ -241,7 +241,7 @@ const translations: Translations = {
     footerBlog: "Nyheter",
     // Calculator
     calcTitle: "Hur mycket tid kan ni spara?",
-    calcLead: "Uppskatta hur många timmar per månad Attestro kan frigöra åt ert team.",
+    calcLead: "Uppskatta hur mycket pengar per månad Attestro kan spara åt ert team.",
     calcInvoicesLabel: "Antal fakturor/mån",
     calcMinutesLabel: "Tid per faktura (min)",
     calcCostLabel: "Kostnad per timme",
@@ -486,7 +486,7 @@ const translations: Translations = {
     footerBlog: "News",
     // Calculator
     calcTitle: "How much time can you save?",
-    calcLead: "Estimate how many hours per month Attestro can free up for your team.",
+    calcLead: "Estimate how much money per month Attestro can save your team.",
     calcInvoicesLabel: "Invoices per month",
     calcMinutesLabel: "Time per invoice (min)",
     calcCostLabel: "Cost per hour",
