@@ -1,6 +1,12 @@
-# Website
+# Älgamo Software AB
 
-Static site (HTML, CSS, TypeScript) built with Vite. Intended for GitHub Pages (see `CNAME`).
+Älgamo Software AB is a Swedish software company that develops **Attestro** — a tool for automated invoice verification in construction, transport, and project-intensive industries. Attestro converts supplier invoices into structured data, validates them against contracts and project price lists, and flags discrepancies before approval.
+
+Website: [algamo.se](https://algamo.se)
+
+## Tech Stack
+
+Static marketing site (HTML, CSS, TypeScript) built with Vite and deployed to GitHub Pages (see `CNAME`).
 
 ## Setup
 
