@@ -238,6 +238,8 @@ const translations: Translations = {
     blogTitle: "Nyheter",
     blogLead: "Uppdateringar från Attestro och Älgamo Software AB.",
     blogEmpty: "Inga nyheter ännu. Följ oss på <a href=\"https://www.linkedin.com/company/%C3%A4lgamo-software-ab/\" target=\"_blank\" rel=\"noopener noreferrer\">LinkedIn</a> för uppdateringar.",
+    blogPost1Title: "Webbplatsen är lanserad!",
+    blogPost1Body: "Vi är glada att kunna presentera vår nya webbplats för Attestro. Här kommer ni kunna följa vår resa och ta del av nyheter om produkten och företaget. Välkomna!",
     footerBlog: "Nyheter",
     // Calculator
     calcTitle: "Hur mycket tid kan ni spara?",
@@ -483,6 +485,8 @@ const translations: Translations = {
     blogTitle: "News",
     blogLead: "Updates from Attestro and Älgamo Software AB.",
     blogEmpty: "No news yet. Follow us on <a href=\"https://www.linkedin.com/company/%C3%A4lgamo-software-ab/\" target=\"_blank\" rel=\"noopener noreferrer\">LinkedIn</a> for updates.",
+    blogPost1Title: "Website launched!",
+    blogPost1Body: "We are happy to present our new website for Attestro. Here you will be able to follow our journey and stay updated on product and company news. Welcome!",
     footerBlog: "News",
     // Calculator
     calcTitle: "How much time can you save?",
