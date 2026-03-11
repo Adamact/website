@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Attestro — Fakturor i strukturerat format | Älgamo Software AB</title>
+  <title>Attestro — Tidseffektiv fakturakontroll | Älgamo Software AB</title>
   <meta name="description" content="Attestro gör fakturor till strukturerad data (t.ex. Excel), med logikvalidering, felflaggor och automatisk kontroll mot avtal och projekt. Från Älgamo Software AB." />
   <link rel="canonical" href="https://algamo.se/" />
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://algamo.se/" />
-  <meta property="og:title" content="Attestro — Fakturor i strukturerat format | Älgamo Software AB" />
+  <meta property="og:title" content="Attestro — Tidseffektiv fakturakontroll | Älgamo Software AB" />
   <meta property="og:description" content="Attestro gör fakturor till strukturerad data (t.ex. Excel), med logikvalidering, felflaggor och automatisk kontroll mot avtal och projekt. Från Älgamo Software AB." />
   <!-- TODO: Replace og:image with a proper OG image (1200x630) when design is ready -->
   <meta property="og:image" content="https://algamo.se/assets/logo.png" />
@@ -22,12 +22,13 @@
   <link rel="alternate" hreflang="x-default" href="https://algamo.se/" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Attestro — Fakturor i strukturerat format | Älgamo Software AB" />
+  <meta name="twitter:title" content="Attestro — Tidseffektiv fakturakontroll | Älgamo Software AB" />
   <meta name="twitter:description" content="Attestro gör fakturor till strukturerad data (t.ex. Excel), med logikvalidering, felflaggor och automatisk kontroll mot avtal och projekt. Från Älgamo Software AB." />
   <meta name="twitter:image" content="https://algamo.se/assets/logo.png" />
   <meta name="theme-color" content="#1a2744" />
   <link rel="icon" type="image/png" href="/assets/logo.png" />
   <link rel="apple-touch-icon" href="/assets/logo.png" />
+  <link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="styles.css" />
   <script type="application/ld+json">
   {
@@ -93,7 +94,6 @@
       "Validering mot avtal och projekt",
       "Excel-export av strukturerad data",
       "Automatisk prisverifiering mot avtalade priser",
-      "Identifiering av överdebitering",
       "Historik och spårbarhet",
       "API-integration",
       "Multi-entity support"
@@ -219,6 +219,7 @@
       <div class="container pilot-cta-inner">
         <h2 class="section-title" data-i18n="pilotTitle">Vi söker pilotpartners</h2>
         <p class="section-lead" data-i18n="pilotLead">Vi bygger Attestro tillsammans med tidiga användare. Bli en av de första att testa och var med och påverka hur produkten utvecklas.</p>
+        <p class="section-lead" data-i18n="pilotDiscount">Pilotpartners får rabatterad tillgång till Attestro under utvecklingsfasen.</p>
         <a href="#contact" class="btn btn-primary btn-lg btn-on-light" data-i18n="pilotCta">Ansök om pilotplats</a>
       </div>
     </section>
@@ -236,7 +237,7 @@
           <li class="audience-card">
             <span class="audience-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span>
             <h3 data-i18n="audienceTransportTitle">Transport och logistik</h3>
-            <p data-i18n="audienceTransportDesc">Verifiera fraktfakturor mot avtalade priser, zoner och volymer. Identifiera överdebitering automatiskt.</p>
+            <p data-i18n="audienceTransportDesc">Verifiera fraktfakturor mot avtalade priser, zoner och volymer. Fånga avvikelser automatiskt.</p>
           </li>
           <li class="audience-card">
             <span class="audience-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/></svg></span>
@@ -421,7 +422,7 @@
           <img src="assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" />
           <span class="logo-fallback">ÄLGAMO Software AB</span>
         </a>
-        <p class="footer-tagline" data-i18n="footerTagline">Attestro. Fakturor i ordning.</p>
+        <p class="footer-tagline" data-i18n="footerTagline">Attestro. Tidseffektiv fakturakontroll.</p>
       </div>
       <div class="footer-legal">
         <p data-i18n="footerLegal">Älgamo Software AB — Sverige</p>

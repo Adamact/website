@@ -12,7 +12,7 @@ type Translations = Record<Lang, Record<string, string>>;
 
 const translations: Translations = {
   sv: {
-    pageTitle: "Attestro — Fakturor i strukturerat format | Älgamo Software AB",
+    pageTitle: "Attestro — Tidseffektiv fakturakontroll | Älgamo Software AB",
     pageDescription: "Attestro gör fakturor till strukturerad data (t.ex. Excel), med logikvalidering, felflaggor och automatisk kontroll mot avtal och projekt. Från Älgamo Software AB.",
     pricingTitle: "Priser för Attestro — Älgamo Software AB",
     pricingDescription: "Prisplaner för Attestro. Fakturor till strukturerad data med validering och kontroll mot avtal och projekt.",
@@ -49,7 +49,7 @@ const translations: Translations = {
     audienceConstructionTitle: "Bygg och anläggning",
     audienceConstructionDesc: "Kontrollera fakturor mot projektavtal, ÄTA och à-prislistor. Fånga avvikelser innan de påverkar projektresultatet.",
     audienceTransportTitle: "Transport och logistik",
-    audienceTransportDesc: "Verifiera fraktfakturor mot avtalade priser, zoner och volymer. Identifiera överdebitering automatiskt.",
+    audienceTransportDesc: "Verifiera fraktfakturor mot avtalade priser, zoner och volymer. Fånga avvikelser automatiskt.",
     audienceServicesTitle: "Tjänsteföretag med underleverantörer",
     audienceServicesDesc: "Matcha fakturor mot timavtal och ramavtal. Säkerställ att varje rad stämmer innan betalning.",
     aboutTitle: "Varför Attestro finns",
@@ -61,7 +61,7 @@ const translations: Translations = {
     aboutText4: "Bolaget drivs av Adam Älgamo, civilingenjörsstudent inom teknisk fysik och elektroteknik.",
     ctaTitle: "Prova Attestro",
     ctaLead: "Boka en demo eller skicka en fråga. Vi berättar gärna mer om hur Attestro kan hjälpa er.",
-    footerTagline: "Attestro. Fakturor i ordning.",
+    footerTagline: "Attestro. Tidseffektiv fakturakontroll.",
     footerLegal: "Älgamo Software AB — Sverige",
     footerSupport: "Kundsupport:",
     pricingHeading: "Priser för Attestro",
@@ -88,7 +88,6 @@ const translations: Translations = {
     featSaker1: "Allt i Minimum",
     featSaker2: "Anpassad export",
     featSaker3: "Automatisk prisverifiering mot avtal",
-    featSaker4: "Identifierar överdebitering",
     featSaker5: "Historik och spårbarhet",
     featSaker6: "Prioriterad support",
     featSaker7: "Databaslagring & historik",
@@ -118,6 +117,7 @@ const translations: Translations = {
     // Pilot CTA
     pilotTitle: "Vi söker pilotpartners",
     pilotLead: "Vi bygger Attestro tillsammans med tidiga användare. Bli en av de första att testa och var med och påverka hur produkten utvecklas.",
+    pilotDiscount: "Pilotpartners får rabatterad tillgång till Attestro under utvecklingsfasen.",
     pilotCta: "Ansök om pilotplats",
     // Contact form
     formCompany: "Företagsnamn",
@@ -186,7 +186,6 @@ const translations: Translations = {
     compValidation: "Grundläggande fältvalidering",
     compCustomExport: "Anpassad export",
     compPriceVerify: "Prisverifiering mot avtal",
-    compOvercharge: "Identifiering av överdebitering",
     compHistory: "Historik och spårbarhet",
     compApi: "API-integration",
     compDashboard: "Dashboard / BI-export",
@@ -197,7 +196,7 @@ const translations: Translations = {
     pricingFaqQ1: "Kan jag byta plan?",
     pricingFaqA1: "Ja. Ni kan uppgradera eller nedgradera er plan när som helst. Ändringen träder i kraft vid nästa faktureringsperiod.",
     pricingFaqQ2: "Vad händer om vi överskrider fakturagränsen?",
-    pricingFaqA2: "Vi hör av oss innan gränsen nås så att ni kan uppgradera. Inga dolda avgifter.",
+    pricingFaqA2: "Fakturor utöver er plans gräns debiteras per styck enligt en pay-as-you-go-modell. Ni kan fortsätta använda tjänsten utan avbrott. Om ni regelbundet överskrider gränsen rekommenderar vi att uppgradera till nästa plan för ett lägre styckpris.",
     pricingFaqQ3: "Ingår implementation i priset?",
     pricingFaqA3: "Implementation debiteras som en engångskostnad utöver månadspriset. Den omfattar konfigurering av era faktureringsmallar och avtalsinställningar.",
     // About values
@@ -257,6 +256,10 @@ const translations: Translations = {
     calcAssumption: "Uppskattning baserad på 60 % minskad granskningstid och 80 % minskad risk för att felaktiga fakturor passerar.",
     // Form validation
     formEmailRequired: "E-post krävs",
+    contactEmailSubject: "Attestro förfrågan",
+    contactLabelCompany: "Företag",
+    contactLabelEmail: "E-post",
+    contactLabelVolume: "Fakturor/mån",
   },
   en: {
     pageTitle: "Attestro — Invoices to structured data | Älgamo Software AB",
@@ -296,7 +299,7 @@ const translations: Translations = {
     audienceConstructionTitle: "Construction and infrastructure",
     audienceConstructionDesc: "Check invoices against project contracts, change orders and unit price lists. Catch deviations before they affect the project result.",
     audienceTransportTitle: "Transport and logistics",
-    audienceTransportDesc: "Verify freight invoices against agreed prices, zones and volumes. Identify overcharging automatically.",
+    audienceTransportDesc: "Verify freight invoices against agreed prices, zones and volumes. Catch discrepancies automatically.",
     audienceServicesTitle: "Service companies with subcontractors",
     audienceServicesDesc: "Match invoices against hourly and framework agreements. Ensure every line is correct before payment.",
     aboutTitle: "Why Attestro exists",
@@ -308,7 +311,7 @@ const translations: Translations = {
     aboutText4: "The company is run by Adam Älgamo, engineering student in applied physics and electrical engineering.",
     ctaTitle: "Try Attestro",
     ctaLead: "Book a demo or send us a question. We're happy to tell you more about how Attestro can help.",
-    footerTagline: "Attestro. Invoices in order.",
+    footerTagline: "Attestro. Time-efficient invoice verification.",
     footerLegal: "Älgamo Software AB — Sweden",
     footerSupport: "Support:",
     pricingHeading: "Attestro pricing",
@@ -335,7 +338,6 @@ const translations: Translations = {
     featSaker1: "Everything in Minimum",
     featSaker2: "Custom export",
     featSaker3: "Automatic price verification against contracts",
-    featSaker4: "Identifies overcharging",
     featSaker5: "History and traceability",
     featSaker6: "Priority support",
     featSaker7: "Database storage & history",
@@ -365,6 +367,7 @@ const translations: Translations = {
     // Pilot CTA
     pilotTitle: "We're looking for pilot partners",
     pilotLead: "We're building Attestro together with early users. Be one of the first to try it and help shape the product.",
+    pilotDiscount: "Pilot partners get discounted access to Attestro during the development phase.",
     pilotCta: "Apply for a pilot spot",
     // Contact form
     formCompany: "Company name",
@@ -433,7 +436,6 @@ const translations: Translations = {
     compValidation: "Basic field validation",
     compCustomExport: "Custom export",
     compPriceVerify: "Price verification against contracts",
-    compOvercharge: "Overcharge identification",
     compHistory: "History and traceability",
     compApi: "API integration",
     compDashboard: "Dashboard / BI export",
@@ -444,7 +446,7 @@ const translations: Translations = {
     pricingFaqQ1: "Can I switch plans?",
     pricingFaqA1: "Yes. You can upgrade or downgrade your plan at any time. The change takes effect at the next billing period.",
     pricingFaqQ2: "What happens if we exceed the invoice limit?",
-    pricingFaqA2: "We'll let you know before the limit is reached so you can upgrade. No hidden fees.",
+    pricingFaqA2: "Invoices beyond your plan's limit are charged per invoice on a pay-as-you-go basis. You can continue using the service without interruption. If you regularly exceed the limit, we recommend upgrading to the next plan for a lower per-invoice cost.",
     pricingFaqQ3: "Is implementation included in the price?",
     pricingFaqA3: "Implementation is charged as a one-time cost in addition to the monthly price. It covers configuration of your invoice templates and contract settings.",
     // About values
@@ -504,6 +506,10 @@ const translations: Translations = {
     calcAssumption: "Estimate based on 60% reduced review time and 80% reduced risk of incorrect invoices passing through.",
     // Form validation
     formEmailRequired: "Email is required",
+    contactEmailSubject: "Attestro inquiry",
+    contactLabelCompany: "Company",
+    contactLabelEmail: "Email",
+    contactLabelVolume: "Invoices/month",
   },
 };
 
@@ -727,11 +733,13 @@ function initContactForm(): void {
       return;
     }
 
-    const subject = encodeURIComponent("Attestro förfrågan" + (company ? " — " + company : ""));
+    const lang = getLang();
+    const t = translations[lang];
+    const subject = encodeURIComponent(t.contactEmailSubject + (company ? " — " + company : ""));
     const bodyParts: string[] = [];
-    if (company) bodyParts.push("Företag: " + company);
-    bodyParts.push("E-post: " + email);
-    if (volume) bodyParts.push("Fakturor/mån: " + volume);
+    if (company) bodyParts.push(t.contactLabelCompany + ": " + company);
+    bodyParts.push(t.contactLabelEmail + ": " + email);
+    if (volume) bodyParts.push(t.contactLabelVolume + ": " + volume);
     if (message) bodyParts.push("\n" + message);
 
     const body = encodeURIComponent(bodyParts.join("\n"));

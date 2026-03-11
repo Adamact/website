@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://algamo.se/</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-03-11</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/" />
@@ -11,7 +11,7 @@
   </url>
   <url>
     <loc>https://algamo.se/pricing.html</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-03-11</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/pricing.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/pricing.html" />
@@ -19,7 +19,7 @@
   </url>
   <url>
     <loc>https://algamo.se/about.html</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-03-11</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/about.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/about.html" />
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://algamo.se/security.html</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-03-11</lastmod>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/security.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/security.html" />
@@ -35,7 +35,7 @@
   </url>
   <url>
     <loc>https://algamo.se/privacy.html</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-03-11</lastmod>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/privacy.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/privacy.html" />
@@ -43,7 +43,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog.html</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-03-11</lastmod>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog.html" />
