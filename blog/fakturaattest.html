@@ -12,11 +12,16 @@
   <meta property="og:title" content="Vad är fakturaattest och hur fungerar attestprocessen? | Attestro" />
   <meta property="og:description" content="Fakturaattest innebär att godkänna en faktura för betalning. Läs om attestprocessen, vanliga arbetsflöden, utmaningar och hur digitala system förändrar fakturahanteringen." />
   <meta property="og:image" content="https://algamo.se/assets/logo.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
   <meta property="og:locale" content="sv_SE" />
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:site_name" content="Älgamo Software AB" />
   <meta property="article:published_time" content="2026-03-13" />
   <meta property="article:author" content="Älgamo Software AB" />
+  <meta property="article:section" content="Guide" />
+  <meta property="article:tag" content="fakturahantering" />
+  <meta property="article:tag" content="leverantörsfakturor" />
   <!-- hreflang -->
   <link rel="alternate" hreflang="sv" href="https://algamo.se/blog/fakturaattest.html" />
   <link rel="alternate" hreflang="en" href="https://algamo.se/blog/fakturaattest.html" />
@@ -51,7 +56,7 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     "headline": "Vad är fakturaattest och hur fungerar attestprocessen?",
     "description": "Fakturaattest innebär att godkänna en faktura för betalning. Läs om attestprocessen, vanliga arbetsflöden, utmaningar och hur digitala system förändrar fakturahanteringen.",
     "datePublished": "2026-03-13",
@@ -68,7 +73,44 @@
         "url": "https://algamo.se/assets/logo.png"
       }
     },
-    "mainEntityOfPage": "https://algamo.se/blog/fakturaattest.html"
+    "mainEntityOfPage": "https://algamo.se/blog/fakturaattest.html",
+    "inLanguage": "sv",
+    "dateModified": "2026-03-13",
+    "articleSection": "Guide",
+    "wordCount": 1100,
+    "keywords": ["fakturaattest", "attestprocess", "leverantörsfakturor", "fakturagodkännande", "internkontroll"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Vad är fakturaattest?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fakturaattest innebär att en utsedd person granskar och godkänner en faktura innan den betalas. Attestanten kontrollerar att fakturan avser en korrekt leverans, att priset stämmer mot avtal, att konteringen är riktig och att fakturan inte är en dubblett."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hur fungerar attestprocessen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En typisk attestprocess börjar med mottagning och registrering av fakturan, följt av kontroll av grunduppgifter, matchning mot avtal och beställning, kontering till rätt konto eller projekt, och slutligen beslut om godkännande eller avvisning."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Vilka utmaningar finns med fakturaattest?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vanliga utmaningar inkluderar tidsbrist som leder till ytlig granskning, beroende av enskilda nyckelpersoner, bristande tillgång till avtal och underlag i fakturaflödet, och avsaknad av systematisk duplikatkontroll. Automatisering kan adressera dessa genom att utföra rutinkontroller maskinellt."
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -117,7 +159,7 @@
       <div class="container security-content">
         <h1 class="section-title" data-i18n="blogAttTitle">Vad är fakturaattest och hur fungerar attestprocessen?</h1>
         <time datetime="2026-03-13" class="blog-article-date">2026-03-13</time>
-        <p class="section-lead" data-i18n="blogAttLead">Innan en leverantörsfaktura betalas behöver den godkännas av rätt person i organisationen. Denna process kallas fakturaattest och är en grundläggande del av den interna kontrollen i alla typer av verksamheter. Trots att attestprocessen finns i praktiskt taget alla företag varierar kvaliteten avsevärt. I vissa organisationer är processen snabb och tydlig. I andra orsakar den förseningar, missförstånd och felbetalningar. Den här artikeln beskriver vad fakturaattest innebär, varför den existerar, hur vanliga arbetsflöden ser ut, vilka problem som uppstår och hur digitala system förändrar processen.</p>
+        <p class="section-lead" data-i18n="blogAttLead">Innan en leverantörsfaktura betalas behöver den godkännas av rätt person i organisationen. Denna process kallas fakturaattest och är en grundläggande del av den interna kontrollen i alla typer av verksamheter. Attesten är ett av flera steg i det övergripande <a href="fakturaflode.html">fakturaflödet</a>. Trots att attestprocessen finns i praktiskt taget alla företag varierar kvaliteten avsevärt. I vissa organisationer är processen snabb och tydlig. I andra orsakar den förseningar, missförstånd och felbetalningar. Den här artikeln beskriver vad fakturaattest innebär, varför den existerar, hur vanliga arbetsflöden ser ut, vilka problem som uppstår och hur digitala system förändrar processen.</p>
 
         <h2 class="security-subtitle" data-i18n="blogAttWhatTitle">Vad innebär fakturaattest?</h2>
         <p class="security-text" data-i18n="blogAttWhatText1">Fakturaattest innebär att en eller flera personer i en organisation granskar och godkänner en leverantörsfaktura innan den betalas. Syftet är att säkerställa att fakturan avser en verklig leverans eller tjänst, att beloppen är korrekta, att rätt kostnadsställe eller projekt belastas och att betalningen ryms inom budget. I praktiken är det en kontrollmekanism som skyddar företaget från att betala för varor eller tjänster som aldrig mottagits, eller som fakturerats till fel pris.</p>
@@ -129,14 +171,23 @@
         <p class="security-text" data-i18n="blogAttWhyText3">Det tredje skälet är spårbarhet. En dokumenterad attestprocess skapar en verifieringskedja som visar vem som godkänt en kostnad, när det skedde och på vilken grund. Det är värdefullt vid revision, både intern och extern, och gör det möjligt att i efterhand utreda oklarheter kring enskilda fakturor.</p>
 
         <h2 class="security-subtitle" data-i18n="blogAttWorkflowTitle">Vanliga arbetsflöden för fakturaattest</h2>
+
+        <div class="blog-flow">
+          <div class="blog-flow-step" data-i18n="blogFaFlowStep1">Faktura anländer</div>
+          <div class="blog-flow-step" data-i18n="blogFaFlowStep2">Registrering</div>
+          <div class="blog-flow-step" data-i18n="blogFaFlowStep3">Sak&shy;granskning</div>
+          <div class="blog-flow-step" data-i18n="blogFaFlowStep4">Besluts&shy;attest</div>
+          <div class="blog-flow-step" data-i18n="blogFaFlowStep5">Betalning</div>
+        </div>
+
         <p class="security-text" data-i18n="blogAttWorkflowText1">Det enklaste attestflödet är linjärt: fakturan anländer, registreras av ekonomiavdelningen, skickas till en attestant som godkänner eller avvisar, och betalas vid godkännande. Det här flödet fungerar i mindre organisationer med begränsat antal fakturor och tydliga ansvarsområden.</p>
         <p class="security-text" data-i18n="blogAttWorkflowText2">I mer komplexa organisationer används flerstegsgodkännande. En faktura som överstiger ett visst belopp kan kräva godkännande av både en projektledare och en avdelningschef. Fakturor som rör flera projekt eller kostnadsställen kan behöva delas upp och godkännas av flera personer. I vissa branscher finns dessutom krav på att separata kontroller utförs av olika roller, exempelvis att en inköpare bekräftar att leveransen mottagits medan en ekonomichef godkänner beloppet.</p>
         <p class="security-text" data-i18n="blogAttWorkflowText3">Attestordningen kan också variera beroende på fakturans typ. Investerings- och anläggningsfakturor kan kräva godkännande på ledningsnivå, medan löpande driftfakturor hanteras längre ned i organisationen. Att ha tydliga attestregler, dokumenterade och kommunicerade, är avgörande för att processen ska fungera utan onödiga förseningar.</p>
 
         <h2 class="security-subtitle" data-i18n="blogAttProblemsTitle">Vanliga problem i attestprocessen</h2>
-        <p class="security-text" data-i18n="blogAttProblemsText1">Ett av de vanligaste problemen är flaskhalsar. Om en enskild person är attestant för ett stort antal fakturor uppstår köer, särskilt vid semesterperioder, sjukdom eller hög arbetsbelastning. Försenad attest leder till försenade betalningar, vilket i sin tur kan ge förseningsavgifter och skadade leverantörsrelationer.</p>
+        <p class="security-text" data-i18n="blogAttProblemsText1">Ett av de vanligaste problemen är flaskhalsar. Om en enskild person är attestant för ett stort antal fakturor uppstår köer, särskilt vid semesterperioder, sjukdom eller hög arbetsbelastning. Försenad attest leder till försenade betalningar, vilket i sin tur kan ge förseningsavgifter och skadade leverantörsrelationer. Detta är en av flera <a href="vanliga-utmaningar-fakturahantering.html">vanliga utmaningar vid fakturahantering</a>.</p>
         <p class="security-text" data-i18n="blogAttProblemsText2">Ett annat vanligt problem är otydliga attestregler. Om det saknas tydliga riktlinjer för vem som ska attestera vilken typ av faktura, eller vid vilka beloppsgränser eskalering krävs, hamnar fakturor hos fel person. Resultatet blir att fakturor studsar fram och tillbaka i organisationen innan de når rätt attestant.</p>
-        <p class="security-text" data-i18n="blogAttProblemsText3">Bristande underlag är också ett återkommande problem. Attestanten förväntas godkänna en faktura men saknar tillgång till underlaget som behövs för att bedöma den. Det kan handla om avtal, beställningar, leveransdokumentation eller projektbudgetar. Utan detta underlag blir godkännandet en formalitet snarare än en verklig kontroll, och värdet av attestprocessen urholkas.</p>
+        <p class="security-text" data-i18n="blogAttProblemsText3">Bristande underlag är också ett återkommande problem. En strukturerad <a href="checklista-fakturakontroll.html">checklista för fakturakontroll</a> kan motverka detta. Attestanten förväntas godkänna en faktura men saknar tillgång till underlaget som behövs för att bedöma den. Det kan handla om avtal, beställningar, leveransdokumentation eller projektbudgetar. Utan detta underlag blir godkännandet en formalitet snarare än en verklig kontroll, och värdet av attestprocessen urholkas.</p>
         <p class="security-text" data-i18n="blogAttProblemsText4">I organisationer som fortfarande hanterar attestprocessen via pappersflöden eller e-post finns dessutom risken att fakturor tappas bort, att versioner blandas ihop och att det saknas dokumentation om vem som godkänt vad. Dessa problem förstärks i takt med att faktureringsvolymen ökar.</p>
 
         <h2 class="security-subtitle" data-i18n="blogAttDigitalTitle">Digitala attestsystem</h2>
@@ -145,7 +196,7 @@
         <p class="security-text" data-i18n="blogAttDigitalText3">Många ekonomisystem och fakturahanteringssystem inkluderar attestfunktionalitet, men kvaliteten varierar. I vissa system är attestflödet enkelt men begränsat. I andra finns avancerade funktioner som beloppsberoende eskalering, parallell attest, ställföreträdarhantering och integration med projektsystem. Valet av system bör styras av organisationens faktiska behov, inte enbart av befintlig systemmiljö.</p>
 
         <h2 class="security-subtitle" data-i18n="blogAttAutoTitle">Automatisering och framtida trender</h2>
-        <p class="security-text" data-i18n="blogAttAutoText1">Trenden inom fakturaattest går mot ökad automatisering av de kontrollsteg som idag utförs manuellt. Istället för att en attestant själv ska kontrollera att priset stämmer mot avtal, att leveransen har mottagits och att konteringen är korrekt kan dessa kontroller utföras automatiskt av systemet. Attestanten får då ett beslutsunderlag som visar vilka kontroller som har passerat och vilka avvikelser som har identifierats, snarare än att behöva utföra alla kontroller från grunden.</p>
+        <p class="security-text" data-i18n="blogAttAutoText1">Trenden inom fakturaattest går mot ökad automatisering av de kontrollsteg som idag utförs manuellt. Istället för att en attestant själv ska kontrollera att priset stämmer mot avtal, en process som beskrivs i <a href="kontrollera-fakturor-mot-avtal.html">fakturakontroll mot avtal och prislistor</a>, att leveransen har mottagits och att konteringen är korrekt kan dessa kontroller utföras automatiskt av systemet. Attestanten får då ett beslutsunderlag som visar vilka kontroller som har passerat och vilka avvikelser som har identifierats, snarare än att behöva utföra alla kontroller från grunden.</p>
         <p class="security-text" data-i18n="blogAttAutoText2">Automatiserad fakturakontroll, där fakturadata extraheras och jämförs mot <a href="verifiera-leverantorsfakturor.html">avtal, prislistor och leveransdokumentation</a>, kan drastiskt minska tiden som attestanten behöver lägga på varje faktura. Fakturor som matchar avtal och underlag kan hanteras snabbare, medan avvikande fakturor flaggas för noggrannare granskning. Resultatet är att attestprocessen går från att vara en flaskhals till att bli en effektiv kontrollpunkt.</p>
         <p class="security-text" data-i18n="blogAttAutoText3">En annan trend är intelligent routing, där systemet inte bara skickar fakturan till rätt attestant utan även anpassar attestflödet baserat på fakturans egenskaper. En standardfaktura från en känd leverantör med avtalade priser kan kräva enklare godkännande, medan en faktura med avvikelser eller från en ny leverantör automatiskt eskaleras till en person med högre befogenhet.</p>
 
@@ -167,9 +218,9 @@
               <h3 data-i18n="bpWipTitle">Vad är fakturahantering? Komplett guide</h3>
               <p data-i18n="bpWipLead">Vad innebär fakturahantering och vilka utmaningar möter företag?</p>
             </a>
-            <a href="manuell-vs-automatiserad-fakturahantering.html" class="blog-related-card">
-              <h3 data-i18n="blogCmpTitle">Manuell vs automatiserad fakturahantering</h3>
-              <p data-i18n="blogCmpIntro">En jämförelse av tid, kostnad och felfrekvens mellan manuell och automatiserad hantering.</p>
+            <a href="checklista-fakturakontroll.html" class="blog-related-card">
+              <h3 data-i18n="blogClListTitle">Checklista: kontrollera leverantörsfakturor innan attest</h3>
+              <p data-i18n="blogClListSummary">Sju konkreta kontrollpunkter som bör genomföras innan varje leverantörsfaktura attesteras.</p>
             </a>
           </div>
         </div>
@@ -181,7 +232,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="../index.html" class="logo-link logo-link-footer">
-          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" />
+          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" loading="lazy" />
           <span class="logo-fallback">ÄLGAMO Software AB</span>
         </a>
         <p class="footer-tagline" data-i18n="footerTagline">Attestro. Tidseffektiv fakturakontroll.</p>

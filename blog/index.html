@@ -4,14 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blogg — Attestro | Älgamo Software AB</title>
-  <meta name="description" content="Bloggartiklar om fakturakontroll, OCR, automatisering och leverantörsfakturor. Från Attestro och Älgamo Software AB." />
+  <meta name="description" content="Guider och analyser om fakturahantering, leverantörsfakturor, OCR och automatisering av ekonomiprocesser. Resurser för ekonomiteam och projektledare. Från Attestro." />
   <link rel="canonical" href="https://algamo.se/blog/" />
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://algamo.se/blog/" />
   <meta property="og:title" content="Blogg — Attestro | Älgamo Software AB" />
-  <meta property="og:description" content="Bloggartiklar om fakturakontroll, OCR, automatisering och leverantörsfakturor. Från Attestro och Älgamo Software AB." />
+  <meta property="og:description" content="Guider och analyser om fakturahantering, leverantörsfakturor, OCR och automatisering av ekonomiprocesser. Resurser för ekonomiteam och projektledare. Från Attestro." />
   <meta property="og:image" content="https://algamo.se/assets/logo.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
   <meta property="og:locale" content="sv_SE" />
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:site_name" content="Älgamo Software AB" />
@@ -22,7 +24,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Blogg — Attestro | Älgamo Software AB" />
-  <meta name="twitter:description" content="Bloggartiklar om fakturakontroll, OCR, automatisering och leverantörsfakturor. Från Attestro och Älgamo Software AB." />
+  <meta name="twitter:description" content="Guider och analyser om fakturahantering, leverantörsfakturor, OCR och automatisering av ekonomiprocesser. Resurser för ekonomiteam och projektledare. Från Attestro." />
   <meta name="twitter:image" content="https://algamo.se/assets/logo.png" />
   <meta name="theme-color" content="#1a2744" />
   <link rel="icon" type="image/png" href="/assets/logo.png" />
@@ -50,6 +52,7 @@
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "Attestro Blogg",
+    "description": "Guider och analyser om fakturahantering, leverantörsfakturor, OCR och automatisering av ekonomiprocesser.",
     "url": "https://algamo.se/blog/",
     "publisher": {
       "@type": "Organization",
@@ -105,110 +108,353 @@
     <section class="section blog">
       <div class="container">
         <h1 class="section-title" data-i18n="blogTitle">Blogg</h1>
-        <p class="section-lead" data-i18n="blogLead">Artiklar om fakturakontroll, automatisering och leverantörsfakturor.</p>
+        <p class="section-lead" data-i18n="blogLead">Guider och analyser om fakturahantering, leverantörsfakturor och automatisering av ekonomiprocesser.</p>
+
+        <!-- Recommended articles -->
+        <div class="blog-featured">
+          <h2 class="blog-featured-title" data-i18n="blogFeaturedTitle">Rekommenderade artiklar</h2>
+          <div class="blog-featured-grid">
+            <a href="what-is-invoice-processing.html" class="blog-featured-card">
+              <span class="blog-post-category" data-i18n="blogCatGuide">Guide</span>
+              <h3 data-i18n="bpWipTitle">Vad är fakturahantering? Komplett guide, från manuell process till automatisering</h3>
+              <span class="blog-featured-link" data-i18n="blogReadArticle">Läs artikel</span>
+            </a>
+            <a href="ocr-faktura.html" class="blog-featured-card">
+              <span class="blog-post-category" data-i18n="blogCatGuide">Guide</span>
+              <h3 data-i18n="blogOcrTitle">Från OCR till strukturerad data: så omvandlas fakturor automatiskt</h3>
+              <span class="blog-featured-link" data-i18n="blogReadArticle">Läs artikel</span>
+            </a>
+            <a href="vanliga-utmaningar-fakturahantering.html" class="blog-featured-card">
+              <span class="blog-post-category" data-i18n="blogCatGuide">Guide</span>
+              <h3 data-i18n="bpRiskTitle">Utmaningar, fel och risker vid fakturahantering. En komplett guide</h3>
+              <span class="blog-featured-link" data-i18n="blogReadArticle">Läs artikel</span>
+            </a>
+          </div>
+        </div>
 
         <div class="blog-search">
-          <input type="search" id="blog-search-input" class="blog-search-input" data-i18n-placeholder="blogSearchPlaceholder" placeholder="Sök bland inlägg..." autocomplete="off" />
+          <input type="search" id="blog-search-input" class="blog-search-input" data-i18n-placeholder="blogSearchPlaceholder" placeholder="Sök artiklar om fakturahantering..." autocomplete="off" />
         </div>
         <p class="blog-no-results" id="blog-no-results" hidden data-i18n="blogNoResults">Inga inlägg matchar din sökning.</p>
 
         <div class="blog-posts">
           <article class="blog-post-entry">
             <time datetime="2026-03-13">2026-03-13</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatGuide">Guide</span>
+              <span class="blog-post-readtime">9 min</span>
+            </span>
+            <h2><a href="infora-automatiserad-fakturakontroll.html" data-i18n="bpIafTitle">Så inför du automatiserad fakturakontroll steg för steg</a></h2>
+            <p data-i18n="bpIafLead">Många företag som hanterar stora volymer leverantörsfakturor inser att manuell kontroll inte längre räcker till. Prisfel passerar oupptäckta, dubbletter betalas och handläggningstiden per faktura gör det omöjligt att granska allt ordentligt. Den här guiden beskriver de praktiska stegen från utvärdering till full implementering.</p>
+            <a href="infora-automatiserad-fakturakontroll.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
+          </article>
+
+          <article class="blog-post-entry">
+            <time datetime="2026-03-13">2026-03-13</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatAnalysis">Analys</span>
+              <span class="blog-post-readtime">9 min</span>
+            </span>
+            <h2><a href="upptacka-fakturabedrageri.html" data-i18n="bpFbTitle">Hur företag upptäcker fakturabedrägerier</a></h2>
+            <p data-i18n="bpFbLead">Fakturabedrägerier är ett växande problem som drabbar företag i alla storlekar och branscher. Den här artikeln beskriver de vanligaste typerna av fakturabedrägerier, vilka varningssignaler som finns och hur företag kan skydda sig.</p>
+            <a href="upptacka-fakturabedrageri.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
+          </article>
+
+          <article class="blog-post-entry">
+            <time datetime="2026-03-13">2026-03-13</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatGuide">Guide</span>
+              <span class="blog-post-readtime">9 min</span>
+            </span>
+            <h2><a href="intern-kontroll-leverantorsfakturor.html" data-i18n="bpIkTitle">Intern kontroll av leverantörsfakturor: krav och bästa praxis</a></h2>
+            <p data-i18n="bpIkLead">Intern kontroll av leverantörsfakturor är en grundläggande del av ett företags ekonomistyrning. Den här artikeln beskriver vad intern kontroll innebär, vilka brister som är vanligast och hur företag kan stärka sina processer.</p>
+            <a href="intern-kontroll-leverantorsfakturor.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
+          </article>
+
+          <article class="blog-post-entry">
+            <time datetime="2026-03-13">2026-03-13</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatGuide">Guide</span>
+              <span class="blog-post-readtime">8 min</span>
+            </span>
+            <h2><a href="erp-integration-fakturahantering.html" data-i18n="blogErpTitle">ERP-integration vid automatiserad fakturahantering</a></h2>
+            <p data-i18n="blogErpIntro">Hur integreras fakturasystem med ERP-system som Visma, Fortnox och SAP? Tekniska utmaningar, dataflöden och vad företag bör tänka på vid integration.</p>
+            <a href="erp-integration-fakturahantering.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
+          </article>
+
+          <article class="blog-post-entry">
+            <time datetime="2026-03-13">2026-03-13</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatAnalysis">Analys</span>
+              <span class="blog-post-readtime">9 min</span>
+            </span>
+            <h2><a href="fakturafel-projektbudget-lonsamhet.html" data-i18n="blogFplTitle">Hur fakturafel påverkar projektbudget och lönsamhet</a></h2>
+            <p data-i18n="blogFplIntro">Hur ackumuleras fakturafel till betydande kostnader i byggprojekt? Vanliga avvikelser, praktiska exempel och hur systematisk kontroll skyddar projektbudgeten.</p>
+            <a href="fakturafel-projektbudget-lonsamhet.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
+          </article>
+
+          <article class="blog-post-entry">
+            <time datetime="2026-03-13">2026-03-13</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatIndustry">Bransch</span>
+              <span class="blog-post-readtime">9 min</span>
+            </span>
+            <h2><a href="ata-hantering-fakturakontroll.html" data-i18n="blogAtaTitle">Ändringsorder och ÄTA-hantering i fakturakontroll</a></h2>
+            <p data-i18n="blogAtaIntro">Varför ÄTA-fakturor är svåra att kontrollera, vanliga problem vid fakturering av ändringsarbeten och hur en strukturerad process minskar risken för feldebitering.</p>
+            <a href="ata-hantering-fakturakontroll.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
+          </article>
+
+          <article class="blog-post-entry">
+            <time datetime="2026-03-13">2026-03-13</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatGuide">Guide</span>
+              <span class="blog-post-readtime">8 min</span>
+            </span>
+            <h2><a href="digital-dokumentanalys-fakturahantering.html" data-i18n="blogDdaTitle">Hur digital dokumentanalys används i fakturahantering</a></h2>
+            <p data-i18n="blogDdaIntro">Digital dokumentanalys gör det möjligt att automatiskt tolka, strukturera och verifiera fakturor. Lär dig hur tekniken fungerar, vilka utmaningar den löser och varför den är central i modern fakturahantering.</p>
+            <a href="digital-dokumentanalys-fakturahantering.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
+          </article>
+
+          <article class="blog-post-entry">
+            <time datetime="2026-03-13">2026-03-13</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatGuide">Guide</span>
+              <span class="blog-post-readtime">10 min</span>
+            </span>
+            <h2><a href="kontrollera-fakturor-mot-avtal.html" data-i18n="blogKfaListTitle">Hur kontrollerar man fakturor mot avtal och prislistor?</a></h2>
+            <p data-i18n="blogKfaListSummary">Praktisk guide till att verifiera fakturor mot avtal och prislistor. Vanliga avtalstyper, felkällor och hur automatiserad kontroll kan effektivisera processen.</p>
+            <a href="kontrollera-fakturor-mot-avtal.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
+          </article>
+
+          <article class="blog-post-entry">
+            <time datetime="2026-03-13">2026-03-13</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatAnalysis">Analys</span>
+              <span class="blog-post-readtime">9 min</span>
+            </span>
+            <h2><a href="vanliga-fel-leverantorsfakturor.html" data-i18n="blogVflTitle">Vanliga fel i leverantörsfakturor och hur företag upptäcker dem</a></h2>
+            <p data-i18n="blogVflIntro">Prisfel, mängdavvikelser, leveransfel och dubblettfakturor. Lär dig identifiera de vanligaste felen i leverantörsfakturor och vilka metoder företag använder för att upptäcka dem.</p>
+            <a href="vanliga-fel-leverantorsfakturor.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
+          </article>
+
+          <article class="blog-post-entry">
+            <time datetime="2026-03-13">2026-03-13</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatAnalysis">Analys</span>
+              <span class="blog-post-readtime">9 min</span>
+            </span>
+            <h2><a href="transportavtal-prislistor-fakturor.html" data-i18n="blogTapListTitle">Hur transportavtal och prislistor påverkar fakturor</a></h2>
+            <p data-i18n="blogTapListSummary">Avståndsbaserade fraktpriser, bränsletillägg, viktbaserade priser och indexjusteringar. En genomgång av hur transportavtal och prislistor påverkar fakturor och varför fel uppstår.</p>
+            <a href="transportavtal-prislistor-fakturor.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
+          </article>
+
+          <article class="blog-post-entry">
+            <time datetime="2026-03-13">2026-03-13</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatAnalysis">Analys</span>
+              <span class="blog-post-readtime">9 min</span>
+            </span>
+            <h2><a href="fakturakontroll-entreprenadprojekt.html" data-i18n="blogFkeListTitle">Fakturakontroll i entreprenadprojekt: vanliga risker</a></h2>
+            <p data-i18n="blogFkeListSummary">Feldebiterade timmar, materialpåslag och dubbla fakturor. En genomgång av vanliga ekonomiska risker vid fakturahantering i entreprenadprojekt och hur företag kan upptäcka dem.</p>
+            <a href="fakturakontroll-entreprenadprojekt.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
+          </article>
+
+          <article class="blog-post-entry">
+            <time datetime="2026-03-13">2026-03-13</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatGuide">Guide</span>
+              <span class="blog-post-readtime">9 min</span>
+            </span>
+            <h2><a href="felaktig-leverantorsfaktura.html" data-i18n="blogFlfTitle">Vad gör man om en leverantörsfaktura är fel?</a></h2>
+            <p data-i18n="blogFlfIntro">Hur hanterar företag felaktiga leverantörsfakturor? Vanliga typer av fakturafel, hur man bestrider en faktura korrekt och hur automatiserad kontroll kan förebygga fel.</p>
+            <a href="felaktig-leverantorsfaktura.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
+          </article>
+
+          <article class="blog-post-entry">
+            <time datetime="2026-03-13">2026-03-13</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatGuide">Guide</span>
+              <span class="blog-post-readtime">9 min</span>
+            </span>
+            <h2><a href="minska-manuellt-arbete-fakturahantering.html" data-i18n="blogMmaListTitle">Hur företag minskar manuellt arbete i fakturahantering</a></h2>
+            <p data-i18n="blogMmaListSummary">Från traditionella processer till moderna automatiserade system. Så minskar företag tidsåtgång, fel och manuellt arbete i fakturahanteringen.</p>
+            <a href="minska-manuellt-arbete-fakturahantering.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
+          </article>
+
+          <article class="blog-post-entry">
+            <time datetime="2026-03-13">2026-03-13</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatAnalysis">Analys</span>
+              <span class="blog-post-readtime">9 min</span>
+            </span>
+            <h2><a href="overdebitering-leverantorer.html" data-i18n="blogOdlTitle">Så upptäcker du överdebitering från leverantörer</a></h2>
+            <p data-i18n="blogOdlIntro">Överdebitering kostar företag inom bygg och transport stora belopp varje år. Lär dig varför det uppstår, hur du kontrollerar fakturor mot avtal och hur automatiserade system identifierar avvikelser.</p>
+            <a href="overdebitering-leverantorer.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
+          </article>
+
+          <article class="blog-post-entry">
+            <time datetime="2026-03-13">2026-03-13</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatAnalysis">Analys</span>
+              <span class="blog-post-readtime">8 min</span>
+            </span>
             <h2><a href="roi-fakturaautomation.html" data-i18n="blogRoiListTitle">ROI på automatiserad fakturakontroll</a></h2>
-            <p data-i18n="blogRoiListSummary">Vad kostar manuell fakturahantering egentligen? En konkret genomgång av tidskostnader, felrisker och besparingspotential vid automatisering, med exempelberäkningar för ett medelstort företag.</p>
-            <a href="roi-fakturaautomation.html" class="blog-read-more" data-i18n="blogReadMore">Läs mer &rarr;</a>
+            <p data-i18n="blogRoiListSummary">Vad kostar manuell fakturahantering egentligen? En analytisk genomgång med exempelberäkningar som visar tidsbesparingar, minskade felkostnader och total ROI vid automatisering.</p>
+            <a href="roi-fakturaautomation.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
           </article>
 
           <article class="blog-post-entry">
             <time datetime="2026-03-13">2026-03-13</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatAnalysis">Analys</span>
+              <span class="blog-post-readtime">8 min</span>
+            </span>
             <h2><a href="vanliga-fel-transportfakturor.html" data-i18n="blogTfeTitle">Vanliga fel i transportfakturor och hur de uppstår</a></h2>
-            <p data-i18n="blogTfeIntro">Fel vikt, felberäknat avstånd, oförklarade tilläggsavgifter och duplicerade sändningar. En genomgång av de vanligaste felen i transportfakturor och varför de uppstår.</p>
-            <a href="vanliga-fel-transportfakturor.html" class="blog-read-more" data-i18n="blogReadMore">Läs mer &rarr;</a>
+            <p data-i18n="blogTfeIntro">Lär dig identifiera de vanligaste felen i transportfakturor: fel vikt, felberäknat avstånd, oförklarade tilläggsavgifter och duplicerade sändningar.</p>
+            <a href="vanliga-fel-transportfakturor.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
           </article>
 
           <article class="blog-post-entry">
             <time datetime="2026-03-13">2026-03-13</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatGuide">Guide</span>
+              <span class="blog-post-readtime">9 min</span>
+            </span>
             <h2><a href="fakturaattest.html" data-i18n="blogAttTitle">Vad är fakturaattest och hur fungerar attestprocessen?</a></h2>
-            <p data-i18n="blogAttIntro">Fakturaattest innebär att en faktura granskas och godkänns innan betalning. Läs om attestprocessen, vanliga arbetsflöden, utmaningar och hur digitala system och automatisering förändrar fakturahanteringen.</p>
-            <a href="fakturaattest.html" class="blog-read-more" data-i18n="blogReadMore">Läs mer &rarr;</a>
+            <p data-i18n="blogAttIntro">Lär dig hur attestprocessen fungerar, från granskning till godkännande. Vanliga arbetsflöden, utmaningar och hur digitala system förändrar fakturahanteringen.</p>
+            <a href="fakturaattest.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
           </article>
 
           <article class="blog-post-entry">
             <time datetime="2026-03-13">2026-03-13</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatAnalysis">Analys</span>
+              <span class="blog-post-readtime">7 min</span>
+            </span>
             <h2><a href="excel-vs-automatiserad-fakturahantering.html" data-i18n="blogExlTitle">Excel vs automatiserad fakturahantering, vilken metod passar ditt företag?</a></h2>
             <p data-i18n="blogExlIntro">Jämförelse mellan Excel och automatiserad fakturahantering. Fördelar, begränsningar och när det är dags att byta från kalkylark till ett fakturakontrollsystem.</p>
-            <a href="excel-vs-automatiserad-fakturahantering.html" class="blog-read-more" data-i18n="blogReadMore">Läs mer &rarr;</a>
+            <a href="excel-vs-automatiserad-fakturahantering.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
           </article>
 
           <article class="blog-post-entry">
             <time datetime="2026-03-13">2026-03-13</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatGuide">Guide</span>
+              <span class="blog-post-readtime">8 min</span>
+            </span>
             <h2><a href="fakturaflode.html" data-i18n="blogFfTitle">Så ser ett typiskt fakturaflöde ut i ett företag</a></h2>
             <p data-i18n="blogFfIntro">Hela fakturaprocessen steg för steg, från mottagning och registrering till betalning och arkivering. Förstå var ineffektivitet uppstår i hanteringen av leverantörsfakturor.</p>
-            <a href="fakturaflode.html" class="blog-read-more" data-i18n="blogReadMore">Läs mer &rarr;</a>
+            <a href="fakturaflode.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
           </article>
 
           <article class="blog-post-entry">
             <time datetime="2026-03-13">2026-03-13</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatChecklist">Checklista</span>
+              <span class="blog-post-readtime">6 min</span>
+            </span>
             <h2><a href="checklista-fakturakontroll.html" data-i18n="blogClListTitle">Checklista: kontrollera leverantörsfakturor innan attest</a></h2>
             <p data-i18n="blogClListSummary">Sju konkreta kontrollpunkter som bör genomföras innan varje leverantörsfaktura attesteras: leverantör, fakturanummer, priser, mängder, avtal, dubbletter och moms.</p>
-            <a href="checklista-fakturakontroll.html" class="blog-read-more" data-i18n="blogReadMore">Läs mer &rarr;</a>
+            <a href="checklista-fakturakontroll.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
           </article>
 
           <article class="blog-post-entry">
             <time datetime="2026-03-13">2026-03-13</time>
-            <h2><a href="automatiserad-fakturakontroll.html">Automatiserad fakturakontroll i praktiken</a></h2>
-            <p>Hur fungerar automatiserad fakturakontroll? OCR, dokumentstrukturanalys och datavalidering. En praktisk genomgång för beslutsfattare som utvärderar fakturaautomation.</p>
-            <a href="automatiserad-fakturakontroll.html" class="blog-read-more" data-i18n="blogReadMore">Läs mer &rarr;</a>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatGuide">Guide</span>
+              <span class="blog-post-readtime">8 min</span>
+            </span>
+            <h2><a href="automatiserad-fakturakontroll.html" data-i18n="blogAfkTitle">Automatiserad fakturakontroll i praktiken</a></h2>
+            <p data-i18n="blogAfkIntro">Lär dig hur automatiserad fakturakontroll fungerar i praktiken. OCR, dokumentstrukturanalys och datavalidering förklarade steg för steg.</p>
+            <a href="automatiserad-fakturakontroll.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
           </article>
 
           <article class="blog-post-entry">
             <time datetime="2026-03-13">2026-03-13</time>
-            <h2><a href="kontroll-fakturor-byggprojekt.html" data-i18n="bpKfbTitle">Kontroll av leverantörsfakturor i byggprojekt</a></h2>
-            <p data-i18n="bpKfbIntro">Leverantörsfakturor i byggprojekt hör till de mest komplexa fakturor som företag hanterar. Mängdbaserad prissättning, avtal med hundratals prisrader, ÄTA-arbeten och långa underentreprenörskedjor gör att varje faktura kräver noggrann granskning. Den här artikeln beskriver varför fakturakontroll i bygg är särskilt krävande och hur en strukturerad verifieringsprocess ser ut.</p>
-            <a href="kontroll-fakturor-byggprojekt.html" class="blog-read-more" data-i18n="blogReadMore">Läs mer &rarr;</a>
-          </article>
-
-          <article class="blog-post-entry">
-            <time datetime="2026-03-13">2026-03-13</time>
-            <h2><a href="upptacka-feldebitering.html">Så upptäcker företag feldebitering i entreprenadfakturor</a></h2>
-            <p>Feldebitering i entreprenadfakturor kostar företag stora belopp varje år. Vanliga fakturafel, varningssignaler och hur automatiserad kontroll kan fånga avvikelser.</p>
-            <a href="upptacka-feldebitering.html" class="blog-read-more" data-i18n="blogReadMore">Läs mer &rarr;</a>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatGuide">Guide</span>
+              <span class="blog-post-readtime">7 min</span>
+            </span>
+            <h2><a href="upptacka-feldebitering.html" data-i18n="blogFelTitle">Så upptäcker företag feldebitering i entreprenadfakturor</a></h2>
+            <p data-i18n="blogFelIntro">Lär dig identifiera feldebitering i entreprenadfakturor. Vanliga fakturafel, varningssignaler och hur automatiserad kontroll fångar avvikelser.</p>
+            <a href="upptacka-feldebitering.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
           </article>
 
           <article class="blog-post-entry">
             <time datetime="2026-03-12">2026-03-12</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatIndustry">Bransch</span>
+              <span class="blog-post-readtime">7 min</span>
+            </span>
             <h2><a href="bygg-transport-fakturor.html" data-i18n="blogBtTitle">Vad gör fakturor inom bygg och transport unika?</a></h2>
-            <p data-i18n="blogBtIntro">Fakturor i bygg och transport innehåller mängdbaserad prissättning, komplexa avtal, underentreprenörskedjor och ÄTA-arbeten. Artikeln förklarar varför de är svårare att granska, och varför det spelar roll.</p>
-            <a href="bygg-transport-fakturor.html" class="blog-read-more" data-i18n="blogReadMore">Läs mer &rarr;</a>
+            <p data-i18n="blogBtIntro">Fakturor i bygg och transport innehåller mängdbaserad prissättning, komplexa avtal och underentreprenörskedjor. Lär dig varför de är svårare att granska.</p>
+            <a href="bygg-transport-fakturor.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
           </article>
 
           <article class="blog-post-entry">
             <time datetime="2026-03-12">2026-03-12</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatAnalysis">Analys</span>
+              <span class="blog-post-readtime">6 min</span>
+            </span>
             <h2><a href="fakturaformat.html" data-i18n="blogFmtTitle">Varför fakturaformat skiljer sig så mycket mellan leverantörer</a></h2>
-            <p data-i18n="blogFmtIntro">Leverantörsfakturor ser olika ut beroende på ERP-system, bransch och format. Varför är det så, och vilka utmaningar skapar det för ekonomiteam?</p>
-            <a href="fakturaformat.html" class="blog-read-more" data-i18n="blogReadMore">Läs mer &rarr;</a>
+            <p data-i18n="blogFmtIntro">Leverantörsfakturor ser olika ut beroende på ERP-system, bransch och format. Lär dig varför det är så och vilka utmaningar det skapar för ekonomiteam.</p>
+            <a href="fakturaformat.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
           </article>
 
           <article class="blog-post-entry">
             <time datetime="2026-03-12">2026-03-12</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatGuide">Guide</span>
+              <span class="blog-post-readtime">8 min</span>
+            </span>
             <h2><a href="ocr-faktura.html" data-i18n="blogOcrTitle">Från OCR till strukturerad data: så omvandlas fakturor automatiskt</a></h2>
             <p data-i18n="blogOcrLead">OCR, layoutanalys, tabellextraktion, datanormalisering och validering. Så fungerar hela kedjan från ostrukturerad PDF till maskinläsbar fakturadata.</p>
-            <a href="ocr-faktura.html" class="blog-read-more" data-i18n="blogReadMore">Läs mer &rarr;</a>
+            <a href="ocr-faktura.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
           </article>
 
           <article class="blog-post-entry">
             <time datetime="2026-03-12">2026-03-12</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatGuide">Guide</span>
+              <span class="blog-post-readtime">10 min</span>
+            </span>
             <h2><a href="vanliga-utmaningar-fakturahantering.html" data-i18n="bpRiskTitle">Utmaningar, fel och risker vid fakturahantering. En komplett guide</a></h2>
-            <p data-i18n="bpRiskLead">Inkonsekvent format, prisfel, dubbelfakturering, tidspress och bedrägeri. En genomgång av de vanligaste problemen vid fakturahantering och hur automatisering kan lösa dem.</p>
-            <a href="vanliga-utmaningar-fakturahantering.html" class="blog-read-more" data-i18n="blogReadMore">Läs mer &rarr;</a>
+            <p data-i18n="bpRiskLead">Inkonsekvent format, prisfel, dubbelfakturering, tidspress och bedrägeri. Lär dig om de vanligaste problemen vid fakturahantering och hur automatisering kan lösa dem.</p>
+            <a href="vanliga-utmaningar-fakturahantering.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
           </article>
 
           <article class="blog-post-entry">
             <time datetime="2026-03-12">2026-03-12</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatGuide">Guide</span>
+              <span class="blog-post-readtime">10 min</span>
+            </span>
             <h2><a href="what-is-invoice-processing.html" data-i18n="bpWipTitle">Vad är fakturahantering? Komplett guide, från manuell process till automatisering</a></h2>
             <p data-i18n="bpWipLead">Vad innebär fakturahantering, hur ser arbetsflödet ut och vilka utmaningar möter företag? En komplett guide om manuell och automatiserad fakturahantering.</p>
-            <a href="what-is-invoice-processing.html" class="blog-read-more" data-i18n="blogReadMore">Läs mer &rarr;</a>
+            <a href="what-is-invoice-processing.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
+          </article>
+
+          <article class="blog-post-entry">
+            <time datetime="2026-03-12">2026-03-12</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatGuide">Guide</span>
+              <span class="blog-post-readtime">7 min</span>
+            </span>
+            <h2><a href="manuell-vs-automatiserad-fakturahantering.html" data-i18n="blogMvaTitle">Manuell vs automatiserad fakturahantering</a></h2>
+            <p data-i18n="blogMvaIntro">En jämförelse mellan manuell och automatiserad fakturahantering. Lär dig skillnaderna i tid, kostnad, precision och skalbarhet.</p>
+            <a href="manuell-vs-automatiserad-fakturahantering.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
+          </article>
+
+          <article class="blog-post-entry">
+            <time datetime="2026-03-12">2026-03-12</time>
+            <span class="blog-post-meta">
+              <span class="blog-post-category" data-i18n="blogCatGuide">Guide</span>
+              <span class="blog-post-readtime">7 min</span>
+            </span>
+            <h2><a href="verifiera-leverantorsfakturor.html" data-i18n="blogVlfTitle">Så verifierar du leverantörsfakturor effektivt</a></h2>
+            <p data-i18n="blogVlfIntro">Lär dig processen för att verifiera leverantörsfakturor. Kontrollpunkter, vanliga fel och hur du säkerställer att fakturan stämmer mot avtal och leverans.</p>
+            <a href="verifiera-leverantorsfakturor.html" class="blog-read-more" data-i18n="blogReadArticle">Läs artikel</a>
           </article>
         </div>
       </div>
@@ -219,7 +465,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="../index.html" class="logo-link logo-link-footer">
-          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" />
+          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" loading="lazy" />
           <span class="logo-fallback">ÄLGAMO Software AB</span>
         </a>
         <p class="footer-tagline" data-i18n="footerTagline">Attestro. Tidseffektiv fakturakontroll.</p>

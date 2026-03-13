@@ -12,6 +12,8 @@
   <meta property="og:title" content="Priser för Attestro — Älgamo Software AB" />
   <meta property="og:description" content="Prisplaner för Attestro. Fakturor till strukturerad data med validering och kontroll mot avtal och projekt." />
   <meta property="og:image" content="https://algamo.se/assets/logo.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
   <meta property="og:locale" content="sv_SE" />
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:site_name" content="Älgamo Software AB" />
@@ -57,33 +59,33 @@
       {
         "@type": "Offer",
         "name": "Minimum",
-        "price": "1590",
+        "price": "2490",
         "priceCurrency": "SEK",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "price": "1590",
+          "price": "2490",
           "priceCurrency": "SEK",
           "billingDuration": "P1M"
         },
-        "description": "100 fakturor/mån, OCR-extraktion, Excel-export, grundläggande fältvalidering, e-postsupport"
+        "description": "100 fakturor/mån, automatisk fakturautläsning, Excel-export, fält- och totalvalidering, e-postsupport"
       },
       {
         "@type": "Offer",
-        "name": "Säker",
-        "price": "4990",
+        "name": "Kontroll",
+        "price": "6990",
         "priceCurrency": "SEK",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "price": "4990",
+          "price": "6990",
           "priceCurrency": "SEK",
           "billingDuration": "P1M"
         },
-        "description": "500 fakturor/mån, allt i Minimum, anpassad export, automatisk prisverifiering mot avtal, historik och spårbarhet, prioriterad support, databaslagring"
+        "description": "500 fakturor/mån, allt i Minimum, anpassningsbar export, prisverifiering mot avtal och prislistor, fullständig valideringshistorik, prioriterad support, databaslagring med spårbarhet"
       },
       {
         "@type": "Offer",
         "name": "Enterprise",
-        "description": "1000+ fakturor/mån, allt i Säker, API-integration, Dashboard/BI-export, multi-entity support, SLA, dedikerad kontakt"
+        "description": "1000+ fakturor/mån, allt i Kontroll, API-integration med ekonomisystem, analys- och BI-export, stöd för flera bolag, SLA med garanterad tillgänglighet, dedikerad kontaktperson"
       }
     ],
     "@id": "https://algamo.se/#software",
@@ -118,10 +120,26 @@
       },
       {
         "@type": "Question",
-        "name": "Ingår implementation i priset?",
+        "name": "Hur räknas fakturor?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Implementation debiteras som en engångskostnad utöver månadspriset. Den omfattar konfigurering av era faktureringsmallar och avtalsinställningar."
+          "text": "Varje unikt fakturadokument som laddas upp räknas som en faktura, oavsett antal rader. Kreditfakturor och kopior räknas också."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Vilka fakturaformat stöds?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Attestro hanterar PDF-fakturor och skannade fakturor (bilder). Systemet extraherar data automatiskt oavsett layout."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan Attestro verifiera priser mot våra avtal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, i planen Kontroll och uppåt. Attestro jämför varje fakturarad mot era avtalade priser, prislistor och projektvillkor. Avvikelser flaggas automatiskt."
         }
       }
     ]
@@ -170,7 +188,7 @@
     <section class="section pricing">
       <div class="container">
         <h1 class="section-title" data-i18n="pricingHeading">Priser för Attestro</h1>
-        <p class="section-lead" data-i18n="pricingLead">Välj plan utifrån er volym och behov. Alla planer inkluderar omvandling till strukturerad data, validering och felflaggor.</p>
+        <p class="section-lead" data-i18n="pricingLead">Välj plan utifrån antal fakturor och hur djup kontroll ni behöver. Alla planer extraherar fakturadata automatiskt och flaggar fel.</p>
         <div class="pricing-toggle-wrap">
           <span class="pricing-toggle-label" id="pricing-binding-label" data-i18n="pricingBindingLabel">12 månaders bindningstid</span>
           <button type="button" class="pricing-toggle" id="pricing-binding-toggle" role="switch" aria-checked="false" aria-labelledby="pricing-binding-label">
@@ -179,56 +197,57 @@
             </span>
           </button>
         </div>
-        <ul class="pricing-grid">
-          <li class="pricing-card">
+        <ul class="pricing-grid stagger">
+          <li class="pricing-card" data-reveal>
             <h2 class="pricing-name" data-i18n="planMinimum">Minimum</h2>
+            <p class="pricing-subtitle" data-i18n="planMinimumDesc">För mindre team som vill automatisera fakturainläsning.</p>
             <div class="pricing-price-wrap">
-              <span class="pricing-price-default" data-i18n="priceMinimumDefault">1 590 kr/mån</span>
-              <span class="pricing-price-binding" data-i18n="priceMinimumBinding">1 350 kr/mån</span>
+              <span class="pricing-price-default" data-i18n="priceMinimumDefault">2 490 kr/mån</span>
+              <span class="pricing-price-binding" data-i18n="priceMinimumBinding">2 120 kr/mån</span>
             </div>
             <p class="pricing-binding-hint" data-i18n="pricingBindingLabel">12 månaders bindningstid</p>
-            <p class="pricing-setup" data-i18n="setupMinimum">Engångsimplementation 5 000 kr</p>
             <ul class="pricing-features">
               <li data-i18n="featMin1">100 fakturor / mån</li>
-              <li data-i18n="featMin2">OCR extraction</li>
-              <li data-i18n="featMin3">Excel-export</li>
-              <li data-i18n="featMin4">Grundläggande fältvalidering</li>
+              <li data-i18n="featMin2">Automatisk utläsning av fakturadata</li>
+              <li data-i18n="featMin3">Export till Excel</li>
+              <li data-i18n="featMin4">Validering av fält och totalbelopp</li>
               <li data-i18n="featMin5">E-postsupport</li>
             </ul>
             <a href="mailto:sales@algamo.se?subject=Attestro%20-%20Minimum" class="btn btn-ghost" data-i18n="contactUs">Kontakta oss</a>
           </li>
-          <li class="pricing-card pricing-card-featured">
-            <span class="pricing-badge" data-i18n="pricingRecommended">Rekommenderad</span>
-            <h2 class="pricing-name" data-i18n="planSaker">Säker</h2>
+          <li class="pricing-card pricing-card-featured" data-reveal>
+            <span class="pricing-badge" data-i18n="pricingRecommended">Populärast</span>
+            <h2 class="pricing-name" data-i18n="planSaker">Kontroll</h2>
+            <p class="pricing-subtitle" data-i18n="planSakerDesc">För företag som behöver verifiera fakturor mot avtal.</p>
             <div class="pricing-price-wrap">
-              <span class="pricing-price-default" data-i18n="priceSakerDefault">4 990 kr/mån</span>
-              <span class="pricing-price-binding" data-i18n="priceSakerBinding">4 240 kr/mån</span>
+              <span class="pricing-price-default" data-i18n="priceSakerDefault">6 990 kr/mån</span>
+              <span class="pricing-price-binding" data-i18n="priceSakerBinding">5 950 kr/mån</span>
             </div>
             <p class="pricing-binding-hint" data-i18n="pricingBindingLabel">12 månaders bindningstid</p>
-            <p class="pricing-setup" data-i18n="setupSaker">Engångsimplementation 15 000 kr</p>
             <ul class="pricing-features">
               <li data-i18n="featSakerVolume">500 fakturor / mån</li>
               <li data-i18n="featSaker1">Allt i Minimum</li>
-              <li data-i18n="featSaker2">Anpassad export</li>
-              <li data-i18n="featSaker3">Automatisk prisverifiering mot avtal</li>
-              <li data-i18n="featSaker5">Historik och spårbarhet</li>
+              <li data-i18n="featSaker2">Anpassningsbar export</li>
+              <li data-i18n="featSaker3">Prisverifiering mot avtal och prislistor</li>
+              <li data-i18n="featSaker5">Fullständig valideringshistorik</li>
               <li data-i18n="featSaker6">Prioriterad support</li>
-              <li data-i18n="featSaker7">Databaslagring & historik</li>
+              <li data-i18n="featSaker7">Databaslagring med spårbarhet</li>
             </ul>
             <a href="mailto:sales@algamo.se?subject=Attestro%20-%20Boka%20demo" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
           </li>
-          <li class="pricing-card">
+          <li class="pricing-card" data-reveal>
             <h2 class="pricing-name" data-i18n="planEnterprise">Enterprise</h2>
+            <p class="pricing-subtitle" data-i18n="planEnterpriseDesc">För organisationer med höga volymer och integrationsbehov.</p>
             <p class="pricing-price pricing-price-enterprise" data-i18n="priceEnterprise">Pris enligt offert</p>
             <p class="pricing-note" data-i18n="enterpriseNote">Minimiavtal på 12 månader</p>
             <ul class="pricing-features">
               <li data-i18n="featEntVolume">1000+ fakturor / mån</li>
-              <li data-i18n="featEnt1">Allt i Säker</li>
-              <li data-i18n="featEnt2">API-integration</li>
-              <li data-i18n="featEnt3">Dashboard / BI-export</li>
-              <li data-i18n="featEnt4">Multi-entity support</li>
-              <li data-i18n="featEnt5">SLA</li>
-              <li data-i18n="featEnt6">Dedikerad kontakt</li>
+              <li data-i18n="featEnt1">Allt i Kontroll</li>
+              <li data-i18n="featEnt2">API-integration med ert ekonomisystem</li>
+              <li data-i18n="featEnt3">Analys- och BI-export</li>
+              <li data-i18n="featEnt4">Stöd för flera bolag</li>
+              <li data-i18n="featEnt5">SLA med garanterad tillgänglighet</li>
+              <li data-i18n="featEnt6">Dedikerad kontaktperson</li>
             </ul>
             <a href="mailto:sales@algamo.se?subject=Attestro%20-%20Enterprise" class="btn btn-ghost" data-i18n="contactUs">Kontakta oss</a>
           </li>
@@ -239,49 +258,49 @@
     <section class="section pricing-comparison">
       <div class="container">
         <h2 class="section-title" data-i18n="comparisonTitle">Jämför planer</h2>
-        <div class="feature-table-wrap">
+        <div class="feature-table-wrap" data-reveal>
           <table class="feature-table">
             <thead>
               <tr>
                 <th scope="col" data-i18n="comparisonFeature">Funktion</th>
                 <th scope="col" data-i18n="planMinimum">Minimum</th>
-                <th scope="col" data-i18n="planSaker">Säker</th>
+                <th scope="col" data-i18n="planSaker">Kontroll</th>
                 <th scope="col" data-i18n="planEnterprise">Enterprise</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td data-i18n="compOcr">OCR-extraktion</td>
+                <td data-i18n="compOcr">Automatisk fakturautläsning</td>
                 <td aria-label="Ja">&#x2713;</td>
                 <td aria-label="Ja">&#x2713;</td>
                 <td aria-label="Ja">&#x2713;</td>
               </tr>
               <tr>
-                <td data-i18n="compExcel">Excel-export</td>
+                <td data-i18n="compExcel">Export till Excel</td>
                 <td aria-label="Ja">&#x2713;</td>
                 <td aria-label="Ja">&#x2713;</td>
                 <td aria-label="Ja">&#x2713;</td>
               </tr>
               <tr>
-                <td data-i18n="compValidation">Grundläggande fältvalidering</td>
+                <td data-i18n="compValidation">Fält- och totalvalidering</td>
                 <td aria-label="Ja">&#x2713;</td>
                 <td aria-label="Ja">&#x2713;</td>
                 <td aria-label="Ja">&#x2713;</td>
               </tr>
               <tr>
-                <td data-i18n="compCustomExport">Anpassad export</td>
+                <td data-i18n="compCustomExport">Anpassningsbar export</td>
                 <td aria-label="Nej">—</td>
                 <td aria-label="Ja">&#x2713;</td>
                 <td aria-label="Ja">&#x2713;</td>
               </tr>
               <tr>
-                <td data-i18n="compPriceVerify">Prisverifiering mot avtal</td>
+                <td data-i18n="compPriceVerify">Avtalsverifiering av priser</td>
                 <td aria-label="Nej">—</td>
                 <td aria-label="Ja">&#x2713;</td>
                 <td aria-label="Ja">&#x2713;</td>
               </tr>
               <tr>
-                <td data-i18n="compHistory">Historik och spårbarhet</td>
+                <td data-i18n="compHistory">Fullständig valideringshistorik</td>
                 <td aria-label="Nej">—</td>
                 <td aria-label="Ja">&#x2713;</td>
                 <td aria-label="Ja">&#x2713;</td>
@@ -293,19 +312,19 @@
                 <td aria-label="Ja">&#x2713;</td>
               </tr>
               <tr>
-                <td data-i18n="compDashboard">Dashboard / BI-export</td>
+                <td data-i18n="compDashboard">Analys- och BI-export</td>
                 <td aria-label="Nej">—</td>
                 <td aria-label="Nej">—</td>
                 <td aria-label="Ja">&#x2713;</td>
               </tr>
               <tr>
-                <td data-i18n="compMultiEntity">Multi-entity support</td>
+                <td data-i18n="compMultiEntity">Stöd för flera bolag</td>
                 <td aria-label="Nej">—</td>
                 <td aria-label="Nej">—</td>
                 <td aria-label="Ja">&#x2713;</td>
               </tr>
               <tr>
-                <td data-i18n="compSla">SLA</td>
+                <td data-i18n="compSla">SLA med garanterad tillgänglighet</td>
                 <td aria-label="Nej">—</td>
                 <td aria-label="Nej">—</td>
                 <td aria-label="Ja">&#x2713;</td>
@@ -329,8 +348,16 @@
             <div class="faq-answer"><p class="faq-answer-inner" data-i18n="pricingFaqA2">Fakturor utöver er plans gräns debiteras per styck enligt en pay-as-you-go-modell. Ni kan fortsätta använda tjänsten utan avbrott. Om ni regelbundet överskrider gränsen rekommenderar vi att uppgradera till nästa plan för ett lägre styckpris.</p></div>
           </details>
           <details class="faq-item">
-            <summary class="faq-question" data-i18n="pricingFaqQ3">Ingår implementation i priset?</summary>
-            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="pricingFaqA3">Implementation debiteras som en engångskostnad utöver månadspriset. Den omfattar konfigurering av era faktureringsmallar och avtalsinställningar.</p></div>
+            <summary class="faq-question" data-i18n="pricingFaqQ4">Hur räknas fakturor?</summary>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="pricingFaqA4">Varje unikt fakturadokument som laddas upp räknas som en faktura, oavsett antal rader. Kreditfakturor och kopior räknas också.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question" data-i18n="pricingFaqQ5">Vilka fakturaformat stöds?</summary>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="pricingFaqA5">Attestro hanterar PDF-fakturor och skannade fakturor (bilder). Systemet extraherar data automatiskt oavsett layout.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question" data-i18n="pricingFaqQ6">Kan Attestro verifiera priser mot våra avtal?</summary>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="pricingFaqA6">Ja, i planen Kontroll och uppåt. Attestro jämför varje fakturarad mot era avtalade priser, prislistor och projektvillkor. Avvikelser flaggas automatiskt.</p></div>
           </details>
         </div>
       </div>
@@ -338,9 +365,9 @@
 
     <section class="section cta">
       <div class="container"><div class="cta-inner">
-        <h2 class="cta-title" data-i18n="pricingCtaTitle">Redo att testa?</h2>
-        <p class="cta-lead" data-i18n="pricingCtaLead">Kontakta oss för en demo eller fråga om hur Attestro kan hjälpa er verksamhet.</p>
-        <a href="index.html#contact" class="btn btn-primary btn-lg" data-i18n="pricingCtaCta">Kontakta oss</a>
+        <h2 class="cta-title" data-i18n="pricingCtaTitle">Redo att stoppa felaktiga fakturor?</h2>
+        <p class="cta-lead" data-i18n="pricingCtaLead">Boka en demo och se hur Attestro verifierar fakturor mot era avtal, automatiskt.</p>
+        <a href="index.html#contact" class="btn btn-primary btn-lg" data-i18n="pricingCtaCta">Boka en demo</a>
       </div></div>
     </section>
   </main>
@@ -349,7 +376,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="index.html" class="logo-link logo-link-footer">
-          <img src="assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" />
+          <img src="assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" loading="lazy" />
           <span class="logo-fallback">ÄLGAMO Software AB</span>
         </a>
         <p class="footer-tagline" data-i18n="footerTagline">Attestro. Tidseffektiv fakturakontroll.</p>

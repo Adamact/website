@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hur transportavtal och prislistor påverkar fakturor | Attestro</title>
+  <meta name="description" content="Avståndsbaserade fraktpriser, bränsletillägg, viktbaserade priser och varför fel uppstår. En genomgång av hur transportavtal och prislistor påverkar fakturor och hur automatiserad kontroll kan hjälpa." />
+  <link rel="canonical" href="https://algamo.se/blog/transportavtal-prislistor-fakturor.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://algamo.se/blog/transportavtal-prislistor-fakturor.html" />
+  <meta property="og:title" content="Hur transportavtal och prislistor påverkar fakturor | Attestro" />
+  <meta property="og:description" content="Avståndsbaserade fraktpriser, bränsletillägg, viktbaserade priser och varför fel uppstår. En genomgång av hur transportavtal och prislistor påverkar fakturor och hur automatiserad kontroll kan hjälpa." />
+  <meta property="og:image" content="https://algamo.se/assets/logo.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:locale" content="sv_SE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="Älgamo Software AB" />
+  <meta property="article:published_time" content="2026-03-13" />
+  <meta property="article:author" content="Älgamo Software AB" />
+  <meta property="article:section" content="Guide" />
+  <meta property="article:tag" content="fakturahantering" />
+  <meta property="article:tag" content="leverantörsfakturor" />
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="sv" href="https://algamo.se/blog/transportavtal-prislistor-fakturor.html" />
+  <link rel="alternate" hreflang="en" href="https://algamo.se/blog/transportavtal-prislistor-fakturor.html" />
+  <link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/transportavtal-prislistor-fakturor.html" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Hur transportavtal och prislistor påverkar fakturor | Attestro" />
+  <meta name="twitter:description" content="Avståndsbaserade fraktpriser, bränsletillägg, viktbaserade priser och varför fel uppstår. En genomgång av hur transportavtal och prislistor påverkar fakturor och hur automatiserad kontroll kan hjälpa." />
+  <meta name="twitter:image" content="https://algamo.se/assets/logo.png" />
+  <meta name="theme-color" content="#1a2744" />
+  <link rel="icon" type="image/png" href="/assets/logo.png" />
+  <link rel="apple-touch-icon" href="/assets/logo.png" />
+  <link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../styles.css" />
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-cjvUyJcrmPfCQoZQOkSLo.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Hem", "item": "https://algamo.se/" },
+      { "@type": "ListItem", "position": 2, "name": "Blogg", "item": "https://algamo.se/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Hur transportavtal och prislistor påverkar fakturor" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Hur transportavtal och prislistor påverkar fakturor",
+    "description": "Avståndsbaserade fraktpriser, bränsletillägg, viktbaserade priser och varför fel uppstår. En genomgång av hur transportavtal och prislistor påverkar fakturor och hur automatiserad kontroll kan hjälpa.",
+    "datePublished": "2026-03-13",
+    "author": {
+      "@type": "Organization",
+      "name": "Älgamo Software AB",
+      "url": "https://algamo.se"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Älgamo Software AB",
+      "url": "https://algamo.se",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://algamo.se/assets/logo.png"
+      }
+    },
+    "mainEntityOfPage": "https://algamo.se/blog/transportavtal-prislistor-fakturor.html",
+    "inLanguage": "sv",
+    "dateModified": "2026-03-13",
+    "articleSection": "Guide",
+    "wordCount": 1100,
+    "keywords": ["transportavtal", "prislistor", "fraktfakturor", "fakturakontroll", "avtalsmatchning"]
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link" data-i18n="skipToContent">Hoppa till innehåll</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo-link">
+        <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img" width="180" height="48" />
+        <span class="logo-fallback">ÄLGAMO Software AB</span>
+      </a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Meny">
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+      </button>
+      <div id="mobile-menu" class="menu-panel">
+        <nav class="nav">
+          <a href="../index.html#process" data-i18n="navSolutions">Funktioner</a>
+          <a href="../about.html" data-i18n="navAbout">Om oss</a>
+          <a href="../pricing.html" data-i18n="navPricing">Priser</a>
+          <a href="../index.html#contact" data-i18n="navContact">Kontakt</a>
+          <a href="../news/" data-i18n="navNews">Nyheter</a>
+          <a href="../blog/" data-i18n="navBlog">Blogg</a>
+        </nav>
+        <div class="lang-switcher" role="group" aria-label="Språk">
+          <button type="button" class="lang-btn" data-lang-btn="sv" aria-pressed="true">Svenska</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">English</button>
+        </div>
+        <a href="../index.html#contact" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="breadcrumb container" aria-label="Breadcrumb">
+    <a href="../index.html" data-i18n="breadcrumbHome">Hem</a>
+    <span aria-hidden="true">&gt;</span>
+    <a href="../blog/" data-i18n="navBlog">Blogg</a>
+    <span aria-hidden="true">&gt;</span>
+    <span data-i18n="blogTapBreadcrumb">Transportavtal och prislistor</span>
+  </nav>
+
+  <main id="main">
+    <article class="section blog-transportavtal-prislistor-fakturor">
+      <div class="container security-content">
+        <h1 class="section-title" data-i18n="blogTapTitle">Hur transportavtal och prislistor påverkar fakturor</h1>
+        <time datetime="2026-03-13" class="blog-article-date">2026-03-13</time>
+        <p class="section-lead" data-i18n="blogTapLead" data-i18n-html>Transportfakturor bygger på avtal och prislistor som ofta är betydligt mer komplexa än vad de först verkar. Avståndsbaserade fraktpriser, viktklasser, bränsletillägg och säsongsjusteringar skapar en prisstruktur med många rörliga delar. Varje del har sin egen beräkningsgrund, och varje beräkningsgrund är en potentiell källa till avvikelser mellan avtal och faktura. Denna komplexitet är en av de faktorer som gör <a href="bygg-transport-fakturor.html">fakturor inom bygg och transport unika</a> jämfört med andra branscher. Den här artikeln går igenom hur vanliga prismodeller inom godstransport fungerar, varför faktureringsfel uppstår så frekvent och vad som krävs för att kontrollera transportfakturor systematiskt.</p>
+
+        <table class="blog-comparison-table">
+          <thead>
+            <tr>
+              <th data-i18n="blogTpfTableHeader1">Priskomponent</th>
+              <th data-i18n="blogTpfTableHeader2">Beräkningsgrund</th>
+              <th data-i18n="blogTpfTableHeader3">Vanlig felkälla</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-i18n="blogTpfTableRow1Col1">Avståndspris</td>
+              <td data-i18n="blogTpfTableRow1Col2">Avstånd mellan avsändare och mottagare</td>
+              <td data-i18n="blogTpfTableRow1Col3">Felaktigt beräknat avstånd eller inaktuell pristabell</td>
+            </tr>
+            <tr>
+              <td data-i18n="blogTpfTableRow2Col1">Viktpris</td>
+              <td data-i18n="blogTpfTableRow2Col2">Kilogram eller ton per sändning</td>
+              <td data-i18n="blogTpfTableRow2Col3">Felaktig taravikt, volymvikt med fel formel</td>
+            </tr>
+            <tr>
+              <td data-i18n="blogTpfTableRow3Col1">Bränsletillägg</td>
+              <td data-i18n="blogTpfTableRow3Col2">Index som justeras periodvis</td>
+              <td data-i18n="blogTpfTableRow3Col3">Fel procentsats, utgången referensperiod</td>
+            </tr>
+            <tr>
+              <td data-i18n="blogTpfTableRow4Col1">Väntetid</td>
+              <td data-i18n="blogTpfTableRow4Col2">Tid vid lastning/lossning</td>
+              <td data-i18n="blogTpfTableRow4Col3">Avsaknad av oberoende dokumentation</td>
+            </tr>
+            <tr>
+              <td data-i18n="blogTpfTableRow5Col1">Miljöavgift</td>
+              <td data-i18n="blogTpfTableRow5Col2">Separat index eller fast tillägg</td>
+              <td data-i18n="blogTpfTableRow5Col3">Blandas med bränsletillägg, svår att verifiera</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="security-subtitle" data-i18n="blogTapZoneTitle">Avståndsbaserade fraktpriser</h2>
+        <p class="security-text" data-i18n="blogTapZoneText1">Avståndsbaserad prissättning är en av de vanligaste modellerna inom godstransport, särskilt för styckegods och paketfrakt. Principen är enkel: fraktpriset bestäms av avståndet mellan avsändare och mottagare, ofta beräknat utifrån postnummer eller ruttplanering. Ju längre avstånd, desto högre pris. I praktiken grupperas avstånd i pristabeller med definierade avståndsintervall.</p>
+        <p class="security-text" data-i18n="blogTapZoneText2">Komplexiteten uppstår i detaljerna. Olika transportörer använder olika avståndstabeller och beräkningsmetoder, vilket innebär att samma sändning mellan två adresser kan prissättas olika beroende på vilken transportör som anlitas. Dessutom kan avståndstabellerna ändras vid avtalsförnyelse utan att det kommuniceras tydligt. Om ett företag har avtalat avståndsbaserade priser med en transportör och transportören uppdaterar sin pristabell, kan fakturor plötsligt hamna i ett dyrare prisintervall trots att varken avsändare eller mottagare har flyttat.</p>
+        <p class="security-text" data-i18n="blogTapZoneText3">Gränsfall mellan prisintervall skapar ytterligare problem. Ett företag som skickar gods till en mottagare vars avstånd ligger precis på gränsen mellan två prisklasser kan faktureras i den dyrare klassen utan att det är uppenbart felaktigt. Att verifiera avståndsberäkningen kräver tillgång till den exakta pristabell som gäller enligt avtalet, inte transportörens generella prislista. Många företag saknar denna dokumentation i en lättillgänglig form vid fakturagranskning.</p>
+        <p class="security-text" data-i18n="blogTapZoneText4">Utöver själva avståndspriset tillkommer ofta tillägg som varierar beroende på leveransadress. Leveranser till avlägsna områden kan ha ett tillägg för svårtillgänglig adress, medan leveranser till storstadsområden kan inkludera en trängselavgift. Dessa tillägg specificeras inte alltid tydligt på fakturan, och det kan vara svårt att avgöra om de tillämpas korrekt utan att gå tillbaka till avtalet rad för rad.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogTapFuelTitle">Bränsletillägg och indexjusteringar</h2>
+        <p class="security-text" data-i18n="blogTapFuelText1">Bränsletillägg är en standardpost i de flesta transportavtal. Syftet är att kompensera transportören för fluktuerande bränslepriser utan att grundpriset behöver omförhandlas. Tillägget beräknas vanligen som en procentuell påökning av fraktpriset, baserat på ett bränsleindex som publiceras av organisationer som SKAB (Svenska Kraftnät) eller branschtidningar som uppdaterar dieselprisindex regelbundet.</p>
+        <p class="security-text" data-i18n="blogTapFuelText2">Beräkningsmodellen varierar mellan avtal. Vissa avtal använder ett fast bränsletillägg som justeras kvartalsvis, medan andra uppdateras månadsvis eller till och med veckovis. Referenspunkten kan vara spotpriset för diesel, ett genomsnittspris för föregående period eller ett branschindex. Avtalet specificerar normalt en basnivå, och tillägget tillämpas först när bränslepriset överstiger denna nivå.</p>
+        <p class="security-text" data-i18n="blogTapFuelText3">Fel uppstår när transportören tillämpar en procentsats som inte motsvarar det aktuella indexvärdet. Det kan bero på att systemet inte uppdaterats i tid, att fel referensperiod används eller att basnivån i avtalet inte stämmer med den som transportören utgår ifrån. I praktiken betyder det att ett bränsletillägg på exempelvis 14,2 procent faktureras trots att korrekt tillägg enligt index och avtal skulle vara 12,8 procent. Skillnaden kan verka liten per faktura, men multiplicerat med hundratals sändningar per månad blir den ekonomiska effekten påtaglig.</p>
+        <p class="security-text" data-i18n="blogTapFuelText4">Ytterligare en komplikation uppstår när miljötillägg eller koldioxidavgifter tillkommer utöver bränsletillägget. Dessa tillägg har egna beräkningsgrunder och egna indexreferenser. Om bränsletillägg och miljötillägg faktureras på samma rad utan uppdelning, blir det praktiskt omöjligt att verifiera om respektive belopp är korrekt beräknat.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogTapWeightTitle">Viktbaserade priser och viktklasser</h2>
+        <p class="security-text" data-i18n="blogTapWeightText1">Viktbaserad prissättning används genomgående vid frakt av bulkgods, byggmaterial och industrivaror. Priset anges per kilogram eller per ton, ofta med stegvisa prisbrytpunkter. En sändning som väger 500 kg kan ha ett pris per kilo, medan en sändning på 2 000 kg har ett lägre kilopris enligt en avtalad pristrappa. Dessa viktklasser definieras i avtalet och kan skilja sig markant mellan olika transportörer.</p>
+        <p class="security-text" data-i18n="blogTapWeightText2">Ett vanligt problem är att den vikt som faktureras inte överensstämmer med den faktiskt transporterade vikten. Transportören registrerar vikten vid lastning, men den kan avvika från den vikt som mottagaren noterar vid lossning. Skillnaden beror sällan på att gods försvunnit under transporten. Vanligare orsaker är att olika vågar ger olika resultat, att fuktinnehåll i material förändras under transport eller att bruttovikten inte korrigeras korrekt för fordonets taravikt.</p>
+        <p class="security-text" data-i18n="blogTapWeightText3">Volymetrisk vikt är en annan källa till avvikelser. Vid frakt av skrymmande men lätta varor tillämpar många transportörer en omräkningsformel där volymen konverteras till en fiktiv vikt. Formeln varierar: vissa använder längd x bredd x höjd delat med 5 000, andra delar med 4 000 eller 6 000. Om den volymvikt som faktureras baseras på en annan formel än den som anges i avtalet, blir priset felaktigt. Samma sändning kan alltså faktureras för 120 kg volymvikt av en transportör och 150 kg av en annan, trots att den fysiska vikten är identisk.</p>
+        <p class="security-text" data-i18n="blogTapWeightText4">Minimumvikter komplicerar bilden ytterligare. De flesta transportavtal anger en minimivikt per sändning, ofta 30 eller 50 kg. Om en sändning väger 12 kg men minimivikten är 50 kg, faktureras 50 kg. Det är korrekt enligt avtalet, men kan överraska beställaren om minimivikten inte är känd eller har ändrats vid avtalsförnyelse.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogTapWhyTitle">Varför fel så ofta uppstår i transportfakturor</h2>
+        <p class="security-text" data-i18n="blogTapWhyText1" data-i18n-html>Frekvent felaktig fakturering inom transport är inte i första hand en fråga om oärlighet, och risken för <a href="overdebitering-leverantorer.html">överdebitering från leverantörer</a> är påtaglig. Det är en konsekvens av att prismodellerna bygger på många variabler som hanteras av flera olika system och personer. En enskild faktura kan påverkas av avståndsberäkning, viktregistrering, bränsleindex, tilläggsavgifter och avtalsspecifika rabatter. Varje variabel hämtas från en separat datakälla, och varje datakälla har sin egen uppdateringsfrekvens och felrisk.</p>
+        <p class="security-text" data-i18n="blogTapWhyText2">Avtalsändringar som inte implementeras korrekt i transportörens fakturasystem är en av de vanligaste orsakerna till avvikelser. När ett nytt avtal tecknas eller ett befintligt avtal uppdateras, ska de nya priserna, avståndstabellerna och villkoren registreras i transportörens TMS och faktureringssystem. I praktiken tar denna implementering ibland veckor, och under övergångsperioden faktureras sändningar enligt det gamla avtalet.</p>
+        <p class="security-text" data-i18n="blogTapWhyText3">En annan vanlig orsak är att avtalet innehåller villkor som inte kan hanteras fullt ut av standardiserade faktureringssystem. Kundspecifika rabatter, projektbaserade priser eller volymtrappor som beräknas i efterhand kräver manuella justeringar i fakturan. Varje manuell justering innebär en risk för fel. Om transportören hanterar tusentals kunder med individuella avtal, blir sannolikheten stor att enskilda kundavtal inte tillämpas korrekt i alla lägen.</p>
+        <p class="security-text" data-i18n="blogTapWhyText4">Kommunikationsbrister mellan transportörens operativa och ekonomiska avdelningar bidrar också. Chauffören registrerar lastdata i ett system, trafikledningen hanterar orderuppgifter i ett annat och ekonomiavdelningen fakturerar utifrån en tredje datakälla. Om informationen inte synkroniseras korrekt mellan dessa system uppstår avvikelser som varken transportören eller kunden upptäcker utan aktiv kontroll.</p>
+
+        <div class="blog-info-box">
+          <div class="blog-info-box-title" data-i18n="blogTpfInfoBoxTitle">Tre nyckelområden att kontrollera i transportfakturor</div>
+          <ol>
+            <li data-i18n="blogTpfInfoBoxItem1" data-i18n-html><strong>Avtalsöverensstämmelse vid övergångsperioder</strong> - Granska de första fakturorna efter ett nytt avtal extra noggrant för att säkerställa att nya priser, avståndstabeller och tillägg tillämpas korrekt.</li>
+            <li data-i18n="blogTpfInfoBoxItem2" data-i18n-html><strong>Bränsletillägg och indexjusteringar</strong> - Verifiera att rätt indexvärde och beräkningsmodell används för den aktuella perioden enligt avtalet.</li>
+            <li data-i18n="blogTpfInfoBoxItem3" data-i18n-html><strong>Viktregistrering och volymberäkning</strong> - Stäm av fakturerade vikter mot egna vågsedlar och leveransdokument regelbundet.</li>
+          </ol>
+        </div>
+
+        <h2 class="security-subtitle" data-i18n="blogTapPracticalTitle">Praktisk insikt: vad företag bör uppmärksamma</h2>
+        <p class="security-text" data-i18n="blogTapPracticalText1" data-i18n-html>Företag som hanterar stora transportvolymer bör vara särskilt uppmärksamma på tre områden vid fakturagranskning, och en strukturerad process för att <a href="kontrollera-fakturor-mot-avtal.html">kontrollera fakturor mot avtal</a> är avgörande. Det första är avtalsöverensstämmelse vid övergångsperioder. När ett nytt transportavtal träder i kraft bör de första fakturorna granskas extra noggrant för att säkerställa att de nya priserna, avståndstabellerna och tilläggen tillämpas korrekt. Avvikelser som upptäcks tidigt är enklare att korrigera och förhindrar att felaktiga priser tillämpas under en längre period.</p>
+        <p class="security-text" data-i18n="blogTapPracticalText2">Det andra området är bränsletillägg och indexjusteringar. Att kontrollera bränsletillägget kräver att fakturamottagaren har tillgång till korrekt indexdata för den aktuella perioden och vet vilken beräkningsmodell som gäller enligt avtalet. Utan denna information är det omöjligt att verifiera om det fakturerade tillägget är korrekt.</p>
+        <p class="security-text" data-i18n="blogTapPracticalText3" data-i18n-html>Det tredje området är viktregistrering och volymberäkning. Regelbunden avstämning av fakturerade vikter mot egna leveransdokument, vågsedlar och mottagningsrapporter är grundläggande för att <a href="verifiera-leverantorsfakturor.html">verifiera leverantörsfakturor</a> korrekt. Systematiska avvikelser, exempelvis att fakturerade vikter konsekvent är 2 till 5 procent högre än den egna registreringen, bör utredas och tas upp med transportören.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogTapAutoTitle">Hur fakturor kan kontrolleras automatiskt</h2>
+        <p class="security-text" data-i18n="blogTapAutoText1" data-i18n-html><a href="automatiserad-fakturakontroll.html">Automatiserad fakturakontroll</a> blir alltmer nödvändig eftersom manuell kontroll av transportfakturor mot avtal och prislistor är tidskrävande och skalar dåligt. En enskild faktura med tiotals rader, där varje rad påverkas av avstånd, vikt, tillägg och avtalsvillkor, kan ta en erfaren medarbetare 30 minuter eller mer att granska fullständigt. I organisationer med hundratals transportfakturor per månad är det inte realistiskt att granska varje rad manuellt.</p>
+        <p class="security-text" data-i18n="blogTapAutoText2" data-i18n-html>Automatiserad fakturakontroll fungerar genom att fakturadata extraheras maskinellt, antingen via <a href="ocr-faktura.html">OCR för skannade dokument</a> eller genom direkt parsing av digitala format som PDF eller e-faktura. Den extraherade datan struktureras och jämförs sedan automatiskt mot den digitaliserade versionen av transportavtalet: avståndstabeller, prislistor, viktklasser, bränsleindex och tilläggsregler.</p>
+        <p class="security-text" data-i18n="blogTapAutoText3">Systemet identifierar avvikelser rad för rad. Om en sändning faktureras med ett högre avståndspris än vad som motsvarar den faktiska rutten enligt avståndstabellen, flaggas raden. Om bränsletillägget är 14,2 procent men aktuellt index anger 12,8 procent, markeras avvikelsen. Om den fakturerade vikten överstiger leveransdokumentets vikt med mer än en definierad tolerans, registreras en varning. Resultatet presenteras som en sammanställning där ekonomiteamet kan fokusera på de rader som kräver manuell bedömning.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogTapConclusionTitle">Sammanfattning</h2>
+        <p class="security-text" data-i18n="blogTapConclusionText">Transportavtal och prislistor bygger på prismodeller med många samverkande variabler: avståndsklasser, viktklasser, bränsletillägg, indexjusteringar och avtalsspecifika villkor. Komplexiteten gör att felaktiga fakturor är vanliga, inte på grund av oärlighet utan på grund av systemkomplexitet och manuella processer. Att kontrollera transportfakturor effektivt kräver tillgång till rätt avtalsdata, aktuella indexvärden och strukturerade jämförelsemetoder. Programvarulösningar som Attestro möjliggör denna typ av automatiserad kontroll genom att digitalisera avtalsdata och jämföra den mot fakturor rad för rad, vilket minskar risken för att avvikelser passerar obemärkt.</p>
+
+        <div class="blog-article-cta">
+          <p data-i18n="blogTapCta" data-i18n-html>Transportfakturor är bland de mest komplexa att kontrollera manuellt. Attestro automatiserar jämförelsen mellan fakturadata och avtalade priser, avståndsklasser och tillägg. <a href="../index.html#contact">Boka en demo</a> för att se hur det fungerar med era transportavtal.</p>
+        </div>
+
+        <div class="blog-related">
+          <h2 data-i18n="blogRelatedTitle">Relaterade artiklar</h2>
+          <div class="blog-related-grid">
+            <a href="vanliga-fel-transportfakturor.html" class="blog-related-card">
+              <h3 data-i18n="blogTfeTitle">Vanliga fel i transportfakturor och hur de uppstår</h3>
+              <p data-i18n="blogTfeIntro">Lär dig identifiera de vanligaste felen i transportfakturor: fel vikt, felberäknat avstånd, oförklarade tilläggsavgifter och duplicerade sändningar.</p>
+            </a>
+            <a href="bygg-transport-fakturor.html" class="blog-related-card">
+              <h3 data-i18n="blogBtTitle">Vad gör fakturor inom bygg och transport unika?</h3>
+              <p data-i18n="blogBtIntro">Fakturor i bygg och transport innehåller mängdbaserad prissättning, komplexa avtal och underentreprenörskedjor.</p>
+            </a>
+            <a href="checklista-fakturakontroll.html" class="blog-related-card">
+              <h3 data-i18n="blogClListTitle">Checklista: kontrollera leverantörsfakturor innan attest</h3>
+              <p data-i18n="blogClListSummary">Sju konkreta kontrollpunkter som bör genomföras innan varje leverantörsfaktura attesteras.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo-link logo-link-footer">
+          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" loading="lazy" />
+          <span class="logo-fallback">ÄLGAMO Software AB</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footerTagline">Attestro. Tidseffektiv fakturakontroll.</p>
+      </div>
+      <div class="footer-legal">
+        <p data-i18n="footerLegal">Älgamo Software AB, Sverige</p>
+        <p class="footer-support"><span data-i18n="footerSupport">Kundsupport:</span> <a href="mailto:support@algamo.se">support@algamo.se</a></p>
+        <p class="footer-social"><a href="https://www.linkedin.com/company/%C3%A4lgamo-software-ab/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <p class="footer-news"><a href="../news/" data-i18n="footerNews">Nyheter</a></p>
+        <p class="footer-blog"><a href="../blog/" data-i18n="footerBlog">Blogg</a></p>
+        <p class="footer-security"><a href="../security.html" data-i18n="footerSecurity">Säkerhet</a></p>
+        <p class="footer-privacy"><a href="../privacy.html" data-i18n="footerPrivacy">Integritetspolicy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

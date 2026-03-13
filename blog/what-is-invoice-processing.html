@@ -12,11 +12,16 @@
   <meta property="og:title" content="Vad är fakturahantering? Komplett guide, från manuell process till automatisering | Attestro" />
   <meta property="og:description" content="Komplett guide om fakturahantering: arbetsflödet steg för steg, manuell kontra automatiserad process, OCR, dataextraktion, validering mot avtal och ERP-integration." />
   <meta property="og:image" content="https://algamo.se/assets/logo.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
   <meta property="og:locale" content="sv_SE" />
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:site_name" content="Älgamo Software AB" />
   <meta property="article:published_time" content="2026-03-12" />
   <meta property="article:author" content="Älgamo Software AB" />
+  <meta property="article:section" content="Guide" />
+  <meta property="article:tag" content="fakturahantering" />
+  <meta property="article:tag" content="leverantörsfakturor" />
   <!-- hreflang -->
   <link rel="alternate" hreflang="sv" href="https://algamo.se/blog/what-is-invoice-processing.html" />
   <link rel="alternate" hreflang="en" href="https://algamo.se/blog/what-is-invoice-processing.html" />
@@ -69,7 +74,12 @@
         "url": "https://algamo.se/assets/logo.png"
       }
     },
-    "mainEntityOfPage": "https://algamo.se/blog/what-is-invoice-processing.html"
+    "mainEntityOfPage": "https://algamo.se/blog/what-is-invoice-processing.html",
+    "inLanguage": "sv",
+    "dateModified": "2026-03-13",
+    "articleSection": "Guide",
+    "wordCount": 1100,
+    "keywords": ["fakturahantering", "automatisering", "fakturakontroll", "leverantörsfakturor", "fakturatolkning"]
   }
   </script>
 </head>
@@ -125,32 +135,41 @@
         <p class="security-text" data-i18n="bpWipWhatText2">Processen handlar inte bara om att betala räkningar. Den inkluderar verifiering av att fakturan stämmer överens med beställning och leverans, att priser matchar avtal, att moms är korrekt beräknad och att kostnaden konteras på rätt projekt eller avdelning. I praktiken är fakturahantering en kritisk kontrollpunkt i företagets ekonomiflöde.</p>
 
         <h2 class="security-subtitle" data-i18n="bpWipStepsTitle">Det manuella arbetsflödet steg för steg</h2>
-        <p class="security-text" data-i18n="bpWipStepsIntro">I de flesta företag följer fakturahantering ett liknande grundflöde, oavsett om det sker manuellt eller med systemstöd:</p>
-        <p class="security-text" data-i18n="bpWipStep1"><strong>1. Mottagning.</strong> Fakturan tas emot som PDF via e-post, som skannat pappersdokument eller som elektronisk faktura (t.ex. Peppol). I många företag landar fakturor i en delad inkorg eller ett ekonomisystem.</p>
-        <p class="security-text" data-i18n="bpWipStep2"><strong>2. Registrering och dataextraktion.</strong> Fakturans innehåll, det vill säga leverantör, fakturanummer, belopp, artikelrader, moms och förfallodatum, identifieras och registreras. Manuellt innebär detta att en person läser av dokumentet och matar in data i ekonomisystemet.</p>
-        <p class="security-text" data-i18n="bpWipStep3"><strong>3. Matchning och validering.</strong> Den registrerade datan kontrolleras mot beställningar, avtal och leveransuppgifter. Stämmer priset med avtalet? Matchar antalet det som levererats? Är momsen korrekt? Det här steget är avgörande för att fånga felaktiga fakturor innan de godkänns för betalning.</p>
-        <p class="security-text" data-i18n="bpWipStep4"><strong>4. Godkännande och attest.</strong> Fakturan skickas till rätt person eller avdelning för attestering. I större organisationer krävs ofta flera attestnivåer beroende på belopp och typ av kostnad.</p>
-        <p class="security-text" data-i18n="bpWipStep5"><strong>5. Betalning och bokföring.</strong> Den godkända fakturan betalas enligt betalningsvillkoren och bokförs i ekonomisystemet. Korrekt kontering, det vill säga rätt konto, projekt och kostnadsställe, är avgörande för tillförlitlig redovisning.</p>
+        <p class="security-text" data-i18n="bpWipStepsIntro" data-i18n-html>I de flesta företag följer fakturahantering ett liknande <a href="fakturaflode.html">grundflöde</a>, oavsett om det sker manuellt eller med systemstöd:</p>
+
+        <div class="blog-flow">
+          <div class="blog-flow-step" data-i18n="blogWipFlowStep1">Receipt</div>
+          <div class="blog-flow-step" data-i18n="blogWipFlowStep2">Data Entry</div>
+          <div class="blog-flow-step" data-i18n="blogWipFlowStep3">Validation</div>
+          <div class="blog-flow-step" data-i18n="blogWipFlowStep4">Approval</div>
+          <div class="blog-flow-step" data-i18n="blogWipFlowStep5">Payment</div>
+        </div>
+
+        <p class="security-text" data-i18n="bpWipStep1" data-i18n-html><strong>1. Mottagning.</strong> Fakturan tas emot som PDF via e-post, som skannat pappersdokument eller som elektronisk faktura (t.ex. Peppol). I många företag landar fakturor i en delad inkorg eller ett ekonomisystem.</p>
+        <p class="security-text" data-i18n="bpWipStep2" data-i18n-html><strong>2. Registrering och dataextraktion.</strong> Fakturans innehåll, det vill säga leverantör, fakturanummer, belopp, artikelrader, moms och förfallodatum, identifieras och registreras. Manuellt innebär detta att en person läser av dokumentet och matar in data i ekonomisystemet.</p>
+        <p class="security-text" data-i18n="bpWipStep3" data-i18n-html><strong>3. Matchning och validering.</strong> Den registrerade datan kontrolleras mot beställningar, avtal och leveransuppgifter. Stämmer priset med avtalet? Matchar antalet det som levererats? Är momsen korrekt? Det här steget är avgörande för att fånga felaktiga fakturor innan de godkänns för betalning.</p>
+        <p class="security-text" data-i18n="bpWipStep4" data-i18n-html><strong>4. Godkännande och attest.</strong> Fakturan skickas till rätt person eller avdelning för <a href="fakturaattest.html">attestering</a>. I större organisationer krävs ofta flera attestnivåer beroende på belopp och typ av kostnad.</p>
+        <p class="security-text" data-i18n="bpWipStep5" data-i18n-html><strong>5. Betalning och bokföring.</strong> Den godkända fakturan betalas enligt betalningsvillkoren och bokförs i ekonomisystemet. Korrekt kontering, det vill säga rätt konto, projekt och kostnadsställe, är avgörande för tillförlitlig redovisning.</p>
 
         <h2 class="security-subtitle" data-i18n="bpWipChallengesTitle">Vanliga utmaningar vid manuell hantering</h2>
-        <p class="security-text" data-i18n="bpWipChallengesIntro">Manuell fakturahantering fungerar i liten skala men skapar problem när volymen ökar. De vanligaste utmaningarna:</p>
+        <p class="security-text" data-i18n="bpWipChallengesIntro" data-i18n-html>Manuell fakturahantering fungerar i liten skala men skapar problem när volymen ökar. De vanligaste <a href="vanliga-utmaningar-fakturahantering.html">utmaningarna</a>:</p>
         <ul class="blog-article-list">
-          <li data-i18n="bpWipChallenge1"><strong>Varierande format.</strong> Leverantörer skickar fakturor som PDF, skannade dokument eller e-faktura, med <a href="fakturaformat.html">varierande layout, fältplacering och struktur</a>. Det försvårar systematisk granskning.</li>
-          <li data-i18n="bpWipChallenge2"><strong>Tidsåtgång.</strong> Manuell registrering och kontroll tar i snitt 10 till 15 minuter per faktura. Vid hundratals fakturor per månad blir det veckor av arbetstid.</li>
-          <li data-i18n="bpWipChallenge3"><strong>Fel som inte fångas.</strong> Dubbelfakturering, felaktiga priser, felaktig moms och kvantitetsavvikelser passerar obemärkt vid manuell granskning, särskilt under hög arbetsbelastning.</li>
-          <li data-i18n="bpWipChallenge4"><strong>Bristande avtalsvalidering.</strong> Utan systematisk kontroll mot avtal och prislistor saknas möjlighet att verifiera att leverantören fakturerar enligt överenskomna villkor.</li>
-          <li data-i18n="bpWipChallenge5"><strong>Flaskhalsar i attestflödet.</strong> Fakturor som fastnar hos enskilda medarbetare, på grund av semester, sjukfrånvaro eller hög arbetsbelastning, leder till sena betalningar och förseningsavgifter.</li>
-          <li data-i18n="bpWipChallenge6"><strong>Svag spårbarhet.</strong> I manuella processer saknas ofta en komplett logg över vem som granskade vad, när och vilka kontroller som gjordes.</li>
+          <li data-i18n="bpWipChallenge1" data-i18n-html><strong>Varierande format.</strong> Leverantörer skickar fakturor som PDF, skannade dokument eller e-faktura, med <a href="fakturaformat.html">varierande layout, fältplacering och struktur</a>. Det försvårar systematisk granskning.</li>
+          <li data-i18n="bpWipChallenge2" data-i18n-html><strong>Tidsåtgång.</strong> Manuell registrering och kontroll tar i snitt 10 till 15 minuter per faktura. Vid hundratals fakturor per månad blir det veckor av arbetstid.</li>
+          <li data-i18n="bpWipChallenge3" data-i18n-html><strong>Fel som inte fångas.</strong> Dubbelfakturering, felaktiga priser, felaktig moms och kvantitetsavvikelser passerar obemärkt vid manuell granskning, särskilt under hög arbetsbelastning.</li>
+          <li data-i18n="bpWipChallenge4" data-i18n-html><strong>Bristande avtalsvalidering.</strong> Utan systematisk kontroll mot avtal och prislistor saknas möjlighet att verifiera att leverantören fakturerar enligt överenskomna villkor.</li>
+          <li data-i18n="bpWipChallenge5" data-i18n-html><strong>Flaskhalsar i attestflödet.</strong> Fakturor som fastnar hos enskilda medarbetare, på grund av semester, sjukfrånvaro eller hög arbetsbelastning, leder till sena betalningar och förseningsavgifter.</li>
+          <li data-i18n="bpWipChallenge6" data-i18n-html><strong>Svag spårbarhet.</strong> I manuella processer saknas ofta en komplett logg över vem som granskade vad, när och vilka kontroller som gjordes.</li>
         </ul>
 
         <h2 class="security-subtitle" data-i18n="bpWipAutoTitle">Hur automatiserad fakturahantering fungerar</h2>
-        <p class="security-text" data-i18n="bpWipAutoIntro">Automatiserad fakturahantering ersätter manuella moment med teknik i varje steg av kedjan. Nedan beskrivs hur processen fungerar i ett modernt automatiseringsflöde.</p>
+        <p class="security-text" data-i18n="bpWipAutoIntro" data-i18n-html>Automatiserad fakturahantering ersätter manuella moment med teknik i varje steg av kedjan. En detaljerad jämförelse finns i artikeln <a href="manuell-vs-automatiserad-fakturahantering.html">manuell vs automatiserad fakturahantering</a>. Nedan beskrivs hur processen fungerar i ett modernt automatiseringsflöde.</p>
 
         <h2 class="security-subtitle" data-i18n="bpWipCaptureTitle">Dokumentinfångning och centralisering</h2>
         <p class="security-text" data-i18n="bpWipCaptureText">Automatisering börjar med dokumentinfångning. Fakturor som anländer via e-post, skannade dokument, leverantörsportaler eller elektroniska format som Peppol BIS samlas i en gemensam kö. Det löser ett grundläggande problem i manuella flöden: fragmentering. När fakturor sprids över olika inkorgar och kanaler blir uppföljning svår och förseningar oundvikliga. Automatiserad infångning registrerar varje faktura i det ögonblick den anländer, oavsett källa eller format.</p>
 
         <h2 class="security-subtitle" data-i18n="bpWipOcrTitle">OCR och teckenigenkänning</h2>
-        <p class="security-text" data-i18n="bpWipOcrText">Fakturan passerar sedan <a href="ocr-faktura.html">OCR (Optical Character Recognition)</a>, som omvandlar dokumentets visuella innehåll till maskinläsbar text. Moderna OCR-motorer hanterar varierande layouter, teckenstorlekar och dokumentkvalitet, inklusive lågupplösta skanningar och dokument med stämplar eller handskrivna anteckningar. OCR-teknikens precision har förbättrats avsevärt genom maskininlärning och neurala nätverk, men OCR i sig producerar inte strukturerad data. Råtexten måste tolkas och organiseras, vilket sker i nästa steg.</p>
+        <p class="security-text" data-i18n="bpWipOcrText" data-i18n-html>Fakturan passerar sedan <a href="ocr-faktura.html">OCR (Optical Character Recognition)</a>, som omvandlar dokumentets visuella innehåll till maskinläsbar text. Moderna OCR-motorer hanterar varierande layouter, teckenstorlekar och dokumentkvalitet, inklusive lågupplösta skanningar och dokument med stämplar eller handskrivna anteckningar. OCR-teknikens precision har förbättrats avsevärt genom maskininlärning och neurala nätverk, men OCR i sig producerar inte strukturerad data. Råtexten måste tolkas och organiseras, vilket sker i nästa steg.</p>
 
         <h2 class="security-subtitle" data-i18n="bpWipExtractionTitle">Dataextraktion och strukturering</h2>
         <p class="security-text" data-i18n="bpWipExtractionText">Dataextraktion omvandlar rå OCR-text till strukturerade fält: leverantörsnamn, organisationsnummer, fakturanummer, datum, förfallodatum, betalningsvillkor, artikelrader med beskrivning, antal, enhetspris och totalbelopp samt moms. Extraktionsmotorer använder mallar, maskininlärningsmodeller eller en kombination av båda för att hantera fakturor från olika leverantörer med olika layout och terminologi. Ett välfungerande system lär sig av korrigeringar över tid och förbättrar extraktionsnoggrannheten med varje behandlad faktura.</p>
@@ -200,7 +219,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="../index.html" class="logo-link logo-link-footer">
-          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" />
+          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" loading="lazy" />
           <span class="logo-fallback">ÄLGAMO Software AB</span>
         </a>
         <p class="footer-tagline" data-i18n="footerTagline">Attestro. Tidseffektiv fakturakontroll.</p>

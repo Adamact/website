@@ -12,11 +12,16 @@
   <meta property="og:title" content="Hur man verifierar leverantörsfakturor effektivt | Attestro" />
   <meta property="og:description" content="En praktisk guide till effektiv fakturakontroll. Lär dig hur avtalskontroll, mängdverifiering, prislistekontroll och automatiserade kontroller kan förbättra er fakturaprocess." />
   <meta property="og:image" content="https://algamo.se/assets/logo.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
   <meta property="og:locale" content="sv_SE" />
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:site_name" content="Älgamo Software AB" />
   <meta property="article:published_time" content="2026-03-12" />
   <meta property="article:author" content="Älgamo Software AB" />
+  <meta property="article:section" content="Guide" />
+  <meta property="article:tag" content="fakturahantering" />
+  <meta property="article:tag" content="leverantörsfakturor" />
   <!-- hreflang -->
   <link rel="alternate" hreflang="sv" href="https://algamo.se/blog/verifiera-leverantorsfakturor.html" />
   <link rel="alternate" hreflang="en" href="https://algamo.se/blog/verifiera-leverantorsfakturor.html" />
@@ -69,7 +74,52 @@
         "url": "https://algamo.se/assets/logo.png"
       }
     },
-    "mainEntityOfPage": "https://algamo.se/blog/verifiera-leverantorsfakturor.html"
+    "mainEntityOfPage": "https://algamo.se/blog/verifiera-leverantorsfakturor.html",
+    "inLanguage": "sv",
+    "dateModified": "2026-03-13",
+    "articleSection": "Guide",
+    "wordCount": 1100,
+    "keywords": ["leverantörsfakturor", "verifiering", "fakturakontroll", "fakturaattest", "avtalskontroll"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Hur man verifierar leverantörsfakturor",
+    "description": "Sex steg för att systematiskt verifiera leverantörsfakturor, från avtalskontroll till kontering och projektkoppling.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Avtalskontroll",
+        "text": "Kontrollera att fakturan matchar det avtal som gäller med leverantören. Verifiera att leverantören har ett giltigt avtal, att de fakturerade tjänsterna eller varorna täcks av avtalet, och att avtalsvillkoren tillämpas korrekt."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Mängdverifiering",
+        "text": "Jämför fakturerade kvantiteter mot vad som faktiskt levererats eller utförts. Underlag kan vara följesedlar, tidrapporter, transportdokumentation eller projektrapporter."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Prislistekontroll",
+        "text": "Verifiera att enhetspriset på varje fakturarad matchar det avtalade priset. Kontrollera vilken version av prislistan som gäller vid leveranstidpunkten, inklusive eventuella indexklausuler och omförhandlingar."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Duplikatkontroll",
+        "text": "Kontrollera om fakturan redan betalats genom att jämföra inte bara fakturanummer utan även kombinationen av leverantör, belopp, datum och artikelrader."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Momskontroll och formalia",
+        "text": "Verifiera att varje faktura innehåller korrekta formella uppgifter: organisationsnummer, momsregistreringsnummer, rätt momssats per rad och korrekt beräknat momsbelopp."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Kontering och projektkoppling",
+        "text": "Koppla fakturan till rätt konto, kostnadsställe och projekt i redovisningen. Korrekt kontering är avgörande för att projektkalkyler och uppföljning ska stämma."
+      }
+    ]
   }
   </script>
 </head>
@@ -120,16 +170,25 @@
         <time datetime="2026-03-12" class="blog-article-date">2026-03-12</time>
         <p class="section-lead" data-i18n="blogVfLead">Fakturakontroll handlar inte om att bocka av en administrativ uppgift. Det handlar om att säkerställa att företaget betalar rätt belopp, för rätt leverans, till rätt villkor. Trots det saknar många organisationer en strukturerad verifieringsprocess och förlitar sig istället på stickprov eller enskilda personers erfarenhet. Den här artikeln beskriver de centrala kontrollstegen i en effektiv fakturagranskning och förklarar hur varje steg bidrar till att minska felbetalningar och stärka den ekonomiska kontrollen.</p>
 
+        <div class="blog-flow">
+          <div class="blog-flow-step" data-i18n="blogVlFlowStep1">Avtals­kontroll</div>
+          <div class="blog-flow-step" data-i18n="blogVlFlowStep2">Mängd­verifiering</div>
+          <div class="blog-flow-step" data-i18n="blogVlFlowStep3">Prisliste­kontroll</div>
+          <div class="blog-flow-step" data-i18n="blogVlFlowStep4">Duplikat­kontroll</div>
+          <div class="blog-flow-step" data-i18n="blogVlFlowStep5">Moms &amp; formalia</div>
+          <div class="blog-flow-step" data-i18n="blogVlFlowStep6">Kontering</div>
+        </div>
+
         <h2 class="security-subtitle" data-i18n="blogVfContractTitle">Steg 1: Avtalskontroll. Stämmer fakturan mot avtalet?</h2>
         <p class="security-text" data-i18n="blogVfContractText1">Det första och viktigaste steget i verifieringsprocessen är att kontrollera att fakturan faktiskt matchar det avtal som gäller med leverantören. Det innebär att verifiera att leverantören har ett giltigt avtal, att de fakturerade tjänsterna eller varorna täcks av avtalet, och att avtalsvillkoren (betalningsvillkor, rabatter, pristillägg) tillämpas korrekt.</p>
         <p class="security-text" data-i18n="blogVfContractText2">I praktiken innebär detta att granskaren behöver tillgång till rätt avtalsdokument. I projektintensiva verksamheter kan det finnas ramavtal, projektspecifika avtal och tilläggsavtal som alla gäller parallellt. Utan en systematisk koppling mellan faktura och avtal är det lätt att missa avvikelser, särskilt när avtalsvillkor ändras under pågående projekt.</p>
 
         <h2 class="security-subtitle" data-i18n="blogVfQtyTitle">Steg 2: Mängdverifiering. Levererades det som faktureras?</h2>
-        <p class="security-text" data-i18n="blogVfQtyText1">Mängdverifiering innebär att jämföra fakturerade kvantiteter mot vad som faktiskt levererats eller utförts. Det kan handla om antal enheter, timmar, ton, kubikmeter eller lass, beroende på bransch och avtalstyp. I branscher som bygg och transport är denna kontroll särskilt komplex, vilket vi beskriver i <a href="bygg-transport-fakturor.html">Vad gör fakturor inom bygg och transport unika?</a>. Källorna för verifiering varierar: följesedlar, tidrapporter, transportdokumentation eller projektrapporter.</p>
+        <p class="security-text" data-i18n="blogVfQtyText1" data-i18n-html>Mängdverifiering innebär att jämföra fakturerade kvantiteter mot vad som faktiskt levererats eller utförts. Det kan handla om antal enheter, timmar, ton, kubikmeter eller lass, beroende på bransch och avtalstyp. I branscher som bygg och transport är denna kontroll särskilt komplex, vilket vi beskriver i <a href="bygg-transport-fakturor.html">Vad gör fakturor inom bygg och transport unika?</a>. Källorna för verifiering varierar: följesedlar, tidrapporter, transportdokumentation eller projektrapporter.</p>
         <p class="security-text" data-i18n="blogVfQtyText2">Det vanligaste felet i mängdverifiering är att fakturerade kvantiteter överstiger levererade mängder. Skillnaden behöver inte vara stor per rad, men multiplicerat med hundratals fakturor per månad ackumuleras kostnaden snabbt. En effektiv verifieringsprocess kräver att rätt underlag finns tillgängligt och att jämförelsen görs systematiskt, inte bara vid stickprov.</p>
 
         <h2 class="security-subtitle" data-i18n="blogVfPriceTitle">Steg 3: Prislistekontroll. Tillämpas rätt pris?</h2>
-        <p class="security-text" data-i18n="blogVfPriceText1">Även om mängden stämmer kan priset vara fel. Prislistekontroll innebär att verifiera att enhetspriset på varje fakturarad matchar det avtalade priset för den specifika artikeln, tjänsten eller leveranstypen. I verksamheter med komplexa avtalsstrukturer kan priserna variera beroende på volymtrösklar, tidpunkt, materialtyp eller leveranszon.</p>
+        <p class="security-text" data-i18n="blogVfPriceText1">Även om mängden stämmer kan priset vara fel. Prislistekontroll innebär att verifiera att enhetspriset på varje fakturarad matchar det avtalade priset för den specifika artikeln, tjänsten eller leveranstypen. I verksamheter med komplexa avtalsstrukturer kan priserna variera beroende på volymtrösklar, tidpunkt, materialtyp eller leveransavstånd.</p>
         <p class="security-text" data-i18n="blogVfPriceText2">En vanlig utmaning är att prislistor uppdateras under avtalets löptid, exempelvis genom indexklausuler, tilläggsavtal eller omförhandlingar. Den som granskar fakturan behöver veta vilken version av prislistan som gäller vid leveranstidpunkten. Utan den informationen är det omöjligt att avgöra om priset är korrekt. I praktiken innebär detta att manuell priskontroll kräver djup avtalskännedom och tillgång till uppdaterad dokumentation.</p>
 
         <h2 class="security-subtitle" data-i18n="blogVfDuplicateTitle">Steg 4: Duplikatkontroll. Har fakturan redan betalats?</h2>
@@ -146,7 +205,7 @@
 
         <h2 class="security-subtitle" data-i18n="blogVfAutoTitle">Automatiserade kontroller: hur teknik förändrar processen</h2>
         <p class="security-text" data-i18n="blogVfAutoText1">Vart och ett av stegen ovan kan utföras manuellt, men det kräver tid, disciplin och tillgång till rätt underlag. I organisationer med stora faktureringsvolymer blir fullständig manuell verifiering ohållbar. Här förändrar automatisering spelplanen.</p>
-        <p class="security-text" data-i18n="blogVfAutoText2">Automatiserad fakturakontroll börjar med att fakturadata extraheras maskinellt, via <a href="ocr-faktura.html">OCR för skannade dokument</a> eller direkt parsing av digitala PDF:er. Den strukturerade datan jämförs sedan mot avtalade priser, leveransdokumentation och historiska mönster. Avvikelser flaggas omedelbart, vilket innebär att granskaren kan fokusera på undantag istället för att gå igenom varje faktura rad för rad.</p>
+        <p class="security-text" data-i18n="blogVfAutoText2" data-i18n-html>Automatiserad fakturakontroll börjar med att fakturadata extraheras maskinellt, via <a href="ocr-faktura.html">OCR för skannade dokument</a> eller direkt parsing av digitala PDF:er. Den strukturerade datan jämförs sedan mot avtalade priser, leveransdokumentation och historiska mönster. Avvikelser flaggas omedelbart, vilket innebär att granskaren kan fokusera på undantag istället för att gå igenom varje faktura rad för rad.</p>
         <p class="security-text" data-i18n="blogVfAutoText3">Automatisering innebär inte att den mänskliga bedömningen försvinner. Det innebär att rutinkontroller som prismatchning, duplikatdetektering och momsvalidering utförs konsekvent och utan de variationer i noggrannhet som präglar manuellt arbete. Granskaren kan lägga sin tid på de fakturor som faktiskt kräver bedömning.</p>
 
         <h2 class="security-subtitle" data-i18n="blogVfMistakesTitle">Vanliga misstag i verifieringsprocessen</h2>
@@ -190,7 +249,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="../index.html" class="logo-link logo-link-footer">
-          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" />
+          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" loading="lazy" />
           <span class="logo-fallback">ÄLGAMO Software AB</span>
         </a>
         <p class="footer-tagline" data-i18n="footerTagline">Attestro. Tidseffektiv fakturakontroll.</p>

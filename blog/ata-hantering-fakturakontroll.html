@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ändringsorder och ÄTA-hantering i fakturakontroll | Attestro</title>
+  <meta name="description" content="ÄTA-arbeten och ändringsorder skapar utmaningar vid fakturakontroll i entreprenadprojekt. Den här artikeln beskriver vanliga problem vid fakturering av ÄTA, hur strukturerade processer minskar risken och hur automatiserad kontroll kan hantera ÄTA-fakturor." />
+  <link rel="canonical" href="https://algamo.se/blog/ata-hantering-fakturakontroll.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://algamo.se/blog/ata-hantering-fakturakontroll.html" />
+  <meta property="og:title" content="Ändringsorder och ÄTA-hantering i fakturakontroll | Attestro" />
+  <meta property="og:description" content="ÄTA-arbeten och ändringsorder skapar utmaningar vid fakturakontroll i entreprenadprojekt. Den här artikeln beskriver vanliga problem vid fakturering av ÄTA, hur strukturerade processer minskar risken och hur automatiserad kontroll kan hantera ÄTA-fakturor." />
+  <meta property="og:image" content="https://algamo.se/assets/logo.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:locale" content="sv_SE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="Älgamo Software AB" />
+  <meta property="article:published_time" content="2026-03-13" />
+  <meta property="article:author" content="Älgamo Software AB" />
+  <meta property="article:section" content="Guide" />
+  <meta property="article:tag" content="fakturahantering" />
+  <meta property="article:tag" content="leverantörsfakturor" />
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="sv" href="https://algamo.se/blog/ata-hantering-fakturakontroll.html" />
+  <link rel="alternate" hreflang="en" href="https://algamo.se/blog/ata-hantering-fakturakontroll.html" />
+  <link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/ata-hantering-fakturakontroll.html" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Ändringsorder och ÄTA-hantering i fakturakontroll | Attestro" />
+  <meta name="twitter:description" content="ÄTA-arbeten och ändringsorder skapar utmaningar vid fakturakontroll i entreprenadprojekt. Den här artikeln beskriver vanliga problem vid fakturering av ÄTA, hur strukturerade processer minskar risken och hur automatiserad kontroll kan hantera ÄTA-fakturor." />
+  <meta name="twitter:image" content="https://algamo.se/assets/logo.png" />
+  <meta name="theme-color" content="#1a2744" />
+  <link rel="icon" type="image/png" href="/assets/logo.png" />
+  <link rel="apple-touch-icon" href="/assets/logo.png" />
+  <link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../styles.css" />
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-cjvUyJcrmPfCQoZQOkSLo.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Hem", "item": "https://algamo.se/" },
+      { "@type": "ListItem", "position": 2, "name": "Blogg", "item": "https://algamo.se/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Ändringsorder och ÄTA-hantering i fakturakontroll" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Ändringsorder och ÄTA-hantering i fakturakontroll",
+    "description": "ÄTA-arbeten och ändringsorder skapar utmaningar vid fakturakontroll i entreprenadprojekt. Den här artikeln beskriver vanliga problem vid fakturering av ÄTA, hur strukturerade processer minskar risken och hur automatiserad kontroll kan hantera ÄTA-fakturor.",
+    "datePublished": "2026-03-13",
+    "author": {
+      "@type": "Organization",
+      "name": "Älgamo Software AB",
+      "url": "https://algamo.se"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Älgamo Software AB",
+      "url": "https://algamo.se",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://algamo.se/assets/logo.png"
+      }
+    },
+    "mainEntityOfPage": "https://algamo.se/blog/ata-hantering-fakturakontroll.html"
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link" data-i18n="skipToContent">Hoppa till innehåll</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo-link">
+        <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img" width="180" height="48" />
+        <span class="logo-fallback">ÄLGAMO Software AB</span>
+      </a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Meny">
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+      </button>
+      <div id="mobile-menu" class="menu-panel">
+        <nav class="nav">
+          <a href="../index.html#process" data-i18n="navSolutions">Funktioner</a>
+          <a href="../about.html" data-i18n="navAbout">Om oss</a>
+          <a href="../pricing.html" data-i18n="navPricing">Priser</a>
+          <a href="../index.html#contact" data-i18n="navContact">Kontakt</a>
+          <a href="../news/" data-i18n="navNews">Nyheter</a>
+          <a href="../blog/" data-i18n="navBlog">Blogg</a>
+        </nav>
+        <div class="lang-switcher" role="group" aria-label="Språk">
+          <button type="button" class="lang-btn" data-lang-btn="sv" aria-pressed="true">Svenska</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">English</button>
+        </div>
+        <a href="../index.html#contact" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="breadcrumb container" aria-label="Breadcrumb">
+    <a href="../index.html" data-i18n="breadcrumbHome">Hem</a>
+    <span aria-hidden="true">&gt;</span>
+    <a href="../blog/" data-i18n="navBlog">Blogg</a>
+    <span aria-hidden="true">&gt;</span>
+    <span data-i18n="blogAtaBreadcrumb">ÄTA-hantering i fakturakontroll</span>
+  </nav>
+
+  <main id="main">
+    <article class="section blog-ata-hantering-fakturakontroll">
+      <div class="container security-content">
+        <h1 class="section-title" data-i18n="blogAtaTitle">Ändringsorder och ÄTA-hantering i fakturakontroll</h1>
+        <time datetime="2026-03-13" class="blog-article-date">2026-03-13</time>
+        <p class="section-lead" data-i18n="blogAtaIntro">I entreprenadprojekt är ändringar och tillägg en oundviklig del av verkligheten. Oförutsedda markförhållanden, ändrade ritningar eller nya krav från beställaren leder till så kallade ÄTA-arbeten (ändringsarbeten, tilläggsarbeten och avgående arbeten). Dessa arbeten genererar separata fakturor med egna priser, villkor och godkännandekedjor. Att kontrollera ÄTA-fakturor mot ursprungliga avtal och godkända ändringsorder är en av de mest krävande uppgifterna inom projektekonomin. Den här artikeln beskriver vad ÄTA-arbeten innebär, varför de skapar problem vid fakturakontroll, vilka fel som är vanligast och hur strukturerade processer och automatiserad kontroll kan minska risken för feldebitering.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogAtaWhatTitle">Vad är ÄTA-arbeten och ändringsorder</h2>
+        <p class="security-text" data-i18n="blogAtaWhatText1">ÄTA är en etablerad förkortning inom svensk entreprenadrätt och står för ändringsarbeten, tilläggsarbeten och avgående arbeten. Ändringsarbeten avser modifieringar av redan avtalade arbeten, till exempel att byta materialval i en konstruktion. Tilläggsarbeten är arbeten som tillkommer utöver det ursprungliga avtalet, exempelvis extra schaktning på grund av oväntade bergförhållanden. Avgående arbeten innebär att arbeten som ingår i avtalet tas bort, vilket ska resultera i en kreditering.</p>
+        <p class="security-text" data-i18n="blogAtaWhatText2">En ändringsorder är det formella dokument som bekräftar att en ÄTA har godkänts av beställaren. Ändringsorden specificerar arbetsomfång, pris, tidsramar och eventuella villkor. I standardavtalen AB 04 och ABT 06 regleras processen för hur ÄTA ska hanteras, men i praktiken varierar rutinerna kraftigt mellan projekt och organisationer.</p>
+        <p class="security-text" data-i18n="blogAtaWhatText3">ÄTA-arbeten är vanliga i bygg- och anläggningsprojekt. Studier visar att ÄTA-kostnader kan utgöra 10 till 30 procent av den totala projektkostnaden. I stora infrastrukturprojekt kan det handla om hundratals enskilda ändringsorder under projektets gång, var och en med egna prisvillkor och godkännandeprocesser.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogAtaWhyTitle">Varför ÄTA-fakturor är svåra att kontrollera</h2>
+        <p class="security-text" data-i18n="blogAtaWhyText1">ÄTA-fakturor skiljer sig från ordinarie entreprenadfakturor på flera avgörande sätt. De grundar sig inte på det ursprungliga kontraktet utan på separata överenskommelser som tillkommit under projektets gång. Det innebär att den som kontrollerar fakturan inte kan förlita sig på en enda avtalsdokument, utan måste ha tillgång till den specifika ändringsorden, eventuella tillhörande bilagor och den godkännandedokumentation som bekräftar att arbetet har beställts.</p>
+        <p class="security-text" data-i18n="blogAtaWhyText2" data-i18n-html>En ytterligare svårighet är att ÄTA-arbeten ofta prissätts på annat sätt än kontrakterade arbeten. Medan huvudavtalet kan ha fasta à-priser baserade på en anbudsprocess, prissätts ÄTA-arbeten ofta på löpande räkning, med timpriser och materialkostnader plus påslag. Det gör att <a href="kontrollera-fakturor-mot-avtal.html">kontrollen mot avtal och prislistor</a> blir mer komplex, eftersom granskaren måste bedöma rimligheten i rapporterade timmar och materialåtgång snarare än att bara jämföra enhetspriser.</p>
+        <p class="security-text" data-i18n="blogAtaWhyText3">Tidsdimensionen skapar också problem. ÄTA-arbeten kan pågå parallellt med ordinarie arbeten under längre perioder. Fakturor kan komma med fördröjning, ibland månader efter att arbetet utförts. Det gör det svårare att verifiera kvantiteter och arbetsinsatser i efterhand, särskilt om personal som var involverad i arbetet har lämnat projektet.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogAtaProblemsTitle">Vanliga problem vid fakturering av ÄTA</h2>
+
+        <h3 class="security-subtitle" style="font-size:1rem" data-i18n="blogAtaProblem1Title">Fakturering utan godkänd ändringsorder</h3>
+        <p class="security-text" data-i18n="blogAtaProblem1Text">Ett av de vanligaste problemen är att leverantörer fakturerar ÄTA-arbeten som aldrig formellt godkänts. I projektets vardag uppstår situationer där arbeten påbörjas efter muntlig överenskommelse mellan platschef och underentreprenör, men den skriftliga ändringsorden formaliseras aldrig. När fakturan sedan kommer finns det ingen dokumentation att verifiera den mot. Det skapar en situation där projektet antingen betalar för arbeten det inte kontrollerat, eller hamnar i tvist med leverantören.</p>
+
+        <h3 class="security-subtitle" style="font-size:1rem" data-i18n="blogAtaProblem2Title">Felaktig prissättning av ÄTA</h3>
+        <p class="security-text" data-i18n="blogAtaProblem2Text" data-i18n-html>ÄTA-arbeten som prissätts på löpande räkning ger utrymme för prisavvikelser. Timpriser kan skilja sig från vad som överenskommits i ändringsorden. Materialpåslag kan vara högre än avtalat. Maskinkostnader kan inkluderas utan att vara specificerade i godkännandet. Eftersom varje ÄTA har sina egna villkor krävs individuell kontroll av varje faktura mot sin specifika ändringsorder, en process som snabbt blir resurskrävande i projekt med många ÄTA. Att <a href="upptacka-feldebitering.html">upptäcka feldebitering</a> i denna typ av fakturor kräver systematisk granskning.</p>
+
+        <h3 class="security-subtitle" style="font-size:1rem" data-i18n="blogAtaProblem3Title">Överlappning mellan ÄTA och ordinarie arbeten</h3>
+        <p class="security-text" data-i18n="blogAtaProblem3Text" data-i18n-html>En subtil men kostsam felkälla är att arbeten som redan ingår i det ursprungliga avtalet faktureras som ÄTA. Det kan ske genom att leverantören tolkar avtalets omfång snävare än beställaren, eller genom att gränsen mellan vad som är inkluderat och vad som är tillägg är genuint otydlig. I <a href="bygg-transport-fakturor.html">bygg- och transportprojekt</a> med komplexa avtalsstrukturer är denna typ av gränsdragningsproblem särskilt vanlig.</p>
+
+        <h3 class="security-subtitle" style="font-size:1rem" data-i18n="blogAtaProblem4Title">Bristande koppling mellan ÄTA-nummer och faktura</h3>
+        <p class="security-text" data-i18n="blogAtaProblem4Text">ÄTA-fakturor bör referera till ett specifikt ÄTA-nummer som motsvarar en godkänd ändringsorder i projektets ÄTA-logg. I praktiken saknas denna referens ibland helt, eller så refererar fakturan till ett ÄTA-nummer som inte finns registrerat. Det gör det svårt för ekonomiavdelningen att koppla fakturan till rätt godkännande och verifiera att beloppet stämmer.</p>
+
+        <h3 class="security-subtitle" style="font-size:1rem" data-i18n="blogAtaProblem5Title">ÄTA som inte krediteras korrekt</h3>
+        <p class="security-text" data-i18n="blogAtaProblem5Text" data-i18n-html>Avgående arbeten, alltså arbeten som tagits bort från det ursprungliga omfånget, ska resultera i en kreditering. I praktiken missar beställarsidan ibland att bevaka att dessa krediteringar faktiskt sker. Leverantören fakturerar det nya tilläggsarbetet men drar inte av det arbete som ersatts. Resultatet är att beställaren betalar för båda. Denna typ av fel är svår att <a href="upptacka-feldebitering.html">upptäcka utan systematisk kontroll</a> av samtliga ÄTA mot ursprungligt avtal.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogAtaProcessTitle">Hur en strukturerad ÄTA-process minskar risken för feldebitering</h2>
+        <p class="security-text" data-i18n="blogAtaProcessText1">Grunden för en fungerande ÄTA-hantering är en formaliserad process som säkerställer att varje ändring dokumenteras, godkänns och registreras innan arbetet påbörjas. En strukturerad process omfattar flera steg:</p>
+        <ul class="security-text blog-benefits-list">
+          <li data-i18n="blogAtaProcessItem1">Registrering av varje ÄTA i en central ÄTA-logg med unikt identifikationsnummer</li>
+          <li data-i18n="blogAtaProcessItem2">Skriftlig ändringsorder med specificerat omfång, pris och tidsram innan arbete påbörjas</li>
+          <li data-i18n="blogAtaProcessItem3">Godkännande från behörig person hos beställaren, dokumenterat och spårbart</li>
+          <li data-i18n="blogAtaProcessItem4">Tydlig avgränsning mot ordinarie avtal, så att det framgår vilka arbeten som är tillägg och vilka som ingår</li>
+          <li data-i18n="blogAtaProcessItem5">Bevakning av avgående arbeten och att tillhörande krediteringar faktiskt sker</li>
+          <li data-i18n="blogAtaProcessItem6">Löpande avstämning av ÄTA-kostnader mot projektbudget</li>
+        </ul>
+        <p class="security-text" data-i18n="blogAtaProcessText2" data-i18n-html>En väl fungerande ÄTA-process gör fakturakontroll avsevärt enklare. När varje ÄTA-faktura kan kopplas till en godkänd ändringsorder med tydliga prisvillkor, reduceras utrymmet för feldebitering. En <a href="checklista-fakturakontroll.html">strukturerad checklista för fakturakontroll</a> bör inkludera specifika kontrollpunkter för ÄTA-fakturor, exempelvis verifiering av ÄTA-nummer, kontroll av godkännandestatus och avstämning av fakturerat belopp mot ändringsorden.</p>
+        <p class="security-text" data-i18n="blogAtaProcessText3" data-i18n-html>Att integrera ÄTA-hantering med den övergripande <a href="fakturakontroll-entreprenadprojekt.html">fakturakontrollprocessen i entreprenadprojekt</a> är avgörande. ÄTA-fakturor bör inte behandlas som undantag utan som en integrerad del av projektets ekonomistyrning. Det inkluderar att ÄTA-kostnader synliggörs i budgetuppföljningen, att <a href="fakturafel-projektbudget-lonsamhet.html">effekten på projektbudget och lönsamhet</a> analyseras löpande och att avvikelser rapporteras på samma sätt som för ordinarie fakturor.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogAtaAutoTitle">Hur automatiserad kontroll kan hantera ÄTA-fakturor</h2>
+        <p class="security-text" data-i18n="blogAtaAutoText1">Manuell kontroll av ÄTA-fakturor är tidskrävande och felbenägen. Varje faktura kräver att granskaren identifierar rätt ändringsorder, verifierar att den är godkänd, kontrollerar priser och kvantiteter mot överenskomna villkor och säkerställer att eventuella avgående arbeten har krediterats. I projekt med hundratals ÄTA blir detta en betydande administrativ börda.</p>
+        <p class="security-text" data-i18n="blogAtaAutoText2">Automatiserad fakturakontroll kan effektivisera denna process genom att strukturera och systematisera de kontrollsteg som annars utförs manuellt. Genom att koppla ÄTA-fakturor till registrerade ändringsorder i projektets ÄTA-logg kan ett system automatiskt verifiera att fakturan refererar till en godkänd ÄTA, att fakturerade priser stämmer med villkoren i ändringsorden och att inga dubbeldebitering sker. Programvarulösningar som Attestro kan automatisera denna typ av kontroll genom att extrahera fakturadata och jämföra den mot avtal, ändringsorder och leveransdokumentation.</p>
+        <p class="security-text" data-i18n="blogAtaAutoText3">Automatisering möjliggör också överblick på en nivå som manuell hantering sällan uppnår. Genom att samla all ÄTA-data kan systemet visa den totala ÄTA-kostnaden i förhållande till projektbudget, identifiera leverantörer med ovanligt höga ÄTA-andelar och flagga mönster som att samma typ av tilläggsarbete återkommer i flera projekt. Den typen av insikter är värdefull för att förbättra framtida avtal och minska behovet av ändringsorder.</p>
+        <p class="security-text" data-i18n="blogAtaAutoText4" data-i18n-html>I kombination med kontroll av <a href="delfakturering-lopande-fakturering.html">delfakturering och löpande fakturering</a> ger automatiserad ÄTA-kontroll en sammanhållen bild av projektets totala fakturaflöde. Det gör det möjligt att säkerställa att summan av delfakturor, ÄTA-fakturor och eventuella krediteringar stämmer med den totala avtalskostnaden inklusive godkända ändringar.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogAtaSummaryTitle">Sammanfattning</h2>
+        <p class="security-text" data-i18n="blogAtaSummaryText">ÄTA-arbeten är en naturlig del av entreprenadprojekt, men de skapar betydande utmaningar för fakturakontroll. Avsaknaden av godkända ändringsorder, felaktig prissättning, överlappning med ordinarie arbeten och utebliven kreditering av avgående arbeten är vanliga felkällor som kan leda till kostsam feldebitering. En strukturerad ÄTA-process med formaliserade godkännanden, en central ÄTA-logg och tydlig koppling mellan ändringsorder och fakturor är grundläggande för att minska risken. Automatiserad fakturakontroll tar detta ett steg längre genom att systematiskt verifiera varje ÄTA-faktura mot godkända ändringsorder och avtalsvillkor. För företag som hanterar stora entreprenadprojekt med många ändringsorder kan den kombinationen av process och teknik vara avgörande för att behålla kontrollen över projektkostnaderna.</p>
+
+        <div class="blog-article-cta">
+          <p data-i18n="blogAtaCta" data-i18n-html>Vill ni förbättra kontrollen av ÄTA-fakturor i era entreprenadprojekt? <a href="../index.html#contact">Boka en demo</a> och se hur automatiserad fakturakontroll kan hjälpa er att verifiera ändringsorder och fånga avvikelser.</p>
+        </div>
+
+        <div class="blog-related">
+          <h2 data-i18n="blogRelatedTitle">Relaterade artiklar</h2>
+          <div class="blog-related-grid">
+            <a href="fakturakontroll-entreprenadprojekt.html" class="blog-related-card">
+              <h3 data-i18n="blogFepTitle">Fakturakontroll i entreprenadprojekt</h3>
+              <p data-i18n="blogFepIntro">Så fungerar systematisk fakturakontroll i komplexa entreprenadprojekt med många leverantörer och avtal.</p>
+            </a>
+            <a href="kontrollera-fakturor-mot-avtal.html" class="blog-related-card">
+              <h3 data-i18n="blogKfaTitle">Kontrollera fakturor mot avtal</h3>
+              <p data-i18n="blogKfaIntro">Steg för steg: hur företag verifierar att fakturor stämmer med avtalade priser och villkor.</p>
+            </a>
+            <a href="upptacka-feldebitering.html" class="blog-related-card">
+              <h3 data-i18n="blogUfTitle">Så upptäcker företag feldebitering i entreprenadfakturor</h3>
+              <p data-i18n="blogUfIntro">Vanliga fakturafel, varningssignaler och hur automatiserad kontroll kan fånga avvikelser.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo-link logo-link-footer">
+          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" loading="lazy" />
+          <span class="logo-fallback">ÄLGAMO Software AB</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footerTagline">Attestro. Tidseffektiv fakturakontroll.</p>
+      </div>
+      <div class="footer-legal">
+        <p data-i18n="footerLegal">Älgamo Software AB, Sverige</p>
+        <p class="footer-support"><span data-i18n="footerSupport">Kundsupport:</span> <a href="mailto:support@algamo.se">support@algamo.se</a></p>
+        <p class="footer-social"><a href="https://www.linkedin.com/company/%C3%A4lgamo-software-ab/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <p class="footer-news"><a href="../news/" data-i18n="footerNews">Nyheter</a></p>
+        <p class="footer-blog"><a href="../blog/" data-i18n="footerBlog">Blogg</a></p>
+        <p class="footer-security"><a href="../security.html" data-i18n="footerSecurity">Säkerhet</a></p>
+        <p class="footer-privacy"><a href="../privacy.html" data-i18n="footerPrivacy">Integritetspolicy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

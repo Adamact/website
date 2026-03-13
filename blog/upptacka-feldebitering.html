@@ -12,11 +12,16 @@
   <meta property="og:title" content="Så upptäcker företag feldebitering i entreprenadfakturor | Attestro" />
   <meta property="og:description" content="Feldebitering i entreprenadfakturor kostar företag stora belopp varje år. Här beskriver vi vanliga fakturafel, varningssignaler och hur automatiserad kontroll kan fånga avvikelser." />
   <meta property="og:image" content="https://algamo.se/assets/logo.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
   <meta property="og:locale" content="sv_SE" />
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:site_name" content="Älgamo Software AB" />
   <meta property="article:published_time" content="2026-03-13" />
   <meta property="article:author" content="Älgamo Software AB" />
+  <meta property="article:section" content="Guide" />
+  <meta property="article:tag" content="fakturahantering" />
+  <meta property="article:tag" content="leverantörsfakturor" />
   <!-- hreflang -->
   <link rel="alternate" hreflang="sv" href="https://algamo.se/blog/upptacka-feldebitering.html" />
   <link rel="alternate" hreflang="en" href="https://algamo.se/blog/upptacka-feldebitering.html" />
@@ -69,7 +74,12 @@
         "url": "https://algamo.se/assets/logo.png"
       }
     },
-    "mainEntityOfPage": "https://algamo.se/blog/upptacka-feldebitering.html"
+    "mainEntityOfPage": "https://algamo.se/blog/upptacka-feldebitering.html",
+    "inLanguage": "sv",
+    "dateModified": "2026-03-13",
+    "articleSection": "Guide",
+    "wordCount": 1100,
+    "keywords": ["feldebitering", "entreprenadfakturor", "fakturakontroll", "avvikelser", "överdebitering"]
   }
   </script>
 </head>
@@ -110,71 +120,89 @@
     <span aria-hidden="true">&gt;</span>
     <a href="../blog/" data-i18n="navBlog">Blogg</a>
     <span aria-hidden="true">&gt;</span>
-    <span>Upptäcka feldebitering</span>
+    <span data-i18n="blogFelDebBreadcrumb">Upptäcka feldebitering</span>
   </nav>
 
   <main id="main">
     <article class="section blog-upptacka-feldebitering">
       <div class="container security-content">
-        <h1 class="section-title">Så upptäcker företag feldebitering i entreprenadfakturor</h1>
+        <h1 class="section-title" data-i18n="blogFelDebTitle">Så upptäcker företag feldebitering i entreprenadfakturor</h1>
         <time datetime="2026-03-13" class="blog-article-date">2026-03-13</time>
-        <p class="section-lead">Feldebitering i entreprenadfakturor är ett av de mest kostsamma och samtidigt svårupptäckta problemen i projektekonomin. Det handlar sällan om uppenbara fel. Oftare rör det sig om marginella prisavvikelser, kvantiteter som inte stämmer med leveransdokumentation, eller tillägg som faller utanför det avtalade omfånget. Sammantaget kan dessa fakturafel ackumuleras till betydande belopp under ett projekts livstid. Den här artikeln beskriver varför feldebitering är vanligt i entreprenad, vilka typer av fel som förekommer, hur företag kan identifiera dem och varför automatiserad fakturakontroll blir allt viktigare för att kontrollera entreprenadfakturor effektivt.</p>
+        <p class="section-lead" data-i18n="blogFelDebLead">Feldebitering i entreprenadfakturor är ett av de mest kostsamma och samtidigt svårupptäckta problemen i projektekonomin. Det handlar sällan om uppenbara fel. Oftare rör det sig om marginella prisavvikelser, kvantiteter som inte stämmer med leveransdokumentation, eller tillägg som faller utanför det avtalade omfånget. Sammantaget kan dessa fakturafel ackumuleras till betydande belopp under ett projekts livstid. Den här artikeln beskriver varför feldebitering är vanligt i entreprenad, vilka typer av fel som förekommer, hur företag kan identifiera dem och varför automatiserad fakturakontroll blir allt viktigare för att kontrollera entreprenadfakturor effektivt.</p>
 
-        <h2 class="security-subtitle">Varför feldebitering är vanligt i entreprenadprojekt</h2>
-        <p class="security-text">Entreprenadprojekt har flera egenskaper som gör fakturor svårare att kontrollera jämfört med andra branscher. Avtalen är komplexa, med hundratals prispositioner, volymtrappor och indexklausuler. Leveranserna är mängdbaserade, vilket innebär att fakturerade kvantiteter måste verifieras mot följesedlar, tidrapporter eller projektrapporter. Dessutom tillkommer ofta <a href="bygg-transport-fakturor.html">ÄTA-arbeten och tillägg</a> som faktureras separat med egna villkor.</p>
-        <p class="security-text">Kombinationen av dessa faktorer skapar ett utrymme där feldebitering, oavsett om den är avsiktlig eller ett resultat av misstag, kan passera obemärkt. En leverantör som använder ett annat ERP-system kan ha en annan version av prislistan inlagd. En underentreprenör kan fakturera för arbeten som redan inkluderas i huvudentreprenörens avtal. Och i slutet av månaden, när ekonomiavdelningen hanterar hundratals fakturor parallellt, är det lätt att avvikelser inte fångas upp.</p>
+        <h2 class="security-subtitle" data-i18n="blogFelDebWhyTitle">Varför feldebitering är vanligt i entreprenadprojekt</h2>
+        <p class="security-text" data-i18n="blogFelDebWhyText1" data-i18n-html>Entreprenadprojekt har flera egenskaper som gör fakturor svårare att kontrollera jämfört med andra branscher. Avtalen är komplexa, med hundratals prispositioner, volymtrappor och indexklausuler. Leveranserna är mängdbaserade, vilket innebär att fakturerade kvantiteter måste verifieras mot följesedlar, tidrapporter eller projektrapporter. Dessutom tillkommer ofta <a href="bygg-transport-fakturor.html">ÄTA-arbeten och tillägg</a> som faktureras separat med egna villkor.</p>
+        <p class="security-text" data-i18n="blogFelDebWhyText2" data-i18n-html>Kombinationen av dessa faktorer skapar ett utrymme där feldebitering, oavsett om den är avsiktlig eller ett resultat av misstag, kan passera obemärkt. En strukturerad process för <a href="kontroll-fakturor-byggprojekt.html">kontroll av leverantörsfakturor i byggprojekt</a> är därför avgörande för att fånga dessa avvikelser. En leverantör som använder ett annat ERP-system kan ha en annan version av prislistan inlagd. En underentreprenör kan fakturera för arbeten som redan inkluderas i huvudentreprenörens avtal. Och i slutet av månaden, när ekonomiavdelningen hanterar hundratals fakturor parallellt, är det lätt att avvikelser inte fångas upp.</p>
 
-        <h2 class="security-subtitle">Typiska felfeldebiteringar i entreprenadfakturor</h2>
+        <h2 class="security-subtitle" data-i18n="blogFelDebTypTitle">Typiska felfeldebiteringar i entreprenadfakturor</h2>
 
-        <h3 class="security-subtitle" style="font-size:1rem">Felaktiga kvantiteter</h3>
-        <p class="security-text">En av de vanligaste formerna av feldebitering i fakturor är att fakturerade kvantiteter inte stämmer med vad som faktiskt levererats. En betongfabrik kan fakturera 48 kubikmeter betong när följesedlarna visar 44. En transportör kan ange 12 lass när det i praktiken var 10. Skillnaden per rad kan vara liten, men vid löpande leveranser under flera månader ackumuleras beloppen snabbt.</p>
-        <p class="security-text">Problemet förstärks av att kvantitetsuppgifter ofta finns i separata system. Följesedlar hanteras av logistik, tidrapporter av projektledningen och fakturor av ekonomiavdelningen. Utan en sammankopplad process saknas den automatiska kontrollen som skulle fånga avvikelsen.</p>
+        <h3 class="security-subtitle" style="font-size:1rem" data-i18n="blogFelDebKvantTitle">Felaktiga kvantiteter</h3>
+        <p class="security-text" data-i18n="blogFelDebKvantText1">En av de vanligaste formerna av feldebitering i fakturor är att fakturerade kvantiteter inte stämmer med vad som faktiskt levererats. En betongfabrik kan fakturera 48 kubikmeter betong när följesedlarna visar 44. En transportör kan ange 12 lass när det i praktiken var 10. Skillnaden per rad kan vara liten, men vid löpande leveranser under flera månader ackumuleras beloppen snabbt.</p>
+        <p class="security-text" data-i18n="blogFelDebKvantText2">Problemet förstärks av att kvantitetsuppgifter ofta finns i separata system. Följesedlar hanteras av logistik, tidrapporter av projektledningen och fakturor av ekonomiavdelningen. Utan en sammankopplad process saknas den automatiska kontrollen som skulle fånga avvikelsen.</p>
 
-        <h3 class="security-subtitle" style="font-size:1rem">Fel prislista eller enhetspris</h3>
-        <p class="security-text">Entreprenadfakturor refererar ofta till specifika à-priser i avtalet. Men avtalen kan innehålla prisändringar kopplade till index, volymrabatter som aktiveras vid vissa trösklar, eller uppdaterade prislistor från tilläggsavtal. Det innebär att det pris som faktureras inte alltid är det pris som gäller.</p>
-        <p class="security-text">Ett konkret exempel: ett markentreprenadprojekt har ett avtalat pris på 185 kr per ton för krossgrus. Efter en indexjustering gäller 190 kr. Leverantören fakturerar 195 kr, möjligen baserat på en gammal standardprislista snarare än det projektspecifika avtalet. Utan systematisk kontroll mot rätt avtalsversion passerar den typen av prisavvikelse obemärkt.</p>
+        <h3 class="security-subtitle" style="font-size:1rem" data-i18n="blogFelDebPrisTitle">Fel prislista eller enhetspris</h3>
+        <p class="security-text" data-i18n="blogFelDebPrisText1">Entreprenadfakturor refererar ofta till specifika à-priser i avtalet. Men avtalen kan innehålla prisändringar kopplade till index, volymrabatter som aktiveras vid vissa trösklar, eller uppdaterade prislistor från tilläggsavtal. Det innebär att det pris som faktureras inte alltid är det pris som gäller.</p>
+        <p class="security-text" data-i18n="blogFelDebPrisText2">Ett konkret exempel: ett markentreprenadprojekt har ett avtalat pris på 185 kr per ton för krossgrus. Efter en indexjustering gäller 190 kr. Leverantören fakturerar 195 kr, möjligen baserat på en gammal standardprislista snarare än det projektspecifika avtalet. Utan systematisk kontroll mot rätt avtalsversion passerar den typen av prisavvikelse obemärkt.</p>
 
-        <h3 class="security-subtitle" style="font-size:1rem">Dubbelfakturering</h3>
-        <p class="security-text">Dubbelfakturering uppstår när samma leverans faktureras mer än en gång. Det kan ske genom att leverantören skickar samma faktura med olika fakturanummer, att en kreditfaktura inte matchas korrekt, eller att samma arbete faktureras av både huvudentreprenör och underentreprenör. I entreprenadprojekt med många leverantörer och parallella leveranser ökar risken avsevärt.</p>
-        <p class="security-text">Branschstudier visar att 0,1 till 0,5 procent av betalda fakturor är dubbletter. Det låter lite, men i ett projekt med 2 000 fakturor per år och en genomsnittsfaktura på 50 000 kr kan det motsvara 100 000 till 500 000 kr i felaktiga betalningar.</p>
+        <h3 class="security-subtitle" style="font-size:1rem" data-i18n="blogFelDebDubbelTitle">Dubbelfakturering</h3>
+        <p class="security-text" data-i18n="blogFelDebDubbelText1">Dubbelfakturering uppstår när samma leverans faktureras mer än en gång. Det kan ske genom att leverantören skickar samma faktura med olika fakturanummer, att en kreditfaktura inte matchas korrekt, eller att samma arbete faktureras av både huvudentreprenör och underentreprenör. I entreprenadprojekt med många leverantörer och parallella leveranser ökar risken avsevärt.</p>
+        <p class="security-text" data-i18n="blogFelDebDubbelText2">Branschstudier visar att 0,1 till 0,5 procent av betalda fakturor är dubbletter. Det låter lite, men i ett projekt med 2 000 fakturor per år och en genomsnittsfaktura på 50 000 kr kan det motsvara 100 000 till 500 000 kr i felaktiga betalningar.</p>
 
-        <h3 class="security-subtitle" style="font-size:1rem">Fakturering utanför avtalat omfång</h3>
-        <p class="security-text">En annan vanlig form av feldebitering är att leverantören fakturerar för arbeten eller material som inte täcks av avtalet. Det kan handla om mobiliseringstillägg som inte är överenskomna, resor som inte ingår, eller tilläggsarbeten som aldrig formellt godkänts. I projekt med muntliga överenskommelser som formaliseras i efterhand är gränsen mellan avtalsenliga och utomavtalsmässiga kostnader ofta otydlig.</p>
+        <h3 class="security-subtitle" style="font-size:1rem" data-i18n="blogFelDebUtanforTitle">Fakturering utanför avtalat omfång</h3>
+        <p class="security-text" data-i18n="blogFelDebUtanforText1">En annan vanlig form av feldebitering är att leverantören fakturerar för arbeten eller material som inte täcks av avtalet. Det kan handla om mobiliseringstillägg som inte är överenskomna, resor som inte ingår, eller tilläggsarbeten som aldrig formellt godkänts. I projekt med muntliga överenskommelser som formaliseras i efterhand är gränsen mellan avtalsenliga och utomavtalsmässiga kostnader ofta otydlig.</p>
 
-        <h2 class="security-subtitle">Varningssignaler att vara uppmärksam på</h2>
-        <p class="security-text">Det finns flera tecken som kan indikera feldebitering i fakturor. Inget av dem bevisar ensamt att något är fel, men de motiverar en närmare granskning:</p>
+        <h2 class="security-subtitle" data-i18n="blogFelDebVarningTitle">Varningssignaler att vara uppmärksam på</h2>
+        <div class="blog-info-box warning">
+          <div class="blog-info-box-title" data-i18n="blogUfInfoBoxTitle">Vanliga varningssignaler vid feldebitering</div>
+          <ul>
+            <li data-i18n="blogUfInfoBoxItem1">Fakturabelopp avviker mer än 5 % från beställning eller avrop</li>
+            <li data-i18n="blogUfInfoBoxItem2">Enhetspriser som inte matchar senaste avtalsversionen</li>
+            <li data-i18n="blogUfInfoBoxItem3">Kvantiteter utan motsvarande leveransdokumentation</li>
+            <li data-i18n="blogUfInfoBoxItem4">Generella beskrivningar som "diverse tillägg" utan specifikation</li>
+            <li data-i18n="blogUfInfoBoxItem5">Liknande belopp och datum men olika fakturanummer</li>
+            <li data-i18n="blogUfInfoBoxItem6">ÄTA-nummer som saknas i projektets ÄTA-logg</li>
+          </ul>
+        </div>
+        <p class="security-text" data-i18n="blogFelDebVarningText1">Det finns flera tecken som kan indikera feldebitering i fakturor. Inget av dem bevisar ensamt att något är fel, men de motiverar en närmare granskning:</p>
         <ul class="security-text blog-benefits-list">
-          <li>Fakturabeloppet avviker mer än 5 procent från förväntat belopp baserat på avrop eller beställning</li>
-          <li>Enhetspriser skiljer sig från den senaste versionen av avtalet eller prislistan</li>
-          <li>Fakturerade kvantiteter saknar motsvarande leveransdokumentation</li>
-          <li>Fakturan innehåller rader med generella beskrivningar som "diverse tillägg" eller "övrigt arbete" utan specifikation</li>
-          <li>Samma leverantör skickar fakturor med liknande belopp och datum men med olika fakturanummer</li>
-          <li>Fakturan refererar till ett ÄTA-nummer som inte finns registrerat i projektets ÄTA-logg</li>
+          <li data-i18n="blogFelDebVarningLi1">Fakturabeloppet avviker mer än 5 procent från förväntat belopp baserat på avrop eller beställning</li>
+          <li data-i18n="blogFelDebVarningLi2">Enhetspriser skiljer sig från den senaste versionen av avtalet eller prislistan</li>
+          <li data-i18n="blogFelDebVarningLi3">Fakturerade kvantiteter saknar motsvarande leveransdokumentation</li>
+          <li data-i18n="blogFelDebVarningLi4">Fakturan innehåller rader med generella beskrivningar som "diverse tillägg" eller "övrigt arbete" utan specifikation</li>
+          <li data-i18n="blogFelDebVarningLi5">Samma leverantör skickar fakturor med liknande belopp och datum men med olika fakturanummer</li>
+          <li data-i18n="blogFelDebVarningLi6">Fakturan refererar till ett ÄTA-nummer som inte finns registrerat i projektets ÄTA-logg</li>
         </ul>
 
-        <h2 class="security-subtitle">Hur företag upptäcker fakturafel idag</h2>
-        <p class="security-text">I de flesta byggföretag och infrastrukturbolag vilar ansvaret för att kontrollera entreprenadfakturor på en kombination av ekonomiavdelningen och projektledningen. Ekonomiavdelningen hanterar registrering och formell granskning, medan projektledaren attesterar och bedömer om fakturan stämmer med utfört arbete. I praktiken innebär det att projektledaren jämför fakturan mot sin egen uppfattning om vad som levererats, snarare än mot formell dokumentation.</p>
-        <p class="security-text">Stickprovskontroll är vanligt. Företag som hanterar stora volymer har sällan resurser att granska varje fakturarad mot avtal och leveransdokumentation. Istället väljer man ut enskilda fakturor för fördjupad kontroll. Problemet med den metoden är att den är statistiskt otillförlitlig. De fakturor som granskas kan vara korrekta, medan felen finns i de som inte kontrolleras.</p>
+        <h2 class="security-subtitle" data-i18n="blogFelDebHurTitle">Hur företag upptäcker fakturafel idag</h2>
+        <ol class="blog-checklist">
+          <li data-i18n="blogUfChecklist1">Kontrollera enhetspriser mot aktuellt avtal och prisbilagor</li>
+          <li data-i18n="blogUfChecklist2">Matcha fakturerade kvantiteter mot följesedlar och tidrapporter</li>
+          <li data-i18n="blogUfChecklist3">Jämför fakturanummer, belopp och datum mot tidigare fakturor</li>
+          <li data-i18n="blogUfChecklist4">Verifiera att alla fakturarader ryms inom avtalat omfång</li>
+          <li data-i18n="blogUfChecklist5">Granska ÄTA-poster mot dokumenterade och godkända beställningar</li>
+        </ol>
+        <p class="security-text" data-i18n="blogFelDebHurText1">I de flesta byggföretag och infrastrukturbolag vilar ansvaret för att kontrollera entreprenadfakturor på en kombination av ekonomiavdelningen och projektledningen. Ekonomiavdelningen hanterar registrering och formell granskning, medan projektledaren attesterar och bedömer om fakturan stämmer med utfört arbete. I praktiken innebär det att projektledaren jämför fakturan mot sin egen uppfattning om vad som levererats, snarare än mot formell dokumentation.</p>
+        <p class="security-text" data-i18n="blogFelDebHurText2">Stickprovskontroll är vanligt. Företag som hanterar stora volymer har sällan resurser att granska varje fakturarad mot avtal och leveransdokumentation. Istället väljer man ut enskilda fakturor för fördjupad kontroll. Problemet med den metoden är att den är statistiskt otillförlitlig. De fakturor som granskas kan vara korrekta, medan felen finns i de som inte kontrolleras.</p>
 
-        <h2 class="security-subtitle">Varför manuell kontroll inte räcker</h2>
-        <p class="security-text">Manuell granskning av entreprenadfakturor har flera strukturella begränsningar. Den kräver att granskaren har tillgång till rätt avtal, rätt version av prislistan och aktuell leveransdokumentation. I praktiken förvaras dessa dokument ofta i olika system: avtalet i ett dokumenthanteringssystem, prislistor i projektmappar och följesedlar i logistiksystemet. Att samla rätt underlag för en enskild faktura kan ta lika lång tid som själva granskningen.</p>
-        <p class="security-text">Dessutom är <a href="vanliga-utmaningar-fakturahantering.html">manuell granskning känslig för tidspress och arbetsbelastning</a>. Under månadsslut, bokslut eller projektavslut prioriteras ofta att fakturor betalas i tid framför att de granskas noggrant. Det skapar ett mönster där feldebitering är som svårast att upptäcka precis när den ekonomiska risken är som störst.</p>
-        <p class="security-text">En tredje begränsning är avsaknaden av mönsterigenkänning. En person som granskar en enskild faktura ser inte att samma leverantör systematiskt fakturerar 3 procent över avtalat pris, eller att en viss typ av tillägg har ökat stadigt under de senaste sex månaderna. Den typen av avvikelser kräver analys av historisk data, något som manuella processer sällan möjliggör.</p>
+        <h2 class="security-subtitle" data-i18n="blogFelDebManuellTitle">Varför manuell kontroll inte räcker</h2>
+        <p class="security-text" data-i18n="blogFelDebManuellText1">Manuell granskning av entreprenadfakturor har flera strukturella begränsningar. Den kräver att granskaren har tillgång till rätt avtal, rätt version av prislistan och aktuell leveransdokumentation. I praktiken förvaras dessa dokument ofta i olika system: avtalet i ett dokumenthanteringssystem, prislistor i projektmappar och följesedlar i logistiksystemet. Att samla rätt underlag för en enskild faktura kan ta lika lång tid som själva granskningen.</p>
+        <p class="security-text" data-i18n="blogFelDebManuellText2" data-i18n-html>Dessutom är <a href="vanliga-utmaningar-fakturahantering.html">manuell granskning känslig för tidspress och arbetsbelastning</a>. Under månadsslut, bokslut eller projektavslut prioriteras ofta att fakturor betalas i tid framför att de granskas noggrant. Det skapar ett mönster där feldebitering är som svårast att upptäcka precis när den ekonomiska risken är som störst.</p>
+        <p class="security-text" data-i18n="blogFelDebManuellText3">En tredje begränsning är avsaknaden av mönsterigenkänning. En person som granskar en enskild faktura ser inte att samma leverantör systematiskt fakturerar 3 procent över avtalat pris, eller att en viss typ av tillägg har ökat stadigt under de senaste sex månaderna. Den typen av avvikelser kräver analys av historisk data, något som manuella processer sällan möjliggör.</p>
 
-        <h2 class="security-subtitle">Hur automatiserad kontroll kan fånga avvikelser</h2>
-        <p class="security-text">Automatiserad fakturakontroll adresserar de begränsningar som gör manuell granskning otillräcklig. Processen börjar med att fakturans innehåll extraheras med <a href="ocr-faktura.html">OCR-teknik</a> och omvandlas till strukturerad data. Varje fakturarad, inklusive artikelbeskrivning, kvantitet, enhetspris och totalbelopp, identifieras och normaliseras.</p>
-        <p class="security-text">Den strukturerade datan jämförs sedan automatiskt mot avtalsdata. Systemet kontrollerar att enhetspriset matchar det avtalade priset för den aktuella artikeln, att kvantiteten ligger inom rimliga gränser baserat på beställning eller leveransdokumentation, och att fakturan inte är en dubblett av en tidigare betald faktura. Avvikelser flaggas med information om vad som förväntades och vad som faktiskt fakturerades.</p>
-        <p class="security-text">Automatisering möjliggör också de mönsteranalyser som manuell granskning saknar. Genom att jämföra fakturadata över tid kan systemet identifiera trender: en leverantör vars priser gradvis avviker från avtalet, en projektpost där kostnaderna konsekvent överstiger budget, eller en fakturaserie med ovanligt många tilläggsrader. Den typen av insikter kräver tillgång till historisk data och systematisk jämförelse, något som är praktiskt omöjligt vid manuell hantering.</p>
+        <h2 class="security-subtitle" data-i18n="blogFelDebAutoTitle">Hur automatiserad kontroll kan fånga avvikelser</h2>
+        <p class="security-text" data-i18n="blogFelDebAutoText1" data-i18n-html>Automatiserad fakturakontroll adresserar de begränsningar som gör manuell granskning otillräcklig. Processen börjar med att fakturans innehåll extraheras med <a href="ocr-faktura.html">OCR-teknik</a> och omvandlas till strukturerad data. Varje fakturarad, inklusive artikelbeskrivning, kvantitet, enhetspris och totalbelopp, identifieras och normaliseras.</p>
+        <p class="security-text" data-i18n="blogFelDebAutoText2">Den strukturerade datan jämförs sedan automatiskt mot avtalsdata. Systemet kontrollerar att enhetspriset matchar det avtalade priset för den aktuella artikeln, att kvantiteten ligger inom rimliga gränser baserat på beställning eller leveransdokumentation, och att fakturan inte är en dubblett av en tidigare betald faktura. Avvikelser flaggas med information om vad som förväntades och vad som faktiskt fakturerades.</p>
+        <p class="security-text" data-i18n="blogFelDebAutoText3">Automatisering möjliggör också de mönsteranalyser som manuell granskning saknar. Genom att jämföra fakturadata över tid kan systemet identifiera trender: en leverantör vars priser gradvis avviker från avtalet, en projektpost där kostnaderna konsekvent överstiger budget, eller en fakturaserie med ovanligt många tilläggsrader. Den typen av insikter kräver tillgång till historisk data och systematisk jämförelse, något som är praktiskt omöjligt vid manuell hantering.</p>
 
-        <h2 class="security-subtitle">Praktiskt exempel: feldebitering i ett infrastrukturprojekt</h2>
-        <p class="security-text">Ett infrastrukturprojekt hanterar under ett år cirka 1 200 leverantörsfakturor med ett sammanlagt värde på 45 miljoner kronor. Vid en genomlysning identifieras tre typer av återkommande fakturafel. Kvantitetsavvikelser i transportfakturor, där fakturerade lass överstiger levererade med i snitt 4 procent. Prisavvikelser i materialfakturor, där två leverantörer tillämpar en äldre prislista som ligger 2 till 3 procent över den aktuella. Samt två fall av dubbelfakturering, där samma underentreprenör fakturerat identiskt arbete med olika fakturanummer och en månads mellanrum.</p>
-        <p class="security-text">Den totala kostnaden för dessa fakturafel beräknas till ungefär 600 000 kr under året. Ingen enskild avvikelse var tillräckligt stor för att väcka uppmärksamhet vid manuell granskning. Det var först vid systematisk kontroll av alla fakturor mot avtal och leveransdokumentation som mönstret blev synligt.</p>
+        <h2 class="security-subtitle" data-i18n="blogFelDebExTitle">Praktiskt exempel: feldebitering i ett infrastrukturprojekt</h2>
+        <p class="security-text" data-i18n="blogFelDebExText1">Ett infrastrukturprojekt hanterar under ett år cirka 1 200 leverantörsfakturor med ett sammanlagt värde på 45 miljoner kronor. Vid en genomlysning identifieras tre typer av återkommande fakturafel. Kvantitetsavvikelser i transportfakturor, där fakturerade lass överstiger levererade med i snitt 4 procent. Prisavvikelser i materialfakturor, där två leverantörer tillämpar en äldre prislista som ligger 2 till 3 procent över den aktuella. Samt två fall av dubbelfakturering, där samma underentreprenör fakturerat identiskt arbete med olika fakturanummer och en månads mellanrum.</p>
+        <p class="security-text" data-i18n="blogFelDebExText2">Den totala kostnaden för dessa fakturafel beräknas till ungefär 600 000 kr under året. Ingen enskild avvikelse var tillräckligt stor för att väcka uppmärksamhet vid manuell granskning. Det var först vid systematisk kontroll av alla fakturor mot avtal och leveransdokumentation som mönstret blev synligt.</p>
 
-        <h2 class="security-subtitle">Sammanfattning</h2>
-        <p class="security-text">Feldebitering i entreprenadfakturor beror på en kombination av komplexa avtalsstrukturer, mängdbaserad prissättning, parallella leverantörer och höga fakturavolymer. De vanligaste felen, felaktiga kvantiteter, fel prislista, dubbelfakturering och fakturering utanför avtalat omfång, är var för sig svåra att upptäcka vid manuell granskning. Det är först vid systematisk, automatiserad kontroll mot avtal och leveransdokumentation som dessa avvikelser kan identifieras konsekvent. Programvarulösningar som Attestro är byggda för att hantera just denna typ av fakturakontroll, med automatisk <a href="verifiera-leverantorsfakturor.html">verifiering</a> av priser, kvantiteter och avtalstillhörighet.</p>
+        <h2 class="security-subtitle" data-i18n="blogFelDebSummaryTitle">Sammanfattning</h2>
+        <p class="security-text" data-i18n="blogFelDebSummaryText" data-i18n-html>Feldebitering i entreprenadfakturor beror på en kombination av komplexa avtalsstrukturer, mängdbaserad prissättning, parallella leverantörer och höga fakturavolymer. De vanligaste felen, felaktiga kvantiteter, fel prislista, dubbelfakturering och fakturering utanför avtalat omfång, är var för sig svåra att upptäcka vid manuell granskning. Det är först vid systematisk, automatiserad kontroll mot avtal och leveransdokumentation som dessa avvikelser kan identifieras konsekvent. Programvarulösningar som Attestro är byggda för att hantera just denna typ av fakturakontroll, med automatisk <a href="verifiera-leverantorsfakturor.html">verifiering</a> av priser, kvantiteter och avtalstillhörighet.</p>
 
         <div class="blog-article-cta">
-          <p data-i18n-html>Vill ni se hur automatiserad fakturakontroll kan hjälpa er att fånga feldebitering innan den blir kostsam? <a href="../index.html#contact">Boka en demo</a> och se hur det fungerar i praktiken.</p>
+          <p data-i18n="blogFelDebCta" data-i18n-html>Vill ni se hur automatiserad fakturakontroll kan hjälpa er att fånga feldebitering innan den blir kostsam? <a href="../index.html#contact">Boka en demo</a> och se hur det fungerar i praktiken.</p>
         </div>
 
         <div class="blog-related">
@@ -188,9 +216,9 @@
               <h3 data-i18n="blogVfTitle">Hur man verifierar leverantörsfakturor effektivt</h3>
               <p data-i18n="blogVfIntro">Systematisk avtalskontroll, mängdverifiering och prislistekontroll steg för steg.</p>
             </a>
-            <a href="vanliga-utmaningar-fakturahantering.html" class="blog-related-card">
-              <h3 data-i18n="bpRiskTitle">Utmaningar, fel och risker vid fakturahantering</h3>
-              <p data-i18n="bpRiskIntro">Inkonsekvent format, felaktiga priser och tidspress gör fakturakontroll riskabel.</p>
+            <a href="kontroll-fakturor-byggprojekt.html" class="blog-related-card">
+              <h3 data-i18n="blogKfbTitle">Kontroll av leverantörsfakturor i byggprojekt</h3>
+              <p data-i18n="blogKfbIntro">Systematisk kontroll av leverantörsfakturor i bygg: avtal, mängder, priser och ÄTA-arbeten.</p>
             </a>
           </div>
         </div>
@@ -202,7 +230,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="../index.html" class="logo-link logo-link-footer">
-          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" />
+          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" loading="lazy" />
           <span class="logo-fallback">ÄLGAMO Software AB</span>
         </a>
         <p class="footer-tagline" data-i18n="footerTagline">Attestro. Tidseffektiv fakturakontroll.</p>

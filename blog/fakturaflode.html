@@ -12,11 +12,16 @@
   <meta property="og:title" content="Så ser ett typiskt fakturaflöde ut i ett företag | Attestro" />
   <meta property="og:description" content="En genomgång av hela fakturaflödet, från mottagning till arkivering. Förstå varje steg i fakturaprocessen och var ineffektivitet uppstår." />
   <meta property="og:image" content="https://algamo.se/assets/logo.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
   <meta property="og:locale" content="sv_SE" />
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:site_name" content="Älgamo Software AB" />
   <meta property="article:published_time" content="2026-03-13" />
   <meta property="article:author" content="Älgamo Software AB" />
+  <meta property="article:section" content="Guide" />
+  <meta property="article:tag" content="fakturahantering" />
+  <meta property="article:tag" content="leverantörsfakturor" />
   <!-- hreflang -->
   <link rel="alternate" hreflang="sv" href="https://algamo.se/blog/fakturaflode.html" />
   <link rel="alternate" hreflang="en" href="https://algamo.se/blog/fakturaflode.html" />
@@ -69,7 +74,57 @@
         "url": "https://algamo.se/assets/logo.png"
       }
     },
-    "mainEntityOfPage": "https://algamo.se/blog/fakturaflode.html"
+    "mainEntityOfPage": "https://algamo.se/blog/fakturaflode.html",
+    "inLanguage": "sv",
+    "dateModified": "2026-03-13",
+    "articleSection": "Guide",
+    "wordCount": 1100,
+    "keywords": ["fakturaflöde", "fakturakontroll", "attestprocess", "leverantörsfakturor", "fakturahantering"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Typiskt fakturaflöde i ett företag",
+    "description": "De sju stegen i ett typiskt fakturaflöde, från mottagning av leverantörsfakturan till arkivering.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Mottagning av fakturan",
+        "text": "Fakturor tas emot via e-post, post, EDI, e-faktura eller leverantörsportaler. Fakturorna sorteras och vidarebefordras till en central hanteringspunkt."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Registrering",
+        "text": "Grunddata från fakturan, som leverantörsnamn, fakturanummer, belopp, moms och förfallodatum, matas in i ekonomisystemet. Detta kan ske manuellt eller med stöd av OCR-teknik."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Verifiering",
+        "text": "Fakturans innehåll granskas mot avtal, beställningar och följesedlar. Kontrollera att leverantören finns registrerad, att priset matchar avtalet, att mängderna stämmer och att momsen är korrekt."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Godkännande (attestering)",
+        "text": "En eller flera behöriga personer bekräftar att fakturan är korrekt och godkänd för betalning, enligt organisationens attestordning baserad på kostnadsställe, projektansvar eller beloppsgränser."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Bokföring",
+        "text": "Fakturan bokförs i redovisningssystemet. Kostnaden fördelas på rätt konton, kostnadsställen och eventuella projekt."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Betalning",
+        "text": "Betalning sker via bankgiro, plusgiro eller direktöverföring enligt fakturans betalningsvillkor, ofta i samlade betalningskörningar."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Arkivering",
+        "text": "Fakturan och relevant underlag arkiveras. Enligt svensk bokföringslag ska räkenskapsinformation bevaras i minst sju år."
+      }
+    ]
   }
   </script>
 </head>
@@ -118,7 +173,17 @@
       <div class="container security-content">
         <h1 class="section-title" data-i18n="blogFfTitle">Så ser ett typiskt fakturaflöde ut i ett företag</h1>
         <time datetime="2026-03-13" class="blog-article-date">2026-03-13</time>
-        <p class="section-lead" data-i18n="blogFfLead">Varje leverantörsfaktura som kommer in till ett företag passerar genom en kedja av steg innan den betalas och arkiveras. Denna fakturaprocess, ofta kallad fakturaflöde, omfattar mottagning, registrering, verifiering, godkännande, bokföring, betalning och arkivering. Trots att processen i grunden är densamma i de flesta organisationer varierar effektiviteten kraftigt. Många företag spenderar betydligt mer tid och resurser på hantering av leverantörsfakturor än nödvändigt, ofta utan att veta var i flödet de största flaskhalsarna finns. Här går vi igenom varje steg i detalj och pekar på var ineffektivitet vanligtvis uppstår.</p>
+        <p class="section-lead" data-i18n="blogFfLead" data-i18n-html>Varje leverantörsfaktura som kommer in till ett företag passerar genom en kedja av steg innan den betalas och arkiveras. En bredare introduktion till ämnet finns i artikeln om <a href="what-is-invoice-processing.html">vad fakturahantering innebär</a>. Denna fakturaprocess, ofta kallad fakturaflöde, omfattar mottagning, registrering, verifiering, godkännande, bokföring, betalning och arkivering. Trots att processen i grunden är densamma i de flesta organisationer varierar effektiviteten kraftigt. Många företag spenderar betydligt mer tid och resurser på hantering av leverantörsfakturor än nödvändigt, ofta utan att veta var i flödet de största flaskhalsarna finns. Här går vi igenom varje steg i detalj och pekar på var ineffektivitet vanligtvis uppstår.</p>
+
+        <div class="blog-flow">
+          <div class="blog-flow-step" data-i18n="blogFfFlowStep1">Mottagning</div>
+          <div class="blog-flow-step" data-i18n="blogFfFlowStep2">Registrering</div>
+          <div class="blog-flow-step" data-i18n="blogFfFlowStep3">Verifiering</div>
+          <div class="blog-flow-step" data-i18n="blogFfFlowStep4">Godkännande</div>
+          <div class="blog-flow-step" data-i18n="blogFfFlowStep5">Bokföring</div>
+          <div class="blog-flow-step" data-i18n="blogFfFlowStep6">Betalning</div>
+          <div class="blog-flow-step" data-i18n="blogFfFlowStep7">Arkivering</div>
+        </div>
 
         <h2 class="security-subtitle" data-i18n="blogFfReceiveTitle">Steg 1: Mottagning av fakturan</h2>
         <p class="security-text" data-i18n="blogFfReceiveText1">Fakturaflödet börjar när en leverantörsfaktura når företaget. Fakturor kan komma in via flera kanaler: e-post, post, EDI (elektroniskt datautbyte), e-faktura eller leverantörsportaler. I många företag saknas en centraliserad inleveranspunkt, vilket innebär att fakturor hamnar hos enskilda medarbetare, i delade brevlådor eller på skrivbord runt om i organisationen.</p>
@@ -126,11 +191,11 @@
 
         <h2 class="security-subtitle" data-i18n="blogFfRegTitle">Steg 2: Registrering</h2>
         <p class="security-text" data-i18n="blogFfRegText1">När fakturan har mottagits registreras den i företagets ekonomisystem eller fakturahanteringssystem. Registrering innebär att grunddata från fakturan, såsom leverantörsnamn, fakturanummer, belopp, moms, förfallodatum och fakturadatum, matas in i systemet. I mer mogna processer sker detta med stöd av OCR-teknik som automatiskt läser av fakturan och föreslår värden. I andra fall görs registreringen helt manuellt.</p>
-        <p class="security-text" data-i18n="blogFfRegText2">Manuell registrering är tidskrävande och felbenägen. Att skriva av siffror från en PDF eller ett skannat dokument leder till inmatningsfel, felaktiga belopp och felkopplade leverantörsreferenser. Även med OCR-stöd krävs ofta manuell korrigering, särskilt för fakturor med avvikande layout eller dålig bildkvalitet. Mer om hur OCR och datautvinning fungerar i praktiken finns i artikeln <a href="ocr-faktura.html">Från OCR till strukturerad data</a>.</p>
+        <p class="security-text" data-i18n="blogFfRegText2" data-i18n-html>Manuell registrering är tidskrävande och felbenägen. Att skriva av siffror från en PDF eller ett skannat dokument leder till inmatningsfel, felaktiga belopp och felkopplade leverantörsreferenser. Även med OCR-stöd krävs ofta manuell korrigering, särskilt för fakturor med avvikande layout eller dålig bildkvalitet. Mer om hur OCR och datautvinning fungerar i praktiken finns i artikeln <a href="ocr-faktura.html">Från OCR till strukturerad data</a>.</p>
 
         <h2 class="security-subtitle" data-i18n="blogFfVerifyTitle">Steg 3: Verifiering</h2>
         <p class="security-text" data-i18n="blogFfVerifyText1">Verifiering, eller fakturakontroll, är steget där fakturans innehåll granskas mot underliggande dokumentation. Syftet är att säkerställa att det som faktureras faktiskt har levererats och att priser, mängder och villkor stämmer överens med avtal, beställningar eller följesedlar. I en typisk fakturaprocess kontrolleras att leverantören finns registrerad, att priset per enhet matchar avtalet, att fakturerade mängder stämmer mot levererade mängder och att momsen är korrekt beräknad.</p>
-        <p class="security-text" data-i18n="blogFfVerifyText2">Verifieringssteget är ofta det mest tidskrävande i hela fakturaflödet. Det beror på att kontrollerna kräver tillgång till information som kan finnas utspridd i olika system: avtalsdatabaser, inköpssystem, projekthanteringsverktyg och fysisk dokumentation som följesedlar. När denna information inte är lättillgänglig, eller när verifieringen görs av en person som saknar detaljkunskap om avtalet, förlängs hanteringstiden avsevärt. Det är också i detta steg som <a href="vanliga-utmaningar-fakturahantering.html">de vanligaste felen</a> passerar obemärkta, såsom felaktiga enhetspriser, dubbelfakturering eller mängdavvikelser.</p>
+        <p class="security-text" data-i18n="blogFfVerifyText2" data-i18n-html>Verifieringssteget är ofta det mest tidskrävande i hela fakturaflödet. Det beror på att kontrollerna kräver tillgång till information som kan finnas utspridd i olika system: avtalsdatabaser, inköpssystem, projekthanteringsverktyg och fysisk dokumentation som följesedlar. När denna information inte är lättillgänglig, eller när verifieringen görs av en person som saknar detaljkunskap om avtalet, förlängs hanteringstiden avsevärt. Det är också i detta steg som <a href="vanliga-utmaningar-fakturahantering.html">de vanligaste felen</a> passerar obemärkta, såsom felaktiga enhetspriser, dubbelfakturering eller mängdavvikelser.</p>
 
         <h2 class="security-subtitle" data-i18n="blogFfApproveTitle">Steg 4: Godkännande (attestering)</h2>
         <p class="security-text" data-i18n="blogFfApproveText1">När fakturan har verifierats skickas den vidare för godkännande. Attestering innebär att en eller flera behöriga personer bekräftar att fakturan är korrekt och godkänd för betalning. I de flesta organisationer finns en attestordning som reglerar vem som får godkänna vilka belopp, ofta baserat på kostnadsställe, projektansvar eller beloppsgränser.</p>
@@ -184,7 +249,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="../index.html" class="logo-link logo-link-footer">
-          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" />
+          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" loading="lazy" />
           <span class="logo-fallback">ÄLGAMO Software AB</span>
         </a>
         <p class="footer-tagline" data-i18n="footerTagline">Attestro. Tidseffektiv fakturakontroll.</p>

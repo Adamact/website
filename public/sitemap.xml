@@ -11,7 +11,7 @@
   </url>
   <url>
     <loc>https://algamo.se/pricing.html</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/pricing.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/pricing.html" />
@@ -40,6 +40,14 @@
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/privacy.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/privacy.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/privacy.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/ordlista-fakturahantering.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/ordlista-fakturahantering.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/ordlista-fakturahantering.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/ordlista-fakturahantering.html" />
   </url>
   <url>
     <loc>https://algamo.se/blog/</loc>
@@ -184,5 +192,189 @@
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/roi-fakturaautomation.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/roi-fakturaautomation.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/roi-fakturaautomation.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/minska-manuellt-arbete-fakturahantering.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/minska-manuellt-arbete-fakturahantering.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/minska-manuellt-arbete-fakturahantering.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/minska-manuellt-arbete-fakturahantering.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/overdebitering-leverantorer.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/overdebitering-leverantorer.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/overdebitering-leverantorer.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/overdebitering-leverantorer.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/felaktig-leverantorsfaktura.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/felaktig-leverantorsfaktura.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/felaktig-leverantorsfaktura.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/felaktig-leverantorsfaktura.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/granska-fakturor-byggprojekt.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/granska-fakturor-byggprojekt.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/granska-fakturor-byggprojekt.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/granska-fakturor-byggprojekt.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/vanliga-fel-leverantorsfakturor.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/vanliga-fel-leverantorsfakturor.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/vanliga-fel-leverantorsfakturor.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/vanliga-fel-leverantorsfakturor.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/transportavtal-prislistor-fakturor.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/transportavtal-prislistor-fakturor.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/transportavtal-prislistor-fakturor.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/transportavtal-prislistor-fakturor.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/kontrollera-fakturor-mot-avtal.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/kontrollera-fakturor-mot-avtal.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/kontrollera-fakturor-mot-avtal.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/kontrollera-fakturor-mot-avtal.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/fakturakontroll-entreprenadprojekt.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/fakturakontroll-entreprenadprojekt.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/fakturakontroll-entreprenadprojekt.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/fakturakontroll-entreprenadprojekt.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/digital-dokumentanalys-fakturahantering.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/digital-dokumentanalys-fakturahantering.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/digital-document-analysis-invoice-processing.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/digital-dokumentanalys-fakturahantering.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/ata-hantering-fakturakontroll.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/ata-hantering-fakturakontroll.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/ata-hantering-fakturakontroll.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/ata-hantering-fakturakontroll.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/fakturafel-projektbudget-lonsamhet.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/fakturafel-projektbudget-lonsamhet.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/fakturafel-projektbudget-lonsamhet.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/fakturafel-projektbudget-lonsamhet.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/betalningsfloden-kassaflodeseffekt.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/betalningsfloden-kassaflodeseffekt.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/betalningsfloden-kassaflodeseffekt.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/betalningsfloden-kassaflodeseffekt.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/indexklausuler-prisjusteringar-avtal.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/indexklausuler-prisjusteringar-avtal.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/indexklausuler-prisjusteringar-avtal.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/indexklausuler-prisjusteringar-avtal.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/leverantorsanalys-fakturadata.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/leverantorsanalys-fakturadata.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/leverantorsanalys-fakturadata.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/leverantorsanalys-fakturadata.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/erp-integration-fakturahantering.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/erp-integration-fakturahantering.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/erp-integration-fakturahantering.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/erp-integration-fakturahantering.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/utlandsk-valuta-fakturering.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/utlandsk-valuta-fakturering.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/utlandsk-valuta-fakturering.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/utlandsk-valuta-fakturering.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/kreditnotor-fakturajusteringar.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/kreditnotor-fakturajusteringar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/kreditnotor-fakturajusteringar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/kreditnotor-fakturajusteringar.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/leverantorsregistrering-stamdata.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/leverantorsregistrering-stamdata.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/leverantorsregistrering-stamdata.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/leverantorsregistrering-stamdata.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/delfakturering-lopande-fakturering.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/delfakturering-lopande-fakturering.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/delfakturering-lopande-fakturering.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/delfakturering-lopande-fakturering.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/digital-document-analysis-invoice-processing.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/digital-document-analysis-invoice-processing.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/digital-dokumentanalys-fakturahantering.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/digital-dokumentanalys-fakturahantering.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/intern-kontroll-leverantorsfakturor.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/intern-kontroll-leverantorsfakturor.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/intern-kontroll-leverantorsfakturor.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/intern-kontroll-leverantorsfakturor.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/upptacka-fakturabedrageri.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/upptacka-fakturabedrageri.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/upptacka-fakturabedrageri.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/upptacka-fakturabedrageri.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/infora-automatiserad-fakturakontroll.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/infora-automatiserad-fakturakontroll.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/infora-automatiserad-fakturakontroll.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/infora-automatiserad-fakturakontroll.html" />
   </url>
 </urlset>

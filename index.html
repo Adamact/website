@@ -13,6 +13,8 @@
   <meta property="og:description" content="Attestro gör fakturor till strukturerad data (t.ex. Excel), med logikvalidering, felflaggor och automatisk kontroll mot avtal och projekt. Från Älgamo Software AB." />
   <!-- TODO: Replace og:image with a proper OG image (1200x630) when design is ready -->
   <meta property="og:image" content="https://algamo.se/assets/logo.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
   <meta property="og:locale" content="sv_SE" />
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:site_name" content="Älgamo Software AB" />
@@ -90,8 +92,8 @@
     "offers": {
       "@type": "AggregateOffer",
       "priceCurrency": "SEK",
-      "lowPrice": "1590",
-      "highPrice": "4990",
+      "lowPrice": "2490",
+      "highPrice": "6990",
       "offerCount": "3",
       "availability": "https://schema.org/OnlineOnly"
     },
@@ -203,89 +205,174 @@
     <section class="hero">
       <div class="container hero-inner">
         <p class="hero-badge" data-i18n="heroBadge">Svenskt verktyg för fakturahantering</p>
-        <h1 class="hero-title" data-i18n="heroTitle">Automatisera fakturakontroll och stoppa fel innan de kostar pengar.</h1>
-        <p class="hero-lead" data-i18n="heroLead">Attestro omvandlar leverantörsfakturor till strukturerad data, validerar mot avtal och flaggar avvikelser automatiskt.</p>
-        <p class="hero-note" data-i18n="heroNoChange">Ni behöver inte byta ekonomisystem. Attestro fungerar vid sidan av det ni har idag.</p>
+        <h1 class="hero-title" data-i18n="heroTitle">Verifiera fakturor mot era avtal, automatiskt.</h1>
+        <p class="hero-lead" data-i18n="heroLead" data-i18n-html>Attestro omvandlar leverantörsfakturor till strukturerad data, jämför dem mot era <strong>avtal och prislistor</strong>, och flaggar avvikelser automatiskt innan attestering.</p>
+        <p class="hero-note" data-i18n="heroNoChange">Fungerar med ert befintliga ekonomisystem. Inget systembyte krävs.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary btn-lg" data-i18n="heroCtaPrimary">Boka en demo</a>
           <a href="pricing.html" class="btn btn-ghost btn-lg" data-i18n="heroCtaSecondary">Se priser</a>
         </div>
       </div>
       <div class="hero-visual" aria-hidden="true">
-        <div class="grid-blur"></div>
+        <div class="hero-pipeline">
+          <!-- Step 1: Invoice -->
+          <div class="hero-step hero-step--1">
+            <div class="hero-step-icon">
+              <svg viewBox="0 0 48 56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 4h24l12 12v36a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4V4z"/>
+                <path d="M30 4v12h12"/>
+                <line x1="14" y1="26" x2="34" y2="26" opacity="0.5"/>
+                <line x1="14" y1="32" x2="30" y2="32" opacity="0.5"/>
+                <line x1="14" y1="38" x2="26" y2="38" opacity="0.5"/>
+                <line x1="14" y1="44" x2="32" y2="44" opacity="0.5"/>
+              </svg>
+            </div>
+            <span class="hero-step-label" data-i18n="heroStepInvoice">Faktura</span>
+          </div>
+
+          <!-- Connector 1 -->
+          <div class="hero-connector hero-connector--1">
+            <svg viewBox="0 0 40 8"><line x1="0" y1="4" x2="36" y2="4" stroke="currentColor" stroke-width="1.5"/><polygon points="34,1 40,4 34,7" fill="currentColor"/></svg>
+          </div>
+
+          <!-- Step 2: OCR -->
+          <div class="hero-step hero-step--2">
+            <div class="hero-step-icon">
+              <svg viewBox="0 0 48 56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="4" width="36" height="48" rx="3"/>
+                <line x1="14" y1="16" x2="34" y2="16" opacity="0.4"/>
+                <line x1="14" y1="22" x2="30" y2="22" opacity="0.4"/>
+                <line x1="14" y1="28" x2="34" y2="28" opacity="0.4"/>
+                <line x1="14" y1="34" x2="28" y2="34" opacity="0.4"/>
+                <line x1="6" y1="20" x2="42" y2="20" stroke-width="2" class="hero-scanline"/>
+              </svg>
+            </div>
+            <span class="hero-step-label" data-i18n="heroStepOCR">OCR</span>
+          </div>
+
+          <!-- Connector 2 -->
+          <div class="hero-connector hero-connector--2">
+            <svg viewBox="0 0 40 8"><line x1="0" y1="4" x2="36" y2="4" stroke="currentColor" stroke-width="1.5"/><polygon points="34,1 40,4 34,7" fill="currentColor"/></svg>
+          </div>
+
+          <!-- Step 3: Structured data -->
+          <div class="hero-step hero-step--3">
+            <div class="hero-step-icon">
+              <svg viewBox="0 0 48 56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="8" width="40" height="40" rx="3"/>
+                <line x1="4" y1="18" x2="44" y2="18"/>
+                <line x1="4" y1="28" x2="44" y2="28"/>
+                <line x1="4" y1="38" x2="44" y2="38"/>
+                <line x1="18" y1="8" x2="18" y2="48"/>
+                <line x1="32" y1="8" x2="32" y2="48"/>
+              </svg>
+            </div>
+            <span class="hero-step-label" data-i18n="heroStepTable">Data</span>
+          </div>
+
+          <!-- Connector 3 -->
+          <div class="hero-connector hero-connector--3">
+            <svg viewBox="0 0 40 8"><line x1="0" y1="4" x2="36" y2="4" stroke="currentColor" stroke-width="1.5"/><polygon points="34,1 40,4 34,7" fill="currentColor"/></svg>
+          </div>
+
+          <!-- Step 4: Contract comparison -->
+          <div class="hero-step hero-step--4">
+            <div class="hero-step-icon">
+              <svg viewBox="0 0 48 56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="8" width="28" height="36" rx="2" opacity="0.5"/>
+                <rect x="18" y="12" width="28" height="36" rx="2"/>
+                <line x1="24" y1="22" x2="40" y2="22" opacity="0.5"/>
+                <line x1="24" y1="28" x2="38" y2="28" opacity="0.5"/>
+                <line x1="24" y1="34" x2="36" y2="34" opacity="0.5"/>
+                <path d="M14 26l4-8" stroke-width="2" opacity="0.7"/>
+                <path d="M14 26l4 8" stroke-width="2" opacity="0.7"/>
+              </svg>
+            </div>
+            <span class="hero-step-label" data-i18n="heroStepCompare">Kontroll</span>
+          </div>
+
+          <!-- Connector 4 -->
+          <div class="hero-connector hero-connector--4">
+            <svg viewBox="0 0 40 8"><line x1="0" y1="4" x2="36" y2="4" stroke="currentColor" stroke-width="1.5"/><polygon points="34,1 40,4 34,7" fill="currentColor"/></svg>
+          </div>
+
+          <!-- Step 5: Warning -->
+          <div class="hero-step hero-step--5">
+            <div class="hero-step-icon">
+              <svg viewBox="0 0 48 56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 6L4 50h40L24 6z"/>
+                <line x1="24" y1="22" x2="24" y2="36" stroke-width="2.5"/>
+                <circle cx="24" cy="43" r="1.5" fill="currentColor" stroke="none"/>
+              </svg>
+            </div>
+            <span class="hero-step-label" data-i18n="heroStepFlag">Avvikelse</span>
+          </div>
+        </div>
+        <div class="hero-glow"></div>
       </div>
     </section>
 
-    <div class="hero-collab">
-      <div class="container">
-        <p data-i18n="heroCollab">Utvecklat i samarbete med entreprenadföretag</p>
-      </div>
-    </div>
-
-    <section class="section pilot-cta">
-      <div class="container pilot-cta-inner">
-        <h2 class="section-title" data-i18n="pilotTitle">Vi söker pilotpartners</h2>
-        <p class="section-lead" data-i18n="pilotLead">Vi bygger Attestro tillsammans med tidiga användare. Bli en av de första att testa och var med och påverka hur produkten utvecklas.</p>
-        <p class="section-lead" data-i18n="pilotDiscount">Pilotpartners får rabatterad tillgång till Attestro under utvecklingsfasen.</p>
-        <a href="#contact" class="btn btn-primary btn-lg btn-on-light" data-i18n="pilotCta">Ansök om pilotplats</a>
-      </div>
-    </section>
+    <svg class="section-divider-wave" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 48h1440V24C1200 0 960 48 720 24 480 0 240 48 0 24z" fill="var(--color-bg)"/>
+    </svg>
 
     <section class="section audience">
       <div class="container">
-        <h2 class="section-title" data-i18n="audienceTitle">Automatisera fakturakontroll i bygg- och transportprojekt</h2>
-        <p class="section-lead" data-i18n="audienceLead">Attestro är byggt för projektintensiva branscher med många fakturor och komplexa avtal, där manuell kontroll helt enkelt inte räcker till.</p>
-        <ul class="audience-grid">
-          <li class="audience-card">
+        <p class="section-label" data-reveal="fade" data-i18n="audienceLabel">Fakturaverifiering</p>
+        <h2 class="section-title" data-reveal data-i18n="audienceTitle">Stoppa överbetalningar innan de lämnar företaget</h2>
+        <p class="section-lead" data-reveal data-i18n="audienceLead">Attestro jämför varje fakturarad mot era avtal, prislistor och projektvillkor. Avvikelser flaggas automatiskt innan attestering.</p>
+        <ul class="audience-grid stagger">
+          <li class="audience-card" data-reveal>
             <span class="audience-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg></span>
             <h3 data-i18n="audienceConstructionTitle">Bygg och anläggning</h3>
-            <p data-i18n="audienceConstructionDesc">Kontrollera fakturor mot projektavtal, ÄTA och à-prislistor. Fånga avvikelser innan de påverkar projektresultatet.</p>
+            <p data-i18n="audienceConstructionDesc">Kontrollera UE-fakturor mot à-prislistor, ÄTA och projektmängder.</p>
           </li>
-          <li class="audience-card">
+          <li class="audience-card" data-reveal>
             <span class="audience-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span>
             <h3 data-i18n="audienceTransportTitle">Transport och logistik</h3>
-            <p data-i18n="audienceTransportDesc">Verifiera fraktfakturor mot avtalade priser, zoner och volymer. Fånga avvikelser automatiskt.</p>
+            <p data-i18n="audienceTransportDesc">Verifiera fraktfakturor mot avtalade priser, avstånd och tillägg.</p>
           </li>
-          <li class="audience-card">
+          <li class="audience-card" data-reveal>
             <span class="audience-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/></svg></span>
             <h3 data-i18n="audienceServicesTitle">Tjänsteföretag med underleverantörer</h3>
-            <p data-i18n="audienceServicesDesc">Matcha fakturor mot timavtal och ramavtal. Säkerställ att varje rad stämmer innan betalning.</p>
+            <p data-i18n="audienceServicesDesc">Matcha underleverantörsfakturor mot ramavtal, timpriser och avtalade volymer.</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <section id="process" class="section process">
+    <section id="process" class="section process section-dotted">
       <div class="container">
-        <h2 class="section-title" data-i18n="processTitle">Från faktura till verifierad data</h2>
-        <ol class="process-grid">
-          <li class="process-card">
+        <h2 class="section-title" data-reveal data-i18n="processTitle">Tre steg från faktura till kontrollerad data</h2>
+        <ol class="process-grid stagger">
+          <li class="process-card" data-reveal>
             <span class="process-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></span>
             <span class="process-num" aria-hidden="true">1</span>
-            <h3 class="process-title" data-i18n="process1Title">Import</h3>
-            <p class="process-desc" data-i18n="process1Desc">Ladda upp fakturan som PDF eller bild. Attestro läser av leverantör, artikelrader, priser och projektkoppling.</p>
+            <h3 class="process-title" data-i18n="process1Title">Läs in fakturan</h3>
+            <p class="process-desc" data-i18n="process1Desc">Leverantör, rader, mängder, priser och projektreferenser extraheras automatiskt från PDF eller skannad faktura.</p>
           </li>
-          <li class="process-card">
+          <li class="process-card" data-reveal>
             <span class="process-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
             <span class="process-num" aria-hidden="true">2</span>
-            <h3 class="process-title" data-i18n="process2Title">Validering</h3>
-            <p class="process-desc" data-i18n="process2Desc">Fakturans innehåll kontrolleras mot avtalade priser, projektvillkor och interna regler. Avvikelser flaggas direkt.</p>
+            <h3 class="process-title" data-i18n="process2Title">Jämför mot avtal</h3>
+            <p class="process-desc" data-i18n="process2Desc">Varje rad kontrolleras mot avtalade priser, projektvillkor och godkända mängder. Avvikelser flaggas direkt.</p>
           </li>
-          <li class="process-card">
+          <li class="process-card" data-reveal>
             <span class="process-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
             <span class="process-num" aria-hidden="true">3</span>
-            <h3 class="process-title" data-i18n="process3Title">Struktur och export</h3>
-            <p class="process-desc" data-i18n="process3Desc">Ni får ut strukturerad data i Excel eller integrerat mot ert ekonomisystem, med full historik och spårbarhet.</p>
+            <h3 class="process-title" data-i18n="process3Title">Exportera verifierad data</h3>
+            <p class="process-desc" data-i18n="process3Desc">Skicka kontrollerad data till Excel eller ert ekonomisystem. Varje rad har full spårbarhet.</p>
           </li>
         </ol>
-        <p class="process-result" data-i18n="processResult">Färre fel, mindre manuellt arbete och bättre kontroll över kostnaderna i varje projekt.</p>
+        <p class="process-result" data-i18n="processResult">Inga felaktiga fakturor passerar utan att ni ser dem.</p>
+        <p class="process-credibility" data-i18n="processCredibility">Fungerar med PDF:er, skannade fakturor och befintliga ekonomisystem.</p>
       </div>
     </section>
 
-    <section class="section calculator">
+    <section class="section calculator section-dotted">
       <div class="container">
-        <h2 class="section-title" data-i18n="calcTitle">Hur mycket tid kan ni spara?</h2>
-        <p class="section-lead" data-i18n="calcLead">Uppskatta hur många timmar per månad Attestro kan frigöra åt ert team.</p>
+        <h2 class="section-title" data-reveal data-i18n="calcTitle">Hur mycket kan ni spara?</h2>
+        <p class="section-lead" data-reveal data-i18n="calcLead">Uppskatta hur många timmar per månad Attestro kan frigöra åt ert team.</p>
         <div class="calculator-sliders">
           <div class="calculator-slider-group">
             <label for="calc-invoices"><span data-i18n="calcInvoicesLabel">Antal fakturor/mån</span>: <output id="calc-invoices-value">200</output></label>
@@ -329,6 +416,44 @@
       </div>
     </section>
 
+    <section class="section pilot-cta">
+      <div class="container pilot-cta-inner" data-reveal>
+        <h2 class="section-title" data-i18n="pilotTitle">Gå med i Attestros pilotprogram</h2>
+        <p class="section-lead" data-i18n="pilotLead">Vi arbetar med en liten grupp bygg- och transportföretag för att förfina Attestro.</p>
+        <p class="pilot-benefits-label" data-i18n="pilotBenefitsLabel">Pilotpartners får</p>
+        <ul class="pilot-benefits">
+          <li data-i18n="pilotBenefit1">Tidig tillgång till Attestro</li>
+          <li data-i18n="pilotBenefit2">Direkt inflytande över produktutvecklingen</li>
+          <li data-i18n="pilotBenefit3">Rabatterad prissättning under pilotfasen</li>
+        </ul>
+        <p class="pilot-limited" data-i18n="pilotLimited">Endast ett fåtal pilotplatser tillgängliga.</p>
+        <a href="#contact" class="btn btn-primary btn-lg btn-on-light" data-i18n="pilotCta">Begär pilotåtkomst</a>
+      </div>
+    </section>
+
+    <section class="section trust-strip">
+      <div class="container">
+        <ul class="trust-grid stagger">
+          <li class="trust-badge" data-reveal>
+            <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+            <span data-i18n="trustSweden">Data lagras i Sverige</span>
+          </li>
+          <li class="trust-badge" data-reveal>
+            <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2L3 7v6c0 5.25 3.75 10.15 9 11.35C17.25 23.15 21 18.25 21 13V7l-9-5z"/><path d="M9 12l2 2 4-4"/></svg></span>
+            <span data-i18n="trustGdpr">GDPR-kompatibelt</span>
+          </li>
+          <li class="trust-badge" data-reveal>
+            <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
+            <span data-i18n="trustEncryption">Krypterad dataöverföring</span>
+          </li>
+          <li class="trust-badge" data-reveal>
+            <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><path d="M14.12 14.12a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg></span>
+            <span data-i18n="trustNoSharing">Ingen delning utan samtycke</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <section id="contact" class="section cta">
       <div class="container cta-contact">
         <div class="cta-contact-text">
@@ -366,32 +491,34 @@
       </div>
     </section>
 
-    <section class="section trust-strip">
+    <section class="section resources">
       <div class="container">
-        <ul class="trust-grid">
-          <li class="trust-badge">
-            <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
-            <span data-i18n="trustSweden">Data lagras i Sverige</span>
-          </li>
-          <li class="trust-badge">
-            <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2L3 7v6c0 5.25 3.75 10.15 9 11.35C17.25 23.15 21 18.25 21 13V7l-9-5z"/><path d="M9 12l2 2 4-4"/></svg></span>
-            <span data-i18n="trustGdpr">GDPR-kompatibelt</span>
-          </li>
-          <li class="trust-badge">
-            <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
-            <span data-i18n="trustEncryption">Krypterad dataöverföring</span>
-          </li>
-          <li class="trust-badge">
-            <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><path d="M14.12 14.12a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg></span>
-            <span data-i18n="trustNoSharing">Ingen delning utan samtycke</span>
-          </li>
-        </ul>
+        <h2 class="section-title" data-reveal data-i18n="resourcesTitle">Resurser om fakturahantering</h2>
+        <p class="section-lead" data-reveal data-i18n="resourcesLead">Fördjupa dig i hur företag effektiviserar sin fakturakontroll.</p>
+        <div class="blog-related-grid resources-grid stagger">
+          <a href="blog/what-is-invoice-processing.html" class="blog-related-card" data-reveal>
+            <h3 data-i18n="resourcesCard1Title">Vad är fakturahantering?</h3>
+            <p data-i18n="resourcesCard1Desc">Komplett guide från manuell process till automatisering av leverantörsfakturor.</p>
+          </a>
+          <a href="blog/checklista-fakturakontroll.html" class="blog-related-card" data-reveal>
+            <h3 data-i18n="resourcesCard2Title">Checklista för fakturakontroll</h3>
+            <p data-i18n="resourcesCard2Desc">Sju kontrollpunkter att gå igenom innan varje faktura attesteras.</p>
+          </a>
+          <a href="blog/automatiserad-fakturakontroll.html" class="blog-related-card" data-reveal>
+            <h3 data-i18n="resourcesCard3Title">Automatiserad fakturakontroll i praktiken</h3>
+            <p data-i18n="resourcesCard3Desc">Hur automatisering förändrar fakturakontroll, från dataextraktion till avtalsmatchning.</p>
+          </a>
+          <a href="blog/verifiera-leverantorsfakturor.html" class="blog-related-card" data-reveal>
+            <h3 data-i18n="resourcesCard4Title">Verifiera leverantörsfakturor</h3>
+            <p data-i18n="resourcesCard4Desc">Steg-för-steg-guide till fakturakontrollens sex centrala moment.</p>
+          </a>
+        </div>
       </div>
     </section>
 
     <section id="faq" class="section faq">
       <div class="container">
-        <h2 class="section-title" data-i18n="faqTitle">Vanliga frågor</h2>
+        <h2 class="section-title" data-reveal data-i18n="faqTitle">Vanliga frågor</h2>
         <div class="faq-list">
           <details class="faq-item">
             <summary class="faq-question" data-i18n="faqQ1">Vad är Attestro?</summary>
@@ -426,7 +553,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="index.html" class="logo-link logo-link-footer">
-          <img src="assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" />
+          <img src="assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" loading="lazy" />
           <span class="logo-fallback">ÄLGAMO Software AB</span>
         </a>
         <p class="footer-tagline" data-i18n="footerTagline">Attestro. Tidseffektiv fakturakontroll.</p>

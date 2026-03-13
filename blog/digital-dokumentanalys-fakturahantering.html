@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hur digital dokumentanalys används i fakturahantering | Attestro</title>
+  <meta name="description" content="Digital dokumentanalys gör det möjligt att automatiskt tolka, strukturera och verifiera fakturor. Lär dig hur tekniken fungerar, vilka utmaningar den löser och varför den är central i modern fakturahantering." />
+  <link rel="canonical" href="https://algamo.se/blog/digital-dokumentanalys-fakturahantering.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://algamo.se/blog/digital-dokumentanalys-fakturahantering.html" />
+  <meta property="og:title" content="Hur digital dokumentanalys används i fakturahantering | Attestro" />
+  <meta property="og:description" content="Digital dokumentanalys gör det möjligt att automatiskt tolka, strukturera och verifiera fakturor. Lär dig hur tekniken fungerar, vilka utmaningar den löser och varför den är central i modern fakturahantering." />
+  <meta property="og:image" content="https://algamo.se/assets/logo.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:locale" content="sv_SE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="Älgamo Software AB" />
+  <meta property="article:published_time" content="2026-03-13" />
+  <meta property="article:author" content="Älgamo Software AB" />
+  <meta property="article:section" content="Guide" />
+  <meta property="article:tag" content="fakturahantering" />
+  <meta property="article:tag" content="leverantörsfakturor" />
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="sv" href="https://algamo.se/blog/digital-dokumentanalys-fakturahantering.html" />
+  <link rel="alternate" hreflang="en" href="https://algamo.se/blog/digital-document-analysis-invoice-processing.html" />
+  <link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/digital-dokumentanalys-fakturahantering.html" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Hur digital dokumentanalys används i fakturahantering | Attestro" />
+  <meta name="twitter:description" content="Digital dokumentanalys gör det möjligt att automatiskt tolka, strukturera och verifiera fakturor. Lär dig hur tekniken fungerar, vilka utmaningar den löser och varför den är central i modern fakturahantering." />
+  <meta name="twitter:image" content="https://algamo.se/assets/logo.png" />
+  <meta name="theme-color" content="#1a2744" />
+  <link rel="icon" type="image/png" href="/assets/logo.png" />
+  <link rel="apple-touch-icon" href="/assets/logo.png" />
+  <link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../styles.css" />
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-cjvUyJcrmPfCQoZQOkSLo.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Hem", "item": "https://algamo.se/" },
+      { "@type": "ListItem", "position": 2, "name": "Blogg", "item": "https://algamo.se/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Digital dokumentanalys i fakturahantering" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Hur digital dokumentanalys används i fakturahantering",
+    "description": "Digital dokumentanalys gör det möjligt att automatiskt tolka, strukturera och verifiera fakturor. Lär dig hur tekniken fungerar, vilka utmaningar den löser och varför den är central i modern fakturahantering.",
+    "datePublished": "2026-03-13",
+    "author": {
+      "@type": "Organization",
+      "name": "Älgamo Software AB",
+      "url": "https://algamo.se"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Älgamo Software AB",
+      "url": "https://algamo.se",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://algamo.se/assets/logo.png"
+      }
+    },
+    "mainEntityOfPage": "https://algamo.se/blog/digital-dokumentanalys-fakturahantering.html",
+    "inLanguage": "sv",
+    "dateModified": "2026-03-13",
+    "articleSection": "Guide",
+    "wordCount": 1100,
+    "keywords": ["dokumentanalys", "fakturahantering", "OCR", "automatisering", "datautvinning"]
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link" data-i18n="skipToContent">Hoppa till innehåll</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo-link">
+        <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img" width="180" height="48" />
+        <span class="logo-fallback">ÄLGAMO Software AB</span>
+      </a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Meny">
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+      </button>
+      <div id="mobile-menu" class="menu-panel">
+        <nav class="nav">
+          <a href="../index.html#process" data-i18n="navSolutions">Funktioner</a>
+          <a href="../about.html" data-i18n="navAbout">Om oss</a>
+          <a href="../pricing.html" data-i18n="navPricing">Priser</a>
+          <a href="../index.html#contact" data-i18n="navContact">Kontakt</a>
+          <a href="../news/" data-i18n="navNews">Nyheter</a>
+          <a href="../blog/" data-i18n="navBlog">Blogg</a>
+        </nav>
+        <div class="lang-switcher" role="group" aria-label="Språk">
+          <button type="button" class="lang-btn" data-lang-btn="sv" aria-pressed="true">Svenska</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">English</button>
+        </div>
+        <a href="../index.html#contact" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="breadcrumb container" aria-label="Breadcrumb">
+    <a href="../index.html" data-i18n="breadcrumbHome">Hem</a>
+    <span aria-hidden="true">&gt;</span>
+    <a href="../blog/" data-i18n="navBlog">Blogg</a>
+    <span aria-hidden="true">&gt;</span>
+    <span data-i18n="blogDdaBreadcrumb">Digital dokumentanalys i fakturahantering</span>
+  </nav>
+
+  <main id="main">
+    <article class="section blog-digital-dokumentanalys">
+      <div class="container security-content">
+        <h1 class="section-title" data-i18n="blogDdaTitle">Hur digital dokumentanalys används i fakturahantering</h1>
+        <time datetime="2026-03-13" class="blog-article-date">2026-03-13</time>
+        <p class="section-lead" data-i18n="blogDdaLead">Leverantörsfakturor som anländer i PDF-format, som inskannade pappersdokument eller som bilagor i e-post är inte omedelbart maskinläsbara. De är utformade för att läsas av människor, med visuell layout som ger struktur åt informationen. Digital dokumentanalys är den teknik som gör det möjligt för programvara att tolka dessa dokument, identifiera relevanta datapunkter och omvandla dem till strukturerad information som kan jämföras mot avtal, prislistor och leveransdokumentation. Den här artikeln beskriver hur dokumentanalys fungerar i praktiken, vilka tekniska komponenter som ingår och vilken roll tekniken spelar i modern fakturahantering.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogDdaH2What">Vad är digital dokumentanalys?</h2>
+        <p class="security-text" data-i18n="blogDdaWhatP1">Digital dokumentanalys är ett samlingsbegrepp för de tekniker som används för att automatiskt tolka och extrahera information från dokument. I kontexten av fakturahantering innebär det att ett system tar emot en faktura i valfritt format och identifierar de dataelement som behövs för vidare bearbetning: leverantörsnamn, organisationsnummer, fakturanummer, fakturadatum, förfallodatum, artikelrader med beskrivning, kvantitet, enhetspris, radbelopp, moms och totalbelopp.</p>
+        <p class="security-text" data-i18n="blogDdaWhatP2" data-i18n-html>Tekniken skiljer sig från enkel <a href="ocr-faktura.html">OCR (optisk teckenigenkänning)</a> på ett avgörande sätt. OCR omvandlar bilddata till text, men ger ingen förståelse för vad texten betyder eller hur den relaterar till andra textelement på sidan. Dokumentanalys går längre genom att förstå dokumentets struktur: vilka textblock som utgör en tabell, vilken kolumn en siffra tillhör, och huruvida ett belopp representerar ett enhetspris eller ett totalbelopp. Det är denna strukturella förståelse som gör det möjligt att extrahera tillförlitlig data från fakturor med vitt skilda layouter.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogDdaH2Components">Tekniska komponenter i dokumentanalys</h2>
+        <p class="security-text" data-i18n="blogDdaComponentsP1">Modern dokumentanalys för fakturor bygger på flera samverkande tekniker. Var och en löser ett specifikt delproblem i kedjan från ostrukturerat dokument till strukturerad data.</p>
+
+        <div class="blog-pillars">
+          <div class="blog-pillar">
+            <div class="blog-pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+            <div class="blog-pillar-title" data-i18n="blogDdaPillarOcrTitle">OCR</div>
+            <div class="blog-pillar-desc" data-i18n="blogDdaPillarOcrDesc">Extraherar rå text från digitala och skannade dokument</div>
+          </div>
+          <div class="blog-pillar">
+            <div class="blog-pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
+            <div class="blog-pillar-title" data-i18n="blogDdaPillarLayoutTitle">Layoutanalys</div>
+            <div class="blog-pillar-desc" data-i18n="blogDdaPillarLayoutDesc">Identifierar regioner, tabeller och fältrelationer på sidan</div>
+          </div>
+          <div class="blog-pillar">
+            <div class="blog-pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg></div>
+            <div class="blog-pillar-title" data-i18n="blogDdaPillarTableTitle">Tabellextraktion</div>
+            <div class="blog-pillar-desc" data-i18n="blogDdaPillarTableDesc">Isolerar artikelrader med kvantitet, pris och belopp</div>
+          </div>
+          <div class="blog-pillar">
+            <div class="blog-pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+            <div class="blog-pillar-title" data-i18n="blogDdaPillarNormTitle">Normalisering</div>
+            <div class="blog-pillar-desc" data-i18n="blogDdaPillarNormDesc">Omvandlar datum, belopp och enheter till enhetligt format</div>
+          </div>
+        </div>
+
+        <h3 class="security-subtitle" style="font-size:1rem" data-i18n="blogDdaH3Ocr">Optisk teckenigenkänning</h3>
+        <p class="security-text" data-i18n="blogDdaOcrP1">Det första steget är att extrahera rå text från dokumentet. För digitalt skapade PDF-filer kan textlagret läsas direkt, men för skannade dokument krävs OCR. Moderna OCR-modeller baserade på djupinlärning hanterar varierande typsnitt, sned skanning, låg upplösning och störningar som stämplar eller handskrivna anteckningar. Kvaliteten i detta steg är kritisk: ett felaktigt tolkat tecken i ett fakturabelopp propagerar genom hela kedjan.</p>
+
+        <h3 class="security-subtitle" style="font-size:1rem" data-i18n="blogDdaH3Layout">Layoutanalys och dokumentklassificering</h3>
+        <p class="security-text" data-i18n="blogDdaLayoutP1">När texten extraherats behöver systemet förstå dokumentets visuella struktur. Layoutanalys identifierar regioner på sidan: adressblock, rubrikfält, artikeltabeller, summeringar och sidfot. Den avgör vilka textelement som hör samman och hur de relaterar till varandra spatialt. En siffra som står till höger om texten "Fakturanummer:" har en annan betydelse än en siffra i kolumnen "Belopp" i en artikeltabell, även om båda är numeriska värden.</p>
+        <p class="security-text" data-i18n="blogDdaLayoutP2">Dokumentklassificering kompletterar layoutanalysen genom att avgöra vilken typ av dokument det rör sig om. Inte alla inkommande dokument är fakturor. Kreditnotor, följesedlar, offerter och avtal kan alla ankomma via samma kanal. Korrekt klassificering säkerställer att rätt extraktionslogik tillämpas.</p>
+
+        <h3 class="security-subtitle" style="font-size:1rem" data-i18n="blogDdaH3Table">Tabellextraktion</h3>
+        <p class="security-text" data-i18n="blogDdaTableP1">Fakturans artikeltabell innehåller den mest detaljerade informationen och är samtidigt den svåraste delen att extrahera korrekt. Tabeller i fakturor saknar ofta synliga kantlinjer, har inkonsekvent kolumnbredd och innehåller rader som bryts över flera visuella rader. En artikelbeskrivning kan sträcka sig över två rader, medan kvantitet och pris står på den första raden. Tilläggsrader med rabatter eller kommentarer kan infogats mellan artikelrader utan tydlig avgränsning.</p>
+        <p class="security-text" data-i18n="blogDdaTableP2">Moderna tabellextraktionsmodeller löser detta genom att analysera den visuella strukturen snarare än att förlita sig på tabellmarkeringar i dokumentet. De identifierar kolumner baserat på vertikal textjustering, separerar rader baserat på horisontella mönster och kopplar cellvärden till rätt kolumnhuvud. Resultatet är en strukturerad tabell där varje artikelrad har en beskrivning, kvantitet, enhetspris och belopp korrekt identifierade.</p>
+
+        <h3 class="security-subtitle" style="font-size:1rem" data-i18n="blogDdaH3Norm">Datanormalisering och entitetsigenkänning</h3>
+        <p class="security-text" data-i18n="blogDdaNormP1">Rå extraherad data är sällan direkt användbar. Datum skrivs i olika format ("2026-03-13", "13/3 2026", "13 mars 2026"). Belopp anges med komma eller punkt som decimalavskiljare. Enheter varierar mellan "st", "styck", "m²" och "kvadratmeter". Datanormalisering omvandlar alla dessa varianter till ett enhetligt format som möjliggör maskinell jämförelse.</p>
+        <p class="security-text" data-i18n="blogDdaNormP2">Entitetsigenkänning går ett steg längre genom att koppla extraherade värden till definierade kategorier. Systemet identifierar att "556123-4567" är ett organisationsnummer, att "F-2026-0847" är ett fakturanummer och att "Leveransdatum" följt av "2026-03-10" representerar det datum då leveransen skedde. Denna semantiska förståelse gör det möjligt att mappa fakturadata mot fält i ekonomisystemet och mot avtalsdata för verifiering.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogDdaH2Essential">Varför dokumentanalys är avgörande för fakturakontroll</h2>
+        <p class="security-text" data-i18n="blogDdaEssentialP1">Dokumentanalys är inte bara ett sätt att digitalisera fakturor snabbare. Den är en förutsättning för att automatiserad fakturakontroll ska vara möjlig. Utan tillförlitlig dataextraktion kan inget system jämföra fakturerade priser mot avtalspriser, verifiera kvantiteter mot leveransdokumentation eller identifiera dubbletter. Kvaliteten på dokumentanalysen avgör kvaliteten på hela den efterföljande kontrollen.</p>
+        <p class="security-text" data-i18n="blogDdaEssentialP2" data-i18n-html>I branscher som bygg och transport, där <a href="fakturaformat.html">fakturor varierar kraftigt i format</a> mellan leverantörer, är utmaningen särskilt stor. En betongfabrik kan skicka en maskinellt genererad PDF med väldefinierade tabeller, medan en underentreprenör skickar en skannad handskriven faktura. Ett åkeri kan bifoga vågsedlar som separata dokument som behöver matchas mot fakturan. Dokumentanalysen måste hantera alla dessa varianter och producera konsekvent strukturerad data oavsett indata.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogDdaH2Challenges">Utmaningar vid dokumentanalys av fakturor</h2>
+        <p class="security-text" data-i18n="blogDdaChallengesP1">Trots stora tekniska framsteg kvarstår flera utmaningar vid automatiserad dokumentanalys av fakturor.</p>
+        <p class="security-text" data-i18n="blogDdaChallengesP2">Formatvariation är den mest grundläggande utmaningen. Det finns ingen universell standard för hur en faktura ska se ut. Varje leverantörs ERP-system genererar fakturor med en unik layout. Ett företag som har 200 leverantörer kan behöva hantera 200 olika fakturalayouter. Maskininlärningsmodeller hanterar denna variation genom att tränas på stora datamängder, men ovanliga format eller kraftigt avvikande layouter kan fortfarande orsaka extraktionsfel.</p>
+        <p class="security-text" data-i18n="blogDdaChallengesP3">Dokumentkvalitet varierar också kraftigt. Digitalt skapade PDF-filer ger generellt högkvalitativ text, men skannade dokument kan ha låg upplösning, skev orientering, smutsiga bakgrunder eller överlagrade stämplar. Fakturor som fotograferats med en mobilkamera har ofta perspektivförvrängning och ojämn belysning. Varje kvalitetsproblem minskar extraktionens tillförlitlighet.</p>
+        <p class="security-text" data-i18n="blogDdaChallengesP4">Fleretablåfakturor utgör en ytterligare komplikation. Vissa fakturor innehåller flera separata tabeller: en för produkter, en för frakttillägg och en för sammanfattning. Att korrekt identifiera varje tabell och förstå relationerna mellan dem kräver kontextuell analys som går bortom ren tabellextraktion. En summarad i produkttabellen ska inte förväxlas med en artikelrad i tilläggstabellen.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogDdaH2Workflow">Dokumentanalys i en automatiserad fakturaprocess</h2>
+        <p class="security-text" data-i18n="blogDdaWorkflowP1">I en komplett automatiserad fakturaprocess utgör dokumentanalys det första och mest kritiska steget. Den typiska kedjan ser ut på följande sätt:</p>
+        <ul class="security-text blog-benefits-list">
+          <li data-i18n="blogDdaWorkflowLi1">Fakturan tas emot via e-post, uppladdning eller integration med ett befintligt system</li>
+          <li data-i18n="blogDdaWorkflowLi2">Dokumentet klassificeras automatiskt som faktura, kreditnota eller annat dokumenttyp</li>
+          <li data-i18n="blogDdaWorkflowLi3">OCR och layoutanalys extraherar all text och identifierar dokumentets struktur</li>
+          <li data-i18n="blogDdaWorkflowLi4">Tabellextraktion isolerar artikelrader med tillhörande kvantiteter, priser och belopp</li>
+          <li data-i18n="blogDdaWorkflowLi5">Datanormalisering omvandlar extraherade värden till ett enhetligt format</li>
+          <li data-i18n="blogDdaWorkflowLi6">Den strukturerade datan matchas mot leverantörsregister, avtal och prislistor</li>
+          <li data-i18n="blogDdaWorkflowLi7" data-i18n-html>Avvikelser flaggas för manuell granskning, medan korrekta fakturor passerar vidare i <a href="fakturaflode.html">fakturaflödet</a></li>
+        </ul>
+        <p class="security-text" data-i18n="blogDdaWorkflowP2">Varje steg bygger på det föregående. Om dokumentanalysen missar en artikelrad eller tilldelar ett belopp till fel kolumn, kommer den efterföljande avtalsmatchningen att ge felaktigt resultat. Det är därför moderna system inkluderar konfidenspoäng för varje extraherat värde och flaggar osäkra resultat för manuell verifiering, snarare än att anta att all extraherad data är korrekt.</p>
+        <p class="security-text" data-i18n="blogDdaWorkflowP3" data-i18n-html>Attestro använder denna typ av dokumentanalys som grund för sin <a href="automatiserad-fakturakontroll.html">automatiserade fakturakontroll</a>. Genom att kombinera avancerad dokumentförståelse med systematisk avtalsmatchning kan varje inkommande faktura verifieras mot avtalade priser, kvantiteter och villkor, oavsett vilket format leverantören använder.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogDdaH2Summary">Sammanfattning</h2>
+        <p class="security-text" data-i18n="blogDdaSummaryP1">Digital dokumentanalys är den tekniska grunden som möjliggör automatiserad fakturahantering. Genom att kombinera OCR, layoutanalys, tabellextraktion och datanormalisering kan programvara omvandla ostrukturerade fakturadokument till strukturerad data som kan verifieras maskinellt. Tekniken löser det grundläggande problemet att fakturor från olika leverantörer ser olika ut och levereras i varierande format och kvalitet. I en tid där företag hanterar allt fler fakturor med begränsade resurser utgör dokumentanalys en nödvändig komponent för att upprätthålla kontroll över kostnader och säkerställa att varje faktura stämmer mot avtal.</p>
+
+        <div class="blog-article-cta">
+          <p data-i18n="blogDdaCta" data-i18n-html>Vill du se hur avancerad dokumentanalys kan effektivisera er fakturakontroll? <a href="../index.html#contact">Boka en demo</a> och se hur Attestro omvandlar fakturor till verifierad data.</p>
+        </div>
+
+        <div class="blog-related">
+          <h2 data-i18n="blogRelatedTitle">Relaterade artiklar</h2>
+          <div class="blog-related-grid">
+            <a href="ocr-faktura.html" class="blog-related-card">
+              <h3 data-i18n="blogOcrTitle">Från OCR till strukturerad data: så omvandlas fakturor automatiskt</h3>
+              <p data-i18n="blogOcrLead">OCR, layoutanalys, tabellextraktion, datanormalisering och validering. Hela kedjan förklarad.</p>
+            </a>
+            <a href="automatiserad-fakturakontroll.html" class="blog-related-card">
+              <h3 data-i18n="blogAfkTitle">Automatiserad fakturakontroll i praktiken</h3>
+              <p data-i18n="blogAfkIntro">Lär dig hur automatiserad fakturakontroll fungerar i praktiken. OCR, dokumentstrukturanalys och datavalidering steg för steg.</p>
+            </a>
+            <a href="fakturaformat.html" class="blog-related-card">
+              <h3 data-i18n="blogFmtTitle">Varför fakturaformat skiljer sig så mycket mellan leverantörer</h3>
+              <p data-i18n="blogFmtIntro">Leverantörsfakturor ser olika ut beroende på ERP-system, bransch och format.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo-link logo-link-footer">
+          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" loading="lazy" />
+          <span class="logo-fallback">ÄLGAMO Software AB</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footerTagline">Attestro. Tidseffektiv fakturakontroll.</p>
+      </div>
+      <div class="footer-legal">
+        <p data-i18n="footerLegal">Älgamo Software AB, Sverige</p>
+        <p class="footer-support"><span data-i18n="footerSupport">Kundsupport:</span> <a href="mailto:support@algamo.se">support@algamo.se</a></p>
+        <p class="footer-social"><a href="https://www.linkedin.com/company/%C3%A4lgamo-software-ab/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <p class="footer-news"><a href="../news/" data-i18n="footerNews">Nyheter</a></p>
+        <p class="footer-blog"><a href="../blog/" data-i18n="footerBlog">Blogg</a></p>
+        <p class="footer-security"><a href="../security.html" data-i18n="footerSecurity">Säkerhet</a></p>
+        <p class="footer-privacy"><a href="../privacy.html" data-i18n="footerPrivacy">Integritetspolicy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
