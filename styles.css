@@ -2062,6 +2062,21 @@ body > main {
   margin-bottom: var(--space-2xl);
 }
 
+/* Footer news link */
+.footer-news {
+  margin-top: var(--space-sm);
+}
+
+.footer-news a {
+  color: var(--color-grey-light);
+  text-decoration: none;
+}
+
+.footer-news a:hover {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
 /* Footer blog link */
 .footer-blog {
   margin-top: var(--space-sm);
