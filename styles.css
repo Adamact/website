@@ -1920,6 +1920,10 @@ body > main {
   display: none;
 }
 
+.nyheter .blog-posts .blog-post-entry time {
+  display: inline-block;
+}
+
 .blog-post-entry h2 {
   font-size: 1.05rem;
   line-height: 1.4;
