@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Från OCR till strukturerad data: så omvandlas fakturor automatiskt | Attestro</title>
+  <meta name="description" content="Hur omvandlas en faktura-PDF till strukturerad data? OCR, layoutanalys, tabellextraktion, datanormalisering och validering. Hela kedjan steg för steg." />
+  <link rel="canonical" href="https://algamo.se/blog/ocr-faktura.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://algamo.se/blog/ocr-faktura.html" />
+  <meta property="og:title" content="Från OCR till strukturerad data: så omvandlas fakturor automatiskt | Attestro" />
+  <meta property="og:description" content="Hur omvandlas en faktura-PDF till strukturerad data? OCR, layoutanalys, tabellextraktion, datanormalisering och validering. Hela kedjan steg för steg." />
+  <meta property="og:image" content="https://algamo.se/assets/logo.png" />
+  <meta property="og:locale" content="sv_SE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="Älgamo Software AB" />
+  <meta property="article:published_time" content="2026-03-12" />
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="sv" href="https://algamo.se/blog/ocr-faktura.html" />
+  <link rel="alternate" hreflang="en" href="https://algamo.se/blog/ocr-faktura.html" />
+  <link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/ocr-faktura.html" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Från OCR till strukturerad data: så omvandlas fakturor automatiskt | Attestro" />
+  <meta name="twitter:description" content="Hur omvandlas en faktura-PDF till strukturerad data? OCR, layoutanalys, tabellextraktion, datanormalisering och validering. Hela kedjan steg för steg." />
+  <meta name="twitter:image" content="https://algamo.se/assets/logo.png" />
+  <meta name="theme-color" content="#1a2744" />
+  <link rel="icon" type="image/png" href="/assets/logo.png" />
+  <link rel="apple-touch-icon" href="/assets/logo.png" />
+  <link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Hem", "item": "https://algamo.se/" },
+      { "@type": "ListItem", "position": 2, "name": "Blogg", "item": "https://algamo.se/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Från OCR till strukturerad data" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Från OCR till strukturerad data: så omvandlas fakturor automatiskt",
+    "description": "Hur omvandlas en faktura-PDF till strukturerad data? OCR, layoutanalys, tabellextraktion, datanormalisering och validering. Hela kedjan steg för steg.",
+    "datePublished": "2026-03-12",
+    "author": {
+      "@type": "Organization",
+      "name": "Älgamo Software AB",
+      "url": "https://algamo.se"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Älgamo Software AB",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://algamo.se/assets/logo.png"
+      }
+    },
+    "mainEntityOfPage": "https://algamo.se/blog/ocr-faktura.html"
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link" data-i18n="skipToContent">Hoppa till innehåll</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo-link">
+        <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img" width="180" height="48" />
+        <span class="logo-fallback">ÄLGAMO Software AB</span>
+      </a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Meny">
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+      </button>
+      <div id="mobile-menu" class="menu-panel">
+        <nav class="nav">
+          <a href="../index.html#process" data-i18n="navSolutions">Funktioner</a>
+          <a href="../about.html" data-i18n="navAbout">Om oss</a>
+          <a href="../pricing.html" data-i18n="navPricing">Priser</a>
+          <a href="../index.html#contact" data-i18n="navContact">Kontakt</a>
+          <a href="../news/" data-i18n="navNews">Nyheter</a>
+          <a href="../blog/" data-i18n="navBlog">Blogg</a>
+        </nav>
+        <div class="lang-switcher" role="group" aria-label="Språk">
+          <button type="button" class="lang-btn" data-lang-btn="sv" aria-pressed="true">Svenska</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">English</button>
+        </div>
+        <a href="../index.html#contact" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="breadcrumb container" aria-label="Breadcrumb">
+    <a href="../index.html" data-i18n="breadcrumbHome">Hem</a>
+    <span aria-hidden="true">&gt;</span>
+    <a href="../blog/" data-i18n="navBlog">Blogg</a>
+    <span aria-hidden="true">&gt;</span>
+    <span data-i18n="blogOcrBreadcrumb">Från OCR till strukturerad data</span>
+  </nav>
+
+  <main id="main">
+    <section class="section blog-ocr-faktura">
+      <div class="container security-content">
+        <article>
+          <h1 class="section-title" data-i18n="blogOcrTitle">Från OCR till strukturerad data: så omvandlas fakturor automatiskt</h1>
+          <time datetime="2026-03-12" class="blog-article-date">2026-03-12</time>
+          <p class="section-lead" data-i18n="blogOcrLead">En leverantörsfaktura i PDF-format är designad för mänskliga ögon, inte för datorer. Att omvandla den till strukturerad, maskinläsbar data kräver en flerstegsprocess: optisk teckenigenkänning, layoutanalys, tabellextraktion, datanormalisering och validering. Den här artikeln beskriver hela kedjan och förklarar varför varje steg är avgörande för tillförlitlig fakturaautomation.</p>
+
+          <h2 class="security-subtitle" data-i18n="blogOcrWhatTitle">Vad är OCR?</h2>
+          <p class="security-text" data-i18n="blogOcrWhatText">OCR står för Optical Character Recognition, eller optisk teckenigenkänning. Tekniken gör det möjligt för datorer att läsa text i bilder, skannade dokument och PDF-filer. Istället för att en människa manuellt skriver av informationen kan OCR automatiskt identifiera och extrahera texten. Modern OCR använder djupinlärning för att hantera varierande typsnitt, skevheter i skanningen, låg upplösning och störningar som stämplar eller handskrivna anteckningar.</p>
+          <p class="security-text" data-i18n="blogOcrWhatText2">Kvaliteten på OCR-avläsningen avgör resten av processen. Ett felaktigt tolkat tecken i ett fakturabelopp, till exempel att siffran 8 läses som 6, leder till felaktig data i alla efterföljande steg. Därför använder moderna system konfidenspoäng per tecken och ord, och flaggar osäkra avläsningar för verifiering.</p>
+
+          <h2 class="security-subtitle" data-i18n="blogOcrWhyTitle">Varför OCR för fakturor?</h2>
+          <p class="security-text" data-i18n="blogOcrWhyText">Fakturor är ett utmärkt användningsfall för OCR. De flesta företag tar emot fakturor i en mängd format som PDF, e-post och skannade papperskopior, och informationen behöver matas in i ekonomisystem. Utan automatisering innebär det att någon manuellt läser av och registrerar belopp, fakturanummer, datum, moms och leverantörsuppgifter.</p>
+          <p class="security-text" data-i18n="blogOcrWhyText2">Det manuella arbetet är inte bara tidskrävande, det leder också till fel. Siffror blandas ihop, rader missas och dubbletter slinker igenom. OCR löser detta genom att automatiskt extrahera fakturadata och göra den tillgänglig digitalt.</p>
+
+          <h2 class="security-subtitle" data-i18n="blogOcrLayoutTitle">Layoutanalys: att förstå dokumentets struktur</h2>
+          <p class="security-text" data-i18n="blogOcrLayoutText1">Rå text utan positionsinformation är otillräcklig. En faktura innehåller rubriker, adressblock, artikeltabeller, summor och fotnoter, och deras inbördes relation bestäms av layouten. Layoutanalys identifierar dokumentets visuella struktur: var finns tabeller, vilka textblock hör ihop, var börjar och slutar en artikelrad, och vilken text är en rubrik respektive ett värde.</p>
+          <p class="security-text" data-i18n="blogOcrLayoutText2">Samma typ av information kan placeras på vitt skilda ställen beroende på leverantör och ERP-system, något vi beskriver närmare i artikeln <a href="fakturaformat.html">Varför fakturaformat skiljer sig så mycket mellan leverantörer</a>. Fakturanumret kan stå i övre högra hörnet, i en sidopanel, eller mitt i ett textblock. Utan korrekt layoutförståelse riskerar systemet att läsa av fel fält eller blanda ihop data från olika delar av dokumentet.</p>
+
+          <h2 class="security-subtitle" data-i18n="blogOcrTableTitle">Tabellextraktion: att identifiera rader och kolumner</h2>
+          <p class="security-text" data-i18n="blogOcrTableText1">De flesta fakturor innehåller en eller flera tabeller med artikelrader, typiskt med kolumner för artikelbeskrivning, antal, enhetspris, rabatt och radbelopp. Tabellextraktion innebär att identifiera tabellens gränser, separera rader från varandra och koppla varje cellvärde till rätt kolumn.</p>
+          <p class="security-text" data-i18n="blogOcrTableText2">I praktiken är fakturor sällan välordnade. Tabeller saknar synliga kantlinjer, rader bryts över flera fysiska rader, kolumner har inkonsekvent bredd, och tilläggsinformation som rabatter eller kommentarer infogas mellan artikelrader. Skannade fakturor med sned orientering eller låg bildkvalitet adderar ytterligare komplexitet. Modern tabellextraktion använder maskininlärningsmodeller som tränats på stora datamängder av fakturaformat för att hantera dessa variationer.</p>
+
+          <h2 class="security-subtitle" data-i18n="blogOcrPracticalTitle">Utmaningar i praktiken</h2>
+          <p class="security-text" data-i18n="blogOcrPracticalText">Ett konkret exempel: ett <a href="bygg-transport-fakturor.html">entreprenadföretag</a> tar emot en faktura från en betongfabrik. Fakturan är en skannad PDF med tre tabeller: en för levererade produkter med artikelnummer och kubikmeterpris, en för transporttillägg per leveransdag, och en sammanfattande tabell med totalbelopp och moms. Artiklarna har beskrivningar som sträcker sig över två rader, och det finns handskrivna tillägg i marginalen. Att korrekt identifiera alla tre tabellerna, separera artikelraderna, koppla transporttilläggen till rätt leveranser och ignorera marginalanteckningarna kräver avancerad dokumentparsning som går bortom enkel OCR.</p>
+
+          <h2 class="security-subtitle" data-i18n="blogOcrNormTitle">Datanormalisering: att skapa enhetlighet</h2>
+          <p class="security-text" data-i18n="blogOcrNormText1">Data som extraheras från olika fakturor har sällan ett enhetligt format. Belopp kan anges med komma eller punkt som decimalavskiljare. Datum skrivs som "2026-03-12", "12/3-2026" eller "12 mars 2026". Enheter varierar mellan "st", "styck", "m3" och "ton". Datanormalisering omvandlar alla dessa varianter till ett standardiserat format som möjliggör maskinell jämförelse.</p>
+          <p class="security-text" data-i18n="blogOcrNormText2">Normaliseringen omfattar även leverantörsidentifikation, det vill säga att matcha leverantörsnamn och organisationsnummer mot ett leverantörsregister, och kategorisering av artikelrader mot befintliga avtal och prislistor. Utan denna normalisering är det omöjligt att systematiskt jämföra fakturadata med avtalsdata, även om själva textextraktionen är korrekt.</p>
+
+          <h2 class="security-subtitle" data-i18n="blogOcrValTitle">Validering: att hitta avvikelser</h2>
+          <p class="security-text" data-i18n="blogOcrValText1">Den strukturerade, normaliserade datan jämförs mot externa datakällor: avtalade priser, beställda kvantiteter, tidigare fakturor från samma leverantör och interna regler för momssatser och kontering. Varje fakturarads pris kontrolleras mot det avtalade à-priset, kvantiteten jämförs med leveransunderlag, och totalbeloppet verifieras mot summan av raderna inklusive moms.</p>
+          <p class="security-text" data-i18n="blogOcrValText2">Avvikelser som identifieras kan vara prisfel (fakturerat pris skiljer sig från avtalat pris), kvantitetsfel (fakturerad mängd stämmer inte med levererad mängd), dubbletter (samma leverans har redan fakturerats), eller formella fel (felaktig momssats, saknat fakturanummer). Varje avvikelse specificeras med information om vad som förväntades och vad som faktiskt fakturerades, vilket ger granskaren ett tydligt underlag för beslut.</p>
+
+          <h2 class="security-subtitle" data-i18n="blogOcrBenefitsTitle">Fördelar med automatiserad fakturabearbetning</h2>
+          <ul class="security-text blog-benefits-list">
+            <li data-i18n="blogOcrBenefit1">Drastiskt minskat manuellt arbete, så att personal kan fokusera på undantag istället för inmatning</li>
+            <li data-i18n="blogOcrBenefit2">Färre fel eftersom systematisk maskinell kontroll eliminerar slarvfel vid avskrivning</li>
+            <li data-i18n="blogOcrBenefit3">Snabbare bearbetning, fakturor hanteras på sekunder istället för minuter</li>
+            <li data-i18n="blogOcrBenefit4">Bättre spårbarhet, all data loggas digitalt från start</li>
+            <li data-i18n="blogOcrBenefit5">Skalbarhet: hantera 10 eller 10 000 fakturor med samma arbetsinsats</li>
+          </ul>
+
+          <h2 class="security-subtitle" data-i18n="blogOcrSummaryTitle">Sammanfattning</h2>
+          <p class="security-text" data-i18n="blogOcrSummaryText">Processen från PDF till strukturerad data är en kedja av beroende steg: OCR extraherar text, layoutanalys identifierar dokumentstrukturen, tabellextraktion isolerar artikelrader, normalisering skapar enhetliga dataformat, och validering jämför resultatet mot avtal och affärsregler. Varje steg bygger på det föregående, och kvaliteten i slutresultatet bestäms av den svagaste länken. För företag som hanterar stora volymer leverantörsfakturor innebär automatisering av denna kedja en fundamental förändring, från manuell tolkning och inmatning till systematisk, konsekvent databehandling.</p>
+          <p class="security-text" data-i18n="blogOcrSummaryText2" data-i18n-html>Programvarulösningar som Attestro syftar till att hantera hela kedjan, från dokumentavläsning till verifiering mot prislistor och avtalsvillkor, för att minska både tidsåtgång och felfrekvens. <a href="../index.html#contact">Boka en demo</a> för att se hur det fungerar i praktiken.</p>
+
+          <div class="blog-related">
+            <h2 data-i18n="blogRelatedTitle">Relaterade artiklar</h2>
+            <div class="blog-related-grid">
+              <a href="fakturaformat.html" class="blog-related-card">
+                <h3 data-i18n="blogFmtTitle">Varför fakturaformat skiljer sig så mycket mellan leverantörer</h3>
+                <p data-i18n="blogFmtIntro">Leverantörsfakturor ser olika ut beroende på ERP-system, bransch och format.</p>
+              </a>
+              <a href="manuell-vs-automatiserad-fakturahantering.html" class="blog-related-card">
+                <h3 data-i18n="blogCmpTitle">Manuell vs automatiserad fakturahantering</h3>
+                <p data-i18n="blogCmpIntro">En jämförelse av tid, kostnad och felfrekvens mellan manuell och automatiserad hantering.</p>
+              </a>
+              <a href="verifiera-leverantorsfakturor.html" class="blog-related-card">
+                <h3 data-i18n="blogVfTitle">Hur man verifierar leverantörsfakturor effektivt</h3>
+                <p data-i18n="blogVfIntro">Systematisk avtalskontroll, mängdverifiering och prislistekontroll steg för steg.</p>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo-link logo-link-footer">
+          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" />
+          <span class="logo-fallback">ÄLGAMO Software AB</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footerTagline">Attestro. Tidseffektiv fakturakontroll.</p>
+      </div>
+      <div class="footer-legal">
+        <p data-i18n="footerLegal">Älgamo Software AB, Sverige</p>
+        <p class="footer-support"><span data-i18n="footerSupport">Kundsupport:</span> <a href="mailto:support@algamo.se">support@algamo.se</a></p>
+        <p class="footer-social"><a href="https://www.linkedin.com/company/%C3%A4lgamo-software-ab/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <p class="footer-news"><a href="../news/" data-i18n="footerNews">Nyheter</a></p>
+        <p class="footer-blog"><a href="../blog/" data-i18n="footerBlog">Blogg</a></p>
+        <p class="footer-security"><a href="../security.html" data-i18n="footerSecurity">Säkerhet</a></p>
+        <p class="footer-privacy"><a href="../privacy.html" data-i18n="footerPrivacy">Integritetspolicy</a></p>
+        <p class="footer-cookies"><a href="#" id="cookie-settings-link" data-i18n="footerCookies">Cookie-inställningar</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cookie-consent" class="cookie-consent" role="dialog" aria-label="Cookie-samtycke" hidden>
+    <div class="container cookie-consent-inner">
+      <p class="cookie-consent-text"><span data-i18n="consentText">Vi använder cookies för anonym webbplatsstatistik (Google Analytics). Ingen data används för marknadsföring.</span> <a href="../privacy.html#cookies" data-i18n="consentPrivacyLink">Läs mer i vår integritetspolicy</a></p>
+      <div class="cookie-consent-actions">
+        <button type="button" id="consent-accept" class="btn btn-primary btn-consent" data-i18n="consentAccept">Acceptera</button>
+        <button type="button" id="consent-reject" class="btn btn-ghost btn-consent" data-i18n="consentReject">Avvisa</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

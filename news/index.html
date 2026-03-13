@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nyheter — Attestro | Älgamo Software AB</title>
   <meta name="description" content="Senaste nyheterna från Attestro och Älgamo Software AB. Uppdateringar om produkten, branschen och företaget." />
-  <link rel="canonical" href="https://algamo.se/blog.html" />
+  <link rel="canonical" href="https://algamo.se/news/" />
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://algamo.se/blog.html" />
+  <meta property="og:url" content="https://algamo.se/news/" />
   <meta property="og:title" content="Nyheter — Attestro | Älgamo Software AB" />
   <meta property="og:description" content="Senaste nyheterna från Attestro och Älgamo Software AB. Uppdateringar om produkten, branschen och företaget." />
   <meta property="og:image" content="https://algamo.se/assets/logo.png" />
@@ -16,9 +16,9 @@
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:site_name" content="Älgamo Software AB" />
   <!-- hreflang -->
-  <link rel="alternate" hreflang="sv" href="https://algamo.se/blog.html" />
-  <link rel="alternate" hreflang="en" href="https://algamo.se/blog.html" />
-  <link rel="alternate" hreflang="x-default" href="https://algamo.se/blog.html" />
+  <link rel="alternate" hreflang="sv" href="https://algamo.se/news/" />
+  <link rel="alternate" hreflang="en" href="https://algamo.se/news/" />
+  <link rel="alternate" hreflang="x-default" href="https://algamo.se/news/" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Nyheter — Attestro | Älgamo Software AB" />
@@ -28,7 +28,7 @@
   <link rel="icon" type="image/png" href="/assets/logo.png" />
   <link rel="apple-touch-icon" href="/assets/logo.png" />
   <link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="../styles.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,6 +37,29 @@
       { "@type": "ListItem", "position": 1, "name": "Hem", "item": "https://algamo.se/" },
       { "@type": "ListItem", "position": 2, "name": "Nyheter" }
     ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Bloggen är igång!",
+    "datePublished": "2026-03-13",
+    "author": {
+      "@type": "Organization",
+      "name": "Älgamo Software AB",
+      "url": "https://algamo.se"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Älgamo Software AB",
+      "url": "https://algamo.se",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://algamo.se/assets/logo.png"
+      }
+    },
+    "mainEntityOfPage": "https://algamo.se/news/"
   }
   </script>
   <script type="application/ld+json">
@@ -59,7 +82,7 @@
         "url": "https://algamo.se/assets/logo.png"
       }
     },
-    "mainEntityOfPage": "https://algamo.se/blog.html"
+    "mainEntityOfPage": "https://algamo.se/news/"
   }
   </script>
 </head>
@@ -67,8 +90,8 @@
   <a href="#main" class="skip-link" data-i18n="skipToContent">Hoppa till innehåll</a>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo-link">
-        <img src="assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img" width="180" height="48" />
+      <a href="../index.html" class="logo-link">
+        <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img" width="180" height="48" />
         <span class="logo-fallback">ÄLGAMO Software AB</span>
       </a>
       <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Meny">
@@ -78,39 +101,46 @@
       </button>
       <div id="mobile-menu" class="menu-panel">
         <nav class="nav">
-          <a href="index.html#process" data-i18n="navSolutions">Funktioner</a>
-          <a href="about.html" data-i18n="navAbout">Om oss</a>
-          <a href="pricing.html" data-i18n="navPricing">Priser</a>
-          <a href="index.html#contact" data-i18n="navContact">Kontakt</a>
-          <a href="blog.html" data-i18n="navBlog">Nyheter</a>
+          <a href="../index.html#process" data-i18n="navSolutions">Funktioner</a>
+          <a href="../about.html" data-i18n="navAbout">Om oss</a>
+          <a href="../pricing.html" data-i18n="navPricing">Priser</a>
+          <a href="../index.html#contact" data-i18n="navContact">Kontakt</a>
+          <a href="../news/" data-i18n="navNews">Nyheter</a>
+          <a href="../blog/" data-i18n="navBlog">Blogg</a>
         </nav>
         <div class="lang-switcher" role="group" aria-label="Språk">
           <button type="button" class="lang-btn" data-lang-btn="sv" aria-pressed="true">Svenska</button>
           <span class="lang-sep" aria-hidden="true">|</span>
           <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">English</button>
         </div>
-        <a href="index.html#contact" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
+        <a href="../index.html#contact" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
       </div>
     </div>
   </header>
 
   <nav class="breadcrumb container" aria-label="Breadcrumb">
-    <a href="index.html" data-i18n="breadcrumbHome">Hem</a>
+    <a href="../index.html" data-i18n="breadcrumbHome">Hem</a>
     <span aria-hidden="true">&gt;</span>
-    <span data-i18n="footerBlog">Nyheter</span>
+    <span data-i18n="navNews">Nyheter</span>
   </nav>
 
   <main id="main">
-    <section class="section blog">
+    <section class="section nyheter">
       <div class="container">
-        <h1 class="section-title" data-i18n="blogTitle">Nyheter</h1>
-        <p class="section-lead" data-i18n="blogLead">Senaste uppdateringarna från Attestro och Älgamo Software AB.</p>
+        <h1 class="section-title" data-i18n="newsTitle">Nyheter</h1>
+        <p class="section-lead" data-i18n="newsLead">Senaste uppdateringarna från Attestro och Älgamo Software AB.</p>
 
         <div class="blog-posts">
           <article class="blog-post-entry">
+            <time datetime="2026-03-13">2026-03-13</time>
+            <h2 data-i18n="newsPost2Title">Bloggen är igång!</h2>
+            <p data-i18n="newsPost2Body">Nu har vi börjat lägga upp bloggartiklar om fakturakontroll, OCR och automatisering. Vi skriver för ekonomiteam och projektledare som vill förstå varför leverantörsfakturor ofta är krångliga att hantera, och hur det går att göra det enklare. Kika in på bloggsidan och läs våra första inlägg!</p>
+          </article>
+
+          <article class="blog-post-entry">
             <time datetime="2026-03-11">2026-03-11</time>
-            <h2 data-i18n="blogPost1Title">Webbplatsen är lanserad!</h2>
-            <p data-i18n="blogPost1Body">Vi är glada att kunna presentera vår nya webbplats för Attestro. Här kommer ni kunna följa vår resa och ta del av nyheter om produkten och företaget. Välkomna!</p>
+            <h2 data-i18n="newsPost1Title">Webbplatsen är lanserad!</h2>
+            <p data-i18n="newsPost1Body">Vi är glada att kunna presentera vår nya webbplats för Attestro. Här kommer ni kunna följa vår resa och ta del av nyheter om produkten och företaget. Välkomna!</p>
           </article>
         </div>
       </div>
@@ -120,19 +150,20 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <a href="index.html" class="logo-link logo-link-footer">
-          <img src="assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" />
+        <a href="../index.html" class="logo-link logo-link-footer">
+          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" />
           <span class="logo-fallback">ÄLGAMO Software AB</span>
         </a>
         <p class="footer-tagline" data-i18n="footerTagline">Attestro. Tidseffektiv fakturakontroll.</p>
       </div>
       <div class="footer-legal">
-        <p data-i18n="footerLegal">Älgamo Software AB — Sverige</p>
+        <p data-i18n="footerLegal">Älgamo Software AB, Sverige</p>
         <p class="footer-support"><span data-i18n="footerSupport">Kundsupport:</span> <a href="mailto:support@algamo.se">support@algamo.se</a></p>
         <p class="footer-social"><a href="https://www.linkedin.com/company/%C3%A4lgamo-software-ab/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-        <p class="footer-blog"><a href="blog.html" data-i18n="footerBlog">Nyheter</a></p>
-        <p class="footer-security"><a href="security.html" data-i18n="footerSecurity">Säkerhet</a></p>
-        <p class="footer-privacy"><a href="privacy.html" data-i18n="footerPrivacy">Integritetspolicy</a></p>
+        <p class="footer-news"><a href="../news/" data-i18n="footerNews">Nyheter</a></p>
+        <p class="footer-blog"><a href="../blog/" data-i18n="footerBlog">Blogg</a></p>
+        <p class="footer-security"><a href="../security.html" data-i18n="footerSecurity">Säkerhet</a></p>
+        <p class="footer-privacy"><a href="../privacy.html" data-i18n="footerPrivacy">Integritetspolicy</a></p>
         <p class="footer-cookies"><a href="#" id="cookie-settings-link" data-i18n="footerCookies">Cookie-inställningar</a></p>
       </div>
     </div>
@@ -140,7 +171,7 @@
 
   <div id="cookie-consent" class="cookie-consent" role="dialog" aria-label="Cookie-samtycke" hidden>
     <div class="container cookie-consent-inner">
-      <p class="cookie-consent-text"><span data-i18n="consentText">Vi använder cookies för anonym webbplatsstatistik (Google Analytics). Ingen data används för marknadsföring.</span> <a href="privacy.html#cookies" data-i18n="consentPrivacyLink">Läs mer i vår integritetspolicy</a></p>
+      <p class="cookie-consent-text"><span data-i18n="consentText">Vi använder cookies för anonym webbplatsstatistik (Google Analytics). Ingen data används för marknadsföring.</span> <a href="../privacy.html#cookies" data-i18n="consentPrivacyLink">Läs mer i vår integritetspolicy</a></p>
       <div class="cookie-consent-actions">
         <button type="button" id="consent-accept" class="btn btn-primary btn-consent" data-i18n="consentAccept">Acceptera</button>
         <button type="button" id="consent-reject" class="btn btn-ghost btn-consent" data-i18n="consentReject">Avvisa</button>
