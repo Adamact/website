@@ -29,6 +29,12 @@
   <link rel="apple-touch-icon" href="/assets/logo.png" />
   <link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="styles.css" />
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-cjvUyJcrmPfCQoZQOkSLo.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -122,20 +128,9 @@
         <p class="footer-blog"><a href="blog/" data-i18n="footerBlog">Blogg</a></p>
         <p class="footer-security"><a href="security.html" data-i18n="footerSecurity">Säkerhet</a></p>
         <p class="footer-privacy"><a href="privacy.html" data-i18n="footerPrivacy">Integritetspolicy</a></p>
-        <p class="footer-cookies"><a href="#" id="cookie-settings-link" data-i18n="footerCookies">Cookie-inställningar</a></p>
       </div>
     </div>
   </footer>
-
-  <div id="cookie-consent" class="cookie-consent" role="dialog" aria-label="Cookie-samtycke" hidden>
-    <div class="container cookie-consent-inner">
-      <p class="cookie-consent-text"><span data-i18n="consentText">Vi använder cookies för anonym webbplatsstatistik (Google Analytics). Ingen data används för marknadsföring.</span> <a href="privacy.html#cookies" data-i18n="consentPrivacyLink">Läs mer i vår integritetspolicy</a></p>
-      <div class="cookie-consent-actions">
-        <button type="button" id="consent-accept" class="btn btn-primary btn-consent" data-i18n="consentAccept">Acceptera</button>
-        <button type="button" id="consent-reject" class="btn btn-ghost btn-consent" data-i18n="consentReject">Avvisa</button>
-      </div>
-    </div>
-  </div>
 
   <script type="module" src="/src/main.ts"></script>
 </body>

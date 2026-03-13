@@ -1,12 +1,5 @@
 // Älgamo Software AB — i18n and smooth scroll
 const STORAGE_KEY = "algamo-lang";
-const CONSENT_KEY = "algamo-consent";
-
-interface ConsentData {
-  analytics: boolean;
-  timestamp: string;
-}
-
 type Lang = "sv" | "en";
 type Translations = Record<Lang, Record<string, string>>;
 
@@ -162,19 +155,19 @@ const translations: Translations = {
     privacyPageDescription: "Integritetspolicy för Attestro och algamo.se. Hur vi hanterar personuppgifter, vilka uppgifter vi behandlar och dina rättigheter enligt GDPR.",
     privacyTitle: "Integritetspolicy",
     privacyLead: "Här beskriver vi hur Älgamo Software AB behandlar personuppgifter på denna webbplats och i tjänsten Attestro.",
-    privacyLastUpdated: "Senast uppdaterad: 9 mars 2026",
+    privacyLastUpdated: "Senast uppdaterad: 13 mars 2026",
     privacyControllerTitle: "Personuppgiftsansvarig",
     privacyControllerText: "Älgamo Software AB är personuppgiftsansvarig för behandlingen av personuppgifter på denna webbplats. Kontakta oss på <a href=\"mailto:support@algamo.se\">support@algamo.se</a> vid frågor om personuppgifter.",
     privacyDataTitle: "Vilka uppgifter vi behandlar",
-    privacyDataText: "<strong>Språkpreferens:</strong> Vi sparar ert språkval (svenska/engelska) lokalt i er webbläsare (localStorage). Detta är ingen personuppgift och skickas aldrig till våra servrar.<br><br><strong>Kontaktförfrågningar:</strong> När ni skickar en förfrågan via kontaktformuläret öppnas ert eget e-postprogram. Meddelandet skickas direkt från er e-postklient. Vi lagrar ingen data på våra servrar via formuläret. När vi tar emot ert e-postmeddelande behandlar vi er e-postadress, eventuellt namn och meddelandeinnehåll för att besvara er förfrågan.<br><br><strong>Analyticscookies:</strong> Om ni samtycker via vår cookiebanner sätts cookies av Google Analytics 4 (<code>_ga</code>, <code>_ga_*</code>) för anonym webbplatsstatistik. Se avsnittet \"Cookies och analys\" nedan.<br><br><strong>Serverloggar:</strong> Webbplatsen hostas av GitHub Pages (se avsnittet Hosting nedan). GitHub kan behandla besökares IP-adresser i sina serverloggar i samband med leverans av webbplatsen.",
+    privacyDataText: "<strong>Språkpreferens:</strong> Vi sparar ert språkval (svenska/engelska) lokalt i er webbläsare (localStorage). Detta är ingen personuppgift och skickas aldrig till våra servrar.<br><br><strong>Kontaktförfrågningar:</strong> När ni skickar en förfrågan via kontaktformuläret öppnas ert eget e-postprogram. Meddelandet skickas direkt från er e-postklient. Vi lagrar ingen data på våra servrar via formuläret. När vi tar emot ert e-postmeddelande behandlar vi er e-postadress, eventuellt namn och meddelandeinnehåll för att besvara er förfrågan.<br><br><strong>Webbplatsstatistik:</strong> Vi använder Plausible Analytics för anonym besöksstatistik. Plausible sätter inga cookies och samlar inte in personuppgifter. Data som samlas in inkluderar sidvisningar, hänvisningskälla och enhetstyp, men ingen information kan kopplas till enskilda besökare.<br><br><strong>Serverloggar:</strong> Webbplatsen hostas av GitHub Pages (se avsnittet Hosting nedan). GitHub kan behandla besökares IP-adresser i sina serverloggar i samband med leverans av webbplatsen.",
     privacyLegalBasisTitle: "Rättslig grund",
-    privacyLegalBasisText: "<strong>Språkpreferens:</strong> Berättigat intresse (artikel 6.1 f GDPR) — för att förbättra användarupplevelsen.<br><br><strong>Kontaktförfrågningar:</strong> Åtgärder som föregår avtal på den registrerades begäran (artikel 6.1 b GDPR) — ni kontaktar oss om en potentiell affärsrelation. Ni kan när som helst begära att vi raderar era uppgifter.<br><br><strong>Analyticscookies:</strong> Samtycke (artikel 6.1 a GDPR) — laddas först efter ert aktiva godkännande via cookiebannern. Ni kan återkalla samtycket när som helst.<br><br><strong>Hosting/serverloggar:</strong> Berättigat intresse (artikel 6.1 f GDPR) — nödvändigt för att leverera webbplatsen.",
+    privacyLegalBasisText: "<strong>Språkpreferens:</strong> Berättigat intresse (artikel 6.1 f GDPR) — för att förbättra användarupplevelsen.<br><br><strong>Kontaktförfrågningar:</strong> Åtgärder som föregår avtal på den registrerades begäran (artikel 6.1 b GDPR) — ni kontaktar oss om en potentiell affärsrelation. Ni kan när som helst begära att vi raderar era uppgifter.<br><br><strong>Webbplatsstatistik:</strong> Berättigat intresse (artikel 6.1 f GDPR) — för att förstå hur webbplatsen används. Plausible Analytics samlar inte in personuppgifter och sätter inga cookies.<br><br><strong>Hosting/serverloggar:</strong> Berättigat intresse (artikel 6.1 f GDPR) — nödvändigt för att leverera webbplatsen.",
     privacyRetentionTitle: "Lagringstid",
-    privacyRetentionText: "<strong>Språkpreferens:</strong> Lagras i er webbläsare tills ni rensar den eller byter webbläsare. Vi har ingen åtkomst till denna data.<br><br><strong>Kontaktförfrågningar:</strong> E-postmeddelanden bevaras så länge det är relevant för den pågående affärsdialogen och raderas därefter. Ni kan begära radering när som helst.<br><br><strong>Analyticscookies:</strong> Cookies (<code>_ga</code>, <code>_ga_*</code>) lagras i upp till 14 månader. Samtyckesvalet lagras i er webbläsare (localStorage) utan tidsbegränsning.<br><br><strong>Serverloggar:</strong> Hanteras av GitHub enligt deras integritetspolicy. Vi har ingen åtkomst till dessa loggar.",
+    privacyRetentionText: "<strong>Språkpreferens:</strong> Lagras i er webbläsare tills ni rensar den eller byter webbläsare. Vi har ingen åtkomst till denna data.<br><br><strong>Kontaktförfrågningar:</strong> E-postmeddelanden bevaras så länge det är relevant för den pågående affärsdialogen och raderas därefter. Ni kan begära radering när som helst.<br><br><strong>Webbplatsstatistik:</strong> Plausible lagrar aggregerad statistik utan koppling till enskilda besökare. Ingen data lagras i besökarens webbläsare.<br><br><strong>Serverloggar:</strong> Hanteras av GitHub enligt deras integritetspolicy. Vi har ingen åtkomst till dessa loggar.",
     privacyHostingTitle: "Hosting",
     privacyHostingText: "Webbplatsen hostas av GitHub Pages (GitHub, Inc., ett Microsoft-företag, USA). GitHub kan behandla besökares IP-adresser i sina serverloggar. GitHub är certifierat under EU-US Data Privacy Framework. Mer information finns i <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\" target=\"_blank\" rel=\"noopener noreferrer\">GitHubs integritetspolicy</a>.",
     privacyThirdPartyTitle: "Tredjepartsleverantörer",
-    privacyThirdPartyText: "Typsnitt är lokalt hostade. Vi laddar inga externa skript eller bilder från tredje part.<br><br><strong>GitHub Pages</strong> (GitHub, Inc., ett Microsoft-företag, USA) — hosting av webbplatsen. Se ovan.<br><br><strong>Google LLC</strong> (USA) — Google Analytics 4 för anonym webbplatsstatistik. Laddas enbart efter samtycke. Google är certifierat under EU-US Data Privacy Framework. Mer information finns i <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Googles integritetspolicy</a>.",
+    privacyThirdPartyText: "Typsnitt är lokalt hostade. Vi laddar inga externa bilder från tredje part.<br><br><strong>GitHub Pages</strong> (GitHub, Inc., ett Microsoft-företag, USA) — hosting av webbplatsen. Se ovan.<br><br><strong>Plausible Analytics</strong> (Plausible Insights OÜ, Estland, EU) — cookiefri webbplatsstatistik. Ingen persondata behandlas. Mer information finns i <a href=\"https://plausible.io/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Plausibles integritetspolicy</a>.",
     privacyRightsTitle: "Dina rättigheter",
     privacyRightsText: "Enligt GDPR har du rätt att:<br>• begära tillgång till dina personuppgifter (artikel 15)<br>• begära rättelse av felaktiga uppgifter (artikel 16)<br>• begära radering av dina uppgifter (artikel 17)<br>• begära begränsning av behandling (artikel 18)<br>• begära dataportabilitet (artikel 20)<br>• invända mot behandling (artikel 21)<br>• återkalla samtycke när som helst, utan att det påverkar lagligheten av behandling som utförts innan återkallelsen (artikel 7.3)<br>• lämna klagomål till Integritetsskyddsmyndigheten (IMY), <a href=\"https://www.imy.se\" target=\"_blank\" rel=\"noopener noreferrer\">www.imy.se</a>, <a href=\"mailto:imy@imy.se\">imy@imy.se</a>",
     privacyContactTitle: "Kontakt",
@@ -208,16 +201,9 @@ const translations: Translations = {
     valueTransparencyDesc: "Ni ser exakt vad ni betalar och hur era fakturor hanteras. Inga dolda avgifter, inga överraskningar.",
     valueLongtermTitle: "Långsiktighet",
     valueLongtermDesc: "Vi bygger för att hålla. Det gäller både tekniken och relationerna med våra kunder.",
-    // Cookie consent
-    consentText: "Vi använder cookies för anonym webbplatsstatistik (Google Analytics). Ingen data används för marknadsföring.",
-    consentAccept: "Acceptera",
-    consentReject: "Avvisa",
-    consentPrivacyLink: "Läs mer i vår integritetspolicy",
-    footerCookies: "Cookie-inställningar",
-    // Privacy: cookies section
-    privacyCookieTitle: "Cookies och analys",
-    privacyCookieText: "Vi använder Google Analytics 4 (GA4) för anonym webbplatsstatistik. GA4 sätter cookies (<code>_ga</code>, <code>_ga_*</code>) som lagras i upp till 14 månader. Data som samlas in inkluderar sidvisningar, tid på sidan, hänvisningskälla och enhetstyp. Ingen data används för marknadsföring eller delas med tredje part utöver Google.<br><br>GA4 laddas <strong>endast efter ditt aktiva samtycke</strong> via cookiebannern. Du kan när som helst ändra ditt val.",
-    privacyCookieReset: "Ändra cookie-inställningar",
+    // Privacy: analytics section
+    privacyCookieTitle: "Webbplatsstatistik",
+    privacyCookieText: "Vi använder Plausible Analytics för anonym besöksstatistik. Plausible sätter inga cookies och samlar inte in personuppgifter. Data som samlas in inkluderar sidvisningar, hänvisningskälla och enhetstyp, men ingen information kan kopplas till enskilda besökare. Plausible Insights OÜ är baserat i Estland (EU). Mer information finns i <a href=\"https://plausible.io/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Plausibles integritetspolicy</a>.",
     // Skip link
     skipToContent: "Hoppa till innehåll",
     // Breadcrumb
@@ -585,19 +571,19 @@ const translations: Translations = {
     privacyPageDescription: "Privacy policy for Attestro and algamo.se. How we handle personal data, what data we process, and your rights under GDPR.",
     privacyTitle: "Privacy policy",
     privacyLead: "Here we describe how Älgamo Software AB processes personal data on this website and in the Attestro service.",
-    privacyLastUpdated: "Last updated: 9 March 2026",
+    privacyLastUpdated: "Last updated: 13 March 2026",
     privacyControllerTitle: "Data controller",
     privacyControllerText: "Älgamo Software AB is the data controller for personal data processing on this website. Contact us at <a href=\"mailto:support@algamo.se\">support@algamo.se</a> for questions about personal data.",
     privacyDataTitle: "What data we process",
-    privacyDataText: "<strong>Language preference:</strong> We store your language choice (Swedish/English) locally in your browser (localStorage). This is not personal data and is never sent to our servers.<br><br><strong>Contact inquiries:</strong> When you submit an inquiry via the contact form, your own email client opens. The message is sent directly from your email client. We do not store any data on our servers via the form. When we receive your email, we process your email address, any name provided, and message content in order to respond to your inquiry.<br><br><strong>Analytics cookies:</strong> If you consent via our cookie banner, cookies are set by Google Analytics 4 (<code>_ga</code>, <code>_ga_*</code>) for anonymous website statistics. See the \"Cookies and analytics\" section below.<br><br><strong>Server logs:</strong> The website is hosted on GitHub Pages (see Hosting section below). GitHub may process visitor IP addresses in its server logs as part of delivering the website.",
+    privacyDataText: "<strong>Language preference:</strong> We store your language choice (Swedish/English) locally in your browser (localStorage). This is not personal data and is never sent to our servers.<br><br><strong>Contact inquiries:</strong> When you submit an inquiry via the contact form, your own email client opens. The message is sent directly from your email client. We do not store any data on our servers via the form. When we receive your email, we process your email address, any name provided, and message content in order to respond to your inquiry.<br><br><strong>Website statistics:</strong> We use Plausible Analytics for anonymous visitor statistics. Plausible does not set cookies and does not collect personal data. Data collected includes page views, referral source, and device type, but no information can be linked to individual visitors.<br><br><strong>Server logs:</strong> The website is hosted on GitHub Pages (see Hosting section below). GitHub may process visitor IP addresses in its server logs as part of delivering the website.",
     privacyLegalBasisTitle: "Legal basis",
-    privacyLegalBasisText: "<strong>Language preference:</strong> Legitimate interest (Article 6.1 f GDPR) — to improve user experience.<br><br><strong>Contact inquiries:</strong> Pre-contractual measures at the data subject's request (Article 6.1 b GDPR) — you contact us about a potential business relationship. You may request deletion of your data at any time.<br><br><strong>Analytics cookies:</strong> Consent (Article 6.1 a GDPR) — loaded only after your active approval via the cookie banner. You may withdraw consent at any time.<br><br><strong>Hosting/server logs:</strong> Legitimate interest (Article 6.1 f GDPR) — necessary to deliver the website.",
+    privacyLegalBasisText: "<strong>Language preference:</strong> Legitimate interest (Article 6.1 f GDPR) — to improve user experience.<br><br><strong>Contact inquiries:</strong> Pre-contractual measures at the data subject's request (Article 6.1 b GDPR) — you contact us about a potential business relationship. You may request deletion of your data at any time.<br><br><strong>Website statistics:</strong> Legitimate interest (Article 6.1 f GDPR) — to understand how the website is used. Plausible Analytics does not collect personal data and does not set cookies.<br><br><strong>Hosting/server logs:</strong> Legitimate interest (Article 6.1 f GDPR) — necessary to deliver the website.",
     privacyRetentionTitle: "Retention period",
-    privacyRetentionText: "<strong>Language preference:</strong> Stored in your browser until you clear it or switch browsers. We have no access to this data.<br><br><strong>Contact inquiries:</strong> Emails are retained as long as relevant to the ongoing business dialogue and deleted afterwards. You may request deletion at any time.<br><br><strong>Analytics cookies:</strong> Cookies (<code>_ga</code>, <code>_ga_*</code>) are stored for up to 14 months. Your consent choice is stored in your browser (localStorage) indefinitely.<br><br><strong>Server logs:</strong> Managed by GitHub according to their privacy policy. We have no access to these logs.",
+    privacyRetentionText: "<strong>Language preference:</strong> Stored in your browser until you clear it or switch browsers. We have no access to this data.<br><br><strong>Contact inquiries:</strong> Emails are retained as long as relevant to the ongoing business dialogue and deleted afterwards. You may request deletion at any time.<br><br><strong>Website statistics:</strong> Plausible stores aggregated statistics with no link to individual visitors. No data is stored in the visitor's browser.<br><br><strong>Server logs:</strong> Managed by GitHub according to their privacy policy. We have no access to these logs.",
     privacyHostingTitle: "Hosting",
     privacyHostingText: "The website is hosted on GitHub Pages (GitHub, Inc., a Microsoft company, USA). GitHub may process visitor IP addresses in its server logs. GitHub is certified under the EU-US Data Privacy Framework. More information is available in <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub's privacy policy</a>.",
     privacyThirdPartyTitle: "Third-party providers",
-    privacyThirdPartyText: "Fonts are self-hosted. We load no external scripts or images from third parties.<br><br><strong>GitHub Pages</strong> (GitHub, Inc., a Microsoft company, USA) — website hosting. See above.<br><br><strong>Google LLC</strong> (USA) — Google Analytics 4 for anonymous website statistics. Loaded only after consent. Google is certified under the EU-US Data Privacy Framework. More information is available in <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Google's privacy policy</a>.",
+    privacyThirdPartyText: "Fonts are self-hosted. We load no external images from third parties.<br><br><strong>GitHub Pages</strong> (GitHub, Inc., a Microsoft company, USA) — website hosting. See above.<br><br><strong>Plausible Analytics</strong> (Plausible Insights OÜ, Estonia, EU) — cookie-free website statistics. No personal data is processed. More information is available in <a href=\"https://plausible.io/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Plausible's privacy policy</a>.",
     privacyRightsTitle: "Your rights",
     privacyRightsText: "Under GDPR you have the right to:<br>• request access to your personal data (Article 15)<br>• request correction of inaccurate data (Article 16)<br>• request deletion of your data (Article 17)<br>• request restriction of processing (Article 18)<br>• request data portability (Article 20)<br>• object to processing (Article 21)<br>• withdraw consent at any time, without affecting the lawfulness of processing carried out before withdrawal (Article 7.3)<br>• file a complaint with the Swedish Authority for Privacy Protection (IMY), <a href=\"https://www.imy.se\" target=\"_blank\" rel=\"noopener noreferrer\">www.imy.se</a>, <a href=\"mailto:imy@imy.se\">imy@imy.se</a>",
     privacyContactTitle: "Contact",
@@ -631,16 +617,9 @@ const translations: Translations = {
     valueTransparencyDesc: "You see exactly what you pay and how your invoices are handled. No hidden fees, no surprises.",
     valueLongtermTitle: "Long-term thinking",
     valueLongtermDesc: "We build to last. That goes for both the technology and the relationships with our customers.",
-    // Cookie consent
-    consentText: "We use cookies for anonymous website statistics (Google Analytics). No data is used for marketing.",
-    consentAccept: "Accept",
-    consentReject: "Reject",
-    consentPrivacyLink: "Read more in our privacy policy",
-    footerCookies: "Cookie settings",
-    // Privacy: cookies section
-    privacyCookieTitle: "Cookies and analytics",
-    privacyCookieText: "We use Google Analytics 4 (GA4) for anonymous website statistics. GA4 sets cookies (<code>_ga</code>, <code>_ga_*</code>) stored for up to 14 months. Data collected includes page views, time on page, referral source, and device type. No data is used for marketing or shared with third parties beyond Google.<br><br>GA4 is loaded <strong>only after your active consent</strong> via the cookie banner. You can change your choice at any time.",
-    privacyCookieReset: "Change cookie settings",
+    // Privacy: analytics section
+    privacyCookieTitle: "Website statistics",
+    privacyCookieText: "We use Plausible Analytics for anonymous visitor statistics. Plausible does not set cookies and does not collect personal data. Data collected includes page views, referral source, and device type, but no information can be linked to individual visitors. Plausible Insights OÜ is based in Estonia (EU). More information is available in <a href=\"https://plausible.io/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Plausible's privacy policy</a>.",
     // Skip link
     skipToContent: "Skip to main content",
     // Breadcrumb
@@ -1154,118 +1133,6 @@ function initCalculator(): void {
   update();
 }
 
-// Cookie consent + GA4 via GTM
-const GA_ID = "G-N1YY4NV0YC";
-
-function getConsent(): ConsentData | null {
-  try {
-    const raw = localStorage.getItem(CONSENT_KEY);
-    if (!raw) return null;
-    return JSON.parse(raw) as ConsentData;
-  } catch {
-    return null;
-  }
-}
-
-function setConsent(analytics: boolean): void {
-  const data: ConsentData = { analytics, timestamp: new Date().toISOString() };
-  try {
-    localStorage.setItem(CONSENT_KEY, JSON.stringify(data));
-  } catch {
-    // ignore
-  }
-}
-
-function clearConsent(): void {
-  try {
-    localStorage.removeItem(CONSENT_KEY);
-  } catch {
-    // ignore
-  }
-}
-
-let gaLoaded = false;
-function loadGA(): void {
-  if (gaLoaded) return;
-  gaLoaded = true;
-
-  const script = document.createElement("script");
-  script.async = true;
-  script.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
-  document.head.appendChild(script);
-
-  const w = window as any;
-  w.dataLayer = w.dataLayer || [];
-  function gtag(...args: any[]) { w.dataLayer.push(args); }
-  gtag("js", new Date());
-  gtag("config", GA_ID);
-}
-
-function deleteGaCookies(): void {
-  const cookies = document.cookie.split(";");
-  const hostname = window.location.hostname;
-  for (const cookie of cookies) {
-    const name = cookie.split("=")[0].trim();
-    if (name === "_ga" || name.startsWith("_ga_")) {
-      // Try all domain variants to ensure deletion
-      document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=" + hostname;
-      document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=." + hostname;
-      document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
-    }
-  }
-}
-
-function showConsentBanner(): void {
-  const banner = document.getElementById("cookie-consent");
-  if (banner) banner.removeAttribute("hidden");
-}
-
-function hideConsentBanner(): void {
-  const banner = document.getElementById("cookie-consent");
-  if (banner) banner.setAttribute("hidden", "");
-}
-
-function initCookieConsent(): void {
-  const consent = getConsent();
-
-  if (consent === null) {
-    // No choice made yet — show banner
-    showConsentBanner();
-  } else if (consent.analytics) {
-    // Previously accepted — load GTM silently
-    loadGA();
-  }
-  // Previously rejected — do nothing
-
-  // Accept button
-  document.getElementById("consent-accept")?.addEventListener("click", () => {
-    setConsent(true);
-    loadGA();
-    hideConsentBanner();
-  });
-
-  // Reject button
-  document.getElementById("consent-reject")?.addEventListener("click", () => {
-    setConsent(false);
-    deleteGaCookies();
-    hideConsentBanner();
-  });
-
-  // Footer cookie settings link + privacy page reset button
-  document.querySelectorAll("#cookie-settings-link, #cookie-reset-btn").forEach((el) => {
-    el.addEventListener("click", (e) => {
-      e.preventDefault();
-      clearConsent();
-      deleteGaCookies();
-      gaLoaded = false;
-      showConsentBanner();
-      // Scroll banner into view
-      const banner = document.getElementById("cookie-consent");
-      if (banner) banner.scrollIntoView({ behavior: "smooth", block: "end" });
-    });
-  });
-}
-
 function initFaqAnimation(): void {
   document.querySelectorAll<HTMLDetailsElement>(".faq-item").forEach((item) => {
     const summary = item.querySelector("summary");
@@ -1325,6 +1192,5 @@ initPricingToggle();
 initMobileMenu();
 initContactForm();
 initCalculator();
-initCookieConsent();
 initFaqAnimation();
 initBlogSearch();
