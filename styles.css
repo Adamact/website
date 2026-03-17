@@ -121,8 +121,9 @@
   --space-3xl: 4rem;
   --space-4xl: 6rem;
   --radius: 0.5rem;
+  --radius-sm: 0.25rem;
   --radius-lg: 0.75rem;
-  --color-error: var(--color-error);
+  --color-error: #d32f2f;
   --container: min(1120px, 100% - 2rem);
 }
 
