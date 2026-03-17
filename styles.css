@@ -2346,6 +2346,12 @@ body > main {
   display: inline-block;
 }
 
+.nyheter .blog-post-entry > p {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
 .blog-post-entry h2 {
   font-size: 1.05rem;
   line-height: 1.4;
