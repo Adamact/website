@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trevägs-matchning: så kontrolleras inköpsorder, leveranskvitto och faktura | Attestro</title>
+  <meta name="description" content="Trevägs-matchning jämför inköpsorder, leveranskvitto och faktura för att säkerställa att beställt, levererat och fakturerat stämmer överens. Så fungerar det i bygg och transport." />
+  <link rel="canonical" href="https://algamo.se/blog/trevags-matchning.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://algamo.se/blog/trevags-matchning.html" />
+  <meta property="og:title" content="Trevägs-matchning: så kontrolleras inköpsorder, leveranskvitto och faktura | Attestro" />
+  <meta property="og:description" content="Trevägs-matchning jämför inköpsorder, leveranskvitto och faktura för att säkerställa att beställt, levererat och fakturerat stämmer överens. Så fungerar det i bygg och transport." />
+  <meta property="og:image" content="https://algamo.se/assets/logo.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:locale" content="sv_SE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="Älgamo Software AB" />
+  <meta property="article:published_time" content="2026-03-18" />
+  <meta property="article:author" content="Älgamo Software AB" />
+  <meta property="article:section" content="Guide" />
+  <meta property="article:tag" content="trevägs-matchning" />
+  <meta property="article:tag" content="inköpsorder" />
+  <meta property="article:tag" content="fakturakontroll" />
+  <meta property="article:tag" content="leveransmatchning" />
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="sv" href="https://algamo.se/blog/trevags-matchning.html" />
+  <link rel="alternate" hreflang="en" href="https://algamo.se/blog/trevags-matchning.html" />
+  <link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/trevags-matchning.html" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Trevägs-matchning: så kontrolleras inköpsorder, leveranskvitto och faktura | Attestro" />
+  <meta name="twitter:description" content="Trevägs-matchning jämför inköpsorder, leveranskvitto och faktura för att säkerställa att beställt, levererat och fakturerat stämmer överens. Så fungerar det i bygg och transport." />
+  <meta name="twitter:image" content="https://algamo.se/assets/logo.png" />
+  <meta name="theme-color" content="#1a2744" />
+  <link rel="icon" type="image/png" href="/assets/logo.png" />
+  <link rel="apple-touch-icon" href="/assets/logo.png" />
+  <link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../styles.css" />
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-cjvUyJcrmPfCQoZQOkSLo.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Hem", "item": "https://algamo.se/" },
+      { "@type": "ListItem", "position": 2, "name": "Blogg", "item": "https://algamo.se/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Trevägs-matchning" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Trevägs-matchning: så kontrolleras inköpsorder, leveranskvitto och faktura",
+    "description": "Trevägs-matchning jämför inköpsorder, leveranskvitto och faktura för att säkerställa att beställt, levererat och fakturerat stämmer överens. Så fungerar det i bygg och transport.",
+    "datePublished": "2026-03-18",
+    "author": {
+      "@type": "Organization",
+      "name": "Älgamo Software AB",
+      "url": "https://algamo.se"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Älgamo Software AB",
+      "url": "https://algamo.se",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://algamo.se/assets/logo.png"
+      }
+    },
+    "mainEntityOfPage": "https://algamo.se/blog/trevags-matchning.html",
+    "inLanguage": "sv",
+    "dateModified": "2026-03-18",
+    "articleSection": "Guide",
+    "wordCount": 1200,
+    "keywords": ["trevägs-matchning", "3-way matching", "inköpsorder", "leveranskvitto", "fakturakontroll", "mängdverifiering", "byggfakturor", "transportfakturor", "leveransmatchning"]
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link" data-i18n="skipToContent">Hoppa till innehåll</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo-link">
+        <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img" width="180" height="48" />
+        <span class="logo-fallback">ÄLGAMO Software AB</span>
+      </a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Meny">
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+      </button>
+      <div id="mobile-menu" class="menu-panel">
+        <nav class="nav">
+          <a href="../produkt.html" data-i18n="navProduct">Produkt</a>
+          <a href="../index.html#process" data-i18n="navSolutions">Funktioner</a>
+          <a href="../about.html" data-i18n="navAbout">Om oss</a>
+          <a href="../pricing.html" data-i18n="navPricing">Priser</a>
+          <a href="../index.html#contact" data-i18n="navContact">Kontakt</a>
+          <a href="../news/" data-i18n="navNews">Nyheter</a>
+          <a href="../blog/" data-i18n="navBlog">Blogg</a>
+        </nav>
+        <div class="lang-switcher" role="group" aria-label="Språk">
+          <button type="button" class="lang-btn" data-lang-btn="sv" aria-pressed="true">Svenska</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">English</button>
+        </div>
+        <a href="../index.html#contact" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="breadcrumb container" aria-label="Breadcrumb">
+    <a href="../index.html" data-i18n="breadcrumbHome">Hem</a>
+    <span aria-hidden="true">&gt;</span>
+    <a href="../blog/" data-i18n="navBlog">Blogg</a>
+    <span aria-hidden="true">&gt;</span>
+    <span data-i18n="blogTvmBreadcrumb">Trevägs-matchning</span>
+  </nav>
+
+  <main id="main">
+    <article class="section blog-trevags-matchning">
+      <div class="container security-content">
+        <h1 class="section-title" data-i18n="blogTvmTitle">Trevägs-matchning: så kontrolleras inköpsorder, leveranskvitto och faktura</h1>
+        <time datetime="2026-03-18" class="blog-article-date">2026-03-18</time>
+        <p class="section-lead" data-i18n="blogTvmLead">Trevägs-matchning är en grundläggande verifieringsmetod som jämför tre dokument: inköpsordern (vad som beställdes), leveranskvittot (vad som levererades) och fakturan (vad som debiteras). Syftet är att säkerställa att alla tre stämmer överens innan betalning sker. Inom bygg och transport, där leveranser ofta är komplexa och delleveranser vanliga, är denna kontroll avgörande för att undvika felbetalningar.</p>
+
+        <div class="blog-flow">
+          <div class="blog-flow-step" data-i18n="blogTvmFlowStep1">Inköpsorder skapas</div>
+          <div class="blog-flow-step" data-i18n="blogTvmFlowStep2">Varor/tjänster levereras</div>
+          <div class="blog-flow-step" data-i18n="blogTvmFlowStep3">Leveranskvitto registreras</div>
+          <div class="blog-flow-step" data-i18n="blogTvmFlowStep4">Faktura inkommer</div>
+          <div class="blog-flow-step" data-i18n="blogTvmFlowStep5">Trevägs-matchning</div>
+          <div class="blog-flow-step" data-i18n="blogTvmFlowStep6">Godkänn eller flagga</div>
+        </div>
+
+        <h2 class="security-subtitle" data-i18n="blogTvmWhatTitle">Vad är trevägs-matchning?</h2>
+        <p class="security-text" data-i18n="blogTvmWhatText1" data-i18n-html>Trevägs-matchning innebär att tre separata dokument jämförs systematiskt. Inköpsordern specificerar vad som beställts: artiklar, kvantiteter, enhetspriser och leveransvillkor. Leveranskvittot bekräftar vad som faktiskt anlänt: mängder, skick och leveransdatum. Fakturan anger vad leverantören begär betalt för. Genom att matcha alla tre kontrolleras att företaget bara betalar för det som faktiskt beställts och levererats till avtalat pris. Metoden är en central del av hur företag <a href="kontrollera-fakturor-mot-avtal.html">kontrollerar fakturor mot avtal</a>.</p>
+        <p class="security-text" data-i18n="blogTvmWhatText2">Tvåvägs-matchning, som enbart jämför inköpsorder mot faktura, missar en kritisk kontrollpunkt. Om leverantören fakturerar för 100 enheter men bara levererade 80, upptäcks inte avvikelsen utan leveranskvittot. Den tredje dokumentkällan gör skillnaden mellan att betala för vad som avtalats och att betala för vad som faktiskt mottagits.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogTvmWhyMattersTitle">Varför trevägs-matchning är avgörande</h2>
+        <p class="security-text" data-i18n="blogTvmWhyMattersText1" data-i18n-html>Utan trevägs-matchning riskerar företag att betala för varor som aldrig levererades, för kvantiteter som överstiger det mottagna, eller till priser som avviker från det avtalade. Varje enskild avvikelse kan vara liten, men summan över hundratals fakturor per månad blir betydande. Företag som inför systematisk trevägs-matchning upptäcker typiskt avvikelser på 2-5 procent av total fakturerad volym, belopp som annars utgör <a href="overdebitering-leverantorer.html">överdebitering från leverantörer</a>.</p>
+        <p class="security-text" data-i18n="blogTvmWhyMattersText2">Problemet förstärks i branscher med höga fakturavolymer och komplexa leveranskedjor. I ett byggprojekt med 50 aktiva leverantörer som var och en skickar 10-20 fakturor per månad blir det praktiskt omöjligt att manuellt verifiera varje rad mot beställning och leveransdokumentation. Ändå är det just dessa rader som innehåller de avvikelser som kostar mest.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogTvmDiscrepanciesTitle">Vanliga avvikelser vid varje matchningspunkt</h2>
+
+        <div class="blog-info-box warning">
+          <div class="blog-info-box-title" data-i18n="blogTvmInfoBoxTitle">Tre matchningspunkter, tre risker</div>
+          <ul>
+            <li data-i18n="blogTvmInfoBoxItem1">PO vs leverans: fel kvantitet, fel artikel, ofullständig leverans</li>
+            <li data-i18n="blogTvmInfoBoxItem2">Leverans vs faktura: fakturerad mängd överstiger levererad, felaktig enhet</li>
+            <li data-i18n="blogTvmInfoBoxItem3">PO vs faktura: avvikande enhetspris, otillåtna tillägg, utgången prislista</li>
+          </ul>
+        </div>
+
+        <p class="security-text" data-i18n="blogTvmDiscrepanciesText1">Avvikelser mellan inköpsorder och leverans uppstår när det som anländer inte stämmer med beställningen. Delleveranser är vanliga i bygg- och transportprojekt, och om de inte registreras korrekt kan leverantören fakturera för den fullständiga ordern. Felaktigt material, skadade varor eller helt uteblivna leveransposter är andra vanliga problem.</p>
+        <p class="security-text" data-i18n="blogTvmDiscrepanciesText2" data-i18n-html>Avvikelser mellan leverans och faktura innebär att leverantören fakturerar för mer än vad som levererats. Det kan handla om kvantitetsskillnader (50 ton levererat, 55 ton fakturerat), enhetsomräkningsfel (pris per ton fakturerat som pris per kubikmeter) eller poster som inte ingick i leveransen. Dessa fel hör till de <a href="vanliga-fel-leverantorsfakturor.html">vanligaste felen i leverantörsfakturor</a>.</p>
+        <p class="security-text" data-i18n="blogTvmDiscrepanciesText3">Avvikelser mellan inköpsorder och faktura handlar typiskt om prissättning. Leverantören tillämpar ett annat enhetspris än det avtalade, lägger på tillägg som saknar stöd i avtalet, eller utgår från en utgången prislista. Dessa avvikelser kan vara svåra att upptäcka utan direkt jämförelse med det ursprungliga avtalsdokumentet.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogTvmConstructionTitle">Trevägs-matchning inom bygg och anläggning</h2>
+        <p class="security-text" data-i18n="blogTvmConstructionText1" data-i18n-html>Inom byggsektorn tar trevägs-matchning en specifik form. Inköpsordern motsvaras av mängdförteckningen i entreprenadavtalet eller en separat beställning. Leveranskvittot kan vara ett mätprotokoll, en dagrapport eller ett kvitteringsunderlag för <a href="ata-hantering-fakturakontroll.html">ÄTA-arbeten</a>. Fakturan är entreprenadfakturan som ska spegla utfört arbete. Att fakturor i <a href="bygg-transport-fakturor.html">bygg och transport</a> har unika egenskaper gör matchningen extra komplex.</p>
+        <p class="security-text" data-i18n="blogTvmConstructionText2">Särskilda utmaningar inom bygg inkluderar mängder som mäts på plats (kubikmeter schakt, löpmeter rör, kvadratmeter beläggning) där mätprotokoll och faktura kan avvika på grund av olika mätmetoder. ÄTA-arbeten som ändrar den ursprungliga beställningen skapar ytterligare komplexitet, eftersom fakturan kan innehålla poster som inte fanns i den ursprungliga mängdförteckningen men som godkänts separat. Delbetalningar baserade på färdigställandegrad innebär att matchningen måste ske kumulativt över flera fakturor.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogTvmTransportTitle">Trevägs-matchning inom transport</h2>
+        <p class="security-text" data-i18n="blogTvmTransportText1" data-i18n-html>Inom transport motsvaras inköpsordern av transportordern eller fraktavtalet. Leveranskvittot kan vara en fraktsedel, ett CMR-dokument eller ett vägningskvitto. Fakturan är transportfakturan. Prissättningen är ofta komplex med avståndszoner, viktklasser, bränsletillägg och tidsbaserade avgifter, vilket skapar utrymme för avvikelser. Mer om dessa komplexiteter finns i vår artikel om <a href="transportavtal-prislistor-fakturor.html">transportavtal, prislistor och fakturor</a>.</p>
+        <p class="security-text" data-i18n="blogTvmTransportText2" data-i18n-html>Viktskillnader mellan lastning och lossning är en av de mest frekventa avvikelserna. Om vägningen vid lastning visar 22 ton men leveranskvittot vid lossning visar 21,5 ton, vilken vikt ska faktureras? Bränsletillägg som ska beräknas mot ett specifikt index kan avvika om leverantören använder fel period. Dessa typer av avvikelser beskrivs mer ingående bland <a href="vanliga-fel-transportfakturor.html">vanliga fel i transportfakturor</a>.</p>
+
+        <table class="blog-comparison-table">
+          <thead>
+            <tr>
+              <th data-i18n="blogTvmTableThDocument">Dokument</th>
+              <th data-i18n="blogTvmTableThConstruction">Bygg & anläggning</th>
+              <th data-i18n="blogTvmTableThTransport">Transport</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-i18n="blogTvmTableRow1Col1">Inköpsorder</td>
+              <td data-i18n="blogTvmTableRow1Col2">Mängdförteckning / ÄTA-beställning</td>
+              <td data-i18n="blogTvmTableRow1Col3">Transportorder / Fraktavtal</td>
+            </tr>
+            <tr>
+              <td data-i18n="blogTvmTableRow2Col1">Leveranskvitto</td>
+              <td data-i18n="blogTvmTableRow2Col2">Mätprotokoll / Dagrapport</td>
+              <td data-i18n="blogTvmTableRow2Col3">Fraktsedel / Vägningskvitto / CMR</td>
+            </tr>
+            <tr>
+              <td data-i18n="blogTvmTableRow3Col1">Faktura</td>
+              <td data-i18n="blogTvmTableRow3Col2">Entreprenadfaktura</td>
+              <td data-i18n="blogTvmTableRow3Col3">Transportfaktura</td>
+            </tr>
+            <tr>
+              <td data-i18n="blogTvmTableRow4Col1">Vanligaste avvikelsen</td>
+              <td data-i18n="blogTvmTableRow4Col2">Felaktiga mängder mot mätprotokoll</td>
+              <td data-i18n="blogTvmTableRow4Col3">Vikten skiljer sig mellan lastning och lossning</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="security-subtitle" data-i18n="blogTvmManualAutoTitle">Manuell kontra automatiserad trevägs-matchning</h2>
+        <p class="security-text" data-i18n="blogTvmManualAutoText1" data-i18n-html>Manuell trevägs-matchning innebär att en person samlar in tre dokument per faktura, öppnar dem sida vid sida och jämför rad för rad. Vid komplexa fakturor med 20-50 rader kan detta ta 20-40 minuter per faktura. Processen kräver att rätt version av varje dokument identifieras, att mängder och priser jämförs korrekt, och att avvikelser dokumenteras. I praktiken leder tidspress till att granskare gör stickprov istället för fullständig kontroll, vilket i sin tur innebär att avvikelser passerar. Detta är en av de processer där företag kan <a href="minska-manuellt-arbete-fakturahantering.html">minska manuellt arbete</a> mest effektivt.</p>
+        <p class="security-text" data-i18n="blogTvmManualAutoText2" data-i18n-html>Automatiserad trevägs-matchning extraherar data från alla tre dokument, oavsett format. Inköpsorderdata kan hämtas direkt från ERP-systemet. Leveransdokumentation kan tolkas med <a href="ocr-faktura.html">OCR och dokumentanalys</a>. Fakturadata extraheras på samma sätt. Systemet matchar sedan artiklarna, jämför kvantiteter och priser, och flaggar avvikelser automatiskt. Hela processen som beskrivs i <a href="automatiserad-fakturakontroll.html">automatiserad fakturakontroll</a> kan utökas med trevägs-matchning.</p>
+        <p class="security-text" data-i18n="blogTvmManualAutoText3">Den avgörande fördelen med automatisering är fullständig kontroll: 100 procent av alla rader på varje faktura jämförs mot beställning och leverans, varje gång, utan undantag. Inget faller mellan stolarna på grund av tidsbrist eller mänsklig trötthet. Systemet tillämpar samma kriterier konsekvent, oavsett om det gäller den första eller den femhundrade fakturan.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogTvmBenefitsTitle">Fördelar med systematisk trevägs-matchning</h2>
+        <p class="security-text" data-i18n="blogTvmBenefitsText1">Den mest direkta fördelen är att företaget inte betalar för varor eller tjänster som aldrig levererats. Varje fakturerad post verifieras mot ett leveranskvitto, vilket eliminerar risken för att godkänna en faktura baserat enbart på att priset stämmer med avtalet. Prisöverensstämmelse utan leveransbekräftelse är inte tillräckligt.</p>
+        <p class="security-text" data-i18n="blogTvmBenefitsText2" data-i18n-html>Trevägs-matchning skapar en komplett revisionskedja där varje betalning kan spåras tillbaka till både beställning och leverans. Detta stärker den <a href="intern-kontroll-leverantorsfakturor.html">interna kontrollen av leverantörsfakturor</a> och förenklar både internrevision och externrevision. Varje godkänd faktura har dokumenterat stöd i tre oberoende källor.</p>
+        <p class="security-text" data-i18n="blogTvmBenefitsText3">Leverantörsrelationer förbättras paradoxalt nog genom striktare kontroll. När avvikelser identifieras tidigt och hanteras sakligt, baserat på konkret data snarare än magkänsla, minskar antalet tvister. Leverantörer som vet att deras fakturor kontrolleras systematiskt skärper sin egen faktureringsprocess, vilket minskar felen på båda sidor.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogTvmConclusionTitle">Sammanfattning</h2>
+        <p class="security-text" data-i18n="blogTvmConclusionText">Trevägs-matchning är den gyllene standarden för fakturakontroll. Genom att jämföra inköpsorder, leveranskvitto och faktura fångar metoden avvikelser som enklare kontrollformer missar: leveranser som inte stämmer med beställningen, fakturor som inte speglar leveransen, och priser som avviker från avtalet. Inom bygg och transport, där dokumentkomplexiteten är hög och varje avvikelse kan kosta tusentals kronor, är systematisk trevägs-matchning inte en lyx utan en nödvändighet. Automatisering gör det praktiskt möjligt att tillämpa kontrollen på varje faktura, varje rad, varje gång.</p>
+
+        <div class="blog-article-cta">
+          <p data-i18n="blogTvmCta" data-i18n-html>Attestro hjälper företag att automatisera fakturakontroll genom att verifiera leverantörsfakturor mot avtal och prislistor. Vill du se hur automatiserad fakturaverifiering kan stärka era kontrollprocesser? <a href="../index.html#contact">Boka en demo</a> för att testa med era egna fakturor.</p>
+        </div>
+
+        <div class="blog-related">
+          <h2 data-i18n="blogRelatedTitle">Relaterade artiklar</h2>
+          <div class="blog-related-grid">
+            <a href="kontrollera-fakturor-mot-avtal.html" class="blog-related-card">
+              <h3 data-i18n="blogKfaListTitle">Hur kontrollerar man fakturor mot avtal och prislistor?</h3>
+              <p data-i18n="blogKfaListSummary">Praktisk guide till att verifiera fakturor mot avtal och prislistor.</p>
+            </a>
+            <a href="vanliga-fel-transportfakturor.html" class="blog-related-card">
+              <h3 data-i18n="blogTfeTitle">Vanliga fel i transportfakturor och hur de uppstår</h3>
+              <p data-i18n="blogTfeIntro">Lär dig identifiera de vanligaste felen i transportfakturor.</p>
+            </a>
+            <a href="ata-hantering-fakturakontroll.html" class="blog-related-card">
+              <h3 data-i18n="blogAtaTitle">Ändringsorder och ÄTA-hantering i fakturakontroll</h3>
+              <p data-i18n="blogAtaIntro">Varför ÄTA-fakturor är svåra att kontrollera.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo-link logo-link-footer">
+          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" loading="lazy" />
+          <span class="logo-fallback">ÄLGAMO Software AB</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footerTagline">Attestro. Tidseffektiv fakturakontroll.</p>
+      </div>
+      <div class="footer-legal">
+        <p data-i18n="footerLegal">Älgamo Software AB, Sverige</p>
+        <p class="footer-support"><span data-i18n="footerSupport">Kundsupport:</span> <a href="mailto:support@algamo.se">support@algamo.se</a></p>
+        <p class="footer-social"><a href="https://www.linkedin.com/company/%C3%A4lgamo-software-ab/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <p class="footer-news"><a href="../news/" data-i18n="footerNews">Nyheter</a></p>
+        <p class="footer-blog"><a href="../blog/" data-i18n="footerBlog">Blogg</a></p>
+        <p class="footer-security"><a href="../security.html" data-i18n="footerSecurity">Säkerhet</a></p>
+        <p class="footer-privacy"><a href="../privacy.html" data-i18n="footerPrivacy">Integritetspolicy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: [
-        "index.html", "pricing.html", "about.html", "security.html", "privacy.html", "ordlista-fakturahantering.html",
+        "index.html", "pricing.html", "about.html", "security.html", "privacy.html", "produkt.html", "ordlista-fakturahantering.html",
         "blog/index.html",
         "blog/vanliga-utmaningar-fakturahantering.html",
         "blog/bygg-transport-fakturor.html",
@@ -36,6 +36,8 @@ export default defineConfig({
         "blog/intern-kontroll-leverantorsfakturor.html",
         "blog/upptacka-fakturabedrageri.html",
         "blog/infora-automatiserad-fakturakontroll.html",
+        "blog/smart-prislista-matchning.html",
+        "blog/trevags-matchning.html",
         "news/index.html",
         "404.html",
       ],

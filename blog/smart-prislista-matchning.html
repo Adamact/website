@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hur smart matchning kopplar prislistor till rätt fakturarader | Attestro</title>
+  <meta name="description" content="Artikelnamn på prislistor och fakturor stämmer sällan överens. Lär dig hur intelligent matchning kopplar rätt prislisteartikel till rätt fakturarad, även när namnen skiljer sig." />
+  <link rel="canonical" href="https://algamo.se/blog/smart-prislista-matchning.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://algamo.se/blog/smart-prislista-matchning.html" />
+  <meta property="og:title" content="Hur smart matchning kopplar prislistor till rätt fakturarader | Attestro" />
+  <meta property="og:description" content="Artikelnamn på prislistor och fakturor stämmer sällan överens. Lär dig hur intelligent matchning kopplar rätt prislisteartikel till rätt fakturarad, även när namnen skiljer sig." />
+  <meta property="og:image" content="https://algamo.se/assets/logo.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:locale" content="sv_SE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="Älgamo Software AB" />
+  <meta property="article:published_time" content="2026-03-18" />
+  <meta property="article:author" content="Älgamo Software AB" />
+  <meta property="article:section" content="Guide" />
+  <meta property="article:tag" content="prislista" />
+  <meta property="article:tag" content="artikelmatchning" />
+  <meta property="article:tag" content="fakturakontroll" />
+  <meta property="article:tag" content="smart matchning" />
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="sv" href="https://algamo.se/blog/smart-prislista-matchning.html" />
+  <link rel="alternate" hreflang="en" href="https://algamo.se/blog/smart-prislista-matchning.html" />
+  <link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/smart-prislista-matchning.html" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Hur smart matchning kopplar prislistor till rätt fakturarader | Attestro" />
+  <meta name="twitter:description" content="Artikelnamn på prislistor och fakturor stämmer sällan överens. Lär dig hur intelligent matchning kopplar rätt prislisteartikel till rätt fakturarad, även när namnen skiljer sig." />
+  <meta name="twitter:image" content="https://algamo.se/assets/logo.png" />
+  <meta name="theme-color" content="#1a2744" />
+  <link rel="icon" type="image/png" href="/assets/logo.png" />
+  <link rel="apple-touch-icon" href="/assets/logo.png" />
+  <link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../styles.css" />
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-cjvUyJcrmPfCQoZQOkSLo.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Hem", "item": "https://algamo.se/" },
+      { "@type": "ListItem", "position": 2, "name": "Blogg", "item": "https://algamo.se/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Smart prislista-matchning" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Hur smart matchning kopplar prislistor till rätt fakturarader",
+    "description": "Artikelnamn på prislistor och fakturor stämmer sällan överens. Lär dig hur intelligent matchning kopplar rätt prislisteartikel till rätt fakturarad, även när namnen skiljer sig.",
+    "datePublished": "2026-03-18",
+    "author": {
+      "@type": "Organization",
+      "name": "Älgamo Software AB",
+      "url": "https://algamo.se"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Älgamo Software AB",
+      "url": "https://algamo.se",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://algamo.se/assets/logo.png"
+      }
+    },
+    "mainEntityOfPage": "https://algamo.se/blog/smart-prislista-matchning.html",
+    "inLanguage": "sv",
+    "dateModified": "2026-03-18",
+    "articleSection": "Guide",
+    "wordCount": 1200,
+    "keywords": ["prislista", "artikelmatchning", "fakturakontroll", "smart matchning", "leverantörsfakturor", "avtalsuppföljning", "byggfakturor"]
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link" data-i18n="skipToContent">Hoppa till innehåll</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo-link">
+        <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img" width="180" height="48" />
+        <span class="logo-fallback">ÄLGAMO Software AB</span>
+      </a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Meny">
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+      </button>
+      <div id="mobile-menu" class="menu-panel">
+        <nav class="nav">
+          <a href="../index.html#process" data-i18n="navSolutions">Funktioner</a>
+          <a href="../about.html" data-i18n="navAbout">Om oss</a>
+          <a href="../pricing.html" data-i18n="navPricing">Priser</a>
+          <a href="../index.html#contact" data-i18n="navContact">Kontakt</a>
+          <a href="../news/" data-i18n="navNews">Nyheter</a>
+          <a href="../blog/" data-i18n="navBlog">Blogg</a>
+        </nav>
+        <div class="lang-switcher" role="group" aria-label="Språk">
+          <button type="button" class="lang-btn" data-lang-btn="sv" aria-pressed="true">Svenska</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">English</button>
+        </div>
+        <a href="../index.html#contact" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="breadcrumb container" aria-label="Breadcrumb">
+    <a href="../index.html" data-i18n="breadcrumbHome">Hem</a>
+    <span aria-hidden="true">&gt;</span>
+    <a href="../blog/" data-i18n="navBlog">Blogg</a>
+    <span aria-hidden="true">&gt;</span>
+    <span data-i18n="blogSpmBreadcrumb">Smart prislista-matchning</span>
+  </nav>
+
+  <main id="main">
+    <article class="section blog-smart-prislista-matchning">
+      <div class="container security-content">
+        <h1 class="section-title" data-i18n="blogSpmTitle">Hur smart matchning kopplar prislistor till rätt fakturarader</h1>
+        <time datetime="2026-03-18" class="blog-article-date">2026-03-18</time>
+        <p class="section-lead" data-i18n="blogSpmLead">En av de mest underskattade utmaningarna vid automatiserad fakturakontroll är att artikelnamn på prislistor och fakturor nästan aldrig stämmer överens ordagrant. Leverantören skriver en sak, prislistan säger en annan, och den som granskar fakturan förväntas förstå att det handlar om samma artikel. I den här artikeln förklarar vi varför det är så, varför enkel textmatchning inte räcker, och hur intelligent matchning löser problemet.</p>
+
+        <div class="blog-flow">
+          <div class="blog-flow-step" data-i18n="blogSpmFlowStep1">Faktura inkommer</div>
+          <div class="blog-flow-step" data-i18n="blogSpmFlowStep2">Identifiera leverantör</div>
+          <div class="blog-flow-step" data-i18n="blogSpmFlowStep3">Välj prislista</div>
+          <div class="blog-flow-step" data-i18n="blogSpmFlowStep4">Matcha artiklar</div>
+          <div class="blog-flow-step" data-i18n="blogSpmFlowStep5">Verifiera priser</div>
+          <div class="blog-flow-step" data-i18n="blogSpmFlowStep6">Flagga avvikelser</div>
+        </div>
+
+        <h2 class="security-subtitle" data-i18n="blogSpmWhyDifferTitle">Varför artikelnamn sällan stämmer överens</h2>
+        <p class="security-text" data-i18n="blogSpmWhyDifferText1" data-i18n-html>I en idealvärld skulle samma artikel ha exakt samma namn i avtal, prislista och på fakturan. I verkligheten fungerar det sällan så. Leverantörer använder sina egna interna benämningar, ofta förkortade eller anpassade efter deras ERP-system. Prislistor följer en annan nomenklatur som satts vid avtalstecknandet. Och när fakturan skapas kan artikelbeskrivningen vara helt fri text som operatören skriver in manuellt. Dessa variationer är en av de <a href="vanliga-utmaningar-fakturahantering.html">vanliga utmaningarna vid fakturahantering</a>.</p>
+        <p class="security-text" data-i18n="blogSpmWhyDifferText2" data-i18n-html>Inom <a href="bygg-transport-fakturor.html">bygg och anläggning</a> är variationen särskilt stor. En prislista kan ange "Grävmaskin 20t, inkl. förare" medan fakturan beskriver samma tjänst som "Hyra bandgrävare Cat 320 med maskinförare". Bägge avser samma sak, men texterna delar knappt ett enda ord. Liknande problem uppstår med materialartiklar, transporttjänster och underentreprenörsarbeten där varje part har sin egen terminologi.</p>
+        <p class="security-text" data-i18n="blogSpmWhyDifferText3">Ytterligare faktorer som bidrar till skillnaderna inkluderar: olika måttenheter (timme kontra dag, ton kontra kubikmeter), paketerade kontra uppdelade tjänster (en prislista kan ange en sammansatt post medan fakturan separerar arbete och material), och regionala variationer i benämningar inom samma bransch.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogSpmTextMatchTitle">Varför enkel textmatchning inte räcker</h2>
+        <p class="security-text" data-i18n="blogSpmTextMatchText1">Den enklaste metoden för att koppla en fakturarad till en prislisteartikel är exakt strängmatchning: om texterna är identiska, finns en match. Men som exemplen ovan visar delar fakturarad och prislisteartikel sällan mer än enstaka ord. Exakt matchning ger en träffgrad som ofta understiger 20 procent, vilket gör metoden i praktiken oanvändbar.</p>
+        <p class="security-text" data-i18n="blogSpmTextMatchText2">Även mer avancerad textjämförelse som söker efter gemensamma delsträngar eller nyckelord missar avgörande kontext. Ordet "20t" i en prislista kan motsvara "Cat 320" på fakturan, men ingen ren textalgoritm förstår att dessa syftar på samma maskintyp. Förkortningar, synonymer och branschspecifika termer gör att rent textbaserade metoder skapar fler falska positiva och negativa resultat än korrekta matchningar.</p>
+
+        <table class="blog-comparison-table">
+          <tr>
+            <th data-i18n="blogSpmTableThPricelist">Prislista</th>
+            <th data-i18n="blogSpmTableThInvoice">Fakturarad</th>
+            <th data-i18n="blogSpmTableThTextMatch">Textmatchning</th>
+          </tr>
+          <tr>
+            <td data-i18n="blogSpmTableRow1Pricelist">Grävmaskin 20t, inkl. förare</td>
+            <td data-i18n="blogSpmTableRow1Invoice">Hyra bandgrävare Cat 320 med maskinförare</td>
+            <td class="cross">&#10007;</td>
+          </tr>
+          <tr>
+            <td data-i18n="blogSpmTableRow2Pricelist">Bergkross 0-32 mm, levererat</td>
+            <td data-i18n="blogSpmTableRow2Invoice">Krossmaterial 0/32 fritt arbetsplats</td>
+            <td class="cross">&#10007;</td>
+          </tr>
+          <tr>
+            <td data-i18n="blogSpmTableRow3Pricelist">Schakt jord, per m³</td>
+            <td data-i18n="blogSpmTableRow3Invoice">Jordschaktning inkl. borttransport</td>
+            <td class="cross">&#10007;</td>
+          </tr>
+          <tr>
+            <td data-i18n="blogSpmTableRow4Pricelist">Transport lastbil 3-axl, per timme</td>
+            <td data-i18n="blogSpmTableRow4Invoice">Lastbilstransport Scania R500 (tim)</td>
+            <td class="cross">&#10007;</td>
+          </tr>
+          <tr>
+            <td data-i18n="blogSpmTableRow5Pricelist">Betongpump, dagshyra</td>
+            <td data-i18n="blogSpmTableRow5Invoice">Hyra betongpumpbil 42m</td>
+            <td class="cross">&#10007;</td>
+          </tr>
+        </table>
+
+        <div class="blog-info-box warning">
+          <div class="blog-info-box-title" data-i18n="blogSpmInfoBoxTitle">Varför ren textmatchning misslyckas</div>
+          <ul>
+            <li data-i18n="blogSpmInfoBoxItem1">Synonymer och branschtermer: "grävmaskin" vs "bandgrävare"</li>
+            <li data-i18n="blogSpmInfoBoxItem2">Förkortningar och modellnummer: "20t" vs "Cat 320"</li>
+            <li data-i18n="blogSpmInfoBoxItem3">Olika enheter: "per m³" vs "inkl. borttransport"</li>
+            <li data-i18n="blogSpmInfoBoxItem4">Paketerade vs uppdelade tjänster: sammansatt post vs separata rader</li>
+            <li data-i18n="blogSpmInfoBoxItem5">Fri text från operatörer utan standardiserad nomenklatur</li>
+          </ul>
+        </div>
+
+        <h2 class="security-subtitle" data-i18n="blogSpmSmartMatchTitle">Hur intelligent matchning fungerar</h2>
+        <p class="security-text" data-i18n="blogSpmSmartMatchText1">Intelligent matchning går bortom ren textjämförelse och analyserar istället den semantiska innebörden av artikelbeskrivningar. Systemet förstår att "grävmaskin" och "bandgrävare" är relaterade begrepp, att "20t" anger en viktklass snarare än en modellbeteckning, och att "inkl. förare" och "med maskinförare" uttrycker samma sak. Genom att kombinera semantisk förståelse med kontextuella ledtrådar kan systemet med hög säkerhet avgöra vilken prislisteartikel som motsvarar en given fakturarad.</p>
+        <p class="security-text" data-i18n="blogSpmSmartMatchText2">Matchningen baseras inte enbart på beskrivningstexten. Systemet väger in flera parametrar samtidigt: artikelnummer om sådant finns, enhet (timme, ton, styck), prisintervall, leverantör och historisk koppling. Om en specifik leverantör konsekvent fakturerar "Lastbilstransport Scania R500" mot prislisteartikeln "Transport lastbil 3-axl, per timme", lagras denna koppling och stärker framtida matchningar.</p>
+        <p class="security-text" data-i18n="blogSpmSmartMatchText3">Fuzzy matching, det vill säga ungefärlig matchning, hanterar variationer i stavning, förkortningar och ordföljd. Artikeln "Bergkross 0-32 mm, levererat" matchar "Krossmaterial 0/32 fritt arbetsplats" genom att systemet identifierar den gemensamma materialkategorin, kornstorlek och leveransvillkor trots att ingen av textsträngarna delar mer än enstaka tecken. Systemet lär sig också av manuella korrigeringar: om en granskare manuellt kopplar en fakturarad till en prislisteartikel, används den kopplingen för att förbättra framtida automatiska matchningar.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogSpmProjectMapTitle">Att koppla prislistor till rätt projekt och avtal</h2>
+        <p class="security-text" data-i18n="blogSpmProjectMapText1" data-i18n-html>Artikelmatchning löser bara halva problemet. Innan systemet kan jämföra priser måste det avgöra vilken prislista som gäller för en specifik faktura. I praktiken har många leverantörer flera aktiva prislistor, ofta en per projekt, avtal eller tidsperiod. En och samma leverantör kan ha olika avtalade priser för samma artikel beroende på vilket projekt leveransen avser. Hur avtal och prislistor samverkar beskrivs mer ingående i vår artikel om <a href="kontrollera-fakturor-mot-avtal.html">att kontrollera fakturor mot avtal</a>.</p>
+        <p class="security-text" data-i18n="blogSpmProjectMapText2" data-i18n-html>Kopplingen mellan faktura och prislista bygger på flera identifierare. Projektreferenser på fakturan (projektnummer, arbetsordernummer eller kostnadsställe) matchas mot avtalade projektkoder. Leverantörens organisationsnummer identifierar vilka avtal som finns. Fakturadatum avgör vilken prislisteversion som gäller, eftersom prislistor ofta revideras kvartalsvis eller årligen med indexuppräkning. Inom transport är denna koppling särskilt komplex, som vi beskriver i artikeln om <a href="transportavtal-prislistor-fakturor.html">transportavtal, prislistor och fakturor</a>.</p>
+        <p class="security-text" data-i18n="blogSpmProjectMapText3">Komplexiteten ökar ytterligare när ett avtal innehåller tilläggsöverenskommelser eller när nya prislistor börjar gälla mitt i en faktureringsperiod. Systemet måste avgöra vilken prislisteversion som var giltig vid leveranstillfället, inte vid fakturadatum. Detta kräver att leveransdatum eller prestationsperiod kan identifieras på fakturan och matchas mot prislistans giltighetsperiod.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogSpmInvoiceMatchTitle">Att matcha fakturarader mot avtalade priser</h2>
+        <p class="security-text" data-i18n="blogSpmInvoiceMatchText1" data-i18n-html>Det fullständiga flödet från inkommande faktura till verifierat resultat omfattar flera steg. Först identifieras leverantören baserat på organisationsnummer eller leverantörsnamn. Sedan hämtas alla aktiva avtal och prislistor för den leverantören. Projektreferensen på fakturan används för att välja rätt prislista. Därefter matchas varje fakturarad mot en artikel i prislistan med hjälp av den intelligenta matchningen som beskrivits ovan. Denna process kan integreras i det bredare <a href="fakturaflode.html">fakturaflödet</a> för att automatisera verifieringen utan att förändra befintliga arbetsprocesser.</p>
+        <p class="security-text" data-i18n="blogSpmInvoiceMatchText2">När en match har etablerats jämförs fakturerat pris med avtalat pris. Systemet kontrollerar inte bara enhetspriset utan även enheten, mängden och eventuella tillägg. En avvikelse kan bero på att fel pris tillämpats, att en prisuppräkning inte beaktats, att en rabatt saknas, eller att fakturan avser en artikel som inte finns i avtalet.</p>
+        <p class="security-text" data-i18n="blogSpmInvoiceMatchText3" data-i18n-html>Särskilt vanliga avvikelser är utgångna priser (leverantören tillämpar fjolårets pris istället för det nya avtalade priset), felaktiga enhetsomräkningar (pris per ton faktureras som pris per kubikmeter), och poster som faktureras separat men ingår i en paketerad prislistepost. Dessa typer av <a href="overdebitering-leverantorer.html">överdebitering från leverantörer</a> passerar ofta vid manuell granskning men fångas systematiskt av ett automatiserat system.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogSpmBenefitsTitle">Konkreta fördelar för ekonomiteam</h2>
+        <p class="security-text" data-i18n="blogSpmBenefitsText1" data-i18n-html>Den mest uppenbara fördelen med intelligent prislistematchning är tidsbesparingen. Istället för att manuellt söka genom prislistor för att hitta rätt artikel, ett arbete som kan ta 5-15 minuter per fakturarad vid komplexa avtal, identifierar systemet matchningen på sekunder. För ett företag som hanterar hundratals fakturor per månad innebär detta en dramatisk minskning av <a href="minska-manuellt-arbete-fakturahantering.html">manuellt arbete i fakturahanteringen</a>.</p>
+        <p class="security-text" data-i18n="blogSpmBenefitsText2">Detektering av överdebitering är en annan central fördel. Genom att systematiskt jämföra varje fakturarad mot avtalat pris fångar systemet avvikelser som annars passerar obemärkt. Erfarenhet visar att företag som inför automatiserad prislistekontroll upptäcker avvikelser på 2-5 procent av total fakturerad volym, belopp som tidigare betalades utan ifrågasättande.</p>
+        <p class="security-text" data-i18n="blogSpmBenefitsText3">Avtalsefterlevnad förbättras genom att alla fakturor konsekvent kontrolleras mot gällande avtal. Varje godkänd match och varje flaggad avvikelse dokumenteras automatiskt, vilket skapar en fullständig revisionskedja. Detta förenklar internrevision och gör det möjligt att i efterhand analysera vilka leverantörer och artikelkategorier som har högst avvikelsefrekvens.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogSpmConclusionTitle">Sammanfattning</h2>
+        <p class="security-text" data-i18n="blogSpmConclusionText">Matchning av prislisteartiklar mot fakturarader är en av de mest komplexa delarna i automatiserad fakturakontroll. Artikelnamn skiljer sig systematiskt mellan prislistor och fakturor, och enkel textmatchning missar majoriteten av korrekta kopplingar. Intelligent matchning som kombinerar semantisk förståelse, kontextuella ledtrådar och historiska data löser detta problem och möjliggör pålitlig automatisk prisverifiering. Tillsammans med korrekt koppling av prislistor till projekt och avtal skapar detta en heltäckande kontroll som sparar tid, fångar överdebitering och säkerställer avtalsefterlevnad.</p>
+
+        <div class="blog-article-cta">
+          <p data-i18n="blogSpmCta" data-i18n-html>Attestro använder intelligent matchning för att koppla prislistor till fakturarader och flagga prisavvikelser automatiskt, oavsett hur artikelnamnen skiljer sig. <a href="../index.html#contact">Boka en demo</a> för att se hur det fungerar med era egna prislistor och fakturor.</p>
+        </div>
+
+        <div class="blog-related">
+          <h2 data-i18n="blogRelatedTitle">Relaterade artiklar</h2>
+          <div class="blog-related-grid">
+            <a href="kontrollera-fakturor-mot-avtal.html" class="blog-related-card">
+              <h3 data-i18n="blogKfaListTitle">Hur kontrollerar man fakturor mot avtal och prislistor?</h3>
+              <p data-i18n="blogKfaListSummary">Praktisk guide till att verifiera fakturor mot avtal och prislistor.</p>
+            </a>
+            <a href="transportavtal-prislistor-fakturor.html" class="blog-related-card">
+              <h3 data-i18n="blogTapListTitle">Hur transportavtal och prislistor påverkar fakturor</h3>
+              <p data-i18n="blogTapListSummary">Avståndsbaserade fraktpriser, bränsletillägg, viktbaserade priser och indexjusteringar.</p>
+            </a>
+            <a href="verifiera-leverantorsfakturor.html" class="blog-related-card">
+              <h3 data-i18n="blogVlfTitle">Så verifierar du leverantörsfakturor effektivt</h3>
+              <p data-i18n="blogVlfIntro">Lär dig processen för att verifiera leverantörsfakturor.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo-link logo-link-footer">
+          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" loading="lazy" />
+          <span class="logo-fallback">ÄLGAMO Software AB</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footerTagline">Attestro. Tidseffektiv fakturakontroll.</p>
+      </div>
+      <div class="footer-legal">
+        <p data-i18n="footerLegal">Älgamo Software AB, Sverige</p>
+        <p class="footer-support"><span data-i18n="footerSupport">Kundsupport:</span> <a href="mailto:support@algamo.se">support@algamo.se</a></p>
+        <p class="footer-social"><a href="https://www.linkedin.com/company/%C3%A4lgamo-software-ab/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <p class="footer-news"><a href="../news/" data-i18n="footerNews">Nyheter</a></p>
+        <p class="footer-blog"><a href="../blog/" data-i18n="footerBlog">Blogg</a></p>
+        <p class="footer-security"><a href="../security.html" data-i18n="footerSecurity">Säkerhet</a></p>
+        <p class="footer-privacy"><a href="../privacy.html" data-i18n="footerPrivacy">Integritetspolicy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
