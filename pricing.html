@@ -58,6 +58,15 @@
     "offers": [
       {
         "@type": "Offer",
+        "name": "Gratis provperiod",
+        "price": "0",
+        "priceCurrency": "SEK",
+        "description": "10 fakturor och 3 prislistor gratis i 14 dagar. Inget kreditkort krävs.",
+        "url": "https://app.algamo.se",
+        "availability": "https://schema.org/OnlineOnly"
+      },
+      {
+        "@type": "Offer",
         "name": "Minimum",
         "price": "2490",
         "priceCurrency": "SEK",
@@ -173,6 +182,7 @@
           <span class="lang-sep" aria-hidden="true">|</span>
           <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">English</button>
         </div>
+        <a href="https://app.algamo.se" class="btn btn-on-light" data-i18n="ctaHeaderTrial">Testa gratis</a>
         <a href="index.html#contact" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
       </div>
     </div>
@@ -252,6 +262,18 @@
             <a href="mailto:sales@algamo.se?subject=Attestro%20-%20Enterprise" class="btn btn-ghost" data-i18n="contactUs">Kontakta oss</a>
           </li>
         </ul>
+        <div class="pricing-trial-banner" data-reveal>
+          <div class="pricing-trial-banner-text">
+            <h2 data-i18n="pricingTrialTitle">Testa Attestro gratis</h2>
+            <p data-i18n="pricingTrialLead">Prova Attestro utan kostnad innan ni väljer plan.</p>
+            <ul class="trial-benefits">
+              <li data-i18n="pricingTrialBenefit1">10 fakturor och 3 prislistor utan kostnad</li>
+              <li data-i18n="pricingTrialBenefit2">14 dagars provperiod</li>
+              <li data-i18n="pricingTrialBenefit3">Inget kreditkort krävs</li>
+            </ul>
+          </div>
+          <a href="https://app.algamo.se" class="btn btn-primary btn-lg btn-on-light" data-i18n="pricingTrialCta">Skapa konto</a>
+        </div>
       </div>
     </section>
 
@@ -365,9 +387,12 @@
 
     <section class="section cta">
       <div class="container"><div class="cta-inner">
-        <h2 class="cta-title" data-i18n="pricingCtaTitle">Redo att stoppa felaktiga fakturor?</h2>
-        <p class="cta-lead" data-i18n="pricingCtaLead">Boka en demo och se hur Attestro verifierar fakturor mot era avtal, automatiskt.</p>
-        <a href="index.html#contact" class="btn btn-primary btn-lg" data-i18n="pricingCtaCta">Boka en demo</a>
+        <h2 class="cta-title" data-i18n="pricingCtaTitle">Redo att testa?</h2>
+        <p class="cta-lead" data-i18n="pricingCtaLead">Skapa ett gratiskonto och testa med 10 fakturor och 3 prislistor i 14 dagar, eller boka en demo.</p>
+        <div class="cta-actions">
+          <a href="https://app.algamo.se" class="btn btn-primary btn-lg" data-i18n="pricingCtaTrialBtn">Testa gratis</a>
+          <a href="index.html#contact" class="btn btn-ghost btn-lg" data-i18n="pricingCtaCta">Boka en demo</a>
+        </div>
       </div></div>
     </section>
   </main>

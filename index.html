@@ -89,14 +89,25 @@
     "operatingSystem": "Web",
     "description": "Attestro omvandlar leverantörsfakturor till strukturerad data (t.ex. Excel), validerar automatiskt mot avtal, projektprislistor och ÄTA, och flaggar avvikelser innan attestering. Byggt för bygg-, anläggnings- och transportbranschen i Sverige.",
     "url": "https://algamo.se",
-    "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "SEK",
-      "lowPrice": "2490",
-      "highPrice": "6990",
-      "offerCount": "3",
-      "availability": "https://schema.org/OnlineOnly"
-    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Gratis provperiod",
+        "price": "0",
+        "priceCurrency": "SEK",
+        "description": "10 fakturor och 3 prislistor gratis i 14 dagar. Inget kreditkort krävs.",
+        "url": "https://app.algamo.se",
+        "availability": "https://schema.org/OnlineOnly"
+      },
+      {
+        "@type": "AggregateOffer",
+        "priceCurrency": "SEK",
+        "lowPrice": "2490",
+        "highPrice": "6990",
+        "offerCount": "3",
+        "availability": "https://schema.org/OnlineOnly"
+      }
+    ],
     "featureList": [
       "OCR-extraktion av fakturadata",
       "Validering mot avtal och projekt",
@@ -162,7 +173,7 @@
         "name": "Kan vi testa innan vi bestämmer oss?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ja. Vi erbjuder pilotprojekt och demo så att ni kan utvärdera Attestro innan ni binder er."
+          "text": "Ja. Skapa ett gratiskonto på app.algamo.se och testa med upp till 10 fakturor och 3 prislistor i 14 dagar, utan kreditkort. Vi erbjuder även demo för er som vill se mer."
         }
       }
     ]
@@ -196,6 +207,7 @@
           <span class="lang-sep" aria-hidden="true">|</span>
           <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">English</button>
         </div>
+        <a href="https://app.algamo.se" class="btn btn-on-light" data-i18n="ctaHeaderTrial">Testa gratis</a>
         <a href="#contact" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
       </div>
     </div>
@@ -210,8 +222,9 @@
         <p class="hero-note" data-i18n="heroNoChange">Fungerar med ert befintliga ekonomisystem. Inget systembyte krävs.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary btn-lg" data-i18n="heroCtaPrimary">Boka en demo</a>
-          <a href="pricing.html" class="btn btn-ghost btn-lg" data-i18n="heroCtaSecondary">Se priser</a>
+          <a href="https://app.algamo.se" class="btn btn-ghost btn-lg" data-i18n="heroCtaSecondary">Testa gratis</a>
         </div>
+        <p class="hero-trial-note" data-i18n="heroTrialNote">10 fakturor och 3 prislistor gratis i 14 dagar. Inget kreditkort.</p>
       </div>
       <div class="hero-visual" aria-hidden="true">
         <div class="hero-pipeline">
@@ -416,18 +429,17 @@
       </div>
     </section>
 
-    <section class="section pilot-cta">
-      <div class="container pilot-cta-inner" data-reveal>
-        <h2 class="section-title" data-i18n="pilotTitle">Gå med i Attestros pilotprogram</h2>
-        <p class="section-lead" data-i18n="pilotLead">Vi arbetar med en liten grupp bygg- och transportföretag för att förfina Attestro.</p>
-        <p class="pilot-benefits-label" data-i18n="pilotBenefitsLabel">Pilotpartners får</p>
-        <ul class="pilot-benefits">
-          <li data-i18n="pilotBenefit1">Tidig tillgång till Attestro</li>
-          <li data-i18n="pilotBenefit2">Direkt inflytande över produktutvecklingen</li>
-          <li data-i18n="pilotBenefit3">Rabatterad prissättning under pilotfasen</li>
+    <section class="section trial-cta">
+      <div class="container trial-cta-inner" data-reveal>
+        <h2 class="section-title" data-i18n="trialTitle">Testa Attestro gratis</h2>
+        <p class="section-lead" data-i18n="trialLead">Skapa ett konto och prova Attestro med era egna fakturor. Ingen bindning, inget kreditkort.</p>
+        <p class="trial-benefits-label" data-i18n="trialBenefitsLabel">Gratis provperiod inkluderar</p>
+        <ul class="trial-benefits">
+          <li data-i18n="trialBenefit1">10 fakturor och 3 prislistor utan kostnad</li>
+          <li data-i18n="trialBenefit2">14 dagars provperiod</li>
+          <li data-i18n="trialBenefit3">Inget kreditkort krävs</li>
         </ul>
-        <p class="pilot-limited" data-i18n="pilotLimited">Endast ett fåtal pilotplatser tillgängliga.</p>
-        <a href="#contact" class="btn btn-primary btn-lg btn-on-light" data-i18n="pilotCta">Begär pilotåtkomst</a>
+        <a href="https://app.algamo.se" class="btn btn-primary btn-lg btn-on-light" data-i18n="trialCta">Skapa konto</a>
       </div>
     </section>
 
@@ -458,7 +470,10 @@
       <div class="container cta-contact">
         <div class="cta-contact-text">
           <h2 class="cta-title" data-i18n="ctaTitle">Prova Attestro</h2>
-          <p class="cta-lead" data-i18n="ctaLead">Boka en demo eller skicka en fråga. Vi berättar gärna mer om hur Attestro kan hjälpa er.</p>
+          <p class="cta-lead" data-i18n="ctaLead">Testa gratis med 10 fakturor och 3 prislistor, eller boka en demo. Vi berättar gärna mer om hur Attestro kan hjälpa er.</p>
+          <div class="cta-actions" style="justify-content:flex-start">
+            <a href="https://app.algamo.se" class="btn btn-primary btn-lg" data-i18n="ctaTrialBtn">Testa gratis</a>
+          </div>
           <p class="cta-email">sales@algamo.se</p>
         </div>
         <form id="contact-form" class="contact-form" novalidate>
@@ -542,7 +557,7 @@
           </details>
           <details class="faq-item">
             <summary class="faq-question" data-i18n="faqQ6">Kan vi testa innan vi bestämmer oss?</summary>
-            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA6">Ja. Vi erbjuder pilotprojekt och demo så att ni kan utvärdera Attestro innan ni binder er.</p></div>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA6" data-i18n-html>Ja. Skapa ett gratiskonto på <a href="https://app.algamo.se">app.algamo.se</a> och testa med upp till 10 fakturor och 3 prislistor i 14 dagar, utan kreditkort. Vi erbjuder även demo för er som vill se mer.</p></div>
           </details>
         </div>
       </div>

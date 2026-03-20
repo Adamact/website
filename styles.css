@@ -329,7 +329,8 @@ body > main {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.site-header .btn-primary {
+.site-header .btn-primary,
+.site-header .btn-on-light {
   border: 1px solid rgba(255, 255, 255, 0.35);
   white-space: nowrap;
 }
@@ -1268,6 +1269,16 @@ body > main {
   color: var(--color-navy-deep);
 }
 
+.cta .btn-ghost {
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.cta .btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+}
+
 /* Footer — navy to match first logo */
 .site-footer {
   padding: var(--space-3xl) 0 var(--space-2xl);
@@ -1546,6 +1557,137 @@ body > main {
   color: var(--color-white);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(42, 157, 143, 0.35), 0 0 24px rgba(42, 157, 143, 0.15);
+}
+
+/* Free trial CTA (replaces pilot) */
+.trial-cta {
+  background: var(--color-bg-alt);
+}
+
+.trial-cta-inner {
+  text-align: center;
+  max-width: 40rem;
+  margin-inline: auto;
+  background: var(--color-white);
+  border-radius: 1rem;
+  padding: 3rem var(--space-xl);
+  border: 1px solid var(--color-border);
+  border-top: 3px solid var(--color-accent);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.trial-cta-inner .section-lead {
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+.trial-benefits-label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--color-text);
+}
+
+.trial-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.75rem 0;
+}
+
+.trial-benefits li {
+  padding: 0.05rem 0;
+  color: var(--color-text-muted);
+}
+
+.trial-benefits li::before {
+  content: "\2713";
+  color: var(--color-accent);
+  font-weight: 700;
+  margin-right: 0.25rem;
+}
+
+.trial-cta-inner .btn-lg {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+/* Pricing trial banner */
+.pricing-trial-banner {
+  background: var(--color-white);
+  border-radius: 1rem;
+  padding: 2rem var(--space-xl);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  margin-top: var(--space-2xl);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.pricing-trial-banner-text {
+  flex: 1;
+  min-width: 14rem;
+}
+
+.pricing-trial-banner-text h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.pricing-trial-banner-text p {
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+.pricing-trial-banner .trial-benefits {
+  margin: 0.5rem 0 0 0;
+}
+
+.pricing-trial-banner .btn {
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .pricing-trial-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Hero trial note */
+.hero-trial-note {
+  font-size: 0.875rem;
+  color: var(--color-grey-light);
+  margin-top: 0.5rem;
+}
+
+/* Blog trial CTA */
+.blog-trial-cta {
+  margin-top: var(--space-lg);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-accent-soft);
+  border-radius: var(--radius);
+  font-size: 0.9375rem;
+  color: var(--color-text);
+}
+
+.blog-trial-cta a {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.blog-trial-cta a:hover {
+  text-decoration: underline;
+}
+
+/* CTA section dual buttons */
+.cta-actions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: var(--space-lg);
 }
 
 /* Contact form (two-column CTA) */
