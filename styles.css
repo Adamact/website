@@ -1190,6 +1190,11 @@ body > main {
   padding: var(--space-4xl) 0;
   background: var(--color-bg);
 }
+.faq .section-title {
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 .faq-list {
   max-width: 48rem;
   margin: var(--space-2xl) auto 0;
