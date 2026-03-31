@@ -1,0 +1,183 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1774943123441,
+  "projectRoot": "C:\\Users\\adama\\Documents\\Github\\Website",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "vite",
+        "version": "6.0.0",
+        "category": "build"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "npm run build",
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "vite",
+      "build": "tsc -b && vite build",
+      "preview": "vite preview"
+    }
+  },
+  "conventions": {
+    "namingStyle": "camelCase",
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "assets",
+      "public",
+      "src"
+    ],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "assets": {
+      "path": "assets",
+      "purpose": "Static assets",
+      "fileCount": 4,
+      "lastAccessed": 1774943123330,
+      "keyFiles": [
+        "algamo-moose.png",
+        "logo-transparent.png",
+        "logo.png"
+      ]
+    },
+    "blog": {
+      "path": "blog",
+      "purpose": null,
+      "fileCount": 33,
+      "lastAccessed": 1774943123331,
+      "keyFiles": [
+        "ata-hantering-fakturakontroll.html",
+        "automatiserad-fakturakontroll.html",
+        "bygg-transport-fakturor.html",
+        "checklista-fakturakontroll.html",
+        "digital-document-analysis-invoice-processing.html"
+      ]
+    },
+    "dist": {
+      "path": "dist",
+      "purpose": "Distribution/build output",
+      "fileCount": 12,
+      "lastAccessed": 1774943123331,
+      "keyFiles": [
+        "404.html",
+        "about.html",
+        "CNAME",
+        "index.html",
+        "llms.txt"
+      ]
+    },
+    "news": {
+      "path": "news",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1774943123332,
+      "keyFiles": [
+        "index.html"
+      ]
+    },
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 4,
+      "lastAccessed": 1774943123333,
+      "keyFiles": [
+        "CNAME",
+        "llms.txt",
+        "robots.txt",
+        "sitemap.xml"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 1,
+      "lastAccessed": 1774943123333,
+      "keyFiles": [
+        "main.ts"
+      ]
+    },
+    "dist\\assets": {
+      "path": "dist\\assets",
+      "purpose": "Static assets",
+      "fileCount": 13,
+      "lastAccessed": 1774943123335,
+      "keyFiles": [
+        "algamo-moose.png",
+        "dm-sans-italic-latin-DklS_ZPQ.woff2",
+        "dm-sans-italic-latin-ext-BYE9wme4.woff2"
+      ]
+    },
+    "public\\assets": {
+      "path": "public\\assets",
+      "purpose": "Static assets",
+      "fileCount": 6,
+      "lastAccessed": 1774943123341,
+      "keyFiles": [
+        "algamo-moose.png",
+        "logo-dark.png",
+        "logo-transparent.png"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "src\\main.ts",
+      "accessCount": 10,
+      "lastAccessed": 1774943390380,
+      "type": "directory"
+    },
+    {
+      "path": "news\\index.html",
+      "accessCount": 3,
+      "lastAccessed": 1774943209252,
+      "type": "file"
+    },
+    {
+      "path": "about.html",
+      "accessCount": 3,
+      "lastAccessed": 1774943408309,
+      "type": "directory"
+    },
+    {
+      "path": "vite.config.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774943161619,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}
