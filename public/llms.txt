@@ -1,45 +1,156 @@
-# Attestro — by Älgamo Software AB
+# Attestro by Älgamo Software AB
 
-> Attestro is an invoice processing tool that converts supplier invoices into structured data, validates against contracts and project price lists, and flags discrepancies automatically. Built for construction, infrastructure, and transport companies in Sweden.
+> Attestro is an automated invoice verification platform built for the Swedish construction, transport, and project-intensive industries. It transforms supplier invoices into structured, validated data by reading every line, comparing it against contracts and price lists, and flagging discrepancies before payment is approved.
 
-## Company
+Attestro is developed and operated by Älgamo Software AB, a Swedish software company founded with a singular focus: building precise, reliable tools for invoice verification in industries where billing errors have a direct and measurable impact on project profitability. The company is headquartered in Sweden and all data is stored within Sweden/EU, ensuring full GDPR compliance.
 
-Älgamo Software AB is a Swedish software company founded by Adam Älgamo. The company builds Attestro to solve invoice control problems in project-intensive industries.
+## What Attestro Does
 
-- Website: https://algamo.se
-- Sales: sales@algamo.se
-- Support: support@algamo.se
-- LinkedIn: https://www.linkedin.com/company/älgamo-software-ab/
+Attestro solves one of the most persistent and costly operational problems in project-driven businesses: the manual verification of complex supplier invoices. In construction and transport, a single project can generate hundreds of invoices, each containing dozens or hundreds of line items tied to contracts, change orders (known as ATA in Swedish construction), price lists, and project-specific terms. Manually checking these invoices is slow, error-prone, and fundamentally unscalable.
 
-## Product: Attestro
+Attestro automates this entire process. The platform ingests supplier invoices in any common format -- PDF, scanned images, JPEG, PNG, or TIFF -- and uses advanced OCR and document analysis to extract every relevant data point: supplier identity, invoice number, date, line items, quantities, unit prices, project references, and cost codes (littra). It then validates each extracted line against the customer's own contracts, agreements, price lists, and project terms using semantic matching that understands the meaning of contract clauses rather than relying on exact field-name matching. When a discrepancy is found -- whether it is a price deviation, an incorrect quantity, a missing project reference, an unapproved change order, or a duplicate charge -- Attestro flags it immediately and provides a full audit trail explaining exactly what was checked and why the flag was raised.
 
-Attestro automates invoice control for construction, transport, and project-based businesses:
+The result is verified, structured data that can be exported to Excel, fed into existing ERP and accounting systems via API, or reviewed directly in the Attestro web application. Every verification step is logged with complete traceability, so finance teams, project managers, and auditors can always see precisely what was controlled and what the outcome was.
 
-- **OCR extraction**: Upload invoices as PDF or image; Attestro extracts supplier, line items, prices, and project links automatically.
-- **Contract validation**: Checks invoice content against agreed prices, project terms, change orders (ÄTA), and unit price lists.
-- **Discrepancy flagging**: Identifies deviations before invoice approval.
-- **Structured export**: Outputs verified data in Excel or integrates with existing accounting systems.
-- **History and traceability**: Full audit trail of all validations and discrepancies.
+## Core Capabilities
 
-Attestro works alongside existing accounting systems — no migration required.
+### Invoice Data Extraction
+- OCR extraction from digital PDFs, scanned invoices, and image files
+- Support for Swedish invoice formats and supplier-specific templates
+- Automatic identification of supplier, dates, invoice numbers, and references
+- Line-level extraction of articles, quantities, unit prices, and amounts
+- Multi-page document support with intelligent layout analysis
+
+### Automated Validation
+- Field validation covering format correctness, amounts, and VAT calculations
+- Price verification against contracts and price lists using semantic analysis
+- Project code and cost code (littra) matching
+- Automatic flagging of discrepancies, overbilling, and duplicate charges
+- Change order (ATA) invoice verification against approved change orders
+- Zone-based freight agreement verification for transport invoices
+- Fuel surcharge and weight-based fee validation
+
+### Semantic Contract Understanding
+Unlike traditional invoice matching systems that require structured data inputs and exact field mappings, Attestro uses semantic analysis to understand the content of contracts, quotes, and price lists as they are. Customers upload their existing documents in whatever format they already use, and the system interprets them automatically. This means no restructuring of existing agreements, no manual data entry of contract terms, and no rigid template requirements. Attestro matches invoice lines to the correct contract prices and terms based on meaning, not just exact wording.
+
+### Export and Integration
+- Excel export with fully structured, validated data
+- Customizable export templates to match existing workflows
+- REST API for integration with ERP systems and accounting software
+- Fortnox integration for automatic import and export of supplier invoices
+- Dashboard and business intelligence export capabilities
+
+### Traceability and Audit
+- Complete audit log for every invoice processed
+- Database storage of all verifications and results
+- Searchable history by supplier, project, and time period
+- Full documentation of every discrepancy and action taken
+- Revision-safe records for compliance and internal control
+
+## Industries Served
+
+### Construction and Civil Engineering
+Attestro is purpose-built for the complexity of construction invoicing. It verifies subcontractor invoices against project agreements, checks unit prices against agreed price lists (a-prislistor), validates ATA (change order) invoices against approved change orders, and matches cost codes and project references automatically. In an industry where a single overlooked price deviation on a large material delivery can cost tens of thousands of kronor, Attestro ensures that every line is checked before payment leaves the company.
+
+### Transport and Logistics
+Transport invoicing brings its own complexity: zone-based pricing, fuel surcharges, weight-based fees, and high invoice volumes. Attestro handles all of these, verifying each charge against the customer's freight agreements and flagging unauthorized surcharges, duplicate shipments, and pricing errors. For companies managing dozens of transport suppliers across multiple projects, this level of automated control is transformative.
+
+### Professional Services and Consulting
+For companies working with subcontractors and consultants on framework agreements, Attestro matches invoiced hours and rates against agreed terms, verifies that billed quantities align with approved orders, and checks travel expenses and disbursements against contractual limits.
 
 ## Pricing
 
-- **Minimum**: 1,590 SEK/month — 100 invoices/month, OCR, Excel export, basic validation
-- **Säker** (Recommended): 4,990 SEK/month — 500 invoices/month, contract price verification, priority support
-- **Enterprise**: Custom pricing — 1,000+ invoices/month, API integration, BI export, multi-entity, SLA
+Attestro offers four pricing tiers designed to scale with invoice volume and verification depth:
 
-12-month commitment discounts available (approx. 15% off).
+- **Bas (Base)**: 790 SEK/month (670 SEK/month with 12-month commitment). 100 invoices per month. Includes automatic invoice data extraction, Excel export, field and total validation, and email support.
+- **Standard**: 1,290 SEK/month (1,090 SEK/month with 12-month commitment). 200 invoices per month. Everything in Bas plus customizable export, price verification against contracts and price lists, and complete validation history.
+- **Plus** (most popular): 1,890 SEK/month (1,590 SEK/month with 12-month commitment). 350 invoices per month. Everything in Standard plus priority support and database storage with full traceability.
+- **Enterprise**: Custom pricing. 500+ invoices per month. Everything in Plus plus API integration with accounting systems, analytics and BI export, multi-entity support, SLA with guaranteed uptime, and a dedicated account manager.
 
-## Target Industries
+A free trial is available: 25 invoices at no cost over 30 days, with Fortnox sync included. No credit card required.
 
-- Construction and infrastructure
-- Transport and logistics
-- Service companies with subcontractors
-- Project organizations with high invoice volumes
+## Security and Data Handling
 
-## Pages
+Attestro takes data security seriously. All data is stored on servers within Sweden/EU using established cloud services with Swedish data centers, ensuring that customer data never leaves the country. All data transfer uses TLS encryption (HTTPS), and data is encrypted at rest using AES-256. Each customer's data is fully isolated, with access controlled per organization and user following the principle of least privilege.
 
-- [Home](https://algamo.se/): Product overview, features, FAQ
-- [Pricing](https://algamo.se/pricing.html): Detailed plan comparison
-- [About](https://algamo.se/about.html): Company and founder information
+The platform is built for GDPR compliance. A Data Processing Agreement (DPA) is provided upon request. In the event of a personal data incident, the relevant supervisory authority is notified within 72 hours in accordance with GDPR Article 33. Customer data is regularly backed up and stored encrypted within Sweden/EU, with documented disaster recovery procedures.
+
+Attestro uses privacy-friendly analytics (Plausible) with no Google Analytics and no third-party data sharing. Self-hosted fonts ensure no external font loading that could compromise visitor privacy.
+
+## Technical Details
+
+- **Supported formats**: PDF (digital and scanned), JPEG, PNG, TIFF
+- **Languages**: Swedish and English (both the application and the website)
+- **OCR engine**: Advanced OCR with support for Swedish characters, tables, and multi-page layouts with automatic per-supplier template identification
+- **Integration**: REST API for ERP and accounting system integration; native Fortnox integration; Excel export as standard
+- **Hosting**: Swedish/EU data centers with encrypted storage
+- **Compliance**: GDPR-compliant, encrypted in transit and at rest
+
+## Company Information
+
+- **Company**: Älgamo Software AB
+- **Registration number**: 559579-6987
+- **Country**: Sweden
+- **Founded by**: Adam Älgamo
+- **Website**: https://algamo.se
+- **Application**: https://app.algamo.se
+- **Sales contact**: sales@algamo.se
+- **Support contact**: support@algamo.se
+- **LinkedIn**: https://www.linkedin.com/company/älgamo-software-ab/
+
+## Links
+
+- [Home](https://algamo.se/)
+- [Product](https://algamo.se/produkt.html)
+- [Pricing](https://algamo.se/pricing.html)
+- [About Us](https://algamo.se/about.html)
+- [Security](https://algamo.se/security.html)
+- [Privacy Policy](https://algamo.se/privacy.html)
+- [Fortnox Integration](https://algamo.se/integrationer/fortnox.html)
+- [Blog](https://algamo.se/blog/)
+- [News](https://algamo.se/news/)
+
+## Blog Topics
+
+The Attestro blog covers a wide range of topics related to invoice management, verification, and automation in Swedish industry, including:
+
+- Automated invoice control and its advantages over manual processes
+- How to detect overbilling and common supplier invoice errors
+- Invoice verification checklists and best practices
+- The role of OCR in modern invoice processing
+- ERP integration strategies for invoice handling
+- ATA (change order) management and invoice control in construction
+- Three-way matching and smart price list matching
+- The case for human-in-the-loop approaches in financial validation
+- Why ERP systems alone cannot solve invoice verification
+- ROI analysis of invoice automation
+- Digital document analysis for invoice processing
+- Internal controls for supplier invoices
+- Common challenges in transport invoice management
+- Excel vs. automated invoice handling comparisons
+
+## Frequently Asked Questions
+
+**What is Attestro?**
+Attestro is a tool that automatically analyzes supplier invoices in construction and project-based businesses. It extracts invoice data, compares it against contracts and project price lists, and flags discrepancies before the invoice is approved for payment.
+
+**Which companies is Attestro suited for?**
+Attestro is primarily built for construction companies, civil engineering firms, transport and material suppliers, and project organizations that handle large volumes of supplier invoices.
+
+**What data is extracted and verified?**
+Attestro extracts supplier name, invoice number, date, project/cost codes (littra), line items, quantities, and unit prices. It verifies prices against project price lists, checks project and cost code references, and flags deviations from contractual terms.
+
+**How does Attestro handle contracts and price lists?**
+Attestro uses semantic analysis to understand the content of existing contracts, quotes, and price lists. Customers upload documents in whatever format they already use and the system interprets them automatically, regardless of structure or layout. No reformatting or manual data entry is required.
+
+**Can we try before committing?**
+Yes. Create a free account at app.algamo.se and test with up to 25 invoices over 30 days with Fortnox sync, no credit card required. Demos are also available upon request.
+
+**Can we switch plans?**
+Yes. Plans can be upgraded or downgraded at any time. Changes take effect at the next billing period.
+
+**What invoice formats are supported?**
+Attestro handles PDF invoices (both digital and scanned) and image files. The system extracts data automatically regardless of layout or template.
+
+**Can Attestro verify prices against our contracts?**
+Yes, from the Standard plan and above. Attestro compares each invoice line against contracted prices, price lists, and project terms. Discrepancies are flagged automatically.
