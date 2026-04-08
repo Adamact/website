@@ -242,7 +242,7 @@ body > main {
 
 .nav {
   display: flex;
-  gap: var(--space-xl);
+  gap: var(--space-lg);
 }
 
 .nav a {
@@ -688,6 +688,18 @@ body > main {
   color: var(--color-text-muted);
   margin: 0 0 var(--space-2xl);
   max-width: 50ch;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-center .section-lead {
+  margin-inline: auto;
+}
+.section-note {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin-top: var(--space-lg);
 }
 
 /* Audience (target industries) */
@@ -1417,14 +1429,14 @@ body > main {
 .menu-panel {
   display: flex;
   align-items: center;
-  gap: var(--space-lg);
+  gap: var(--space-md);
   flex: 1;
   min-width: 0;
   justify-content: space-between;
 }
 
 /* Responsive */
-@media (max-width: 960px) {
+@media (max-width: 1270px) {
   .header-inner {
     flex-wrap: wrap;
     padding: var(--space-sm) var(--space-md);
@@ -2196,6 +2208,8 @@ body > main {
   font-size: 0.8125rem;
   color: var(--color-text-muted);
   background: var(--color-bg-alt);
+  box-shadow: 0 0 0 100vmax var(--color-bg-alt);
+  clip-path: inset(0 -100vmax);
 }
 
 .breadcrumb a {
@@ -3369,4 +3383,88 @@ body > main {
   .produkt-tech-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ── Integration pages ── */
+.integration-hero {
+  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-deep) 100%);
+  color: var(--color-white);
+  padding: var(--space-4xl) 0;
+}
+
+.integration-hero-inner {
+  max-width: 680px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.integration-hero .section-title {
+  color: var(--color-white);
+}
+
+.integration-hero .section-lead {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.integration-partner-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2xl);
+  margin-bottom: var(--space-xl);
+}
+
+.integration-logo {
+  height: auto;
+  object-fit: contain;
+}
+
+.integration-logo-attestro {
+  height: 64px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.integration-logo-fortnox {
+  height: 64px;
+  width: auto;
+}
+
+.integration-logo-sep {
+  font-size: 1.75rem;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.integration-hero-actions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  margin-top: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.integration-hero .btn-ghost {
+  color: var(--color-white);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.integration-hero .btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+
+.integration-contact-info {
+  margin-bottom: var(--space-xl);
+}
+
+.integration-contact-email a {
+  color: var(--color-white);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.integration-contact-email a:hover {
+  opacity: 0.85;
 }

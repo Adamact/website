@@ -104,6 +104,7 @@
           <a href="../index.html#process" data-i18n="navSolutions">Funktioner</a>
           <a href="../about.html" data-i18n="navAbout">Om oss</a>
           <a href="../pricing.html" data-i18n="navPricing">Priser</a>
+          <a href="../integrationer/fortnox.html" data-i18n="navIntegrations">Integrationer</a>
           <a href="../index.html#contact" data-i18n="navContact">Kontakt</a>
           <a href="../news/" data-i18n="navNews">Nyheter</a>
           <a href="../blog/" data-i18n="navBlog">Blogg</a>
@@ -145,7 +146,7 @@
 
         <h2 class="security-subtitle" data-i18n="blogTvmWhatTitle">Vad är trevägs-matchning?</h2>
         <p class="security-text" data-i18n="blogTvmWhatText1" data-i18n-html>Trevägs-matchning innebär att tre separata dokument jämförs systematiskt. Inköpsordern specificerar vad som beställts: artiklar, kvantiteter, enhetspriser och leveransvillkor. Leveranskvittot bekräftar vad som faktiskt anlänt: mängder, skick och leveransdatum. Fakturan anger vad leverantören begär betalt för. Genom att matcha alla tre kontrolleras att företaget bara betalar för det som faktiskt beställts och levererats till avtalat pris. Metoden är en central del av hur företag <a href="kontrollera-fakturor-mot-avtal.html">kontrollerar fakturor mot avtal</a>.</p>
-        <p class="security-text" data-i18n="blogTvmWhatText2">Tvåvägs-matchning, som enbart jämför inköpsorder mot faktura, missar en kritisk kontrollpunkt. Om leverantören fakturerar för 100 enheter men bara levererade 80, upptäcks inte avvikelsen utan leveranskvittot. Den tredje dokumentkällan gör skillnaden mellan att betala för vad som avtalats och att betala för vad som faktiskt mottagits.</p>
+        <p class="security-text" data-i18n="blogTvmWhatText2">Trevägs-matchning är dock en form av datamatchning; <a href="vad-innebar-kontrollera-faktura.html">verklig fakturavalidering</a> kräver även semantisk förståelse. Tvåvägs-matchning, som enbart jämför inköpsorder mot faktura, missar en kritisk kontrollpunkt. Om leverantören fakturerar för 100 enheter men bara levererade 80, upptäcks inte avvikelsen utan leveranskvittot. Den tredje dokumentkällan gör skillnaden mellan att betala för vad som avtalats och att betala för vad som faktiskt mottagits.</p>
 
         <h2 class="security-subtitle" data-i18n="blogTvmWhyMattersTitle">Varför trevägs-matchning är avgörande</h2>
         <p class="security-text" data-i18n="blogTvmWhyMattersText1" data-i18n-html>Utan trevägs-matchning riskerar företag att betala för varor som aldrig levererades, för kvantiteter som överstiger det mottagna, eller till priser som avviker från det avtalade. Varje enskild avvikelse kan vara liten, men summan över hundratals fakturor per månad blir betydande. Företag som inför systematisk trevägs-matchning upptäcker typiskt avvikelser på 2-5 procent av total fakturerad volym, belopp som annars utgör <a href="overdebitering-leverantorer.html">överdebitering från leverantörer</a>.</p>
@@ -207,8 +208,8 @@
         </table>
 
         <h2 class="security-subtitle" data-i18n="blogTvmManualAutoTitle">Manuell kontra automatiserad trevägs-matchning</h2>
-        <p class="security-text" data-i18n="blogTvmManualAutoText1" data-i18n-html>Manuell trevägs-matchning innebär att en person samlar in tre dokument per faktura, öppnar dem sida vid sida och jämför rad för rad. Vid komplexa fakturor med 20-50 rader kan detta ta 20-40 minuter per faktura. Processen kräver att rätt version av varje dokument identifieras, att mängder och priser jämförs korrekt, och att avvikelser dokumenteras. I praktiken leder tidspress till att granskare gör stickprov istället för fullständig kontroll, vilket i sin tur innebär att avvikelser passerar. Detta är en av de processer där företag kan <a href="minska-manuellt-arbete-fakturahantering.html">minska manuellt arbete</a> mest effektivt.</p>
-        <p class="security-text" data-i18n="blogTvmManualAutoText2" data-i18n-html>Automatiserad trevägs-matchning extraherar data från alla tre dokument, oavsett format. Inköpsorderdata kan hämtas direkt från ERP-systemet. Leveransdokumentation kan tolkas med <a href="ocr-faktura.html">OCR och dokumentanalys</a>. Fakturadata extraheras på samma sätt. Systemet matchar sedan artiklarna, jämför kvantiteter och priser, och flaggar avvikelser automatiskt. Hela processen som beskrivs i <a href="automatiserad-fakturakontroll.html">automatiserad fakturakontroll</a> kan utökas med trevägs-matchning.</p>
+        <p class="security-text" data-i18n="blogTvmManualAutoText1" data-i18n-html>Manuell trevägs-matchning innebär att en person samlar in tre dokument per faktura, öppnar dem sida vid sida och jämför rad för rad. Vid komplexa fakturor med 20-50 rader kan detta ta 20-40 minuter per faktura. Processen kräver att rätt version av varje dokument identifieras, att mängder och priser jämförs korrekt, och att avvikelser dokumenteras. I praktiken leder tidspress till att granskare gör stickprov istället för fullständig kontroll, vilket i sin tur innebär att avvikelser passerar. Problemet förstärks av att <a href="varfor-fakturamatchning-ar-trasig.html">traditionell PO-baserad matchning inte fungerar</a> när avtalen saknar artikelnummer och prislistor varierar. Detta är en av de processer där företag kan <a href="minska-manuellt-arbete-fakturahantering.html">minska manuellt arbete</a> mest effektivt.</p>
+        <p class="security-text" data-i18n="blogTvmManualAutoText2" data-i18n-html>Automatiserad trevägs-matchning extraherar data från alla tre dokument, oavsett format. Inköpsorderdata kan hämtas direkt från <a href="varfor-erp-aldrig-loser-detta.html">ERP-systemet</a>. Leveransdokumentation kan tolkas med <a href="ocr-faktura.html">OCR och dokumentanalys</a>. Fakturadata extraheras på samma sätt. Systemet matchar sedan artiklarna, jämför kvantiteter och priser, och flaggar avvikelser automatiskt. Hela processen som beskrivs i <a href="automatiserad-fakturakontroll.html">automatiserad fakturakontroll</a> kan utökas med trevägs-matchning.</p>
         <p class="security-text" data-i18n="blogTvmManualAutoText3">Den avgörande fördelen med automatisering är fullständig kontroll: 100 procent av alla rader på varje faktura jämförs mot beställning och leverans, varje gång, utan undantag. Inget faller mellan stolarna på grund av tidsbrist eller mänsklig trötthet. Systemet tillämpar samma kriterier konsekvent, oavsett om det gäller den första eller den femhundrade fakturan.</p>
 
         <h2 class="security-subtitle" data-i18n="blogTvmBenefitsTitle">Fördelar med systematisk trevägs-matchning</h2>
@@ -224,7 +225,7 @@
         </div>
 
         <div class="blog-trial-cta">
-          <p data-i18n="blogTrialCta" data-i18n-html>Testa Attestro gratis med 10 fakturor och 3 prislistor. <a href="https://app.algamo.se">Skapa konto</a></p>
+          <p data-i18n="blogTrialCta" data-i18n-html>Testa Attestro gratis med 25 fakturor och Fortnox-synk. <a href="https://app.algamo.se">Skapa konto</a></p>
         </div>
 
         <div class="blog-related">

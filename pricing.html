@@ -61,18 +61,18 @@
         "name": "Gratis provperiod",
         "price": "0",
         "priceCurrency": "SEK",
-        "description": "10 fakturor och 3 prislistor gratis i 14 dagar. Inget kreditkort krävs.",
+        "description": "25 fakturor gratis i 30 dagar med Fortnox-synk. Inget kreditkort krävs.",
         "url": "https://app.algamo.se",
         "availability": "https://schema.org/OnlineOnly"
       },
       {
         "@type": "Offer",
-        "name": "Minimum",
-        "price": "2490",
+        "name": "Bas",
+        "price": "790",
         "priceCurrency": "SEK",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "price": "2490",
+          "price": "790",
           "priceCurrency": "SEK",
           "billingDuration": "P1M"
         },
@@ -80,21 +80,34 @@
       },
       {
         "@type": "Offer",
-        "name": "Kontroll",
-        "price": "6990",
+        "name": "Standard",
+        "price": "1290",
         "priceCurrency": "SEK",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "price": "6990",
+          "price": "1290",
           "priceCurrency": "SEK",
           "billingDuration": "P1M"
         },
-        "description": "500 fakturor/mån, allt i Minimum, anpassningsbar export, prisverifiering mot avtal och prislistor, fullständig valideringshistorik, prioriterad support, databaslagring med spårbarhet"
+        "description": "200 fakturor/mån, allt i Bas, anpassningsbar export, prisverifiering mot avtal och prislistor, fullständig valideringshistorik"
+      },
+      {
+        "@type": "Offer",
+        "name": "Plus",
+        "price": "1890",
+        "priceCurrency": "SEK",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "1890",
+          "priceCurrency": "SEK",
+          "billingDuration": "P1M"
+        },
+        "description": "350 fakturor/mån, allt i Standard, prioriterad support, databaslagring med spårbarhet"
       },
       {
         "@type": "Offer",
         "name": "Enterprise",
-        "description": "1000+ fakturor/mån, allt i Kontroll, API-integration med ekonomisystem, analys- och BI-export, stöd för flera bolag, SLA med garanterad tillgänglighet, dedikerad kontaktperson"
+        "description": "500+ fakturor/mån, allt i Plus, API-integration med ekonomisystem, analys- och BI-export, stöd för flera bolag, SLA med garanterad tillgänglighet, dedikerad kontaktperson"
       }
     ],
     "@id": "https://algamo.se/#software",
@@ -148,7 +161,7 @@
         "name": "Kan Attestro verifiera priser mot våra avtal?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ja, i planen Kontroll och uppåt. Attestro jämför varje fakturarad mot era avtalade priser, prislistor och projektvillkor. Avvikelser flaggas automatiskt."
+          "text": "Ja, i planen Standard och uppåt. Attestro jämför varje fakturarad mot era avtalade priser, prislistor och projektvillkor. Avvikelser flaggas automatiskt."
         }
       }
     ]
@@ -173,6 +186,7 @@
           <a href="index.html#process" data-i18n="navSolutions">Funktioner</a>
           <a href="about.html" data-i18n="navAbout">Om oss</a>
           <a href="pricing.html" data-i18n="navPricing">Priser</a>
+          <a href="integrationer/fortnox.html" data-i18n="navIntegrations">Integrationer</a>
           <a href="index.html#contact" data-i18n="navContact">Kontakt</a>
           <a href="news/" data-i18n="navNews">Nyheter</a>
           <a href="blog/" data-i18n="navBlog">Blogg</a>
@@ -209,11 +223,11 @@
         </div>
         <ul class="pricing-grid stagger">
           <li class="pricing-card" data-reveal>
-            <h2 class="pricing-name" data-i18n="planMinimum">Minimum</h2>
+            <h2 class="pricing-name" data-i18n="planMinimum">Bas</h2>
             <p class="pricing-subtitle" data-i18n="planMinimumDesc">För mindre team som vill automatisera fakturainläsning.</p>
             <div class="pricing-price-wrap">
-              <span class="pricing-price-default" data-i18n="priceMinimumDefault">2 490 kr/mån</span>
-              <span class="pricing-price-binding" data-i18n="priceMinimumBinding">2 120 kr/mån</span>
+              <span class="pricing-price-default" data-i18n="priceMinimumDefault">790 kr/mån</span>
+              <span class="pricing-price-binding" data-i18n="priceMinimumBinding">670 kr/mån</span>
             </div>
             <p class="pricing-binding-hint" data-i18n="pricingBindingLabel">12 månaders bindningstid</p>
             <ul class="pricing-features">
@@ -223,25 +237,39 @@
               <li data-i18n="featMin4">Validering av fält och totalbelopp</li>
               <li data-i18n="featMin5">E-postsupport</li>
             </ul>
-            <a href="mailto:sales@algamo.se?subject=Attestro%20-%20Minimum" class="btn btn-ghost" data-i18n="contactUs">Kontakta oss</a>
+            <a href="index.html#contact" class="btn btn-ghost" data-i18n="pricingTrialCta">Kontakta oss</a>
           </li>
-          <li class="pricing-card pricing-card-featured" data-reveal>
-            <span class="pricing-badge" data-i18n="pricingRecommended">Populärast</span>
-            <h2 class="pricing-name" data-i18n="planSaker">Kontroll</h2>
+          <li class="pricing-card" data-reveal>
+            <h2 class="pricing-name" data-i18n="planSaker">Standard</h2>
             <p class="pricing-subtitle" data-i18n="planSakerDesc">För företag som behöver verifiera fakturor mot avtal.</p>
             <div class="pricing-price-wrap">
-              <span class="pricing-price-default" data-i18n="priceSakerDefault">6 990 kr/mån</span>
-              <span class="pricing-price-binding" data-i18n="priceSakerBinding">5 950 kr/mån</span>
+              <span class="pricing-price-default" data-i18n="priceSakerDefault">1 290 kr/mån</span>
+              <span class="pricing-price-binding" data-i18n="priceSakerBinding">1 090 kr/mån</span>
             </div>
             <p class="pricing-binding-hint" data-i18n="pricingBindingLabel">12 månaders bindningstid</p>
             <ul class="pricing-features">
-              <li data-i18n="featSakerVolume">500 fakturor / mån</li>
-              <li data-i18n="featSaker1">Allt i Minimum</li>
+              <li data-i18n="featSakerVolume">200 fakturor / mån</li>
+              <li data-i18n="featSaker1">Allt i Bas</li>
               <li data-i18n="featSaker2">Anpassningsbar export</li>
               <li data-i18n="featSaker3">Prisverifiering mot avtal och prislistor</li>
               <li data-i18n="featSaker5">Fullständig valideringshistorik</li>
-              <li data-i18n="featSaker6">Prioriterad support</li>
-              <li data-i18n="featSaker7">Databaslagring med spårbarhet</li>
+            </ul>
+            <a href="index.html#contact" class="btn btn-ghost" data-i18n="pricingTrialCta">Kontakta oss</a>
+          </li>
+          <li class="pricing-card pricing-card-featured" data-reveal>
+            <span class="pricing-badge" data-i18n="pricingRecommended">Populärast</span>
+            <h2 class="pricing-name" data-i18n="planPlus">Plus</h2>
+            <p class="pricing-subtitle" data-i18n="planPlusDesc">För företag med större volymer och behov av full spårbarhet.</p>
+            <div class="pricing-price-wrap">
+              <span class="pricing-price-default" data-i18n="pricePlusDefault">1 890 kr/mån</span>
+              <span class="pricing-price-binding" data-i18n="pricePlusBinding">1 590 kr/mån</span>
+            </div>
+            <p class="pricing-binding-hint" data-i18n="pricingBindingLabel">12 månaders bindningstid</p>
+            <ul class="pricing-features">
+              <li data-i18n="featPlusVolume">350 fakturor / mån</li>
+              <li data-i18n="featPlus1">Allt i Standard</li>
+              <li data-i18n="featPlus2">Prioriterad support</li>
+              <li data-i18n="featPlus3">Databaslagring med spårbarhet</li>
             </ul>
             <a href="mailto:sales@algamo.se?subject=Attestro%20-%20Boka%20demo" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
           </li>
@@ -251,8 +279,8 @@
             <p class="pricing-price pricing-price-enterprise" data-i18n="priceEnterprise">Pris enligt offert</p>
             <p class="pricing-note" data-i18n="enterpriseNote">Minimiavtal på 12 månader</p>
             <ul class="pricing-features">
-              <li data-i18n="featEntVolume">1000+ fakturor / mån</li>
-              <li data-i18n="featEnt1">Allt i Kontroll</li>
+              <li data-i18n="featEntVolume">500+ fakturor / mån</li>
+              <li data-i18n="featEnt1">Allt i Plus</li>
               <li data-i18n="featEnt2">API-integration med ert ekonomisystem</li>
               <li data-i18n="featEnt3">Analys- och BI-export</li>
               <li data-i18n="featEnt4">Stöd för flera bolag</li>
@@ -267,17 +295,16 @@
             <h2 data-i18n="pricingTrialTitle">Testa Attestro gratis</h2>
             <p data-i18n="pricingTrialLead">Prova Attestro utan kostnad innan ni väljer plan.</p>
             <ul class="trial-benefits">
-              <li data-i18n="pricingTrialBenefit1">10 fakturor och 3 prislistor utan kostnad</li>
-              <li data-i18n="pricingTrialBenefit2">14 dagars provperiod</li>
-              <li data-i18n="pricingTrialBenefit3">Inget kreditkort krävs</li>
+              <li data-i18n="pricingTrialBenefit1">25 fakturor utan kostnad</li>
+              <li data-i18n="pricingTrialBenefit2">30 dagars provperiod</li>
             </ul>
           </div>
-          <a href="https://app.algamo.se" class="btn btn-primary btn-lg btn-on-light" data-i18n="pricingTrialCta">Skapa konto</a>
+          <a href="index.html#contact" class="btn btn-primary btn-lg btn-on-light" data-i18n="pricingTrialCta">Kontakta oss</a>
         </div>
       </div>
     </section>
 
-    <section class="section pricing-comparison">
+    <section class="section pricing-comparison" style="display:none">
       <div class="container">
         <h2 class="section-title" data-i18n="comparisonTitle">Jämför planer</h2>
         <div class="feature-table-wrap" data-reveal>
@@ -285,8 +312,9 @@
             <thead>
               <tr>
                 <th scope="col" data-i18n="comparisonFeature">Funktion</th>
-                <th scope="col" data-i18n="planMinimum">Minimum</th>
-                <th scope="col" data-i18n="planSaker">Kontroll</th>
+                <th scope="col" data-i18n="planMinimum">Bas</th>
+                <th scope="col" data-i18n="planSaker">Standard</th>
+                <th scope="col" data-i18n="planPlus">Plus</th>
                 <th scope="col" data-i18n="planEnterprise">Enterprise</th>
               </tr>
             </thead>
@@ -296,9 +324,11 @@
                 <td aria-label="Ja">&#x2713;</td>
                 <td aria-label="Ja">&#x2713;</td>
                 <td aria-label="Ja">&#x2713;</td>
+                <td aria-label="Ja">&#x2713;</td>
               </tr>
               <tr>
                 <td data-i18n="compExcel">Export till Excel</td>
+                <td aria-label="Ja">&#x2713;</td>
                 <td aria-label="Ja">&#x2713;</td>
                 <td aria-label="Ja">&#x2713;</td>
                 <td aria-label="Ja">&#x2713;</td>
@@ -308,10 +338,12 @@
                 <td aria-label="Ja">&#x2713;</td>
                 <td aria-label="Ja">&#x2713;</td>
                 <td aria-label="Ja">&#x2713;</td>
+                <td aria-label="Ja">&#x2713;</td>
               </tr>
               <tr>
                 <td data-i18n="compCustomExport">Anpassningsbar export</td>
                 <td aria-label="Nej">—</td>
+                <td aria-label="Ja">&#x2713;</td>
                 <td aria-label="Ja">&#x2713;</td>
                 <td aria-label="Ja">&#x2713;</td>
               </tr>
@@ -320,9 +352,25 @@
                 <td aria-label="Nej">—</td>
                 <td aria-label="Ja">&#x2713;</td>
                 <td aria-label="Ja">&#x2713;</td>
+                <td aria-label="Ja">&#x2713;</td>
               </tr>
               <tr>
                 <td data-i18n="compHistory">Fullständig valideringshistorik</td>
+                <td aria-label="Nej">—</td>
+                <td aria-label="Ja">&#x2713;</td>
+                <td aria-label="Ja">&#x2713;</td>
+                <td aria-label="Ja">&#x2713;</td>
+              </tr>
+              <tr>
+                <td data-i18n="compPrioritySupport">Prioriterad support</td>
+                <td aria-label="Nej">—</td>
+                <td aria-label="Nej">—</td>
+                <td aria-label="Ja">&#x2713;</td>
+                <td aria-label="Ja">&#x2713;</td>
+              </tr>
+              <tr>
+                <td data-i18n="compDatabase">Databaslagring med spårbarhet</td>
+                <td aria-label="Nej">—</td>
                 <td aria-label="Nej">—</td>
                 <td aria-label="Ja">&#x2713;</td>
                 <td aria-label="Ja">&#x2713;</td>
@@ -331,10 +379,12 @@
                 <td data-i18n="compApi">API-integration</td>
                 <td aria-label="Nej">—</td>
                 <td aria-label="Nej">—</td>
+                <td aria-label="Nej">—</td>
                 <td aria-label="Ja">&#x2713;</td>
               </tr>
               <tr>
                 <td data-i18n="compDashboard">Analys- och BI-export</td>
+                <td aria-label="Nej">—</td>
                 <td aria-label="Nej">—</td>
                 <td aria-label="Nej">—</td>
                 <td aria-label="Ja">&#x2713;</td>
@@ -343,10 +393,12 @@
                 <td data-i18n="compMultiEntity">Stöd för flera bolag</td>
                 <td aria-label="Nej">—</td>
                 <td aria-label="Nej">—</td>
+                <td aria-label="Nej">—</td>
                 <td aria-label="Ja">&#x2713;</td>
               </tr>
               <tr>
                 <td data-i18n="compSla">SLA med garanterad tillgänglighet</td>
+                <td aria-label="Nej">—</td>
                 <td aria-label="Nej">—</td>
                 <td aria-label="Nej">—</td>
                 <td aria-label="Ja">&#x2713;</td>
@@ -379,7 +431,7 @@
           </details>
           <details class="faq-item">
             <summary class="faq-question" data-i18n="pricingFaqQ6">Kan Attestro verifiera priser mot våra avtal?</summary>
-            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="pricingFaqA6">Ja, i planen Kontroll och uppåt. Attestro jämför varje fakturarad mot era avtalade priser, prislistor och projektvillkor. Avvikelser flaggas automatiskt.</p></div>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="pricingFaqA6">Ja, i planen Standard och uppåt. Attestro jämför varje fakturarad mot era avtalade priser, prislistor och projektvillkor. Avvikelser flaggas automatiskt.</p></div>
           </details>
         </div>
       </div>
@@ -388,7 +440,7 @@
     <section class="section cta">
       <div class="container"><div class="cta-inner">
         <h2 class="cta-title" data-i18n="pricingCtaTitle">Redo att testa?</h2>
-        <p class="cta-lead" data-i18n="pricingCtaLead">Skapa ett gratiskonto och testa med 10 fakturor och 3 prislistor i 14 dagar, eller boka en demo.</p>
+        <p class="cta-lead" data-i18n="pricingCtaLead">Skapa ett gratiskonto och testa med 25 fakturor i 30 dagar med Fortnox-synk, eller boka en demo.</p>
         <div class="cta-actions">
           <a href="https://app.algamo.se" class="btn btn-primary btn-lg" data-i18n="pricingCtaTrialBtn">Testa gratis</a>
           <a href="index.html#contact" class="btn btn-ghost btn-lg" data-i18n="pricingCtaCta">Boka en demo</a>

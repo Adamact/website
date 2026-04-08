@@ -133,6 +133,7 @@
           <a href="../index.html#process" data-i18n="navSolutions">Funktioner</a>
           <a href="../about.html" data-i18n="navAbout">Om oss</a>
           <a href="../pricing.html" data-i18n="navPricing">Priser</a>
+          <a href="../integrationer/fortnox.html" data-i18n="navIntegrations">Integrationer</a>
           <a href="../index.html#contact" data-i18n="navContact">Kontakt</a>
           <a href="../news/" data-i18n="navNews">Nyheter</a>
           <a href="../blog/" data-i18n="navBlog">Blogg</a>
@@ -174,7 +175,7 @@
 
         <h2 class="security-subtitle" data-i18n="blogKfaWhatTitle">Vad innebär fakturaverifiering mot avtal?</h2>
         <p class="security-text" data-i18n="blogKfaWhatText1">Fakturaverifiering mot avtal innebär att varje rad på en leverantörsfaktura jämförs med det som faktiskt avtalats. Det handlar om att kontrollera att rätt priser tillämpas, att fakturerade mängder stämmer överens med levererat eller utfört arbete, och att eventuella tillägg och avgifter har stöd i avtalet. Syftet är att säkerställa att företaget inte betalar mer än vad som överenskommits.</p>
-        <p class="security-text" data-i18n="blogKfaWhatText2">I praktiken innebär detta att den som granskar fakturan behöver tillgång till det aktuella avtalet, gällande prislista, eventuella tilläggsöverenskommelser och leveransdokumentation. Varje fakturarad måste matchas mot en avtalspost, och priset per enhet måste överensstämma med det avtalade priset. Om fakturan innehåller poster som inte finns i avtalet, eller om enhetspriset avviker, ska detta flaggas för utredning.</p>
+        <p class="security-text" data-i18n="blogKfaWhatText2">I praktiken innebär detta att den som granskar fakturan behöver tillgång till <a href="problemet-ar-inte-fakturor-utan-offerter.html">det aktuella avtalet, gällande prislista, eventuella tilläggsöverenskommelser</a> och leveransdokumentation. Varje fakturarad måste matchas mot en avtalspost, och priset per enhet måste överensstämma med det avtalade priset. Om fakturan innehåller poster som inte finns i avtalet, eller om enhetspriset avviker, ska detta flaggas för utredning.</p>
         <p class="security-text" data-i18n="blogKfaWhatText3" data-i18n-html>Verifieringen omfattar normalt flera dimensioner: är leverantören korrekt, är referensnumret rätt, stämmer priset per enhet, stämmer antalet enheter, och är eventuella rabatter eller tillägg korrekt beräknade? Först när samtliga kontrollpunkter godkänts kan fakturan gå vidare till <a href="fakturaattest.html">attestering</a> och betalning.</p>
 
         <h2 class="security-subtitle" data-i18n="blogKfaTypesTitle">Vanliga typer av avtal som fakturor kontrolleras mot</h2>
@@ -199,7 +200,7 @@
           <li><strong>Utgångna prislistor.</strong> Fakturan baseras på en prislista som inte längre gäller, antingen till fördel eller nackdel för beställaren. Utan kontroll av prislistans giltighetsperiod passerar dessa avvikelser obemärkta.</li>
           <li><strong>Dubbletter.</strong> Samma arbete eller leverans faktureras mer än en gång, ofta med olika referensnummer eller på separata fakturor som skickas med kort mellanrum.</li>
         </ul>
-        <p class="security-text" data-i18n="blogKfaErrorsText2" data-i18n-html>Gemensamt för dessa feltyper är att de sällan beror på avsiktlig manipulation, men de kan leda till betydande <a href="overdebitering-leverantorer.html">överdebitering från leverantörer</a> om de inte fångas upp. De uppstår i gränslandet mellan olika system, processer och ansvarsområden, och förstärks av hög fakturavolym och tidsbrist vid granskning.</p>
+        <p class="security-text" data-i18n="blogKfaErrorsText2" data-i18n-html>Gemensamt för dessa feltyper är att de sällan beror på avsiktlig manipulation, men de kan leda till betydande <a href="overdebitering-leverantorer.html">överdebitering från leverantörer</a> om de inte fångas upp. De uppstår i gränslandet mellan olika system, processer och ansvarsområden, och förstärks av hög fakturavolym och tidsbrist vid granskning. Vår <a href="case-fakturan-sag-korrekt-ut.html">fallstudie om en faktura som såg korrekt ut men var fel</a> illustrerar hur en sådan avvikelse kan passera alla kontroller obemärkt.</p>
 
         <table class="blog-comparison-table">
           <thead>
@@ -246,7 +247,7 @@
 
         <h2 class="security-subtitle" data-i18n="blogKfaSystemTitle">Hur system kan jämföra fakturor mot prislistor</h2>
         <p class="security-text" data-i18n="blogKfaSystemText1">Ett fakturaverifieringssystem arbetar i flera steg för att jämföra inkommande fakturor mot avtalade prislistor. Processen börjar med att fakturadata extraheras. Det kan ske genom OCR för inskannade fakturor, eller genom parsing av strukturerade format som e-fakturor. Resultatet är en datastruktur där varje fakturarad innehåller information om artikel eller tjänst, enhet, mängd och pris.</p>
-        <p class="security-text" data-i18n="blogKfaSystemText2">Nästa steg är matchning mot avtalet. Systemet identifierar vilken leverantör fakturan kommer från, väljer det korrekta avtalet eller den korrekta prislistan baserat på leverantör och giltighetsdatum, och matchar varje fakturarad mot en position i prislistan. Matchningen kan baseras på artikelnummer, beskrivning, eller en kombination av parametrar. När en matchning hittats jämförs det fakturerade priset med det avtalade priset, och eventuella avvikelser beräknas.</p>
+        <p class="security-text" data-i18n="blogKfaSystemText2">Nästa steg är matchning mot avtalet. Systemet identifierar vilken leverantör fakturan kommer från, väljer det korrekta avtalet eller den korrekta prislistan baserat på leverantör och giltighetsdatum, och matchar varje fakturarad mot en position i prislistan. Matchningen kan baseras på artikelnummer, beskrivning, eller en kombination av parametrar, men som vi beskriver i artikeln om <a href="vad-innebar-kontrollera-faktura.html">vad det egentligen innebär att kontrollera en faktura</a> räcker ren textjämförelse sällan. När en matchning hittats jämförs det fakturerade priset med det avtalade priset, och eventuella avvikelser beräknas.</p>
         <p class="security-text" data-i18n="blogKfaSystemText3">Ett praktiskt exempel: ett byggföretag har ett ramavtal med en materialleverantör. Avtalet innehåller en prislista med 800 artiklar, inklusive volymrabatter vid köp över vissa tröskelvärden. En faktura inkommer med 35 rader. Systemet extraherar alla rader, matchar varje artikel mot prislistan, kontrollerar att rätt pris tillämpats och att volymrabatten beräknats korrekt baserat på den totala beställningsvolymen. Om en rad saknar matchning i prislistan, eller om priset avviker med mer än en konfigurerad tolerans, flaggas raden för manuell granskning.</p>
         <p class="security-text" data-i18n="blogKfaSystemText4">Attestro är ett exempel på en lösning som arbetar enligt denna princip. Systemet tar emot leverantörsfakturor, extraherar fakturadata automatiskt och jämför varje rad mot uppladdade avtal och prislistor. Avvikelser presenteras i en tydlig översikt där granskaren ser exakt vilka rader som avviker, med hur mycket, och mot vilken avtalspost jämförelsen gjorts. Genom att automatisera den inledande kontrollen kan ekonomiteam fokusera sin tid på att utreda flaggade avvikelser istället för att manuellt söka igenom avtalsdokument.</p>
         <p class="security-text" data-i18n="blogKfaSystemText5">Denna typ av system hanterar också prislistor som ändras över tid. När en ny prislista träder i kraft ersätter den den föregående, och fakturor som inkommer efter brytdatumet kontrolleras automatiskt mot den nya versionen. Det eliminerar risken att fakturor godkänns mot en utgången prislista, ett fel som annars kan passera obemärkt under veckor eller månader.</p>
@@ -259,7 +260,7 @@
         </div>
 
         <div class="blog-trial-cta">
-          <p data-i18n="blogTrialCta" data-i18n-html>Testa Attestro gratis med 10 fakturor och 3 prislistor. <a href="https://app.algamo.se">Skapa konto</a></p>
+          <p data-i18n="blogTrialCta" data-i18n-html>Testa Attestro gratis med 25 fakturor och Fortnox-synk. <a href="https://app.algamo.se">Skapa konto</a></p>
         </div>
 
         <div class="blog-related">
@@ -269,9 +270,9 @@
               <h3 data-i18n="blogVfTitle">Hur man verifierar leverantörsfakturor effektivt</h3>
               <p data-i18n="blogVfIntro">Systematisk avtalskontroll, mängdverifiering och prislistekontroll steg för steg.</p>
             </a>
-            <a href="vanliga-fel-transportfakturor.html" class="blog-related-card">
-              <h3 data-i18n="blogTfeTitle">Vanliga fel i transportfakturor och hur de uppstår</h3>
-              <p data-i18n="blogTfeIntro">Lär dig identifiera de vanligaste felen i transportfakturor: fel vikt, felberäknat avstånd, oförklarade tilläggsavgifter och duplicerade sändningar.</p>
+            <a href="varfor-erp-aldrig-loser-detta.html" class="blog-related-card">
+              <h3>Varför ditt ERP-system aldrig kommer lösa detta</h3>
+              <p>Avtalskontroll kräver semantisk tolkning. ERP-system hanterar strukturerad data. Därför behövs ett lager ovanför ERP.</p>
             </a>
             <a href="checklista-fakturakontroll.html" class="blog-related-card">
               <h3 data-i18n="blogClListTitle">Checklista: kontrollera leverantörsfakturor innan attest</h3>

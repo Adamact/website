@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Varför human-in-the-loop inte är en kompromiss utan en förutsättning | Attestro</title>
+  <meta name="description" content="Full automation av fakturakontroll låter bra i teorin men misslyckas i praktiken. Läs varför mänskligt beslutsfattande är en förutsättning, inte en svaghet, i finansiell validering." />
+  <link rel="canonical" href="https://algamo.se/blog/human-in-the-loop-fakturakontroll.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://algamo.se/blog/human-in-the-loop-fakturakontroll.html" />
+  <meta property="og:title" content="Varför human-in-the-loop inte är en kompromiss utan en förutsättning | Attestro" />
+  <meta property="og:description" content="Full automation av fakturakontroll låter bra i teorin men misslyckas i praktiken. Läs varför mänskligt beslutsfattande är en förutsättning, inte en svaghet, i finansiell validering." />
+  <meta property="og:image" content="https://algamo.se/assets/logo.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:locale" content="sv_SE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="Älgamo Software AB" />
+  <meta property="article:published_time" content="2026-04-08" />
+  <meta property="article:author" content="Älgamo Software AB" />
+  <meta property="article:section" content="Analys" />
+  <meta property="article:tag" content="fakturahantering" />
+  <meta property="article:tag" content="automation" />
+  <meta property="article:tag" content="human-in-the-loop" />
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="sv" href="https://algamo.se/blog/human-in-the-loop-fakturakontroll.html" />
+  <link rel="alternate" hreflang="en" href="https://algamo.se/blog/human-in-the-loop-fakturakontroll.html" />
+  <link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/human-in-the-loop-fakturakontroll.html" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Varför human-in-the-loop inte är en kompromiss utan en förutsättning | Attestro" />
+  <meta name="twitter:description" content="Full automation av fakturakontroll låter bra i teorin men misslyckas i praktiken. Läs varför mänskligt beslutsfattande är en förutsättning, inte en svaghet, i finansiell validering." />
+  <meta name="twitter:image" content="https://algamo.se/assets/logo.png" />
+  <meta name="theme-color" content="#1a2744" />
+  <link rel="icon" type="image/png" href="/assets/logo.png" />
+  <link rel="apple-touch-icon" href="/assets/logo.png" />
+  <link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../styles.css" />
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-cjvUyJcrmPfCQoZQOkSLo.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Hem", "item": "https://algamo.se/" },
+      { "@type": "ListItem", "position": 2, "name": "Blogg", "item": "https://algamo.se/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Human-in-the-loop i fakturakontroll" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Varför human-in-the-loop inte är en kompromiss utan en förutsättning",
+    "description": "Full automation av fakturakontroll låter bra i teorin men misslyckas i praktiken. Läs varför mänskligt beslutsfattande är en förutsättning, inte en svaghet, i finansiell validering.",
+    "datePublished": "2026-04-08",
+    "author": {
+      "@type": "Organization",
+      "name": "Älgamo Software AB",
+      "url": "https://algamo.se"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Älgamo Software AB",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://algamo.se/assets/logo.png"
+      }
+    },
+    "mainEntityOfPage": "https://algamo.se/blog/human-in-the-loop-fakturakontroll.html",
+    "inLanguage": "sv",
+    "dateModified": "2026-04-08",
+    "articleSection": "Analys",
+    "wordCount": 1500,
+    "keywords": ["human-in-the-loop", "fakturakontroll", "automation", "AI", "beslutsfattande", "leverantörsfakturor"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Vad betyder human-in-the-loop inom fakturahantering?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Human-in-the-loop innebär att ett automatiserat system utför analys och kontroller, men att en människa fattar det slutgiltiga beslutet om godkännande eller avvisning. Inom fakturahantering betyder det att AI extraherar data, matchar mot avtal och flaggar avvikelser, medan en attestant bedömer och beslutar. Det kombinerar maskinens hastighet med människans omdöme."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Varför fungerar inte full automation av fakturakontroll?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Full automation misslyckas eftersom finansiell validering innehåller bedömningar som inte kan reduceras till regler. Avtal omförhandlas muntligt, prislistor uppdateras med eftersläpning, och tilläggsarbeten (ÄTA) formaliseras efter att fakturan redan skickats. Ett helautomatiskt system saknar den kontexten och kommer antingen avvisa giltiga fakturor eller godkänna ogiltiga."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Vad är skillnaden mellan att reducera tänkande och ta bort beslut?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Att reducera tänkande innebär att automatisera det manuella arbetet med att samla underlag, jämföra priser och kontrollera avtal, så att attestanten får ett färdigt beslutsunderlag. Att ta bort beslutet innebär att låta systemet godkänna eller avvisa fakturor utan mänsklig inblandning. Det första gör organisationen effektivare. Det andra flyttar juridiskt ansvar till en process som saknar förståelse för kontext."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hur hanterar Attestro human-in-the-loop?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Attestro har en tydlig gräns mellan analys och beslut. Systemet extraherar fakturadata, matchar mot avtal och prislistor, identifierar avvikelser och presenterar ett strukturerat beslutsunderlag. Det flaggar vad som behöver uppmärksamhet och visar varför. Men det godkänner aldrig en faktura på egen hand. AI gör analysen, människan fattar beslutet."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link" data-i18n="skipToContent">Hoppa till innehåll</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo-link">
+        <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img" width="180" height="48" />
+        <span class="logo-fallback">ÄLGAMO Software AB</span>
+      </a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Meny">
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+      </button>
+      <div id="mobile-menu" class="menu-panel">
+        <nav class="nav">
+          <a href="../index.html#process" data-i18n="navSolutions">Funktioner</a>
+          <a href="../about.html" data-i18n="navAbout">Om oss</a>
+          <a href="../pricing.html" data-i18n="navPricing">Priser</a>
+          <a href="../integrationer/fortnox.html" data-i18n="navIntegrations">Integrationer</a>
+          <a href="../index.html#contact" data-i18n="navContact">Kontakt</a>
+          <a href="../news/" data-i18n="navNews">Nyheter</a>
+          <a href="../blog/" data-i18n="navBlog">Blogg</a>
+        </nav>
+        <div class="lang-switcher" role="group" aria-label="Språk">
+          <button type="button" class="lang-btn" data-lang-btn="sv" aria-pressed="true">Svenska</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">English</button>
+        </div>
+        <a href="https://app.algamo.se" class="btn btn-on-light" data-i18n="ctaHeaderTrial">Testa gratis</a>
+        <a href="../index.html#contact" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="breadcrumb container" aria-label="Breadcrumb">
+    <a href="../index.html" data-i18n="breadcrumbHome">Hem</a>
+    <span aria-hidden="true">&gt;</span>
+    <a href="../blog/" data-i18n="navBlog">Blogg</a>
+    <span aria-hidden="true">&gt;</span>
+    <span data-i18n="blogHitlBreadcrumb">Human-in-the-loop i fakturakontroll</span>
+  </nav>
+
+  <main id="main">
+    <article class="section blog-human-in-the-loop">
+      <div class="container security-content">
+        <h1 class="section-title" data-i18n="blogHitlTitle">Varför human-in-the-loop inte är en kompromiss utan en förutsättning</h1>
+        <time datetime="2026-04-08" class="blog-article-date">2026-04-08</time>
+        <p class="section-lead" data-i18n="blogHitlLead">Det finns en utbredd föreställning att den ultimata lösningen inom <a href="what-is-invoice-processing.html">fakturahantering</a> är full automation: fakturor in, betalningar ut, utan mänsklig inblandning. Det låter effektivt. Det är också fel. Finansiell validering innehåller bedömningar som inte kan reduceras till regler, och försöker man ändå hamnar man i ett system som antingen godkänner för mycket eller stoppar för mycket. Mänskligt beslutsfattande är inte en eftergift. Det är en konstruktionsprincip.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogHitlAutoFailTitle">Varför full automation misslyckas i finansiell validering</h2>
+        <p class="security-text" data-i18n="blogHitlAutoFailText1">Automation fungerar utmärkt för uppgifter med entydiga regler och förutsägbara utfall. Att <a href="ocr-faktura.html">extrahera data från en faktura</a>, <a href="smart-prislista-matchning.html">matcha ett artikelnummer mot en prislista</a> eller flagga en dubblett är uppgifter där maskiner överträffar människor varje gång. Problemet uppstår när man försöker automatisera steget efter analysen: beslutet.</p>
+        <p class="security-text" data-i18n="blogHitlAutoFailText2">I teorin borde det gå. Om fakturan matchar avtalet, godkänn. Om den avviker, avvisa. Men verkligheten är inte binär. Avtal omförhandlas muntligt. Prislistor uppdateras med eftersläpning. Leveransvillkor ändras under projektets gång. En faktura som tekniskt sett avviker från avtalet kan vara helt korrekt utifrån vad som faktiskt överenskommits mellan parterna. Ett automatiserat system som saknar den kontexten kommer antingen att avvisa giltiga fakturor eller, värre, godkänna ogiltiga. Ingendera är acceptabelt.</p>
+        <p class="security-text" data-i18n="blogHitlAutoFailText3">Det finns en anledning till att inget seriöst ekonomisystem erbjuder en knapp som säger "betala allt automatiskt". Det handlar inte om att tekniken inte räcker till. Det handlar om att problemet kräver bedömning, och bedömning är per definition en mänsklig förmåga. <a href="vad-innebar-kontrollera-faktura.html">Skillnaden mellan datamatchning och avtalsverifiering</a> gör detta särskilt tydligt.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogHitlLegalTitle">Juridiskt ansvar och tvetydighet</h2>
+        <p class="security-text" data-i18n="blogHitlLegalText1">Varje godkänd faktura är en ekonomisk transaktion som någon ansvarar för. I svenska bolag vilar det ansvaret ytterst på den som <a href="fakturaattest.html">attesterat betalningen</a>. Det ansvaret kan inte delegeras till en algoritm. Om en felaktig betalning passerar genom ett helautomatiskt system är det fortfarande en människa som får förklara för revisorn varför beloppet betalades.</p>
+        <p class="security-text" data-i18n="blogHitlLegalText2">Den juridiska verkligheten är dessutom full av gråzoner. Avtal inom <a href="bygg-transport-fakturor.html">bygg och transport</a> är sällan helt entydiga. Tilläggsarbeten (<a href="ata-hantering-fakturakontroll.html">ÄTA</a>) regleras genom processer som kan ta veckor att formalisera, medan fakturan landar långt tidigare. Prisändringar kopplade till index, bränsleklausuler eller valutajusteringar skapar fakturor som avviker från grundavtalet men som ändå är korrekta. Muntliga överenskommelser mellan platschef och underentreprenör omvandlas till fakturor utan skriftlig dokumentation. I samtliga dessa fall krävs en bedömning som tar hänsyn till kontext, avsikt och affärsrelation. Det är inte en uppgift för ett regelbaserat system.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogHitlEdgeTitle">Kantfall som avgör systemets värde</h2>
+        <p class="security-text" data-i18n="blogHitlEdgeText1">Det är lätt att bygga ett system som hanterar de 80 procent av fakturorna som är raka: rätt leverantör, rätt pris, rätt kvantitet. Det verkliga testet är vad som händer med resterande 20 procent. Det är i kantfallen som ett fakturahanteringssystem bevisar sitt värde, och det är där full automation konsekvent fallerar.</p>
+        <p class="security-text" data-i18n="blogHitlEdgeText2">Betrakta en <a href="vanliga-fel-transportfakturor.html">transportfaktura</a> där kilopriset är 2 procent högre än avtalat. Är det ett fel? Kanske. Men det kan också vara en legitim bränslejustering som transportören har rätt att tillämpa enligt en klausul i avtalet. Eller så har säljaren och inköparen kommit överens om en tillfällig justering per telefon. Ett system som automatiskt avvisar fakturan skapar onödigt arbete och skadar leverantörsrelationen. Ett system som automatiskt godkänner den riskerar att missa verkliga <a href="overdebitering-leverantorer.html">överdebiteringar</a>.</p>
+        <p class="security-text" data-i18n="blogHitlEdgeText3">Eller ta fallet med en tilläggsrad på en <a href="fakturakontroll-entreprenadprojekt.html">entreprenadsfaktura</a>. Raden finns inte i det ursprungliga avtalet. Ett regelbaserat system ser en avvikelse och flaggar eller avvisar. Men i praktiken kan det vara ett godkänt ÄTA-arbete som ännu inte formaliserats i avtalssystemet, eller en merkostnad som projektledaren redan accepterat på plats. Beslutet kräver kunskap om projektets historia och den specifika leverantörsrelationen. Ingen algoritm har den kunskapen.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogHitlDivisionTitle">Rätt uppdelning: AI analyserar, människan beslutar</h2>
+        <p class="security-text" data-i18n="blogHitlDivisionText1">Lösningen är inte att välja mellan människa och maskin. Det är att ge dem rätt roller. AI och regelbaserade system är överlägsna på analys: att extrahera data, jämföra mot avtal och prislistor, identifiera avvikelser, beräkna differenser och sammanställa beslutsunderlag. Människan är överlägsen på bedömning: att tolka avvikelser i sitt sammanhang, väga in faktorer som inte finns i systemet och fatta beslut som balanserar ekonomisk kontroll mot operativa realiteter.</p>
+        <p class="security-text" data-i18n="blogHitlDivisionText2">Den här uppdelningen är inte en kompromiss. Det är den enda arkitektur som fungerar i praktiken. Ett system som levererar ett komplett beslutsunderlag, där alla kontroller redan är utförda och avvikelser tydligt markerade, gör att en attestant kan granska en faktura på sekunder istället för minuter. Beslutet fattas snabbare, inte för att det automatiserats, utan för att tänkandet har reducerats.</p>
+        <p class="security-text" data-i18n="blogHitlDivisionText3">Skillnaden är avgörande. Att reducera tänkande innebär att ta bort det manuella arbetet med att leta fram avtal, räkna om priser, jämföra kvantiteter och kontrollera tidigare fakturor. Att ta bort beslutet innebär att flytta juridiskt och ekonomiskt ansvar till en process som saknar förståelse för kontext. Det första gör organisationen effektivare. Det andra gör den sårbar.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogHitlExamplesTitle">Två situationer, samma princip</h2>
+        <p class="security-text" data-i18n="blogHitlExamplesText1"><strong>En liten prisavvikelse.</strong> En faktura på kontorsmaterial visar ett styckpris som är 4 kronor högre än i avtalad prislista. Systemet flaggar avvikelsen och visar differensen: totalt 280 kronor mer än förväntat. Attestanten ser omedelbart att det rör sig om en liten justering på en post med lågt totalvärde. Beslutet att godkänna tar tre sekunder. Utan systemets analys hade attestanten behövt öppna avtalet, hitta rätt rad, jämföra manuellt och komma till samma slutsats. Med full automation hade systemet antingen blockerat fakturan i onödan eller godkänt den utan att någon någonsin visste att avvikelsen fanns.</p>
+        <p class="security-text" data-i18n="blogHitlExamplesText2"><strong>En legitim merkostnad.</strong> En underentreprenör fakturerar ett belopp som överstiger kontraktssumman med 45 000 kronor. Systemet visar att det inte finns något registrerat ÄTA som täcker beloppet. Det ser ut som en <a href="felaktig-leverantorsfaktura.html">felaktig faktura</a>. Men projektledaren vet att arbetet utfördes efter ett akut beslut på byggarbetsplatsen och att en ÄTA-anmälan är på väg. Attestanten parkerar fakturan, kontaktar projektledaren, bekräftar och godkänner när dokumentationen är på plats. Systemet hanterade analysen. Människan hanterade bedömningen. Resultatet är korrekt. Full automation hade antingen betalat utan verifiering eller stoppat en faktura som skulle betalas.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogHitlReduceTitle">System ska reducera tänkande, inte ta bort beslut</h2>
+        <p class="security-text" data-i18n="blogHitlReduceText1">Målet med automatisering inom fakturahantering borde aldrig vara att eliminera mänsklig inblandning. Målet borde vara att göra den mänskliga inblandningen så snabb och välgrundad som möjligt. En attestant som får ett komplett underlag, med alla kontroller utförda, alla avvikelser markerade och alla relevanta avtal länkade, fattar bättre beslut på kortare tid. Det är den verkliga produktivitetsvinsten.</p>
+        <p class="security-text" data-i18n="blogHitlReduceText2">Företag som jagar full automation löser fel problem. De ser mänsklig inblandning som en flaskhals och vill eliminera den. Men flaskhalsen är sällan beslutet. Flaskhalsen är arbetet som krävs för att komma fram till beslutet: att samla in underlag, <a href="checklista-fakturakontroll.html">kontrollera siffror</a>, hitta rätt avtal och stämma av med kollegor. Automatisera det arbetet och beslutet tar sig självt. Försök automatisera beslutet och du skapar ett system som ingen vågar lita på.</p>
+
+        <h2 class="security-subtitle" data-i18n="blogHitlAttestroTitle">Hur Attestro är byggt kring denna princip</h2>
+        <p class="security-text" data-i18n="blogHitlAttestroText1">Attestro är designat med en tydlig gräns mellan analys och beslut. Systemet extraherar fakturadata, <a href="kontrollera-fakturor-mot-avtal.html">matchar mot avtal och prislistor</a>, identifierar avvikelser och presenterar ett strukturerat beslutsunderlag. Det flaggar vad som behöver uppmärksamhet och visar exakt varför. Men det godkänner aldrig en faktura på egen hand.</p>
+        <p class="security-text" data-i18n="blogHitlAttestroText2">Det är ett medvetet designval. Inte för att det är enklare att bygga. Utan för att det är rätt sätt att hantera finansiell validering. AI gör analysen. Människan fattar beslutet. Resultat: snabbare granskning, färre fel och ett system som fungerar även när verkligheten inte följer avtalet till punkt och pricka.</p>
+
+        <div class="blog-article-cta">
+          <p data-i18n="blogHitlCta" data-i18n-html>Vill du se hur Attestro kombinerar automatiserad analys med mänskligt beslutsfattande? <a href="../index.html#contact">Boka en demo</a> och se hur det fungerar med era fakturor.</p>
+        </div>
+
+        <div class="blog-trial-cta">
+          <p data-i18n="blogTrialCta" data-i18n-html>Testa Attestro gratis med 25 fakturor och Fortnox-synk. <a href="https://app.algamo.se">Skapa konto</a></p>
+        </div>
+
+        <div class="blog-related">
+          <h2 data-i18n="blogRelatedTitle">Relaterade artiklar</h2>
+          <div class="blog-related-grid">
+            <a href="ata-hantering-fakturakontroll.html" class="blog-related-card">
+              <h3 data-i18n="bpAtaTitle">ÄTA-hantering i fakturakontroll</h3>
+              <p data-i18n="bpAtaLead">Hur hanteras tilläggsarbeten och ändringar i entreprenadprojekt vid fakturakontroll?</p>
+            </a>
+            <a href="fakturaattest.html" class="blog-related-card">
+              <h3 data-i18n="blogAttTitle">Vad är fakturaattest och hur fungerar attestprocessen?</h3>
+              <p data-i18n="blogAttLead">Innan en leverantörsfaktura betalas behöver den godkännas av rätt person i organisationen.</p>
+            </a>
+            <a href="kontrollera-fakturor-mot-avtal.html" class="blog-related-card">
+              <h3 data-i18n="bpKfmaTitle">Kontrollera fakturor mot avtal och prislistor</h3>
+              <p data-i18n="bpKfmaLead">Systematisk avtalskontroll för att säkerställa att fakturerade priser och villkor stämmer.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo-link logo-link-footer">
+          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" loading="lazy" />
+          <span class="logo-fallback">ÄLGAMO Software AB</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footerTagline">Attestro. Tidseffektiv fakturakontroll.</p>
+      </div>
+      <div class="footer-legal">
+        <p data-i18n="footerLegal">Älgamo Software AB (559579-6987), Sverige</p>
+        <p class="footer-support"><span data-i18n="footerSupport">Kundsupport:</span> <a href="mailto:support@algamo.se">support@algamo.se</a></p>
+        <p class="footer-social"><a href="https://www.linkedin.com/company/%C3%A4lgamo-software-ab/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <p class="footer-news"><a href="../news/" data-i18n="footerNews">Nyheter</a></p>
+        <p class="footer-blog"><a href="../blog/" data-i18n="footerBlog">Blogg</a></p>
+        <p class="footer-security"><a href="../security.html" data-i18n="footerSecurity">Säkerhet</a></p>
+        <p class="footer-privacy"><a href="../privacy.html" data-i18n="footerPrivacy">Integritetspolicy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

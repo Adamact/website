@@ -73,7 +73,7 @@
     "@id": "https://algamo.se/#website",
     "name": "Attestro — Älgamo Software AB",
     "url": "https://algamo.se",
-    "description": "Attestro omvandlar leverantörsfakturor till strukturerad data, validerar mot avtal och flaggar avvikelser automatiskt.",
+    "description": "Attestro omvandlar leverantörsfakturor till strukturerad data, validerar mot era befintliga avtal och flaggar avvikelser automatiskt.",
     "publisher": { "@id": "https://algamo.se/#organization" },
     "inLanguage": ["sv", "en"]
   }
@@ -95,16 +95,16 @@
         "name": "Gratis provperiod",
         "price": "0",
         "priceCurrency": "SEK",
-        "description": "10 fakturor och 3 prislistor gratis i 14 dagar. Inget kreditkort krävs.",
+        "description": "25 fakturor gratis i 30 dagar med Fortnox-synk. Inget kreditkort krävs.",
         "url": "https://app.algamo.se",
         "availability": "https://schema.org/OnlineOnly"
       },
       {
         "@type": "AggregateOffer",
         "priceCurrency": "SEK",
-        "lowPrice": "2490",
-        "highPrice": "6990",
-        "offerCount": "3",
+        "lowPrice": "790",
+        "highPrice": "1890",
+        "offerCount": "4",
         "availability": "https://schema.org/OnlineOnly"
       }
     ],
@@ -154,18 +154,10 @@
       },
       {
         "@type": "Question",
-        "name": "Hur börjar man använda Attestro?",
+        "name": "Hur hanterar Attestro våra avtal och prislistor?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ladda upp exempel på fakturor från era leverantörer, systemet konfigureras för era mallar, och Attestro börjar analysera nya fakturor automatiskt."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Behöver vi ändra vårt ekonomisystem?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Nej. Attestro är byggt som ett komplement till befintliga ekonomisystem."
+          "text": "Attestro använder semantisk analys för att förstå innehållet i era befintliga avtal, offerter och prislistor. Ni laddar upp de dokument ni redan har och systemet tolkar dem automatiskt, oavsett format eller struktur. Det innebär att ni inte behöver anpassa era underlag - Attestro arbetar med det ni redan använder och matchar fakturarader mot rätt avtalspriser och villkor."
         }
       },
       {
@@ -173,7 +165,7 @@
         "name": "Kan vi testa innan vi bestämmer oss?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ja. Skapa ett gratiskonto på app.algamo.se och testa med upp till 10 fakturor och 3 prislistor i 14 dagar, utan kreditkort. Vi erbjuder även demo för er som vill se mer."
+          "text": "Ja. Skapa ett gratiskonto på app.algamo.se och testa med upp till 25 fakturor i 30 dagar med Fortnox-synk, utan kreditkort. Vi erbjuder även demo för er som vill se mer."
         }
       }
     ]
@@ -198,6 +190,7 @@
           <a href="#process" data-i18n="navSolutions">Funktioner</a>
           <a href="about.html" data-i18n="navAbout">Om oss</a>
           <a href="pricing.html" data-i18n="navPricing">Priser</a>
+          <a href="integrationer/fortnox.html" data-i18n="navIntegrations">Integrationer</a>
           <a href="#contact" data-i18n="navContact">Kontakt</a>
           <a href="news/" data-i18n="navNews">Nyheter</a>
           <a href="blog/" data-i18n="navBlog">Blogg</a>
@@ -224,7 +217,7 @@
           <a href="#contact" class="btn btn-primary btn-lg" data-i18n="heroCtaPrimary">Boka en demo</a>
           <a href="https://app.algamo.se" class="btn btn-ghost btn-lg" data-i18n="heroCtaSecondary">Testa gratis</a>
         </div>
-        <p class="hero-trial-note" data-i18n="heroTrialNote">10 fakturor och 3 prislistor gratis i 14 dagar. Inget kreditkort.</p>
+        <p class="hero-trial-note" data-i18n="heroTrialNote">25 fakturor gratis i 30 dagar.</p>
       </div>
       <div class="hero-visual" aria-hidden="true">
         <div class="hero-pipeline">
@@ -341,9 +334,9 @@
             <p data-i18n="audienceConstructionDesc">Kontrollera UE-fakturor mot à-prislistor, ÄTA och projektmängder.</p>
           </li>
           <li class="audience-card" data-reveal>
-            <span class="audience-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span>
-            <h3 data-i18n="audienceTransportTitle">Transport och logistik</h3>
-            <p data-i18n="audienceTransportDesc">Verifiera fraktfakturor mot avtalade priser, avstånd och tillägg.</p>
+            <span class="audience-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg></span>
+            <h3 data-i18n="audienceTransportTitle">Alla avtalsformat</h3>
+            <p data-i18n="audienceTransportDesc">Fungerar med era befintliga avtal, offerter och prislistor som de är.</p>
           </li>
           <li class="audience-card" data-reveal>
             <span class="audience-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/></svg></span>
@@ -374,7 +367,7 @@
             <span class="process-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
             <span class="process-num" aria-hidden="true">3</span>
             <h3 class="process-title" data-i18n="process3Title">Exportera verifierad data</h3>
-            <p class="process-desc" data-i18n="process3Desc">Skicka kontrollerad data till Excel eller ert ekonomisystem. Varje rad har full spårbarhet.</p>
+            <p class="process-desc" data-i18n="process3Desc">Skicka kontrollerad data till Excel eller kolla direkt i appen. Varje rad har full spårbarhet.</p>
           </li>
         </ol>
         <p class="process-result" data-i18n="processResult">Inga felaktiga fakturor passerar utan att ni ser dem.</p>
@@ -435,9 +428,8 @@
         <p class="section-lead" data-i18n="trialLead">Skapa ett konto och prova Attestro med era egna fakturor. Ingen bindning, inget kreditkort.</p>
         <p class="trial-benefits-label" data-i18n="trialBenefitsLabel">Gratis provperiod inkluderar</p>
         <ul class="trial-benefits">
-          <li data-i18n="trialBenefit1">10 fakturor och 3 prislistor utan kostnad</li>
-          <li data-i18n="trialBenefit2">14 dagars provperiod</li>
-          <li data-i18n="trialBenefit3">Inget kreditkort krävs</li>
+          <li data-i18n="trialBenefit1">25 fakturor utan kostnad</li>
+          <li data-i18n="trialBenefit2">30 dagars provperiod</li>
         </ul>
         <a href="https://app.algamo.se" class="btn btn-primary btn-lg btn-on-light" data-i18n="trialCta">Skapa konto</a>
       </div>
@@ -448,7 +440,7 @@
         <ul class="trust-grid stagger">
           <li class="trust-badge" data-reveal>
             <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
-            <span data-i18n="trustSweden">Data lagras i Sverige</span>
+            <span data-i18n="trustSweden">Data lagras i EU</span>
           </li>
           <li class="trust-badge" data-reveal>
             <span class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2L3 7v6c0 5.25 3.75 10.15 9 11.35C17.25 23.15 21 18.25 21 13V7l-9-5z"/><path d="M9 12l2 2 4-4"/></svg></span>
@@ -470,7 +462,7 @@
       <div class="container cta-contact">
         <div class="cta-contact-text">
           <h2 class="cta-title" data-i18n="ctaTitle">Prova Attestro</h2>
-          <p class="cta-lead" data-i18n="ctaLead">Testa gratis med 10 fakturor och 3 prislistor, eller boka en demo. Vi berättar gärna mer om hur Attestro kan hjälpa er.</p>
+          <p class="cta-lead" data-i18n="ctaLead">Testa gratis med 25 fakturor och Fortnox-synk i 30 dagar, eller boka en demo. Vi berättar gärna mer om hur Attestro kan hjälpa er.</p>
           <div class="cta-actions" style="justify-content:flex-start">
             <a href="https://app.algamo.se" class="btn btn-primary btn-lg" data-i18n="ctaTrialBtn">Testa gratis</a>
           </div>
@@ -548,16 +540,12 @@
             <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA3" data-i18n-html>Attestro extraherar leverantör, fakturanummer, datum, projekt/littra, transaktioner, mängd och pris per enhet. Systemet kontrollerar:<br>• pris mot projektets prislista<br>• projekt- eller littra-koppling<br>• avvikelser mot avtal</p></div>
           </details>
           <details class="faq-item">
-            <summary class="faq-question" data-i18n="faqQ4">Hur börjar man använda Attestro?</summary>
-            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA4" data-i18n-html>• Ladda upp exempel på fakturor från era leverantörer<br>• Systemet konfigureras för era mallar<br>• Attestro börjar analysera nya fakturor automatiskt</p></div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-question" data-i18n="faqQ5">Behöver vi ändra vårt ekonomisystem?</summary>
-            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA5">Nej. Attestro är byggt som ett komplement till befintliga ekonomisystem.</p></div>
+            <summary class="faq-question" data-i18n="faqQ5">Hur hanterar Attestro våra avtal och prislistor?</summary>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA5" data-i18n-html>Attestro använder semantisk analys för att förstå innehållet i era befintliga avtal, offerter och prislistor. Ni laddar upp de dokument ni redan har och systemet tolkar dem automatiskt, oavsett format eller struktur. Det innebär att ni inte behöver anpassa era underlag - Attestro arbetar med det ni redan använder och matchar fakturarader mot rätt avtalspriser och villkor.</p></div>
           </details>
           <details class="faq-item">
             <summary class="faq-question" data-i18n="faqQ6">Kan vi testa innan vi bestämmer oss?</summary>
-            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA6" data-i18n-html>Ja. Skapa ett gratiskonto på <a href="https://app.algamo.se">app.algamo.se</a> och testa med upp till 10 fakturor och 3 prislistor i 14 dagar, utan kreditkort. Vi erbjuder även demo för er som vill se mer.</p></div>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA6" data-i18n-html>Ja. Skapa ett gratiskonto på <a href="https://app.algamo.se">app.algamo.se</a> och testa med upp till 25 fakturor i 30 dagar med Fortnox-synk, utan kreditkort. Vi erbjuder även demo för er som vill se mer.</p></div>
           </details>
         </div>
       </div>

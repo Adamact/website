@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Det verkliga problemet är inte fakturor - det är offerter | Attestro</title>
+  <meta name="description" content="De flesta system fokuserar på fakturor, men det verkliga problemet börjar långt tidigare. Avtal lever i PDF:er, mejl och Excel-filer. Varför brist på struktur dödar automatisering, och hur semantisk dokumentanalys löser det." />
+  <link rel="canonical" href="https://algamo.se/blog/problemet-ar-inte-fakturor-utan-offerter.html" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://algamo.se/blog/problemet-ar-inte-fakturor-utan-offerter.html" />
+  <meta property="og:title" content="Det verkliga problemet är inte fakturor - det är offerter | Attestro" />
+  <meta property="og:description" content="De flesta system fokuserar på fakturor, men det verkliga problemet börjar långt tidigare. Avtal lever i PDF:er, mejl och Excel-filer. Varför brist på struktur dödar automatisering, och hur semantisk dokumentanalys löser det." />
+  <meta property="og:image" content="https://algamo.se/assets/logo.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:locale" content="sv_SE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="Älgamo Software AB" />
+  <meta property="article:published_time" content="2026-04-08" />
+  <meta property="article:author" content="Älgamo Software AB" />
+  <meta property="article:section" content="Analys" />
+  <meta property="article:tag" content="fakturahantering" />
+  <meta property="article:tag" content="dokumentanalys" />
+  <meta property="article:tag" content="bygg" />
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="sv" href="https://algamo.se/blog/problemet-ar-inte-fakturor-utan-offerter.html" />
+  <link rel="alternate" hreflang="en" href="https://algamo.se/blog/problemet-ar-inte-fakturor-utan-offerter.html" />
+  <link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/problemet-ar-inte-fakturor-utan-offerter.html" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Det verkliga problemet är inte fakturor - det är offerter | Attestro" />
+  <meta name="twitter:description" content="De flesta system fokuserar på fakturor, men det verkliga problemet börjar långt tidigare. Avtal lever i PDF:er, mejl och Excel-filer. Varför brist på struktur dödar automatisering, och hur semantisk dokumentanalys löser det." />
+  <meta name="twitter:image" content="https://algamo.se/assets/logo.png" />
+  <meta name="theme-color" content="#1a2744" />
+  <link rel="icon" type="image/png" href="/assets/logo.png" />
+  <link rel="apple-touch-icon" href="/assets/logo.png" />
+  <link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../styles.css" />
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-cjvUyJcrmPfCQoZQOkSLo.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Hem", "item": "https://algamo.se/" },
+      { "@type": "ListItem", "position": 2, "name": "Blogg", "item": "https://algamo.se/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Det verkliga problemet är inte fakturor - det är offerter" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Det verkliga problemet är inte fakturor - det är offerter",
+    "description": "De flesta system fokuserar på fakturor, men det verkliga problemet börjar långt tidigare. Avtal lever i PDF:er, mejl och Excel-filer. Varför brist på struktur dödar automatisering, och hur semantisk dokumentanalys löser det.",
+    "datePublished": "2026-04-08",
+    "author": {
+      "@type": "Organization",
+      "name": "Älgamo Software AB",
+      "url": "https://algamo.se"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Älgamo Software AB",
+      "url": "https://algamo.se",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://algamo.se/assets/logo.png"
+      }
+    },
+    "mainEntityOfPage": "https://algamo.se/blog/problemet-ar-inte-fakturor-utan-offerter.html",
+    "keywords": ["fakturahantering bygg", "offerter byggbranschen", "avtalshantering projekt", "semantisk dokumentanalys", "automatiserad fakturakontroll", "PO-tvång bygg", "ostrukturerade avtal", "fakturamatchning", "dokumentkaos byggprojekt", "prislista Excel faktura"],
+    "inLanguage": "sv",
+    "wordCount": "2100",
+    "articleSection": "Analys"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Varför fungerar inte PO-tvång i byggbranschen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Inköpsbeslut i byggprojekt fattas ofta akut på plats, avtal har komplexa strukturer med ramavtal och ÄTA-arbeten, och platschefer saknar tillgång till inköpssystem i fält. Att tvinga inköpsordrar skapar skuggprocesser där beställningar görs utanför systemet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Vad är semantisk dokumentanalys för fakturor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Semantisk dokumentanalys innebär att system läser och tolkar dokument baserat på innehåll och kontext, inte format. Offerter i PDF, prislistor i Excel och avtalsbekräftelser i mejl behandlas som delar av samma avtalsbild och bygger automatiskt en referens som fakturor kan matchas mot."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Var finns avtalsinformation i byggprojekt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "I praktiken är avtalsinformation utspridd över PDF-offerter, Excel-prislistor, mejlbekräftelser, inskannade avtalshandlingar och muntliga överenskommelser. Det saknas ofta ett samlat, strukturerat underlag som system kan använda för fakturamatchning."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Vad är gapet mellan systemverklighet och affärsverklighet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Systemverkligheten är den strukturerade bilden i ERP-systemet med ordrar och matchade fakturor. Affärsverkligheten är det som faktiskt händer: förhandlingar parallellt med leveranser, muntligt ändrade avtal och ungefärliga prislistor. Ju större gapet är, desto mer manuellt arbete krävs."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link" data-i18n="skipToContent">Hoppa till innehåll</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo-link">
+        <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img" width="180" height="48" />
+        <span class="logo-fallback">ÄLGAMO Software AB</span>
+      </a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Meny">
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+      </button>
+      <div id="mobile-menu" class="menu-panel">
+        <nav class="nav">
+          <a href="../index.html#process" data-i18n="navSolutions">Funktioner</a>
+          <a href="../about.html" data-i18n="navAbout">Om oss</a>
+          <a href="../pricing.html" data-i18n="navPricing">Priser</a>
+          <a href="../integrationer/fortnox.html" data-i18n="navIntegrations">Integrationer</a>
+          <a href="../index.html#contact" data-i18n="navContact">Kontakt</a>
+          <a href="../news/" data-i18n="navNews">Nyheter</a>
+          <a href="../blog/" data-i18n="navBlog">Blogg</a>
+        </nav>
+        <div class="lang-switcher" role="group" aria-label="Språk">
+          <button type="button" class="lang-btn" data-lang-btn="sv" aria-pressed="true">Svenska</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">English</button>
+        </div>
+        <a href="https://app.algamo.se" class="btn btn-on-light" data-i18n="ctaHeaderTrial">Testa gratis</a>
+        <a href="../index.html#contact" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="breadcrumb container" aria-label="Breadcrumb">
+    <a href="../index.html" data-i18n="breadcrumbHome">Hem</a>
+    <span aria-hidden="true">&gt;</span>
+    <a href="../blog/" data-i18n="navBlog">Blogg</a>
+    <span aria-hidden="true">&gt;</span>
+    <span>Det verkliga problemet är inte fakturor - det är offerter</span>
+  </nav>
+
+  <main id="main">
+    <article class="section blog-problemet-ar-inte-fakturor">
+      <div class="container security-content">
+        <h1 class="section-title">Det verkliga problemet är inte fakturor - det är offerter</h1>
+        <time datetime="2026-04-08" class="blog-article-date">2026-04-08</time>
+        <p class="section-lead">Branschen lägger enormt med energi på att automatisera fakturahantering. <a href="ocr-faktura.html">OCR</a>, regelbaserad matchning, <a href="fakturaattest.html">attestflöden</a>. Men fakturan är slutprodukten av en lång kedja av beslut och överenskommelser. Det verkliga problemet sitter inte i fakturan. Det sitter i allt som kom före den: offerter, prislistor, avtalsbilagor och mejlbekräftelser. Så länge det underlaget saknar struktur spelar det ingen roll hur sofistikerad fakturakontrollen är.</p>
+        <p class="security-text"><strong>Sammanfattat:</strong> I projektbaserade branscher som bygg och anläggning lever avtalsinformation utspridd i PDF:er, Excel-filer och mejl. Det gör att automatiserad fakturakontroll inte kan nå sin fulla potential, oavsett hur avancerat fakturahanteringssystemet är. Lösningen är semantisk dokumentanalys som förstår ostrukturerade dokument i stället för att kräva att de formateras om.</p>
+
+        <h2 class="security-subtitle">Var lever egentligen avtalet?</h2>
+        <p class="security-text">Fråga en projektledare i ett byggföretag var det gällande avtalet med en underentreprenör finns. Svaret är sällan "i vårt avtalssystem". Oftare ser det ut så här:</p>
+        <ul class="security-text blog-benefits-list">
+          <li>En offert i PDF-format, bifogad i ett mejl från mars.</li>
+          <li>En reviderad prislista i Excel, skickad som uppföljning två veckor senare.</li>
+          <li>En muntlig överenskommelse om justerade villkor för tilläggsarbeten, bekräftad via SMS.</li>
+          <li>En avtalshandling med AB 04-hänvisningar, inskannad och sparad i en projektmapp på filservern.</li>
+        </ul>
+        <p class="security-text">Det finns inget samlat, strukturerat underlag som ett system kan matcha en faktura mot. Det finns fragment, spridda över mejl, filservrar och personers minne. Det är inte slarv. Det är så byggindustrin fungerar i praktiken. Enligt branschanalyser saknar upp till 60-70 procent av alla inköp i svenska byggprojekt en formell inköpsorder vid tidpunkten för leverans. Avtalsinformationen existerar, men den är utspridd och ostrukturerad.</p>
+
+        <h2 class="security-subtitle">Varför de flesta system tittar åt fel håll</h2>
+        <p class="security-text">Fakturahanteringssystem är designade för att processa den sista länken i kedjan. De tar emot en faktura, extraherar rader och belopp, och försöker matcha resultatet mot en referens. Men vilken referens? I en ideal värld finns en inköpsorder med exakta rader och priser. I verkligheten, särskilt i bygg och anläggning, finns ofta bara en kombination av offerter, ramavtal och kompletterande mejl.</p>
+        <p class="security-text">Det skapar ett fundamentalt gap. Systemet förutsätter struktur som inte existerar. Konsekvensen är att fakturan antingen matchas mot fel underlag, matchas partiellt, eller inte matchas alls och skickas vidare för manuell hantering. I samtliga fall urholkas nyttan av automatiseringen.</p>
+        <p class="security-text">Problemet är inte att fakturahanteringssystemen är dåliga. Problemet är att de löser fel problem. De optimerar slutsteget i en process där den verkliga osäkerheten ligger i början.</p>
+
+        <h2 class="security-subtitle">Varför PO-tvång inte fungerar i bygg</h2>
+        <p class="security-text">Den vanligaste invändningen är: "Tvinga alla att skapa inköpsordrar innan något beställs." I teorin löser det problemet. Om varje inköp har en formell order med specificerade rader, priser och kvantiteter, finns det en tydlig referens att matcha fakturan mot.</p>
+        <p class="security-text">I praktiken fungerar det sällan i projektbaserade branscher. Det finns flera anledningar:</p>
+        <ul class="security-text blog-benefits-list">
+          <li>Tempo och akuta beslut. På en byggarbetsplats fattas inköpsbeslut i stunden. Material behövs imorgon. En underentreprenör kan börja tidigare om beslutet tas nu. Att vänta på att en inköpsorder registreras, godkänns och skickas innebär förseningar som kostar mer än den administrativa ordningen sparar.</li>
+          <li>Avtalsstrukturer som inte passar PO-modellen. Ramavtal med löpande avrop, mängdkontrakt med rörliga volymer och <a href="ata-hantering-fakturakontroll.html">ÄTA-arbeten</a> som uppstår under projektets gång passar inte in i en strikt order-per-leverans-modell. Det krävs flera ordrar per avtal, och varje order måste reflektera den specifika avropets villkor.</li>
+          <li>Organisatorisk verklighet. Platschefer och arbetsledare som fattar inköpsbeslut har sällan tillgång till, eller tid att använda, inköpssystem ute på arbetsplatsen. Besluten dokumenteras informellt och når ekonomiavdelningen först i samband med att fakturan anländer.</li>
+        </ul>
+        <p class="security-text">Att tvinga PO-först-logik på en bransch som inte fungerar så skapar inte ordning. Det skapar skuggprocesser. Beställningar görs ändå, utanför systemet, och fakturorna anländer utan matchbar referens. Resultatet blir sämre, inte bättre, än att arbeta med det faktiska dokumentflödet.</p>
+
+        <h2 class="security-subtitle">Gapet mellan systemverklighet och affärsverklighet</h2>
+        <p class="security-text">Det finns ett begrepp som sällan nämns i produktbeskrivningar men som varje projektledare och ekonomiansvarig i bygg känner igen: gapet mellan systemverklighet och affärsverklighet.</p>
+        <p class="security-text">Systemverkligheten är den bild som <a href="erp-integration-fakturahantering.html">ERP-systemet</a> och fakturahanteringsverktyget ger. Strukturerade ordrar, matchade fakturor, rapporter med gröna bockar. Affärsverkligheten är det som faktiskt händer: förhandlingar som pågår parallellt med leveranser, avtal som ändras muntligt, prislistor som gäller "ungefär" men inte exakt.</p>
+        <p class="security-text">Ju större gapet är, desto mer manuellt arbete krävs för att överbrygga det. Ekonomiavdelningen blir översättare mellan två världar. De tar emot en faktura som inte matchar något i systemet, ringer projektledaren, ber om underlaget, får ett mejl med en bifogad PDF, tolkar vilka rader som hör till vilket avtal, och matar in informationen manuellt. Det är inte fakturahantering. Det är dokumentarkeologi. I en typisk bygg- eller anläggningsverksamhet kan den manuella hanteringen av ostrukturerade avtalsdokument stå för 30-40 procent av den totala tiden som ekonomiavdelningen lägger på leverantörsfakturor. Det är tid som i stället kunde läggas på analys och uppföljning, och det är en av anledningarna till att <a href="minska-manuellt-arbete-fakturahantering.html">minskat manuellt arbete</a> är en central drivkraft bakom automatisering.</p>
+
+        <h2 class="security-subtitle">Vad projektledare faktiskt kämpar med</h2>
+        <p class="security-text">Projektledare i bygg och anläggning hanterar inte fakturor i första hand. De hanterar osäkerhet. Och den osäkerheten börjar i dokumenten som definierar vad som är avtalat. Några typiska situationer:</p>
+        <ul class="security-text blog-benefits-list">
+          <li>En underentreprenör fakturerar för tilläggsarbeten. Projektledaren minns att det diskuterades på ett byggmöte, men det finns inget skriftligt underlag förutom en anteckning i mötesprotollet. Stämmer beloppet? Ingen vet utan att gräva.</li>
+          <li>En materialleverantör har justerat priserna sedan offerten skickades. Den nya <a href="smart-prislista-matchning.html">prislistan</a> bifogades i ett mejl, men ingen vet om projektledaren godkände den eller bara tog emot den.</li>
+          <li>Tre fakturor från samma transportör har olika priser per kubik. Projektledaren vet att priset beror på avstånd, men den informationen finns i ett <a href="excel-vs-automatiserad-fakturahantering.html">Excel-ark</a> som någon skapade vid projektstart och som sedan dess inte uppdaterats.</li>
+        </ul>
+        <p class="security-text">I samtliga fall är problemet detsamma: det saknas en pålitlig, tillgänglig referens att kontrollera fakturan mot. Det är inte projektledarens fel. Det är en konsekvens av att avtalsinformationen aldrig strukturerades från början.</p>
+
+        <h2 class="security-subtitle">Dokument förstås inte - de tvingas</h2>
+        <p class="security-text">De flesta digitaliseringsinitiativ inom fakturahantering utgår från samma antagande: att lösningen är att tvinga dokumenten in i en fördefinierad struktur. Kräv att alla offerter följer ett visst format. Kräv att alla avtal registreras i ett system. Kräv att alla priser matas in manuellt före fakturans ankomst.</p>
+        <p class="security-text">Det fungerar i stabila, repetitiva inköpsprocesser. Det fungerar inte i projektbaserade branscher där varje projekt har unika förutsättningar, leverantörskonstellationer och avtalsformer. Att kräva att verkligheten anpassar sig till systemet i stället för tvärtom leder till lågt användande, sämre datakvalitet och ökad frustration.</p>
+        <p class="security-text">Alternativet är att vända på perspektivet: i stället för att tvinga dokument att vara strukturerade, bygg system som förstår ostrukturerade dokument.</p>
+
+        <h2 class="security-subtitle">Semantisk dokumentanalys: förstå dokument i stället för att formatera dem</h2>
+        <p class="security-text">Semantisk dokumentanalys innebär att ett system läser och tolkar dokument baserat på deras innehåll och kontext, inte deras format. En offert i PDF, en prislista i Excel och en avtalsbekräftelse i ett mejl behandlas inte som tre isolerade filer utan som delar av samma avtalsbild.</p>
+        <p class="security-text">Konkret innebär det att systemet kan:</p>
+        <ul class="security-text blog-benefits-list">
+          <li>Extrahera priser, villkor och artikelspecifikationer ur offerter oavsett om de är strukturerade tabeller eller löptext.</li>
+          <li>Identifiera relationer mellan dokument. Till exempel att en prislista i Excel tillhör ett specifikt ramavtal, eller att ett mejl bekräftar en prisändring för ett visst projekt.</li>
+          <li>Bygga en sammanhängande avtalsreferens som fakturor kan matchas mot, utan att någon behövt mata in informationen manuellt.</li>
+          <li>Hantera versioner och ändringar. Om en ny prislista ersätter en gammal, reflekteras det i den avtalsreferens som systemet använder vid fakturakontroll.</li>
+        </ul>
+        <p class="security-text">Skillnaden mot traditionell <a href="digital-dokumentanalys-fakturahantering.html">dokumentanalys inom fakturahantering</a> är att fokus flyttas från fakturan till hela dokumentkedjan. Fakturan är fortfarande slutprodukten som kontrolleras, men referensen den kontrolleras mot byggs dynamiskt utifrån de faktiska avtalsdokumenten, inte utifrån manuellt inmatade ordrar.</p>
+
+        <h2 class="security-subtitle">Från dokumentkaos till kontrollerbar verklighet</h2>
+        <p class="security-text">Det handlar inte om att eliminera ostrukturerade dokument. De kommer alltid att finnas. Byggprojekt genererar offerter, prislistor, avtalsbilagor, mejl och protokoll. Det kommer inte att förändras.</p>
+        <p class="security-text">Det som kan förändras är hur system hanterar den verkligheten. I stället för att kräva att allt matas in manuellt i fördefinierade fält, i stället för att tvinga projektledare att arbeta med inköpsordrar som inte speglar hur beslut faktiskt fattas, och i stället för att skicka omatchade fakturor till en kö för manuell hantering, kan system som förstår dokumentens innehåll bygga den struktur som behövs automatiskt.</p>
+        <p class="security-text">Resultatet är att <a href="kontrollera-fakturor-mot-avtal.html">fakturor kontrolleras mot avtal</a> som faktiskt reflekterar vad som överenskommits, inte mot en förenklad systemversion av verkligheten. Projektledaren slipper vara den som håller avtalsinformationen i huvudet. Ekonomiavdelningen slipper vara dokumentarkeologer.</p>
+
+        <h2 class="security-subtitle">Sammanfattning</h2>
+        <p class="security-text">Det verkliga hindret för automatiserad fakturakontroll i projektbaserade branscher är inte fakturan. Det är allt som kom före den. Avtal som lever i PDF:er, prislistor i Excel, bekräftelser i mejl. Så länge det underlaget förblir ostrukturerat och otillgängligt för system, kommer fakturakontrollen att vara manuell i praktiken, oavsett vilka verktyg som används.</p>
+        <p class="security-text">Lösningen är inte att tvinga verkligheten in i en systemstruktur som inte passar. Lösningen är att bygga system som förstår dokument som de är. Semantisk dokumentanalys gör det möjligt att extrahera avtalsinformation ur de dokument som faktiskt finns, bygga en sammanhängande referens, och kontrollera fakturor mot den. Det är skillnaden mellan att automatisera slutsteget och att lösa det verkliga problemet. Hur detta konkretiseras i en femstegsmodell för fakturakontroll beskrivs i artikeln <a href="framtidens-fakturakontroll.html">Så borde framtidens fakturakontroll se ut</a>.</p>
+
+        <div class="blog-article-cta">
+          <p>Vill ni se hur dokumentförståelse kan ersätta manuell fakturakontroll i era projekt? <a href="../index.html#contact">Boka en demo</a> av Attestro och se hur det fungerar i praktiken.</p>
+        </div>
+
+        <div class="blog-trial-cta">
+          <p data-i18n="blogTrialCta" data-i18n-html>Testa Attestro gratis med 25 fakturor och Fortnox-synk. <a href="https://app.algamo.se">Skapa konto</a></p>
+        </div>
+
+        <div class="blog-related">
+          <h2 data-i18n="blogRelatedTitle">Relaterade artiklar</h2>
+          <div class="blog-related-grid">
+            <a href="varfor-erp-aldrig-loser-detta.html" class="blog-related-card">
+              <h3>Varför ditt ERP-system aldrig kommer lösa detta</h3>
+              <p>ERP-system kräver strukturerad data. Verkliga avtal är inte strukturerade. Därför behövs ett pre-attest-valideringslager.</p>
+            </a>
+            <a href="kontrollera-fakturor-mot-avtal.html" class="blog-related-card">
+              <h3>Kontrollera fakturor mot avtal</h3>
+              <p>Så säkerställer du att leverantörsfakturor stämmer med avtalade priser och villkor.</p>
+            </a>
+            <a href="fakturakontroll-entreprenadprojekt.html" class="blog-related-card">
+              <h3>Fakturakontroll i byggprojekt</h3>
+              <p>Hur byggföretag kan kontrollera leverantörsfakturor mot avtal, mängdförteckningar och leveransdokumentation.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo-link logo-link-footer">
+          <img src="../assets/logo-transparent.png" alt="Älgamo Software AB" class="logo-img logo-img-footer" width="180" height="48" loading="lazy" />
+          <span class="logo-fallback">ÄLGAMO Software AB</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footerTagline">Attestro. Tidseffektiv fakturakontroll.</p>
+      </div>
+      <div class="footer-legal">
+        <p data-i18n="footerLegal">Älgamo Software AB (559579-6987), Sverige</p>
+        <p class="footer-support"><span data-i18n="footerSupport">Kundsupport:</span> <a href="mailto:support@algamo.se">support@algamo.se</a></p>
+        <p class="footer-social"><a href="https://www.linkedin.com/company/%C3%A4lgamo-software-ab/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <p class="footer-news"><a href="../news/" data-i18n="footerNews">Nyheter</a></p>
+        <p class="footer-blog"><a href="../blog/" data-i18n="footerBlog">Blogg</a></p>
+        <p class="footer-security"><a href="../security.html" data-i18n="footerSecurity">Säkerhet</a></p>
+        <p class="footer-privacy"><a href="../privacy.html" data-i18n="footerPrivacy">Integritetspolicy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
