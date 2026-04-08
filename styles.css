@@ -122,8 +122,13 @@
   --space-4xl: 6rem;
   --radius: 0.5rem;
   --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
   --color-error: #d32f2f;
+  --color-heading: #1a2744;
+  --color-surface: #f9fafb;
+  --color-muted: #6b7280;
+  --color-card-bg: #ffffff;
   --container: min(1120px, 100% - 2rem);
 }
 
@@ -768,6 +773,23 @@ body > main {
 }
 
 
+
+/* Differentiator strip */
+.differentiator-strip {
+  padding: var(--space-xl) 0;
+  text-align: center;
+  background: var(--color-accent-soft, rgba(42, 157, 143, 0.06));
+  border-top: 1px solid rgba(42, 157, 143, 0.12);
+  border-bottom: 1px solid rgba(42, 157, 143, 0.12);
+}
+.differentiator-strip p {
+  margin: 0;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: var(--color-text);
+  max-width: 56ch;
+  margin-inline: auto;
+}
 
 /* Process (från faktura till verifierad data) */
 .process {
@@ -3281,12 +3303,12 @@ body > main {
 .produkt-screenshot-placeholder {
   margin-top: var(--space-md);
   padding: var(--space-lg) var(--space-md);
-  border: 2px dashed var(--color-border, #d0d5dd);
-  border-radius: var(--radius-md, 0.75rem);
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-md);
   text-align: center;
-  color: var(--color-muted, #6b7280);
+  color: var(--color-muted);
   font-size: 0.9rem;
-  background: var(--color-surface, #f9fafb);
+  background: var(--color-surface);
 }
 
 .produkt-feature-grid {
@@ -3297,16 +3319,16 @@ body > main {
 }
 
 .produkt-feature-category {
-  background: var(--color-card-bg, #fff);
-  border: 1px solid var(--color-border, #e5e7eb);
-  border-radius: var(--radius-md, 0.75rem);
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
   padding: var(--space-lg);
 }
 
 .produkt-feature-category h3 {
   font-size: 1.15rem;
   margin-bottom: var(--space-sm);
-  color: var(--color-heading, #1a2744);
+  color: var(--color-heading);
 }
 
 .produkt-feature-list {
@@ -3327,7 +3349,7 @@ body > main {
   content: "\2713";
   position: absolute;
   left: 0;
-  color: var(--color-primary, #2563eb);
+  color: var(--color-primary);
   font-weight: 700;
 }
 
@@ -3339,16 +3361,16 @@ body > main {
 }
 
 .produkt-tech-item {
-  background: var(--color-card-bg, #fff);
-  border: 1px solid var(--color-border, #e5e7eb);
-  border-radius: var(--radius-md, 0.75rem);
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
   padding: var(--space-lg);
 }
 
 .produkt-tech-item h3 {
   font-size: 1.1rem;
-  margin-bottom: var(--space-xs, 0.5rem);
-  color: var(--color-heading, #1a2744);
+  margin-bottom: var(--space-xs);
+  color: var(--color-heading);
 }
 
 .produkt-tech-item p {
@@ -3367,7 +3389,7 @@ body > main {
   padding-left: 1.5em;
   margin-bottom: 0.4em;
   font-size: 0.92rem;
-  color: var(--color-muted, #6b7280);
+  color: var(--color-muted);
   line-height: 1.45;
 }
 
@@ -3375,7 +3397,7 @@ body > main {
   content: "\2022";
   position: absolute;
   left: 0.25em;
-  color: var(--color-primary, #2563eb);
+  color: var(--color-primary);
 }
 
 @media (max-width: 768px) {

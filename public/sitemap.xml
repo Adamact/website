@@ -313,4 +313,84 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/infora-automatiserad-fakturakontroll.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/infora-automatiserad-fakturakontroll.html" />
   </url>
+  <url>
+    <loc>https://algamo.se/blog/smart-prislista-matchning.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/smart-prislista-matchning.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/smart-prislista-matchning.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/smart-prislista-matchning.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/vad-innebar-kontrollera-faktura.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/vad-innebar-kontrollera-faktura.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/vad-innebar-kontrollera-faktura.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/vad-innebar-kontrollera-faktura.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/varfor-fakturamatchning-ar-trasig.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/varfor-fakturamatchning-ar-trasig.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/varfor-fakturamatchning-ar-trasig.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/varfor-fakturamatchning-ar-trasig.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/framtidens-fakturakontroll.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/framtidens-fakturakontroll.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/framtidens-fakturakontroll.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/framtidens-fakturakontroll.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/problemet-ar-inte-fakturor-utan-offerter.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/problemet-ar-inte-fakturor-utan-offerter.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/problemet-ar-inte-fakturor-utan-offerter.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/problemet-ar-inte-fakturor-utan-offerter.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/varfor-erp-aldrig-loser-detta.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/varfor-erp-aldrig-loser-detta.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/varfor-erp-aldrig-loser-detta.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/varfor-erp-aldrig-loser-detta.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/case-fakturan-sag-korrekt-ut.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/case-fakturan-sag-korrekt-ut.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/case-fakturan-sag-korrekt-ut.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/case-fakturan-sag-korrekt-ut.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/human-in-the-loop-fakturakontroll.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/human-in-the-loop-fakturakontroll.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/human-in-the-loop-fakturakontroll.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/human-in-the-loop-fakturakontroll.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/blog/trevags-matchning.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/trevags-matchning.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/trevags-matchning.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/blog/trevags-matchning.html" />
+  </url>
+  <url>
+    <loc>https://algamo.se/integrationer/fortnox.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/integrationer/fortnox.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/integrationer/fortnox.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algamo.se/integrationer/fortnox.html" />
+  </url>
 </urlset>
