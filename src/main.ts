@@ -106,12 +106,12 @@ const translations: Translations = {
     featFlex7: "Fortnox-integration",
     featFlex8: "Kontering mot konto, projekt och kostnadsställe",
     featFlex9: "Första attest-godkännande",
-    pricingVolumeUnitSv: "fakturor / mån",
+    pricingVolumeUnitSv: "sidor / mån",
     pricingPriceUnitSv: "kr/mån",
     planEnterprise: "Enterprise",
     priceEnterprise: "Pris enligt offert",
     enterpriseNote: "Minimiavtal på 12 månader",
-    featEntVolume: "1 000+ fakturor / mån",
+    featEntVolume: "1 500+ sidor / mån",
     featEnt1: "Allt i Kontroll",
     featEnt2: "API-integration",
     featEnt3: "Dashboard / BI-export",
@@ -205,8 +205,8 @@ const translations: Translations = {
     pricingFaqTitle: "Vanliga frågor om priser",
     pricingFaqQ1: "Kan jag byta plan?",
     pricingFaqA1: "Ja. Ni kan uppgradera eller nedgradera er plan när som helst. Ändringen träder i kraft vid nästa faktureringsperiod.",
-    pricingFaqQ2: "Vad händer om vi överskrider fakturagränsen?",
-    pricingFaqA2: "Ni får en notifiering innan ni når er gräns. Fakturor utöver er plans gräns kan debiteras per styck enligt en pay-as-you-go-modell, men endast efter ert aktiva godkännande. Inga dolda avgifter. Om ni regelbundet överskrider gränsen rekommenderar vi att uppgradera till nästa plan för ett lägre styckpris.",
+    pricingFaqQ2: "Vad händer om vi överskrider sidgränsen?",
+    pricingFaqA2: "Ni får en notifiering innan ni når er gräns. Sidor utöver er plans gräns kan debiteras per styck enligt en pay-as-you-go-modell, men endast efter ert aktiva godkännande. Inga dolda avgifter. Om ni regelbundet överskrider gränsen rekommenderar vi att uppgradera till nästa plan för ett lägre styckpris.",
     pricingFaqQ3: "Ingår implementation i priset?",
     pricingFaqA3: "Implementation debiteras som en engångskostnad utöver månadspriset. Den omfattar konfigurering av era faktureringsmallar och avtalsinställningar.",
     // About values
@@ -1186,9 +1186,9 @@ const translations: Translations = {
     resourcesLead: "Fördjupa dig i hur företag effektiviserar sin fakturakontroll.",
     resourcesTitle: "Resurser om fakturahantering",
     planEnterpriseDesc: "För organisationer med höga volymer och integrationsbehov.",
-    pricingFaqA4: "Varje unikt fakturadokument som laddas upp räknas som en faktura, oavsett antal rader. Kreditfakturor och kopior räknas också.",
+    pricingFaqA4: "Varje sida i ett uppladdat fakturadokument räknas. En faktura på fyra sidor räknas alltså som fyra sidor. Kreditfakturor och kopior räknas också.",
     pricingFaqA6: "Ja, prisverifiering ingår i alla planer. Attestro jämför varje fakturarad mot era avtalade priser, prislistor och projektvillkor. Avvikelser flaggas automatiskt.",
-    pricingFaqQ4: "Hur räknas fakturor?",
+    pricingFaqQ4: "Hur räknas sidor?",
     pricingFaqQ6: "Kan Attestro verifiera priser mot våra avtal?",
     blogFlfInfoBoxTitle: "Vanliga feltyper att bevaka",
     blogAfkBreadcrumb: "Hur automatisering effektiviserar leverantörsfakturakontroll.",
@@ -2522,12 +2522,12 @@ const translations: Translations = {
     featFlex7: "Fortnox integration",
     featFlex8: "Accounting coding by account, project and cost center",
     featFlex9: "First-level attest approval",
-    pricingVolumeUnitSv: "invoices / month",
+    pricingVolumeUnitSv: "pages / month",
     pricingPriceUnitSv: "SEK/month",
     planEnterprise: "Enterprise",
     priceEnterprise: "Price by quote",
     enterpriseNote: "Minimum 12-month agreement",
-    featEntVolume: "1,000+ invoices / month",
+    featEntVolume: "1,500+ pages / month",
     featEnt1: "Everything in Kontroll",
     featEnt2: "API integration",
     featEnt3: "Dashboard / BI export",
@@ -2622,8 +2622,8 @@ const translations: Translations = {
     pricingFaqTitle: "Pricing FAQ",
     pricingFaqQ1: "Can I switch plans?",
     pricingFaqA1: "Yes. You can upgrade or downgrade your plan at any time. The change takes effect at the next billing period.",
-    pricingFaqQ2: "What happens if we exceed the invoice limit?",
-    pricingFaqA2: "You'll be notified before reaching your limit. Invoices beyond your plan's limit can be charged per invoice on a pay-as-you-go basis, but only with your explicit consent. No hidden fees. If you regularly exceed the limit, we recommend upgrading to the next plan for a lower per-invoice cost.",
+    pricingFaqQ2: "What happens if we exceed the page limit?",
+    pricingFaqA2: "You'll be notified before reaching your limit. Pages beyond your plan's limit can be charged per page on a pay-as-you-go basis, but only with your explicit consent. No hidden fees. If you regularly exceed the limit, we recommend upgrading to the next plan for a lower per-page cost.",
     pricingFaqQ3: "Is implementation included in the price?",
     pricingFaqA3: "Implementation is charged as a one-time cost in addition to the monthly price. It covers configuration of your invoice templates and contract settings.",
     // About values
@@ -3604,9 +3604,9 @@ const translations: Translations = {
     resourcesLead: "Explore how companies streamline their invoice control processes.",
     resourcesTitle: "Invoice handling resources",
     planEnterpriseDesc: "For organizations with high volumes and integration needs.",
-    pricingFaqA4: "Each unique invoice document uploaded counts as one invoice, regardless of the number of line items. Credit notes and copies also count.",
+    pricingFaqA4: "Each page in an uploaded invoice document is counted. A four-page invoice counts as four pages. Credit notes and copies also count.",
     pricingFaqA6: "Yes, price verification is included in all plans. Attestro compares each invoice line against your agreed prices, price lists, and project terms. Discrepancies are flagged automatically.",
-    pricingFaqQ4: "How are invoices counted?",
+    pricingFaqQ4: "How are pages counted?",
     pricingFaqQ6: "Can Attestro verify prices against our contracts?",
     blogAfkBreadcrumb: "How automation streamlines supplier invoice verification.",
     blogAkPillarDesc1: "Text is extracted from PDFs and scanned documents",
@@ -5001,9 +5001,9 @@ function initPricingToggle(): void {
   });
 }
 
-const PRICING_VOLUMES = [50, 100, 500, 1000];
-const PRICING_PRICES = [390, 690, 2000, 2900];
-const PRICING_PRICES_BINDING = [330, 590, 1700, 2465];
+const PRICING_VOLUMES = [100, 300, 750, 1500];
+const PRICING_PRICES = [390, 890, 1990, 3490];
+const PRICING_PRICES_BINDING = [332, 757, 1692, 2967];
 
 function renderPricingSlider(): void {
   const slider = document.getElementById("pricing-volume-slider") as HTMLInputElement | null;
@@ -5011,7 +5011,7 @@ function renderPricingSlider(): void {
   const i = Math.max(0, Math.min(PRICING_VOLUMES.length - 1, Number(slider.value) || 0));
   const lang = getLang();
   const priceUnit = lang === "en" ? "SEK/month" : "kr/mån";
-  const volumeUnit = lang === "en" ? "invoices / month" : "fakturor / mån";
+  const volumeUnit = lang === "en" ? "pages / month" : "sidor / mån";
   const defaultEl = document.getElementById("pricing-flex-price-default");
   const bindingEl = document.getElementById("pricing-flex-price-binding");
   const volumeEl = document.getElementById("pricing-flex-volume");

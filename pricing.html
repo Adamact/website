@@ -67,7 +67,7 @@
       },
       {
         "@type": "Offer",
-        "name": "Kontroll 50",
+        "name": "Kontroll 100",
         "price": "390",
         "priceCurrency": "SEK",
         "priceSpecification": {
@@ -76,51 +76,51 @@
           "priceCurrency": "SEK",
           "billingDuration": "P1M"
         },
-        "description": "50 fakturor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, kontering, första attest-godkännande, Fortnox-integration, Excel-export, API-integration, e-postsupport"
+        "description": "100 sidor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, kontering, första attest-godkännande, Fortnox-integration, Excel-export, API-integration, e-postsupport"
       },
       {
         "@type": "Offer",
-        "name": "Kontroll 100",
-        "price": "690",
+        "name": "Kontroll 300",
+        "price": "890",
         "priceCurrency": "SEK",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "price": "690",
+          "price": "890",
           "priceCurrency": "SEK",
           "billingDuration": "P1M"
         },
-        "description": "100 fakturor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, kontering, första attest-godkännande, Fortnox-integration, Excel-export, API-integration, e-postsupport"
+        "description": "300 sidor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, kontering, första attest-godkännande, Fortnox-integration, Excel-export, API-integration, e-postsupport"
       },
       {
         "@type": "Offer",
-        "name": "Kontroll 500",
-        "price": "2000",
+        "name": "Kontroll 750",
+        "price": "1990",
         "priceCurrency": "SEK",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "price": "2000",
+          "price": "1990",
           "priceCurrency": "SEK",
           "billingDuration": "P1M"
         },
-        "description": "500 fakturor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, kontering, första attest-godkännande, Fortnox-integration, Excel-export, API-integration, e-postsupport"
+        "description": "750 sidor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, kontering, första attest-godkännande, Fortnox-integration, Excel-export, API-integration, e-postsupport"
       },
       {
         "@type": "Offer",
-        "name": "Kontroll 1000",
-        "price": "2900",
+        "name": "Kontroll 1500",
+        "price": "3490",
         "priceCurrency": "SEK",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "price": "2900",
+          "price": "3490",
           "priceCurrency": "SEK",
           "billingDuration": "P1M"
         },
-        "description": "1 000 fakturor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, kontering, första attest-godkännande, Fortnox-integration, Excel-export, API-integration, e-postsupport"
+        "description": "1 500 sidor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, kontering, första attest-godkännande, Fortnox-integration, Excel-export, API-integration, e-postsupport"
       },
       {
         "@type": "Offer",
         "name": "Enterprise",
-        "description": "1 000+ fakturor/mån, allt i Kontroll, analys- och BI-export, stöd för flera bolag, SLA med garanterad tillgänglighet, dedikerad kontaktperson"
+        "description": "1 500+ sidor/mån, allt i Kontroll, analys- och BI-export, stöd för flera bolag, SLA med garanterad tillgänglighet, dedikerad kontaktperson"
       }
     ],
     "@id": "https://algamo.se/#software",
@@ -147,7 +147,7 @@
       },
       {
         "@type": "Question",
-        "name": "Vad händer om vi överskrider fakturagränsen?",
+        "name": "Vad händer om vi överskrider sidgränsen?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Ni får en notifiering innan ni når er gräns. Pay-as-you-go aktiveras endast efter ert aktiva godkännande. Inga dolda avgifter."
@@ -155,10 +155,10 @@
       },
       {
         "@type": "Question",
-        "name": "Hur räknas fakturor?",
+        "name": "Hur räknas sidor?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Varje unikt fakturadokument som laddas upp räknas som en faktura, oavsett antal rader. Kreditfakturor och kopior räknas också."
+          "text": "Varje sida i ett uppladdat fakturadokument räknas. En faktura på fyra sidor räknas alltså som fyra sidor. Kreditfakturor och kopior räknas också."
         }
       },
       {
@@ -239,22 +239,22 @@
             <h2 class="pricing-name" data-i18n="planFlexTitle">Kontroll</h2>
             <p class="pricing-subtitle" data-i18n="planFlexDesc">Välj den volym som passar ert team.</p>
             <div class="pricing-price-wrap">
-              <span class="pricing-price-default" id="pricing-flex-price-default">690 kr/mån</span>
+              <span class="pricing-price-default" id="pricing-flex-price-default">890 kr/mån</span>
             </div>
             <div class="pricing-slider-wrap">
-              <p class="pricing-volume-label" id="pricing-flex-volume">100 fakturor / mån</p>
-              <input type="range" id="pricing-volume-slider" class="pricing-slider" min="0" max="3" step="1" value="1" aria-label="Antal fakturor per månad" list="pricing-volume-ticks" />
+              <p class="pricing-volume-label" id="pricing-flex-volume">300 sidor / mån</p>
+              <input type="range" id="pricing-volume-slider" class="pricing-slider" min="0" max="3" step="1" value="1" aria-label="Antal sidor per månad" list="pricing-volume-ticks" />
               <datalist id="pricing-volume-ticks">
-                <option value="0" label="50"></option>
-                <option value="1" label="100"></option>
-                <option value="2" label="500"></option>
-                <option value="3" label="1000"></option>
+                <option value="0" label="100"></option>
+                <option value="1" label="300"></option>
+                <option value="2" label="750"></option>
+                <option value="3" label="1500"></option>
               </datalist>
               <div class="pricing-slider-ticks" role="presentation">
-                <button type="button" class="pricing-slider-tick" data-tick="0">50</button>
-                <button type="button" class="pricing-slider-tick is-active" data-tick="1">100</button>
-                <button type="button" class="pricing-slider-tick" data-tick="2">500</button>
-                <button type="button" class="pricing-slider-tick" data-tick="3">1000</button>
+                <button type="button" class="pricing-slider-tick" data-tick="0">100</button>
+                <button type="button" class="pricing-slider-tick is-active" data-tick="1">300</button>
+                <button type="button" class="pricing-slider-tick" data-tick="2">750</button>
+                <button type="button" class="pricing-slider-tick" data-tick="3">1500</button>
               </div>
             </div>
             <ul class="pricing-features">
@@ -276,7 +276,7 @@
             <p class="pricing-price pricing-price-enterprise" data-i18n="priceEnterprise">Pris enligt offert</p>
             <p class="pricing-note" data-i18n="enterpriseNote">Minimiavtal på 12 månader</p>
             <ul class="pricing-features">
-              <li data-i18n="featEntVolume">1 000+ fakturor / mån</li>
+              <li data-i18n="featEntVolume">1 500+ sidor / mån</li>
               <li data-i18n="featEnt1">Allt i Kontroll</li>
               <li data-i18n="featEnt3">Analys- och BI-export</li>
               <li data-i18n="featEnt4">Stöd för flera bolag</li>
