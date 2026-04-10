@@ -112,6 +112,7 @@ const translations: Translations = {
     priceEnterprise: "Pris enligt offert",
     enterpriseNote: "Minimiavtal på 12 månader",
     featEntVolume: "1 500+ sidor / mån",
+    featEntHistorical: "Ett års historiska fakturor ingår vid köp",
     featEnt1: "Allt i Kontroll",
     featEnt2: "API-integration",
     featEnt3: "Dashboard / BI-export",
@@ -2528,6 +2529,7 @@ const translations: Translations = {
     priceEnterprise: "Price by quote",
     enterpriseNote: "Minimum 12-month agreement",
     featEntVolume: "1,500+ pages / month",
+    featEntHistorical: "One year of historical invoices included at purchase",
     featEnt1: "Everything in Kontroll",
     featEnt2: "API integration",
     featEnt3: "Dashboard / BI export",
@@ -5018,6 +5020,13 @@ function renderPricingSlider(): void {
   if (defaultEl) defaultEl.textContent = `${formatNumber(PRICING_PRICES[i])} ${priceUnit}`;
   if (bindingEl) bindingEl.textContent = `${formatNumber(PRICING_PRICES_BINDING[i])} ${priceUnit}`;
   if (volumeEl) volumeEl.textContent = `${formatNumber(PRICING_VOLUMES[i])} ${volumeUnit}`;
+  const historicalEl = document.getElementById("pricing-flex-historical");
+  if (historicalEl) {
+    const n = formatNumber(PRICING_VOLUMES[i]);
+    historicalEl.textContent = lang === "en"
+      ? `Up to ${n} historical pages included at purchase`
+      : `Upp till ${n} historiska sidor ingår vid köp`;
+  }
   document.querySelectorAll<HTMLElement>(".pricing-slider-tick").forEach((tick, idx) => {
     tick.classList.toggle("is-active", idx === i);
     tick.setAttribute("aria-pressed", String(idx === i));
