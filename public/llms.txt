@@ -67,7 +67,7 @@ Attestro offers four pricing tiers designed to scale with invoice volume and ver
 - **Plus** (most popular): 1,890 SEK/month (1,590 SEK/month with 12-month commitment). 350 invoices per month. Everything in Standard plus priority support and database storage with full traceability.
 - **Enterprise**: Custom pricing. 500+ invoices per month. Everything in Plus plus API integration with accounting systems, analytics and BI export, multi-entity support, SLA with guaranteed uptime, and a dedicated account manager.
 
-A free trial is available: 25 invoices at no cost over 30 days, with Fortnox sync included. No credit card required.
+A free trial is available: 25 invoices at no cost over 30 days. No credit card required. Note: the Fortnox integration is not included in the free trial; it is available in the paid Kontroll and Enterprise plans.
 
 ## Security and Data Handling
 
@@ -144,7 +144,7 @@ Attestro extracts supplier name, invoice number, date, project/cost codes (littr
 Attestro uses semantic analysis to understand the content of existing contracts, quotes, and price lists. Customers upload documents in whatever format they already use and the system interprets them automatically, regardless of structure or layout. No reformatting or manual data entry is required.
 
 **Can we try before committing?**
-Yes. Create a free account at app.algamo.se and test with up to 25 invoices over 30 days with Fortnox sync, no credit card required. Demos are also available upon request.
+Yes. Create a free account at app.algamo.se and test with up to 25 invoices over 30 days, no credit card required. The Fortnox integration is not included in the free trial; it is available in the paid plans. Demos are also available upon request.
 
 **Can we switch plans?**
 Yes. Plans can be upgraded or downgraded at any time. Changes take effect at the next billing period.
