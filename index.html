@@ -94,15 +94,15 @@
         "name": "Gratis provperiod",
         "price": "0",
         "priceCurrency": "SEK",
-        "description": "25 fakturor gratis i 30 dagar med Fortnox-synk. Inget kreditkort krävs.",
+        "description": "25 fakturor gratis i 30 dagar. Inget kreditkort krävs.",
         "url": "https://app.algamo.se",
         "availability": "https://schema.org/OnlineOnly"
       },
       {
         "@type": "AggregateOffer",
         "priceCurrency": "SEK",
-        "lowPrice": "790",
-        "highPrice": "1890",
+        "lowPrice": "390",
+        "highPrice": "2900",
         "offerCount": "4",
         "availability": "https://schema.org/OnlineOnly"
       }
@@ -199,7 +199,7 @@
           <span class="lang-sep" aria-hidden="true">|</span>
           <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">English</button>
         </div>
-        <a href="https://app.algamo.se" class="btn btn-on-light" data-i18n="ctaHeaderTrial">Testa gratis</a>
+        <a href="https://app.algamo.se" class="header-text-link" data-i18n="ctaHeaderTrial">Testa gratis</a>
         <a href="#contact" class="btn btn-primary" data-i18n="ctaHeader">Boka demo</a>
       </div>
     </div>
@@ -211,12 +211,22 @@
         <p class="hero-badge" data-i18n="heroBadge">Svenskt verktyg för fakturahantering</p>
         <h1 class="hero-title" data-i18n="heroTitle">Verifiera fakturor mot era avtal, automatiskt.</h1>
         <p class="hero-lead" data-i18n="heroLead" data-i18n-html>Attestro omvandlar leverantörsfakturor till strukturerad data, <strong>förstår innebörden</strong> i era avtal och prislistor, och flaggar avvikelser automatiskt.</p>
+        <p class="hero-value-claim" data-i18n="heroValueClaim">Minska manuell fakturakontroll avsevärt och fånga fel innan de attesteras.</p>
         <p class="hero-note" data-i18n="heroNoChange">Fungerar med ert befintliga ekonomisystem. Inget systembyte krävs.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary btn-lg" data-i18n="heroCtaPrimary">Boka en demo</a>
-          <a href="https://app.algamo.se" class="btn btn-ghost btn-lg" data-i18n="heroCtaSecondary">Testa gratis</a>
         </div>
-        <p class="hero-trial-note" data-i18n="heroTrialNote">25 fakturor gratis i 30 dagar.</p>
+        <p class="hero-trial-link">
+          <span data-i18n="heroTrialPrefix">eller</span>
+          <a href="https://app.algamo.se" class="hero-text-link" data-i18n="heroTrialLink">testa gratis i 30 dagar →</a>
+        </p>
+        <ul class="hero-trust-line" aria-label="Trygghet">
+          <li data-i18n="heroTrustEU">Data lagras inom EU</li>
+          <li aria-hidden="true">·</li>
+          <li data-i18n="heroTrustGdpr">GDPR-kompatibelt</li>
+          <li aria-hidden="true">·</li>
+          <li data-i18n="heroTrustNoChange">Inget systembyte</li>
+        </ul>
       </div>
       <div class="hero-visual" aria-hidden="true">
         <div class="hero-pipeline">
@@ -346,11 +356,30 @@
       </div>
     </section>
 
-    <div class="differentiator-strip" data-reveal="fade">
+    <section class="section why-attestro">
       <div class="container">
-        <p data-i18n="diffCallout">Till skillnad från andra system kräver inte Attestro att ni strukturerar om era underlag. Vi matchar fakturor mot avtal utifrån innebörd, inte exakta fältnamn.</p>
+        <p class="section-label" data-reveal="fade" data-i18n="whyLabel">Varför Attestro</p>
+        <h2 class="section-title" data-reveal data-i18n="whyTitle">Byggt för hur ni redan jobbar</h2>
+        <p class="section-lead" data-reveal data-i18n="whyLead">Till skillnad från andra system kräver inte Attestro att ni strukturerar om era underlag. Tre saker som gör skillnad i praktiken.</p>
+        <ul class="audience-grid stagger">
+          <li class="audience-card" data-reveal>
+            <span class="audience-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/><path d="M12 8v8"/></svg></span>
+            <h3 data-i18n="whyCard1Title">Förstår innebörden i era avtal</h3>
+            <p data-i18n="whyCard1Desc">Semantisk matchning jämför fakturarader mot avtal, offerter och prislistor utifrån betydelse, inte exakta fältnamn. Ni behöver inte strukturera om något.</p>
+          </li>
+          <li class="audience-card" data-reveal>
+            <span class="audience-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h10"/><path d="M18 15l3 3-3 3"/></svg></span>
+            <h3 data-i18n="whyCard2Title">Inget systembyte</h3>
+            <p data-i18n="whyCard2Desc">Attestro fungerar tillsammans med ert befintliga ekonomisystem. Ingen migrering, ingen ny leverantörsreskontra, inga avbrott i verksamheten.</p>
+          </li>
+          <li class="audience-card" data-reveal>
+            <span class="audience-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L3 7v6c0 5.25 3.75 10.15 9 11.35C17.25 23.15 21 18.25 21 13V7l-9-5z"/><path d="M9 12l2 2 4-4"/></svg></span>
+            <h3 data-i18n="whyCard3Title">Svensk support, data i EU</h3>
+            <p data-i18n="whyCard3Desc">Utvecklat och supporterat i Sverige. All data lagras inom EU och hanteras enligt GDPR, utan delning med tredje part.</p>
+          </li>
+        </ul>
       </div>
-    </div>
+    </section>
 
     <section id="process" class="section process section-dotted">
       <div class="container">
@@ -427,6 +456,16 @@
       </div>
     </section>
 
+    <section class="section pricing-teaser">
+      <div class="container pricing-teaser-inner" data-reveal>
+        <div class="pricing-teaser-text">
+          <h2 class="pricing-teaser-title" data-i18n="pricingTeaserTitle">Från 390 kr/mån</h2>
+          <p class="pricing-teaser-lead" data-i18n="pricingTeaserLead">Inga uppstartsavgifter. Välj den volym som passar ert team och betala bara för det ni behöver.</p>
+        </div>
+        <a href="pricing.html" class="btn btn-primary btn-lg btn-on-light" data-i18n="pricingTeaserCta">Se priser →</a>
+      </div>
+    </section>
+
     <section class="section trial-cta">
       <div class="container trial-cta-inner" data-reveal>
         <h2 class="section-title" data-i18n="trialTitle">Testa Attestro gratis</h2>
@@ -498,6 +537,7 @@
             <textarea id="cf-message" name="message" rows="4"></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-lg btn-form-submit" data-i18n="formSubmit">Skicka förfrågan</button>
+          <p class="form-next-step" data-i18n="formNextStep">Vi svarar inom en arbetsdag med en kort intro och förslag på demotid.</p>
           <p class="form-privacy-notice" data-i18n="formPrivacyNotice">Formuläret öppnar ditt e-postprogram. Ingen data lagras på våra servrar.</p>
         </form>
       </div>
