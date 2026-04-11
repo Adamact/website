@@ -76,7 +76,7 @@
           "priceCurrency": "SEK",
           "billingDuration": "P1M"
         },
-        "description": "100 sidor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, kontering, första attest-godkännande, Fortnox-integration, Excel-export, API-integration, e-postsupport"
+        "description": "100 sidor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, kontering, första attest-godkännande, Fortnox-integration, Excel-export, API-integration, dedikerad kontakt"
       },
       {
         "@type": "Offer",
@@ -89,7 +89,7 @@
           "priceCurrency": "SEK",
           "billingDuration": "P1M"
         },
-        "description": "300 sidor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, kontering, första attest-godkännande, Fortnox-integration, Excel-export, API-integration, e-postsupport"
+        "description": "300 sidor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, kontering, första attest-godkännande, Fortnox-integration, Excel-export, API-integration, dedikerad kontakt"
       },
       {
         "@type": "Offer",
@@ -102,7 +102,7 @@
           "priceCurrency": "SEK",
           "billingDuration": "P1M"
         },
-        "description": "750 sidor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, kontering, första attest-godkännande, Fortnox-integration, Excel-export, API-integration, e-postsupport"
+        "description": "750 sidor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, kontering, första attest-godkännande, Fortnox-integration, Excel-export, API-integration, dedikerad kontakt"
       },
       {
         "@type": "Offer",
@@ -115,12 +115,12 @@
           "priceCurrency": "SEK",
           "billingDuration": "P1M"
         },
-        "description": "1 500 sidor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, kontering, första attest-godkännande, Fortnox-integration, Excel-export, API-integration, e-postsupport"
+        "description": "1 500 sidor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, kontering, första attest-godkännande, Fortnox-integration, Excel-export, API-integration, dedikerad kontakt"
       },
       {
         "@type": "Offer",
         "name": "Enterprise",
-        "description": "1 500+ sidor/mån, allt i Kontroll, analys- och BI-export, stöd för flera bolag, SLA med garanterad tillgänglighet, dedikerad kontaktperson"
+        "description": "1 500+ sidor/mån, allt i Kontroll, API-integration, analys- och BI-export, stöd för flera bolag, SLA med garanterad tillgänglighet, dedikerad kontakt"
       }
     ],
     "@id": "https://algamo.se/#software",
@@ -150,7 +150,7 @@
         "name": "Vad händer om vi överskrider sidgränsen?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ni får en notifiering innan ni når er gräns. Pay-as-you-go aktiveras endast efter ert aktiva godkännande. Inga dolda avgifter."
+          "text": "Ni får en notifiering innan ni når er gräns. Sidor utöver er plans gräns kan debiteras per styck enligt en pay-as-you-go-modell, men endast efter ert aktiva godkännande. Inga dolda avgifter. Om ni regelbundet överskrider gränsen rekommenderar vi att uppgradera till nästa plan för ett lägre styckpris."
         }
       },
       {
@@ -218,7 +218,7 @@
       <div class="container">
         <span class="section-label">Priser</span>
         <h1 class="section-title" data-i18n="pricingHeading">Priser för <span class="text-gradient-teal">Attestro</span></h1>
-        <p class="section-lead" data-i18n="pricingLead">Välj plan utifrån antal fakturor och hur djup kontroll ni behöver. Alla planer extraherar fakturadata automatiskt och flaggar fel.</p>
+        <p class="section-lead" data-i18n="pricingLead">Välj plan utifrån er volym och behov. Alla planer inkluderar omvandling till strukturerad data, validering och felflaggor.</p>
         <ul class="pricing-grid pricing-grid-3 stagger">
           <li class="pricing-card" data-reveal>
             <h2 class="pricing-name" data-i18n="planFreeTitle">Gratis provperiod</h2>
@@ -231,11 +231,12 @@
               <li data-i18n="featFree2">Automatisk fakturautläsning och validering</li>
               <li data-i18n="featFree3">Prisverifiering mot avtal</li>
               <li data-i18n="featFree4">Inget kreditkort krävs</li>
+              <li data-i18n="featFreeSupport">E-postsupport</li>
             </ul>
             <a href="https://app.algamo.se" class="btn btn-ghost pricing-cta" data-i18n="planFreeCta">Testa gratis</a>
           </li>
           <li class="pricing-card pricing-card-featured" data-reveal>
-            <span class="pricing-badge" data-i18n="pricingRecommended">Populärast</span>
+            <span class="pricing-badge" data-i18n="pricingRecommended">Rekommenderad</span>
             <h2 class="pricing-name" data-i18n="planFlexTitle">Kontroll</h2>
             <p class="pricing-subtitle" data-i18n="planFlexDesc">Välj den volym som passar ert team.</p>
             <div class="pricing-price-wrap">
@@ -258,7 +259,7 @@
               </div>
             </div>
             <ul class="pricing-features">
-              <li id="pricing-flex-historical">Upp till 300 historiska sidor ingår vid köp</li>
+              <li id="pricing-flex-historical">Upp till 300 historiska sidor ingår vid&nbsp;köp</li>
               <li data-i18n="featFlex1">Automatisk utläsning av fakturadata</li>
               <li data-i18n="featFlex2">Validering av fält och totalbelopp</li>
               <li data-i18n="featFlex3">Prisverifiering mot avtal och prislistor</li>
@@ -267,7 +268,7 @@
               <li data-i18n="featFlex7">Fortnox-integration</li>
               <li data-i18n="featFlex4">Anpassningsbar Excel-export</li>
               <li data-i18n="featFlex5">API-integration med ert ekonomisystem</li>
-              <li data-i18n="featFlex6">E-postsupport</li>
+              <li data-i18n="featFlex6">Dedikerad kontakt</li>
             </ul>
             <a href="mailto:sales@algamo.se?subject=Attestro%20-%20Boka%20demo" class="btn btn-primary pricing-cta" data-i18n="ctaHeader">Boka demo</a>
           </li>
@@ -280,10 +281,11 @@
               <li data-i18n="featEntVolume">1 500+ sidor / mån</li>
               <li data-i18n="featEntHistorical">Ett års historiska fakturor ingår vid köp</li>
               <li data-i18n="featEnt1">Allt i Kontroll</li>
+              <li data-i18n="featEnt2">API-integration</li>
               <li data-i18n="featEnt3">Analys- och BI-export</li>
               <li data-i18n="featEnt4">Stöd för flera bolag</li>
               <li data-i18n="featEnt5">SLA med garanterad tillgänglighet</li>
-              <li data-i18n="featEnt6">Dedikerad kontaktperson</li>
+              <li data-i18n="featEnt6">Dedikerad kontakt</li>
             </ul>
             <a href="mailto:sales@algamo.se?subject=Attestro%20-%20Enterprise" class="btn btn-ghost" data-i18n="contactUs">Kontakta oss</a>
           </li>
@@ -301,12 +303,12 @@
             <div class="faq-answer"><p class="faq-answer-inner" data-i18n="pricingFaqA1">Ja. Ni kan uppgradera eller nedgradera er plan när som helst. Ändringen träder i kraft vid nästa faktureringsperiod.</p></div>
           </details>
           <details class="faq-item">
-            <summary class="faq-question" data-i18n="pricingFaqQ2">Vad händer om vi överskrider fakturagränsen?</summary>
-            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="pricingFaqA2">Ni får en notifiering innan ni når er gräns. Fakturor utöver er plans gräns kan debiteras per styck enligt en pay-as-you-go-modell, men endast efter ert aktiva godkännande. Inga dolda avgifter. Om ni regelbundet överskrider gränsen rekommenderar vi att uppgradera till nästa plan för ett lägre styckpris.</p></div>
+            <summary class="faq-question" data-i18n="pricingFaqQ2">Vad händer om vi överskrider sidgränsen?</summary>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="pricingFaqA2">Ni får en notifiering innan ni når er gräns. Sidor utöver er plans gräns kan debiteras per styck enligt en pay-as-you-go-modell, men endast efter ert aktiva godkännande. Inga dolda avgifter. Om ni regelbundet överskrider gränsen rekommenderar vi att uppgradera till nästa plan för ett lägre styckpris.</p></div>
           </details>
           <details class="faq-item">
-            <summary class="faq-question" data-i18n="pricingFaqQ4">Hur räknas fakturor?</summary>
-            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="pricingFaqA4">Varje unikt fakturadokument som laddas upp räknas som en faktura, oavsett antal rader. Kreditfakturor och kopior räknas också.</p></div>
+            <summary class="faq-question" data-i18n="pricingFaqQ4">Hur räknas sidor?</summary>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="pricingFaqA4">Varje sida i ett uppladdat fakturadokument räknas. En faktura på fyra sidor räknas alltså som fyra sidor. Kreditfakturor och kopior räknas också.</p></div>
           </details>
           <details class="faq-item">
             <summary class="faq-question" data-i18n="pricingFaqQ6">Kan Attestro verifiera priser mot våra avtal?</summary>
@@ -320,7 +322,7 @@
       <div class="container"><div class="cta-inner">
         <span class="section-label">Kom igång</span>
         <h2 class="cta-title" data-i18n="pricingCtaTitle">Redo att testa?</h2>
-        <p class="cta-lead" data-i18n="pricingCtaLead">Skapa ett gratiskonto och testa med 10 fakturor i 30 dagar, eller boka en demo.</p>
+        <p class="cta-lead" data-i18n="pricingCtaLead">Skapa ett gratiskonto och testa med 25 sidor i 30 dagar, eller boka en demo.</p>
         <div class="cta-actions">
           <a href="https://app.algamo.se" class="btn btn-primary btn-lg" data-i18n="pricingCtaTrialBtn">Testa gratis</a>
           <a href="index.html#contact" class="btn btn-ghost btn-lg" data-i18n="pricingCtaCta">Boka en demo</a>

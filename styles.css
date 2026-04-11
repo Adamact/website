@@ -1030,7 +1030,7 @@ body > main {
   font-size: 1rem;
   color: var(--color-navy);
   margin: 0 0 var(--space-sm);
-  text-align: center;
+  text-align: left;
 }
 
 .pricing-slider {
@@ -1130,9 +1130,9 @@ body > main {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1.08fr 1fr;
+  grid-template-columns: 1fr 1.18fr 1fr;
   gap: var(--space-xl);
-  margin-top: 0;
+  margin-top: var(--space-3xl);
   align-items: stretch;
 }
 
@@ -1162,8 +1162,16 @@ body > main {
   border-color: var(--color-accent);
   border-width: 2px;
   background: var(--color-white);
-  padding: var(--space-2xl) var(--space-xl);
+  padding: calc(var(--space-2xl) + var(--space-md)) var(--space-2xl);
+  margin: calc(var(--space-lg) * -1) 0;
   box-shadow: 0 4px 16px rgba(42, 157, 143, 0.12), 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+@media (max-width: 900px) {
+  .pricing-card-featured {
+    margin: 0;
+    padding: var(--space-2xl) var(--space-xl);
+  }
 }
 
 .pricing-card-featured:hover {

@@ -95,6 +95,7 @@ const translations: Translations = {
     featFree3: "Prisverifiering mot avtal",
     featFree4: "Inget kreditkort krävs",
     featFree5: "Ingen bindning",
+    featFreeSupport: "E-postsupport",
     planFlexTitle: "Kontroll",
     planFlexDesc: "Välj den volym som passar ert team.",
     featFlex1: "Automatisk utläsning av fakturadata",
@@ -102,7 +103,7 @@ const translations: Translations = {
     featFlex3: "Prisverifiering mot avtal och prislistor",
     featFlex4: "Anpassningsbar Excel-export",
     featFlex5: "API-integration med ert ekonomisystem",
-    featFlex6: "E-postsupport",
+    featFlex6: "Dedikerad kontakt",
     featFlex7: "Fortnox-integration",
     featFlex8: "Kontering mot konto, projekt och kostnadsställe",
     featFlex9: "Första attest-godkännande",
@@ -115,9 +116,9 @@ const translations: Translations = {
     featEntHistorical: "Ett års historiska fakturor ingår vid köp",
     featEnt1: "Allt i Kontroll",
     featEnt2: "API-integration",
-    featEnt3: "Dashboard / BI-export",
-    featEnt4: "Multi-entity support",
-    featEnt5: "SLA",
+    featEnt3: "Analys- och BI-export",
+    featEnt4: "Stöd för flera bolag",
+    featEnt5: "SLA med garanterad tillgänglighet",
     featEnt6: "Dedikerad kontakt",
     faqTitle: "Vanliga frågor",
     faqQ1: "Vad är Attestro?",
@@ -2512,6 +2513,7 @@ const translations: Translations = {
     featFree3: "Price verification against contracts",
     featFree4: "No credit card required",
     featFree5: "No commitment",
+    featFreeSupport: "Email support",
     planFlexTitle: "Kontroll",
     planFlexDesc: "Pick the volume that fits your team.",
     featFlex1: "Automatic invoice data extraction",
@@ -2519,7 +2521,7 @@ const translations: Translations = {
     featFlex3: "Price verification against contracts and price lists",
     featFlex4: "Customizable Excel export",
     featFlex5: "API integration with your accounting system",
-    featFlex6: "Email support",
+    featFlex6: "Dedicated contact",
     featFlex7: "Fortnox integration",
     featFlex8: "Accounting coding by account, project and cost center",
     featFlex9: "First-level attest approval",
@@ -2532,9 +2534,9 @@ const translations: Translations = {
     featEntHistorical: "One year of historical invoices included at purchase",
     featEnt1: "Everything in Kontroll",
     featEnt2: "API integration",
-    featEnt3: "Dashboard / BI export",
+    featEnt3: "Analytics and BI export",
     featEnt4: "Multi-entity support",
-    featEnt5: "SLA",
+    featEnt5: "SLA with guaranteed availability",
     featEnt6: "Dedicated contact",
     faqTitle: "Frequently asked questions",
     faqQ1: "What is Attestro?",
@@ -5024,8 +5026,8 @@ function renderPricingSlider(): void {
   if (historicalEl) {
     const n = formatNumber(PRICING_VOLUMES[i]);
     historicalEl.textContent = lang === "en"
-      ? `Up to ${n} historical pages included at purchase`
-      : `Upp till ${n} historiska sidor ingår vid köp`;
+      ? `Up to ${n} historical pages included at\u00A0purchase`
+      : `Upp till ${n} historiska sidor ingår vid\u00A0köp`;
   }
   document.querySelectorAll<HTMLElement>(".pricing-slider-tick").forEach((tick, idx) => {
     tick.classList.toggle("is-active", idx === i);
