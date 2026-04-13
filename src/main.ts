@@ -451,7 +451,9 @@ const translations: Translations = {
     calcTimeSavings: "Tidsbesparingar",
     calcErrorSavings: "Minskade felkostnader",
     calcTotalPrefix: "Total besparing",
-    calcTotalSuffix: "kr per månad",
+    calcTotalSuffix: "kr per år",
+    calcMonthlyPrefix: "motsvarar",
+    calcMonthlySuffix: "kr per månad",
     calcAssumption: "Uppskattning baserad på 60 % minskad granskningstid och 80 % minskad risk för att felaktiga fakturor passerar.",
     // Form validation
     formEmailRequired: "E-post krävs",
@@ -2871,7 +2873,9 @@ const translations: Translations = {
     calcTimeSavings: "Time savings",
     calcErrorSavings: "Reduced error costs",
     calcTotalPrefix: "Total savings",
-    calcTotalSuffix: "SEK per month",
+    calcTotalSuffix: "SEK per year",
+    calcMonthlyPrefix: "equivalent to",
+    calcMonthlySuffix: "SEK per month",
     calcAssumption: "Estimate based on 60% reduced review time and 80% reduced risk of incorrect invoices passing through.",
     // Form validation
     formEmailRequired: "Email is required",
@@ -5175,6 +5179,7 @@ function initCalculator(): void {
   const resultTime = document.getElementById("calc-result-time");
   const resultErrors = document.getElementById("calc-result-errors");
   const resultTotal = document.getElementById("calc-result-total");
+  const resultMonthly = document.getElementById("calc-result-monthly");
   if (!invoicesSlider || !minutesSlider || !costSlider || !errorRateSlider || !errorCostSlider) return;
 
   function update() {
@@ -5192,11 +5197,15 @@ function initCalculator(): void {
     const timeSaved = Math.round(invoices * minutes * 0.60 / 60);
     const timeSavingsKr = timeSaved * costPerHour;
     const errorSavingsKr = Math.round(invoices * (errorRate / 100) * errorCost * 0.80);
-    const total = timeSavingsKr + errorSavingsKr;
+    const monthlyTotal = timeSavingsKr + errorSavingsKr;
+    const yearlyTime = timeSavingsKr * 12;
+    const yearlyErrors = errorSavingsKr * 12;
+    const yearlyTotal = monthlyTotal * 12;
 
-    animateNumber(resultTime, timeSavingsKr);
-    animateNumber(resultErrors, errorSavingsKr);
-    animateNumber(resultTotal, total);
+    animateNumber(resultTime, yearlyTime);
+    animateNumber(resultErrors, yearlyErrors);
+    animateNumber(resultTotal, yearlyTotal);
+    animateNumber(resultMonthly, monthlyTotal);
     if (resultTotal) {
       resultTotal.classList.add("is-updating");
       setTimeout(() => resultTotal.classList.remove("is-updating"), 150);

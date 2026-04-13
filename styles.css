@@ -2603,6 +2603,19 @@ body > main {
   transform: scale(1.05);
 }
 
+.calculator-result-monthly {
+  text-align: center;
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-sm);
+}
+
+.calculator-result-monthly strong {
+  font-size: 1rem;
+  color: var(--color-navy);
+  margin: 0 0.25rem;
+}
+
 .calculator-result {
   text-align: center;
   font-size: 1.25rem;
