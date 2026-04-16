@@ -72,7 +72,7 @@
     "@id": "https://algamo.se/#website",
     "name": "Attestro — Älgamo Software AB",
     "url": "https://algamo.se",
-    "description": "Attestro omvandlar leverantörsfakturor till strukturerad data, validerar mot era befintliga avtal och flaggar avvikelser automatiskt.",
+    "description": "Attestro omvandlar leverantörsfakturor till strukturerad data, validerar mot era befintliga avtal och flaggar avvikelser.",
     "publisher": { "@id": "https://algamo.se/#organization" },
     "inLanguage": ["sv", "en"]
   }
@@ -86,7 +86,7 @@
     "applicationCategory": "BusinessApplication",
     "applicationSubCategory": "Invoice Processing",
     "operatingSystem": "Web",
-    "description": "Attestro omvandlar leverantörsfakturor till strukturerad data (t.ex. Excel), validerar automatiskt mot avtal, projektprislistor och ÄTA, och flaggar avvikelser innan attestering. Byggt för bygg-, anläggnings- och transportbranschen i Sverige.",
+    "description": "Attestro omvandlar leverantörsfakturor till strukturerad data (t.ex. Excel), validerar mot ramavtal, offerter och ÄTA, och flaggar avvikelser innan attestering. Byggt för bygg-, anläggnings- och transportbranschen i Sverige.",
     "url": "https://algamo.se",
     "offers": [
       {
@@ -135,7 +135,7 @@
         "name": "Vad är Attestro?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Attestro är ett verktyg som automatiskt analyserar leverantörsfakturor i entreprenadprojekt. Systemet extraherar fakturadata, jämför mot avtal och projektprislistor och flaggar avvikelser innan fakturan attesteras."
+          "text": "Attestro är ett verktyg som analyserar leverantörsfakturor i entreprenadprojekt. Systemet extraherar fakturadata, jämför mot avtal och offerter och flaggar avvikelser innan fakturan attesteras."
         }
       },
       {
@@ -156,10 +156,10 @@
       },
       {
         "@type": "Question",
-        "name": "Hur hanterar Attestro våra avtal och prislistor?",
+        "name": "Hur hanterar Attestro våra avtal och offerter?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Attestro använder semantisk analys för att förstå innehållet i era befintliga avtal, offerter och prislistor. Ni laddar upp de dokument ni redan har och systemet tolkar dem automatiskt, oavsett format eller struktur. Det innebär att ni inte behöver anpassa era underlag - Attestro arbetar med det ni redan använder och matchar fakturarader mot rätt avtalspriser och villkor."
+          "text": "Attestro använder semantisk analys för att förstå innehållet i era befintliga avtal och offerter. Ni laddar upp de dokument ni redan har och systemet tolkar dem, oavsett format eller struktur. Det innebär att ni inte behöver anpassa era underlag - Attestro arbetar med det ni redan använder och matchar fakturarader mot rätt avtalspriser och villkor."
         }
       },
       {
@@ -212,10 +212,10 @@
     <section class="hero">
       <div class="container hero-inner">
         <p class="hero-badge" data-i18n="heroBadge">Svenskt verktyg för fakturahantering</p>
-        <h1 class="hero-title" data-i18n="heroTitle">Verifiera fakturor mot era avtal, automatiskt.</h1>
-        <p class="hero-lead" data-i18n="heroLead" data-i18n-html>Attestro omvandlar leverantörsfakturor till strukturerad data, <strong>förstår innebörden</strong> i era avtal och prislistor, och flaggar avvikelser automatiskt.</p>
-        <p class="hero-value-claim" data-i18n="heroValueClaim">Minska manuell fakturakontroll avsevärt och fånga fel innan de attesteras.</p>
-        <p class="hero-note" data-i18n="heroNoChange">Fungerar med ert befintliga ekonomisystem. Inget systembyte krävs.</p>
+        <h1 class="hero-title" data-i18n="heroTitle">Verifiera fakturor mot era avtal.</h1>
+        <p class="hero-lead" data-i18n="heroLead" data-i18n-html>Attestro omvandlar leverantörsfakturor till strukturerad data, <strong>förstår innebörden</strong> i era avtal och offerter, och flaggar avvikelser.</p>
+        <p class="hero-value-claim" data-i18n="heroValueClaim">Minska manuell fakturakontroll och fånga fel innan de attesteras.</p>
+
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary btn-lg" data-i18n="heroCtaPrimary">Boka en demo</a>
         </div>
@@ -231,102 +231,112 @@
           <li data-i18n="heroTrustNoChange">Inget systembyte</li>
         </ul>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="hero-pipeline">
-          <!-- Step 1: Invoice -->
-          <div class="hero-step hero-step--1">
-            <div class="hero-step-icon">
-              <svg viewBox="0 0 48 56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6 4h24l12 12v36a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4V4z"/>
-                <path d="M30 4v12h12"/>
-                <line x1="14" y1="26" x2="34" y2="26" opacity="0.5"/>
-                <line x1="14" y1="32" x2="30" y2="32" opacity="0.5"/>
-                <line x1="14" y1="38" x2="26" y2="38" opacity="0.5"/>
-                <line x1="14" y1="44" x2="32" y2="44" opacity="0.5"/>
-              </svg>
+      <div class="hero-showcase" data-hero-showcase>
+        <div class="hero-showcase-tabs" role="tablist" aria-label="Produktvyer">
+          <button type="button" role="tab" id="tab-upload"
+                  aria-controls="panel-upload" aria-selected="true"
+                  class="hero-showcase-tab is-active"
+                  data-target="panel-upload"
+                  data-i18n="showcaseTabUpload">Ladda upp</button>
+          <button type="button" role="tab" id="tab-prislista"
+                  aria-controls="panel-prislista" aria-selected="false" tabindex="-1"
+                  class="hero-showcase-tab"
+                  data-target="panel-prislista"
+                  data-i18n="showcaseTabPrislista">Prislista</button>
+          <button type="button" role="tab" id="tab-avtal"
+                  aria-controls="panel-avtal" aria-selected="false" tabindex="-1"
+                  class="hero-showcase-tab"
+                  data-target="panel-avtal"
+                  data-i18n="showcaseTabAvtal">Avtal</button>
+          <button type="button" role="tab" id="tab-projekt"
+                  aria-controls="panel-projekt" aria-selected="false" tabindex="-1"
+                  class="hero-showcase-tab"
+                  data-target="panel-projekt"
+                  data-i18n="showcaseTabProjekt">Projekt</button>
+          <button type="button" role="tab" id="tab-ok"
+                  aria-controls="panel-ok" aria-selected="false" tabindex="-1"
+                  class="hero-showcase-tab"
+                  data-target="panel-ok"
+                  data-i18n="showcaseTabOk">Inga avvikelser</button>
+          <button type="button" role="tab" id="tab-prisavvik"
+                  aria-controls="panel-prisavvik" aria-selected="false" tabindex="-1"
+                  class="hero-showcase-tab"
+                  data-target="panel-prisavvik"
+                  data-i18n="showcaseTabPrisavvik">Avvikande pris</button>
+          <button type="button" role="tab" id="tab-artikelavvik"
+                  aria-controls="panel-artikelavvik" aria-selected="false" tabindex="-1"
+                  class="hero-showcase-tab"
+                  data-target="panel-artikelavvik"
+                  data-i18n="showcaseTabArtikelavvik">Avvikande artikel</button>
+        </div>
+
+        <div class="hero-showcase-frame">
+          <div class="hero-showcase-chrome" aria-hidden="true">
+            <span class="hero-showcase-dot"></span>
+            <span class="hero-showcase-dot"></span>
+            <span class="hero-showcase-dot"></span>
+            <span class="hero-showcase-url">app.algamo.se</span>
+          </div>
+
+          <div class="hero-showcase-panels">
+            <div class="hero-showcase-panel is-active" id="panel-upload"
+                 role="tabpanel" aria-labelledby="tab-upload">
+              <img src="assets/screenshot-ladda-upp.jpg"
+                   alt="Skärmbild som visar uppladdning av leverantörsfaktura i Attestro"
+                   data-i18n-alt="showcaseUploadAlt"
+                   loading="eager" decoding="async"
+                   width="1920" height="1080">
             </div>
-            <span class="hero-step-label" data-i18n="heroStepInvoice">Faktura</span>
-          </div>
-
-          <!-- Connector 1 -->
-          <div class="hero-connector hero-connector--1">
-            <svg viewBox="0 0 40 8"><line x1="0" y1="4" x2="36" y2="4" stroke="currentColor" stroke-width="1.5"/><polygon points="34,1 40,4 34,7" fill="currentColor"/></svg>
-          </div>
-
-          <!-- Step 2: OCR -->
-          <div class="hero-step hero-step--2">
-            <div class="hero-step-icon">
-              <svg viewBox="0 0 48 56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="6" y="4" width="36" height="48" rx="3"/>
-                <line x1="14" y1="16" x2="34" y2="16" opacity="0.4"/>
-                <line x1="14" y1="22" x2="30" y2="22" opacity="0.4"/>
-                <line x1="14" y1="28" x2="34" y2="28" opacity="0.4"/>
-                <line x1="14" y1="34" x2="28" y2="34" opacity="0.4"/>
-                <line x1="6" y1="20" x2="42" y2="20" stroke-width="2" class="hero-scanline"/>
-              </svg>
+            <div class="hero-showcase-panel" id="panel-prislista"
+                 role="tabpanel" aria-labelledby="tab-prislista" hidden>
+              <img src="assets/screenshot-prislista.jpg"
+                   alt="Skärmbild som visar prislistor och avtalsdokument i Attestro"
+                   data-i18n-alt="showcasePrislistaAlt"
+                   loading="lazy" decoding="async"
+                   width="1920" height="1080">
             </div>
-            <span class="hero-step-label" data-i18n="heroStepOCR">OCR</span>
-          </div>
-
-          <!-- Connector 2 -->
-          <div class="hero-connector hero-connector--2">
-            <svg viewBox="0 0 40 8"><line x1="0" y1="4" x2="36" y2="4" stroke="currentColor" stroke-width="1.5"/><polygon points="34,1 40,4 34,7" fill="currentColor"/></svg>
-          </div>
-
-          <!-- Step 3: Structured data -->
-          <div class="hero-step hero-step--3">
-            <div class="hero-step-icon">
-              <svg viewBox="0 0 48 56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="4" y="8" width="40" height="40" rx="3"/>
-                <line x1="4" y1="18" x2="44" y2="18"/>
-                <line x1="4" y1="28" x2="44" y2="28"/>
-                <line x1="4" y1="38" x2="44" y2="38"/>
-                <line x1="18" y1="8" x2="18" y2="48"/>
-                <line x1="32" y1="8" x2="32" y2="48"/>
-              </svg>
+            <div class="hero-showcase-panel" id="panel-avtal"
+                 role="tabpanel" aria-labelledby="tab-avtal" hidden>
+              <img src="assets/screenshot-avtal.jpg"
+                   alt="Skärmbild som visar förhandsgranskning av leveransavtal med prislista"
+                   data-i18n-alt="showcaseAvtalAlt"
+                   loading="lazy" decoding="async"
+                   width="1920" height="1080">
             </div>
-            <span class="hero-step-label" data-i18n="heroStepTable">Data</span>
-          </div>
-
-          <!-- Connector 3 -->
-          <div class="hero-connector hero-connector--3">
-            <svg viewBox="0 0 40 8"><line x1="0" y1="4" x2="36" y2="4" stroke="currentColor" stroke-width="1.5"/><polygon points="34,1 40,4 34,7" fill="currentColor"/></svg>
-          </div>
-
-          <!-- Step 4: Contract comparison -->
-          <div class="hero-step hero-step--4">
-            <div class="hero-step-icon">
-              <svg viewBox="0 0 48 56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="8" width="28" height="36" rx="2" opacity="0.5"/>
-                <rect x="18" y="12" width="28" height="36" rx="2"/>
-                <line x1="24" y1="22" x2="40" y2="22" opacity="0.5"/>
-                <line x1="24" y1="28" x2="38" y2="28" opacity="0.5"/>
-                <line x1="24" y1="34" x2="36" y2="34" opacity="0.5"/>
-                <path d="M14 26l4-8" stroke-width="2" opacity="0.7"/>
-                <path d="M14 26l4 8" stroke-width="2" opacity="0.7"/>
-              </svg>
+            <div class="hero-showcase-panel" id="panel-projekt"
+                 role="tabpanel" aria-labelledby="tab-projekt" hidden>
+              <img src="assets/screenshot-projekt.jpg"
+                   alt="Skärmbild som visar projektvy med matchgrad och total överpris i Attestro"
+                   data-i18n-alt="showcaseProjektAlt"
+                   loading="lazy" decoding="async"
+                   width="1920" height="1080">
             </div>
-            <span class="hero-step-label" data-i18n="heroStepCompare">Kontroll</span>
-          </div>
-
-          <!-- Connector 4 -->
-          <div class="hero-connector hero-connector--4">
-            <svg viewBox="0 0 40 8"><line x1="0" y1="4" x2="36" y2="4" stroke="currentColor" stroke-width="1.5"/><polygon points="34,1 40,4 34,7" fill="currentColor"/></svg>
-          </div>
-
-          <!-- Step 5: Warning -->
-          <div class="hero-step hero-step--5">
-            <div class="hero-step-icon">
-              <svg viewBox="0 0 48 56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M24 6L4 50h40L24 6z"/>
-                <line x1="24" y1="22" x2="24" y2="36" stroke-width="2.5"/>
-                <circle cx="24" cy="43" r="1.5" fill="currentColor" stroke="none"/>
-              </svg>
+            <div class="hero-showcase-panel" id="panel-ok"
+                 role="tabpanel" aria-labelledby="tab-ok" hidden>
+              <img src="assets/screenshot-inga-avvikelser.jpg"
+                   alt="Skärmbild som visar fakturarader utan avvikelser, alla godkända mot avtal"
+                   data-i18n-alt="showcaseOkAlt"
+                   loading="lazy" decoding="async"
+                   width="1920" height="1080">
             </div>
-            <span class="hero-step-label" data-i18n="heroStepFlag">Avvikelse</span>
+            <div class="hero-showcase-panel" id="panel-prisavvik"
+                 role="tabpanel" aria-labelledby="tab-prisavvik" hidden>
+              <img src="assets/screenshot-avvikande-pris.jpg"
+                   alt="Skärmbild som visar prisavvikelse markerad på fakturarad mot avtalat pris"
+                   data-i18n-alt="showcasePrisavvikAlt"
+                   loading="lazy" decoding="async"
+                   width="1920" height="1080">
+            </div>
+            <div class="hero-showcase-panel" id="panel-artikelavvik"
+                 role="tabpanel" aria-labelledby="tab-artikelavvik" hidden>
+              <img src="assets/screenshot-avvikande-artikel.jpg"
+                   alt="Skärmbild som visar artikel som inte hittades i prislistan, flaggad för granskning"
+                   data-i18n-alt="showcaseArtikelavvikAlt"
+                   loading="lazy" decoding="async"
+                   width="1920" height="1080">
+            </div>
           </div>
         </div>
-        <div class="hero-glow"></div>
       </div>
     </section>
 
@@ -338,7 +348,7 @@
       <div class="container">
         <p class="section-label" data-reveal="fade" data-i18n="audienceLabel">Fakturaverifiering</p>
         <h2 class="section-title" data-reveal data-i18n="audienceTitle">Stoppa överbetalningar innan de lämnar företaget</h2>
-        <p class="section-lead" data-reveal data-i18n="audienceLead">Attestro jämför varje fakturarad mot era avtal, prislistor och projektvillkor. Avvikelser flaggas automatiskt innan attestering.</p>
+        <p class="section-lead" data-reveal data-i18n="audienceLead">Attestro jämför varje fakturarad mot era ramavtal, offerter och projektvillkor. Avvikelser flaggas innan attestering.</p>
         <ul class="audience-grid stagger">
           <li class="audience-card" data-reveal>
             <span class="audience-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg></span>
@@ -348,7 +358,7 @@
           <li class="audience-card" data-reveal>
             <span class="audience-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg></span>
             <h3 data-i18n="audienceTransportTitle">Alla avtalsformat</h3>
-            <p data-i18n="audienceTransportDesc">Ladda upp avtal, offerter och prislistor som de är. Attestro tolkar innehållet oavsett format, utan att ni behöver strukturera om.</p>
+            <p data-i18n="audienceTransportDesc">Ladda upp avtal och offerter som de är. Attestro tolkar innehållet oavsett format, utan att ni behöver strukturera om.</p>
           </li>
           <li class="audience-card" data-reveal>
             <span class="audience-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/></svg></span>
@@ -368,7 +378,7 @@
           <li class="audience-card" data-reveal>
             <span class="audience-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/><path d="M12 8v8"/></svg></span>
             <h3 data-i18n="whyCard1Title">Förstår innebörden i era avtal</h3>
-            <p data-i18n="whyCard1Desc">Semantisk matchning jämför fakturarader mot avtal, offerter och prislistor utifrån betydelse, inte exakta fältnamn. Ni behöver inte strukturera om något.</p>
+            <p data-i18n="whyCard1Desc">Semantisk matchning jämför fakturarader mot avtal och offerter utifrån betydelse, inte exakta fältnamn. Ni behöver inte strukturera om något.</p>
           </li>
           <li class="audience-card" data-reveal>
             <span class="audience-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h10"/><path d="M18 15l3 3-3 3"/></svg></span>
@@ -392,7 +402,7 @@
             <span class="process-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></span>
             <span class="process-num" aria-hidden="true">1</span>
             <h3 class="process-title" data-i18n="process1Title">Läs in fakturan</h3>
-            <p class="process-desc" data-i18n="process1Desc">Leverantör, rader, mängder, priser och projektreferenser extraheras automatiskt från PDF eller skannad faktura.</p>
+            <p class="process-desc" data-i18n="process1Desc">Ladda upp fakturan som PDF eller bild, eller integrera mot ert ekonomisystem. Attestro läser av leverantör, artikelrader, priser och projektkoppling.</p>
           </li>
           <li class="process-card" data-reveal>
             <span class="process-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
@@ -582,11 +592,11 @@
         <div class="faq-list">
           <details class="faq-item">
             <summary class="faq-question" data-i18n="faqQ1">Vad är Attestro?</summary>
-            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA1">Attestro är ett verktyg som automatiskt analyserar leverantörsfakturor i entreprenadprojekt. Systemet extraherar fakturadata, jämför mot avtal och projektprislistor och flaggar avvikelser innan fakturan attesteras.</p></div>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA1">Attestro är ett verktyg som analyserar leverantörsfakturor i entreprenadprojekt. Systemet extraherar fakturadata, jämför mot avtal och offerter och flaggar avvikelser innan fakturan attesteras.</p></div>
           </details>
           <details class="faq-item">
             <summary class="faq-question" data-i18n="faqQ7">Vad skiljer Attestro från andra system?</summary>
-            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA7" data-i18n-html>Attestro använder semantisk matchning istället för att kräva strukturerad indata. Det betyder att ni kan använda era befintliga offerter, avtal och prislistor precis som de är, oavsett om de kommer som PDF, Excel eller till och med prislistor i e-post. Ni behöver inte anpassa era underlag eller mata in data manuellt. Attestro förstår innehållet och matchar det mot fakturarader automatiskt.</p></div>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA7" data-i18n-html>Attestro använder semantisk matchning istället för att kräva strukturerad indata. Det betyder att ni kan använda era befintliga avtal och offerter precis som de är, oavsett om de kommer som PDF, Excel eller e-post. Ni behöver inte anpassa era underlag eller mata in data manuellt. Attestro förstår innehållet och matchar det mot fakturarader.</p></div>
           </details>
           <details class="faq-item">
             <summary class="faq-question" data-i18n="faqQ2">Vilka företag passar Attestro för?</summary>
@@ -597,8 +607,8 @@
             <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA3" data-i18n-html>Attestro extraherar leverantör, fakturanummer, datum, projekt/littra, transaktioner, mängd och pris per enhet. Systemet kontrollerar:<br>• pris mot projektets prislista<br>• projekt- eller littra-koppling<br>• avvikelser mot avtal</p></div>
           </details>
           <details class="faq-item">
-            <summary class="faq-question" data-i18n="faqQ5">Hur hanterar Attestro våra avtal och prislistor?</summary>
-            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA5" data-i18n-html>Attestro använder semantisk analys för att förstå innehållet i era befintliga avtal, offerter och prislistor. Ni laddar upp de dokument ni redan har och systemet tolkar dem automatiskt, oavsett format eller struktur. Det innebär att ni inte behöver anpassa era underlag - Attestro arbetar med det ni redan använder och matchar fakturarader mot rätt avtalspriser och villkor.</p></div>
+            <summary class="faq-question" data-i18n="faqQ5">Hur hanterar Attestro våra avtal och offerter?</summary>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="faqA5" data-i18n-html>Attestro använder semantisk analys för att förstå innehållet i era befintliga avtal och offerter. Ni laddar upp de dokument ni redan har och systemet tolkar dem, oavsett format eller struktur. Det innebär att ni inte behöver anpassa era underlag - Attestro arbetar med det ni redan använder och matchar fakturarader mot rätt avtalspriser och villkor.</p></div>
           </details>
           <details class="faq-item">
             <summary class="faq-question" data-i18n="faqQ6">Kan vi testa innan vi bestämmer oss?</summary>

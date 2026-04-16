@@ -105,7 +105,7 @@
         "name": "Vilka fyra egenskaper behöver framtidens fakturakontroll?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Framtidens fakturakontroll behöver: (1) dokumentförståelse som tolkar text till mening, inte bara extraherar siffror, (2) semantisk matchning som jämför fakturarader mot avtal på betydelsenivå, (3) användardefinierad sanning där kundens egna avtal och prislistor utgör grunden för kontroll, och (4) förklarbarhet där varje avvikelse motiveras i klartext med referens till avtalsposter."
+          "text": "Framtidens fakturakontroll behöver: (1) dokumentförståelse som tolkar text till mening, inte bara extraherar siffror, (2) semantisk matchning som jämför fakturarader mot avtal på betydelsenivå, (3) användardefinierad sanning där kundens egna avtal och offerter utgör grunden för kontroll, och (4) förklarbarhet där varje avvikelse motiveras i klartext med referens till avtalsposter."
         }
       },
       {
@@ -113,7 +113,7 @@
         "name": "Hur fungerar femstegsmodellen för fakturakontroll?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Modellen består av fem steg: (1) Input -- fakturan och relevanta referensdokument som avtal och prislistor samlas in, (2) Förståelse -- innehållet tolkas semantiskt och normaliseras, (3) Matchning -- varje fakturarad matchas mot avtalet på betydelsenivå, (4) Avvikelse -- skillnader beräknas och förklaras i klartext, (5) Beslut -- användaren får en transparent rekommendation med motivering."
+          "text": "Modellen består av fem steg: (1) Input -- fakturan och relevanta referensdokument som avtal och offerter samlas in, (2) Förståelse -- innehållet tolkas semantiskt och normaliseras, (3) Matchning -- varje fakturarad matchas mot avtalet på betydelsenivå, (4) Avvikelse -- skillnader beräknas och förklaras i klartext, (5) Beslut -- användaren får en transparent rekommendation med motivering."
         }
       },
       {
@@ -213,7 +213,7 @@
         <p class="security-text">Att <a href="kontrollera-fakturor-mot-avtal.html">jämföra en faktura mot ett avtal</a> kräver mer än sifferjämförelse. Avtalet kanske specificerar "Schaktarbete, maskin klass 2, 850 kr/tim exkl. moms". Fakturan kanske säger "Grävmaskin Cat 320, 8 tim, 7 200 kr". Stämmer det? Ett regelbaserat system kan inte bedöma det. <a href="smart-prislista-matchning.html">Semantisk matchning</a> innebär att systemet förstår att "maskin klass 2" och "Cat 320" kan vara samma sak, och att 7 200 kr / 8 tim = 900 kr/tim, vilket överstiger avtalat pris med 50 kr/tim.</p>
 
         <h3 class="security-subtitle" style="font-size:1.15rem;">Användardefinierad sanning</h3>
-        <p class="security-text">Inget system kan veta vad som är rätt utan att veta vad som avtalats. Framtidens fakturakontroll måste bygga på användarens egna avtal, prislistor och beställningar som sanningskälla -- inte generiska regler. Varje organisation har unika avtal, unika villkor, unika toleranser. Systemet måste kunna ta in dessa och använda dem som grund för varje kontroll.</p>
+        <p class="security-text">Inget system kan veta vad som är rätt utan att veta vad som avtalats. Framtidens fakturakontroll måste bygga på användarens egna ramavtal, offerter och beställningar som sanningskälla -- inte generiska regler. Varje organisation har unika avtal, unika villkor, unika toleranser. Systemet måste kunna ta in dessa och använda dem som grund för varje kontroll.</p>
 
         <h3 class="security-subtitle" style="font-size:1.15rem;">Förklarbarhet</h3>
         <p class="security-text">Ett system som flaggar en avvikelse utan att förklara varför är lika värdelöst som ett som missar den. Användaren måste kunna se: vilken fakturarad som avviker, vad den jämfördes mot, vad den förväntade kostnaden var, och varför systemet bedömer det som en avvikelse. Utan förklarbarhet finns inget förtroende, och utan förtroende finns ingen adoption.</p>
@@ -267,7 +267,7 @@
         <!-- ====== Closing: subtle Attestro positioning ====== -->
         <h2 class="security-subtitle">Från vision till verklighet</h2>
         <p class="security-text">Modellen ovan är inte en framtidsvision. Den är en designprincip. Varje steg -- dokumentförståelse, semantisk matchning, avvikelserapportering med förklaring -- är tekniskt möjlig idag. Frågan är inte om det går att bygga, utan vem som bygger det och hur snabbt det kan komma i drift.</p>
-        <p class="security-text">Attestro är byggt på exakt den här modellen. Inte som en ambition, utan som arkitektur. Varje faktura som passerar systemet genomgår alla fem stegen: input, förståelse, matchning mot kundens egna avtal och prislistor, avvikelserapportering i klartext, och en transparent rekommendation som användaren kan lita på och agera utifrån.</p>
+        <p class="security-text">Attestro är byggt på exakt den här modellen. Inte som en ambition, utan som arkitektur. Varje faktura som passerar systemet genomgår alla fem stegen: input, förståelse, matchning mot kundens egna avtal och offerter, avvikelserapportering i klartext, och en transparent rekommendation som användaren kan lita på och agera utifrån.</p>
         <p class="security-text">Det innebär inte att systemet är perfekt. Det innebär att det ställer rätt frågor -- inte "stämmer siffrorna?" utan "är det här rimligt givet vad ni har avtalat?"</p>
 
         <h2 class="security-subtitle">Vanliga frågor om framtidens fakturakontroll</h2>
@@ -278,7 +278,7 @@
           </details>
           <details>
             <summary>Vilka fyra egenskaper behöver framtidens fakturakontroll?</summary>
-            <p class="security-text">Dokumentförståelse (tolka text till mening, inte bara extrahera siffror), semantisk matchning (jämföra fakturarader mot avtal på betydelsenivå), användardefinierad sanning (kundens egna avtal och prislistor som grund), och förklarbarhet (varje avvikelse motiveras i klartext med referens till avtalsposter).</p>
+            <p class="security-text">Dokumentförståelse (tolka text till mening, inte bara extrahera siffror), semantisk matchning (jämföra fakturarader mot avtal på betydelsenivå), användardefinierad sanning (kundens egna avtal och offerter som grund), och förklarbarhet (varje avvikelse motiveras i klartext med referens till avtalsposter).</p>
           </details>
           <details>
             <summary>Hur fungerar femstegsmodellen för fakturakontroll?</summary>
@@ -303,7 +303,7 @@
           <div class="blog-related-grid">
             <a href="kontrollera-fakturor-mot-avtal.html" class="blog-related-card">
               <h3>Så kontrollerar du fakturor mot avtal</h3>
-              <p>Steg-för-steg: matchning av leverantörsfakturor mot ramavtal och prislistor.</p>
+              <p>Steg-för-steg: matchning av leverantörsfakturor mot avtal och offerter.</p>
             </a>
             <a href="smart-prislista-matchning.html" class="blog-related-card">
               <h3>Smart prislistmatchning</h3>

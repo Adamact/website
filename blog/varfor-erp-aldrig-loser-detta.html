@@ -96,7 +96,7 @@
         "name": "Vad är pre-attest-validering?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Pre-attest-validering är ett valideringslager som sitter ovanför ERP-systemet och automatiskt jämför inkommande fakturor mot ostrukturerad kontext som avtal, prislistor och överenskommelser. Det sker innan den mänskliga attesten och flaggar avvikelser så att attestanten får faktabaserat underlag istället för att förlita sig på magkänsla och stickprov."
+          "text": "Pre-attest-validering är ett valideringslager som sitter ovanför ERP-systemet och jämför inkommande fakturor mot ostrukturerad kontext som ramavtal, offerter och överenskommelser. Det sker innan den mänskliga attesten och flaggar avvikelser så att attestanten får faktabaserat underlag istället för att förlita sig på magkänsla och stickprov."
         }
       },
       {
@@ -188,7 +188,7 @@
         <h2 class="security-subtitle">Varför ERP-leverantörer undviker detta</h2>
         <p class="security-text">Det finns en logisk anledning till att inget stort ERP-system har löst det här problemet, och det handlar inte om bristande kompetens. Det handlar om produktarkitektur.</p>
         <p class="security-text">ERP-system är byggda som transaktionsmotorer. De garanterar dataintegritet, spårbarhet och konsistens. Att introducera probabilistisk tolkning, "denna faktura stämmer troligen inte med avtalet, med 87% säkerhet", i den arkitekturen skulle underminera hela förtroendemodellen.</p>
-        <p class="security-text">Dessutom varierar den ostrukturerade kontexten enormt mellan branscher. Byggbranschens <a href="fakturakontroll-entreprenadprojekt.html">avtal, prislistor och ÄTA-hantering</a> ser helt annorlunda ut jämfört med <a href="transportavtal-prislistor-fakturor.html">transportbranschens tilläggsavgifter och zonpriser</a>. ERP-leverantörer som vill sälja brett har inget intresse av att specialisera sig i den typen av branschspecifik tolkning.</p>
+        <p class="security-text">Dessutom varierar den ostrukturerade kontexten enormt mellan branscher. Byggbranschens <a href="fakturakontroll-entreprenadprojekt.html">ramavtal, offerter och ÄTA-hantering</a> ser helt annorlunda ut jämfört med <a href="transportavtal-prislistor-fakturor.html">transportbranschens tilläggsavgifter och zonpriser</a>. ERP-leverantörer som vill sälja brett har inget intresse av att specialisera sig i den typen av branschspecifik tolkning.</p>
         <p class="security-text" data-i18n-html>Resultatet? ERP-system fortsätter att göra det de gör bäst: bearbeta strukturerad data. Och <a href="overdebitering-leverantorer.html">överdebitering</a>, dubbelbetalningar och <a href="upptacka-feldebitering.html">feldebitering</a> fortsätter att passera onoterade.</p>
 
         <h2 class="security-subtitle">Det här problemet lever ovanför ERP</h2>
@@ -199,7 +199,7 @@
         <h2 class="security-subtitle">En ny kategori: pre-attest-validering</h2>
         <p class="security-text">Vi tror att det behövs ett nytt begrepp för den här typen av lösning: <strong>pre-attest-validering</strong>.</p>
         <p class="security-text" data-i18n-html>Det traditionella attestflödet förutsätter att någon, en projektledare, en ekonom, en platschef, <a href="manuell-vs-automatiserad-fakturahantering.html">manuellt verifierar</a> att fakturan stämmer innan den godkänns. Men <a href="fakturaattest.html">attestprocessen</a> bygger i praktiken ofta på magkänsla och stickprov. Attestanten hinner sällan kontrollera varje rad mot avtal och prislista.</p>
-        <p class="security-text"><a href="human-in-the-loop-fakturakontroll.html">Pre-attest-validering</a> sker innan den mänskliga attesten. Det är det lager som automatiskt jämför fakturan mot den ostrukturerade kontexten, flaggar avvikelser och presenterar underlag för attestanten. Inte som en del av ERP-systemet, utan ovanför det. Ett semantiskt valideringslager som översätter verkligheten till strukturerad data som ERP-systemet kan lita på.</p>
+        <p class="security-text"><a href="human-in-the-loop-fakturakontroll.html">Pre-attest-validering</a> sker innan den mänskliga attesten. Det är det lager som jämför fakturan mot den ostrukturerade kontexten, flaggar avvikelser och presenterar underlag för attestanten. Inte som en del av ERP-systemet, utan ovanför det. Ett semantiskt valideringslager som översätter verkligheten till strukturerad data som ERP-systemet kan lita på.</p>
         <p class="security-text">Det här är vad Attestro gör. Inte för att ersätta ditt ERP-system, utan för att ge det den input det alltid har förutsatt men aldrig fått.</p>
 
         <h2 class="security-subtitle">Slutsats</h2>
@@ -222,7 +222,7 @@
             </a>
             <a href="kontrollera-fakturor-mot-avtal.html" class="blog-related-card">
               <h3>Kontrollera fakturor mot avtal</h3>
-              <p>Hur avtalsvillkor, prislistor och rabatter kan verifieras automatiskt mot inkommande leverantörsfakturor.</p>
+              <p>Hur avtalsvillkor, avtal och offerter kan verifieras mot inkommande leverantörsfakturor.</p>
             </a>
             <a href="digital-dokumentanalys-fakturahantering.html" class="blog-related-card">
               <h3>Digital dokumentanalys inom fakturahantering</h3>
