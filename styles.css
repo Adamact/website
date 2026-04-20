@@ -1683,7 +1683,8 @@ body > main {
     pointer-events: auto;
   }
 
-  .site-header .btn-primary {
+  .site-header .btn-primary,
+  .site-header .btn-on-light {
     display: inline-flex;
     align-self: flex-start;
     margin-top: var(--space-sm);

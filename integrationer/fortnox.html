@@ -56,15 +56,15 @@
     "applicationCategory": "BusinessApplication",
     "applicationSubCategory": "Accounts Payable Automation",
     "operatingSystem": "Web",
-    "description": "Attestros integration för Fortnox hämtar leverantörsfakturor från Fortnox, kontrollerar varje rad mot avtal och offerter, och skickar tillbaka verifierad bokföringsdata.",
+    "description": "Attestros integration för Fortnox hämtar leverantörsfakturor från Fortnox, kontrollerar varje rad mot avtal och offerter, och presenterar ett verifierat beslutsunderlag i Attestro innan attest sker i Fortnox.",
     "url": "https://algamo.se/integrationer/fortnox.html",
     "softwareRequirements": "Fortnox-konto",
     "featureList": [
-      "Tvåvägs OAuth 2.0-integration med Fortnox",
+      "OAuth 2.0-integration med Fortnox (läsåtkomst till leverantörsfakturor)",
       "Automatisk hämtning av leverantörsfakturor",
       "Radvis kontroll mot avtal och offerter",
-      "Avvikelseflaggning före bokföring",
-      "Återrapportering av verifierad bokföringsdata till Fortnox",
+      "Avvikelseflaggning före attest",
+      "Beslutsunderlag presenterat i Attestro inför attest i Fortnox",
       "Full revisionslogg och spårbarhet",
       "EU-hosting, GDPR-kompatibel"
     ],
@@ -77,7 +77,7 @@
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "SEK",
-      "description": "Fortnox-integrationen ingår i Kontroll- och Enterprise-planerna. Gratis provperiod med 25 sidor i 30 dagar finns tillgänglig, men utan Fortnox-integration."
+      "description": "Fortnox-integrationen ingår utan extra avgift i alla betalda Attestro-planer. Fortnox kan ta ut en separat licensavgift från sin sida. Gratis provperiod med 25 sidor i 30 dagar finns tillgänglig, men utan Fortnox-integration."
     }
   }
   </script>
@@ -89,12 +89,12 @@
       {
         "@type": "Question",
         "name": "Vad kostar Fortnox-integrationen?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Fortnox-integrationen ingår i Kontroll- och Enterprise-planerna utan extra avgift. Den är inte tillgänglig i den kostnadsfria provperioden. Se pricing.html för aktuella priser." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Fortnox-integrationen ingår utan extra avgift i alla betalda Attestro-planer. Den är inte tillgänglig i den kostnadsfria provperioden. Observera att Fortnox kan ta ut en separat licensavgift för integrationen från sin sida. Se pricing.html för aktuella priser." }
       },
       {
         "@type": "Question",
         "name": "Ändras något i min Fortnox-miljö när jag ansluter?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Nej. Attestro läser leverantörsfakturor från Fortnox och skickar tillbaka verifierad bokföringsdata. Inga inställningar, kontoplaner eller historiska poster i Fortnox ändras." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Nej. Attestro har endast läsåtkomst till leverantörsfakturor i Fortnox. Beslutsunderlaget visas i Attestro och inga inställningar, kontoplaner eller historiska poster i Fortnox ändras." }
       },
       {
         "@type": "Question",
@@ -201,7 +201,7 @@
           <li class="audience-card" data-reveal>
             <span class="audience-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
             <h3 data-i18n="fortnoxValueQ4Title">Vem har mest nytta</h3>
-            <p data-i18n="fortnoxValueQ4Desc">Bygg-, entreprenad-, transport- och tillverkningsbolag med 10 till 150 anställda som använder Fortnox och hanterar många leverantörsfakturor mot ramavtal, offerter eller projektbudgetar.</p>
+            <p data-i18n="fortnoxValueQ4Desc">Bygg-, entreprenad-, transport- och tillverkningsbolag med 20 till 100 anställda som använder Fortnox och hanterar många leverantörsfakturor mot ramavtal, offerter eller projektbudgetar.</p>
           </li>
         </ul>
       </div>
@@ -211,14 +211,14 @@
     <section class="section section-alt">
       <div class="container">
         <h2 class="section-title" data-reveal data-i18n="fortnoxFlowTitle">Så flödar datan mellan systemen</h2>
-        <p class="section-lead" data-reveal data-i18n="fortnoxFlowLead">Tvåvägsintegration med OAuth 2.0. Attestro läser inkommande fakturor från Fortnox, utför kontrollen, och skickar tillbaka ett verifierat resultat.</p>
+        <p class="section-lead" data-reveal data-i18n="fortnoxFlowLead">Enkelriktad OAuth 2.0-integration. Attestro läser inkommande leverantörsfakturor från Fortnox och presenterar ett verifierat beslutsunderlag i Attestro. Ingen data skrivs tillbaka till Fortnox. Ni konterar och attesterar fakturan i Fortnox som vanligt, med Attestros underlag som beslutsstöd.</p>
         <div class="integration-flow" data-reveal>
           <div class="integration-flow-node">
             <span class="integration-flow-node-label" data-i18n="fortnoxFlowFortnoxLabel">Fortnox</span>
             <span class="integration-flow-node-desc" data-i18n="fortnoxFlowFortnoxDesc">Källsystem för leverantörsfakturor</span>
           </div>
           <div class="integration-flow-arrow" aria-hidden="true">
-            <span class="integration-flow-arrow-label" data-i18n="fortnoxFlowArrow1">Fakturor, PDF, metadata</span>
+            <span class="integration-flow-arrow-label" data-i18n="fortnoxFlowArrow1">Fakturor, PDF, metadata (läs)</span>
             <svg viewBox="0 0 40 12" width="40" height="12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="2" y1="6" x2="34" y2="6"/><polyline points="28 2 34 6 28 10"/></svg>
           </div>
           <div class="integration-flow-node integration-flow-node-center">
@@ -226,12 +226,12 @@
             <span class="integration-flow-node-desc" data-i18n="fortnoxFlowAttestroDesc">OCR, matchning mot avtal och offerter, flaggning av avvikelser</span>
           </div>
           <div class="integration-flow-arrow" aria-hidden="true">
-            <span class="integration-flow-arrow-label" data-i18n="fortnoxFlowArrow2">Verifierad data, kontrollogg</span>
+            <span class="integration-flow-arrow-label" data-i18n="fortnoxFlowArrow2">Beslutsunderlag (visas i Attestro)</span>
             <svg viewBox="0 0 40 12" width="40" height="12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="2" y1="6" x2="34" y2="6"/><polyline points="28 2 34 6 28 10"/></svg>
           </div>
           <div class="integration-flow-node">
-            <span class="integration-flow-node-label" data-i18n="fortnoxFlowFortnoxLabel2">Fortnox</span>
-            <span class="integration-flow-node-desc" data-i18n="fortnoxFlowFortnoxReturnDesc">Ni konterar och attesterar fakturan här</span>
+            <span class="integration-flow-node-label" data-i18n="fortnoxFlowFortnoxLabel2">Manuell attest i Fortnox</span>
+            <span class="integration-flow-node-desc" data-i18n="fortnoxFlowFortnoxReturnDesc">Ni konterar och godkänner fakturan i Fortnox med Attestros underlag</span>
           </div>
         </div>
       </div>
@@ -263,8 +263,8 @@
           <li class="process-card" data-reveal>
             <span class="process-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
             <span class="process-num" aria-hidden="true">4</span>
-            <h3 class="process-title" data-i18n="fortnoxHow4Title">Verifierad data tillbaka till Fortnox</h3>
-            <p class="process-desc" data-i18n="fortnoxHow4Desc">När Attestros kontroll är klar skickas fakturan tillbaka till Fortnox med eventuella avvikelser flaggade. Ni konterar och godkänner fakturan i Fortnox som vanligt, med fullt underlag för beslutet.</p>
+            <h3 class="process-title" data-i18n="fortnoxHow4Title">Beslutsunderlag i Attestro</h3>
+            <p class="process-desc" data-i18n="fortnoxHow4Desc">När Attestros kontroll är klar visas resultatet i Attestro med eventuella avvikelser flaggade. Ni konterar och godkänner fakturan i Fortnox som vanligt, med Attestros underlag som beslutsstöd. Ingen data skrivs tillbaka till Fortnox.</p>
           </li>
         </ol>
         <div class="integration-screenshots" data-reveal>
@@ -288,7 +288,7 @@
         <dl class="integration-checklist" data-reveal>
           <div class="integration-checklist-row">
             <dt data-i18n="fortnoxCheck1Label">Typ av integration</dt>
-            <dd data-i18n="fortnoxCheck1Value">Tvåvägs, läser från och skriver till Fortnox</dd>
+            <dd data-i18n="fortnoxCheck1Value">Enkelriktad. Attestro läser leverantörsfakturor från Fortnox men skriver ingenting tillbaka.</dd>
           </div>
           <div class="integration-checklist-row">
             <dt data-i18n="fortnoxCheck2Label">Autentisering</dt>
@@ -304,7 +304,7 @@
           </div>
           <div class="integration-checklist-row">
             <dt data-i18n="fortnoxCheck5Label">Data som skickas till Fortnox</dt>
-            <dd data-i18n="fortnoxCheck5Value">Verifierad leverantörsfaktura, flaggade avvikelser, kontrollogg</dd>
+            <dd data-i18n="fortnoxCheck5Value">Ingen. Attestro skriver inte till Fortnox. Beslutsunderlaget och kontrolloggen visas i Attestro.</dd>
           </div>
           <div class="integration-checklist-row">
             <dt data-i18n="fortnoxCheck6Label">Synkfrekvens</dt>
@@ -338,7 +338,7 @@
           </li>
           <li class="audience-card" data-reveal>
             <h3 data-i18n="fortnoxAudience3Title">Tillverkande företag</h3>
-            <p data-i18n="fortnoxAudience3Desc">Material och komponenter mot inköpsavtal. Attestro kontrollerar enhetspris, mängd och villkor per rad, och skickar bara godkända fakturor vidare till Fortnox.</p>
+            <p data-i18n="fortnoxAudience3Desc">Material och komponenter mot inköpsavtal. Attestro kontrollerar enhetspris, mängd och villkor per rad, så att ni vet vilka fakturor som är säkra att godkänna i Fortnox.</p>
           </li>
         </ul>
       </div>
@@ -399,11 +399,11 @@
         <div class="faq-list" data-reveal>
           <details class="faq-item">
             <summary class="faq-question" data-i18n="fortnoxFaq1Q">Vad kostar Fortnox-integrationen?</summary>
-            <div class="faq-answer"><p class="faq-answer-inner" data-i18n-html="fortnoxFaq1A">Fortnox-integrationen ingår i Kontroll- och Enterprise-planerna utan extra avgift. Den är inte tillgänglig i den kostnadsfria provperioden. Se <a href="../pricing.html">pricing</a> för aktuella priser.</p></div>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n-html="fortnoxFaq1A">Fortnox-integrationen ingår utan extra avgift i alla betalda Attestro-planer. Den är inte tillgänglig i den kostnadsfria provperioden. Observera att Fortnox kan ta ut en separat licensavgift för integrationen från sin sida. Se <a href="../pricing.html">pricing</a> för aktuella priser.</p></div>
           </details>
           <details class="faq-item">
             <summary class="faq-question" data-i18n="fortnoxFaq2Q">Ändras något i min Fortnox-miljö när jag ansluter?</summary>
-            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="fortnoxFaq2A">Nej. Attestro läser leverantörsfakturor från Fortnox och skickar tillbaka verifierad bokföringsdata. Inga inställningar, kontoplaner eller historiska poster i Fortnox ändras.</p></div>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="fortnoxFaq2A">Nej. Attestro har endast läsåtkomst till leverantörsfakturor i Fortnox. Beslutsunderlaget visas i Attestro och inga inställningar, kontoplaner eller historiska poster i Fortnox ändras.</p></div>
           </details>
           <details class="faq-item">
             <summary class="faq-question" data-i18n="fortnoxFaq3Q">Vilka fakturor fångas upp av integrationen?</summary>
