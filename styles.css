@@ -2780,6 +2780,15 @@ body > main {
   overflow: visible;
 }
 
+.nyheter .news-post-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: var(--space-sm) 0 var(--space-md);
+  padding: var(--space-md) 0;
+}
+
 .blog-post-entry h2 {
   font-size: 1.05rem;
   line-height: 1.4;
@@ -4686,6 +4695,34 @@ body > main {
   font-size: 1.75rem;
   font-weight: 300;
   opacity: 0.5;
+}
+
+.integration-partner-mark-section {
+  padding: var(--space-2xl) 0;
+}
+
+.integration-partner-mark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  text-align: center;
+}
+
+.integration-partner-mark-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted, #6b7280);
+  margin: 0;
+}
+
+.integration-partner-mark-logo {
+  height: 120px;
+  width: auto;
+  max-width: 100%;
+  padding: 24px;
 }
 
 .integration-hero-actions {
