@@ -175,16 +175,16 @@
       <div class="container security-content">
         <h1 class="section-title">Så borde framtidens fakturakontroll se ut</h1>
         <time datetime="2026-04-08" class="blog-article-date">2026-04-08</time>
-        <p class="section-lead">De flesta system för fakturakontroll gör samma sak som de gjorde för tio år sedan: de matchar siffror mot siffror. Inköpsordernummer mot fakturanummer. Belopp mot belopp. Kvantitet mot kvantitet. Det fungerar -- när allt stämmer exakt. Men verkligheten ser sällan ut så. Den här artikeln beskriver vad som krävs av nästa generations fakturakontroll, och hur en enkel men kraftfull modell kan ersätta dagens begränsade metoder.</p>
+        <p class="section-lead">De flesta system för fakturakontroll gör samma sak som de gjorde för tio år sedan: de matchar siffror mot siffror. Inköpsordernummer mot fakturanummer. Belopp mot belopp. Kvantitet mot kvantitet. Det fungerar när allt stämmer exakt. Men verkligheten ser sällan ut så. Den här artikeln beskriver vad som krävs av nästa generations fakturakontroll, och hur en tydlig femstegsmodell kan ersätta dagens begränsade metoder.</p>
 
         <div class="blog-tldr">
-          <p><strong>Sammanfattning:</strong> Regelbaserad fakturakontroll (PO-matchning, momsvalidering) fångar uppenbara fel men missar det som kostar mest: feldebitering, ej avtalade poster och gradvis prisökning. Framtidens fakturakontroll kräver fyra egenskaper -- dokumentförståelse, semantisk matchning mot avtal, användardefinierad sanning och förklarbarhet -- och kan beskrivas som en pipeline i fem steg: Input, Förståelse, Matchning, Avvikelse, Beslut.</p>
+          <p><strong>Sammanfattning:</strong> Regelbaserad fakturakontroll (PO-matchning, momsvalidering) fångar uppenbara fel men missar det som kostar mest: feldebitering, ej avtalade poster och gradvis prisökning. Framtidens fakturakontroll kräver fyra egenskaper: dokumentförståelse, semantisk matchning mot avtal, användardefinierad sanning och förklarbarhet. Den kan beskrivas som en pipeline i fem steg: Input, Förståelse, Matchning, Avvikelse, Beslut.</p>
         </div>
 
         <!-- ====== SECTION 1: What exists today ====== -->
         <h2 class="security-subtitle">Vad vi har idag: regelbaserad matchning</h2>
-        <p class="security-text">Dagens fakturakontrollsystem vilar på två grundpelare. Den första är <a href="trevags-matchning.html">PO-matchning</a> (purchase order matching), där fakturarader jämförs mot inköpsorder eller beställningar. Den andra är regelbaserad validering: kontroller som "momsen ska vara 25 %", "totalbeloppet ska matcha summan av raderna", eller "leverantören ska finnas i godkänd leverantörslista".</p>
-        <p class="security-text">Dessa metoder fångar uppenbara fel: dubbelfakturering, felaktig moms, totalsumma som inte stämmer. Det är nödvändiga kontroller. Men de representerar den enklaste nivån av verifiering -- de besvarar frågan "stämmer siffrorna?" utan att ställa den viktigare frågan: "är det här rimligt?"</p>
+        <p class="security-text">Dagens fakturakontrollsystem bygger på två metoder. Den första är <a href="trevags-matchning.html">PO-matchning</a> (purchase order matching), där fakturarader jämförs mot inköpsorder eller beställningar. Den andra är regelbaserad validering: kontroller som "momsen ska vara 25 %", "totalbeloppet ska matcha summan av raderna" eller "leverantören ska finnas i godkänd leverantörslista".</p>
+        <p class="security-text">Dessa metoder fångar uppenbara fel: dubbelfakturering, felaktig moms, totalsumma som inte stämmer. Det är nödvändiga kontroller. Men de representerar den enklaste nivån av verifiering. De besvarar frågan "stämmer siffrorna?" utan att ställa den viktigare frågan: "är det här rimligt?"</p>
 
         <div class="blog-diagram-box">
           <p class="blog-diagram-label">Dagens modell</p>
@@ -199,7 +199,7 @@
         <p class="security-text">Regelbaserad matchning har tre fundamentala begränsningar.</p>
         <p class="security-text"><strong>1. Den kräver perfekt strukturerad input.</strong> Om fakturan inte har ett inköpsordernummer, eller om raderna är grupperade annorlunda än i beställningen, fallerar matchningen. Systemet kan inte hantera det det inte förväntar sig. En detaljerad genomgång av <a href="varfor-fakturamatchning-ar-trasig.html">varför denna typ av matchning är fundamentalt otillräcklig</a> visar hur problemet ser ut i praktiken.</p>
         <p class="security-text"><strong>2. Den missar semantiska avvikelser.</strong> En faktura kan vara korrekt i varje enskild siffra men ändå vara felaktig. Rätt pris per enhet, men fel enhet. Rätt kvantitet, men för en tjänst som aldrig utfördes. Rätt totalbelopp, men fördelat på rader som inte motsvarar avtalade poster. Regelbaserade system ser inte sådant, eftersom de inte förstår innebörden av det som faktureras.</p>
-        <p class="security-text"><strong>3. Den saknar kontext.</strong> Är det rimligt att en transportfaktura för sträckan Göteborg--Malmö kostar 45 000 kr? Regelbaserat system vet inte -- det har ingen uppfattning om vad som är rimligt. Det kontrollerar bara om siffran matchar en annan siffra.</p>
+        <p class="security-text"><strong>3. Den saknar kontext.</strong> Är det rimligt att en transportfaktura för sträckan Göteborg till Malmö kostar 45 000 kr? Regelbaserade system vet inte. De har ingen uppfattning om vad som är rimligt. De kontrollerar bara om siffran matchar en annan siffra.</p>
         <p class="security-text">Resultatet: de flesta fel som faktiskt kostar pengar -- <a href="upptacka-feldebitering.html">feldebitering</a>, felaktiga tilläggsavgifter, <a href="overdebitering-leverantorer.html">gradvis prisökning</a>, fakturering för ej utfört arbete -- passerar igenom systemet obemärkt. Inte för att systemet är trasigt, utan för att det <a href="problemet-ar-inte-fakturor-utan-offerter.html">aldrig designades för att fånga dem</a>.</p>
 
         <!-- ====== SECTION 3: What's required ====== -->
@@ -266,9 +266,9 @@
 
         <!-- ====== Closing: subtle Attestro positioning ====== -->
         <h2 class="security-subtitle">Från vision till verklighet</h2>
-        <p class="security-text">Modellen ovan är inte en framtidsvision. Den är en designprincip. Varje steg -- dokumentförståelse, semantisk matchning, avvikelserapportering med förklaring -- är tekniskt möjlig idag. Frågan är inte om det går att bygga, utan vem som bygger det och hur snabbt det kan komma i drift.</p>
-        <p class="security-text">Attestro är byggt på exakt den här modellen. Inte som en ambition, utan som arkitektur. Varje faktura som passerar systemet genomgår alla fem stegen: input, förståelse, matchning mot kundens egna avtal och offerter, avvikelserapportering i klartext, och en transparent rekommendation som användaren kan lita på och agera utifrån.</p>
-        <p class="security-text">Det innebär inte att systemet är perfekt. Det innebär att det ställer rätt frågor -- inte "stämmer siffrorna?" utan "är det här rimligt givet vad ni har avtalat?"</p>
+        <p class="security-text">Modellen ovan är inte en framtidsvision. Det är en designprincip. Varje steg, dokumentförståelse, semantisk matchning och avvikelserapportering med förklaring, är tekniskt möjligt idag. Frågan är inte om det går att bygga, utan vem som bygger det och hur snabbt det kan komma i drift.</p>
+        <p class="security-text">Attestro är ett fakturaverifieringsverktyg från Älgamo Software AB, byggt på den här modellen. Varje faktura genomgår alla fem stegen: input, semantisk förståelse av faktura och referensdokument, matchning mot kundens egna avtal och offerter, avvikelserapportering i klartext med belopp och referens, och en transparent rekommendation som attestanten kan agera direkt på. Verktyget är anpassat för svenska bygg-, transport- och projektföretag och integrerar med Fortnox.</p>
+        <p class="security-text">Det innebär inte att systemet är perfekt. Det innebär att det ställer rätt frågor. Inte "stämmer siffrorna?" utan "är det här rimligt givet vad ni har avtalat?"</p>
 
         <h2 class="security-subtitle">Vanliga frågor om framtidens fakturakontroll</h2>
         <div class="blog-faq">

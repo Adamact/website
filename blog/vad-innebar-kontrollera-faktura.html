@@ -173,7 +173,7 @@
       <div class="container security-content">
         <h1 class="section-title">Vad innebär det egentligen att kontrollera en faktura?</h1>
         <time datetime="2026-04-08" class="blog-article-date">2026-04-08</time>
-        <p class="section-lead">De flesta fakturahanteringssystem lovar "automatisk kontroll". Men vad kontrollerar de egentligen? I de flesta fall jämförs fält mot fält: artikelnummer mot artikelnummer, pris mot pris, mängd mot mängd. Det är datamatchning. Det är inte fakturakontroll. Den här artikeln förklarar skillnaden mellan att matcha data och att verifiera ett avtal, varför den spelar roll, och vad som faktiskt krävs för att validera en leverantörsfaktura på riktigt.</p>
+        <p class="section-lead">De flesta fakturahanteringssystem lovar "automatisk kontroll". Men vad kontrollerar de egentligen? I de flesta fall jämförs fält mot fält: artikelnummer mot artikelnummer, pris mot pris, mängd mot mängd. Det är datamatchning, inte fakturakontroll. Den här artikeln förklarar skillnaden, varför den spelar roll i praktiken, och vad som faktiskt krävs för att validera en leverantörsfaktura.</p>
 
         <h2 class="security-subtitle">Två nivåer av kontroll</h2>
         <p class="security-text">När vi talar om att "kontrollera en faktura" blandar vi ihop två fundamentalt olika operationer. Det är värt att separera dem, för de kräver helt olika kapacitet.</p>
@@ -191,14 +191,14 @@
 
         <div class="blog-highlight-box">
           <p class="blog-highlight-label">Offert / Avtal</p>
-          <p class="blog-highlight-text"><strong>"Markarbete inkl. bortforsling"</strong> &#8212; 145 000 kr</p>
+          <p class="blog-highlight-text"><strong>"Markarbete inkl. bortforsling"</strong> &ndash; 145 000 kr</p>
         </div>
 
         <p class="security-text">Två veckor senare kommer fakturan. På den står:</p>
 
         <div class="blog-highlight-box">
           <p class="blog-highlight-label">Faktura</p>
-          <p class="blog-highlight-text"><strong>"Schakt + transport massor"</strong> &#8212; 145 000 kr</p>
+          <p class="blog-highlight-text"><strong>"Schakt + transport massor"</strong> &ndash; 145 000 kr</p>
         </div>
 
         <p class="security-text">Beloppet stämmer. Men beskrivningen är en annan. För den som var med på bygget är det uppenbart att det handlar om samma sak: gräven grävdes, massorna kördes bort. "Markarbete inkl. bortforsling" och "Schakt + transport massor" är två sätt att beskriva samma arbete.</p>
@@ -257,8 +257,8 @@
           <li>Jag vet att detta arbete faktiskt utfördes på platsen under den aktuella perioden.</li>
           <li>Jag kan därför bekräfta att fakturan avser det avtalade arbetet.</li>
         </ul>
-        <p class="security-text">Det är inte databehandling. Det är domänkompetens kombinerad med språklig tolkning och kontextuell bedömning. Ingen enkel regelmotor kan replikera det. Och det är precis därför människor fortfarande är oumbärliga i kontrollkedjan.</p>
-        <p class="security-text">Frågan är inte om människor behövs. Frågan är var i processen deras bedömning gör störst nytta, och hur mycket av det övriga arbetet som kan avlastas. Det är samma princip som gäller vid <a href="fakturaattest.html">attestering</a>: systemet förbereder, människan beslutar.</p>
+        <p class="security-text">Det är inte databehandling. Det är domänkompetens kombinerad med språklig tolkning och kontextuell bedömning. Ingen regelmotor kan replikera det. Det är också varför människor fortfarande är nödvändiga i kontrollkedjan, och förmodligen alltid kommer att vara.</p>
+        <p class="security-text">Frågan är inte om människor behövs. Frågan är var i processen deras bedömning gör störst nytta. Det är samma princip som gäller vid <a href="fakturaattest.html">attestering</a>: systemet förbereder, människan beslutar.</p>
 
         <h2 class="security-subtitle">Varför traditionella system misslyckas</h2>
         <p class="security-text">Sammanfattningsvis: traditionella fakturakontrollsystem är byggda för datamatchning, inte för avtalsverifiering. De fungerar när:</p>
@@ -318,12 +318,12 @@
           </tbody>
         </table>
 
-        <p class="security-text">De tre första lagren är där största gapet finns idag. De flesta system klarar lager 1 och 4, men hoppar över lager 2 och 3, alltså den del där den verkliga verifieringen sker. Utan förståelse för vad fakturan och avtalet faktiskt beskriver reduceras kontrollen till en ytlig sifferjämförelse.</p>
-        <p class="security-text">Lager 5 är och förblir människans domän. Inget system bör fatta det slutgiltiga beslutet att godkänna eller avvisa en faktura. Men ett system som hanterar lager 1 till 4 på ett intelligent sätt kan reducera människans arbete från "gå igenom allt" till "bedöm det som är oklart".</p>
+        <p class="security-text">De tre första lagren är där det största gapet finns. De flesta system klarar lager 1 och 4, men hoppar över lager 2 och 3, där den faktiska verifieringen sker. Utan förståelse för vad fakturan och avtalet beskriver reduceras kontrollen till en sifferjämförelse.</p>
+        <p class="security-text">Lager 5 förblir människans domän. Inget system bör fatta det slutgiltiga beslutet att godkänna eller avvisa en faktura. Men ett system som hanterar lager 1 till 4 kan minska attestantens arbete från "gå igenom allt" till "bedöm det som är oklart".</p>
         <p class="security-text">Det är skillnaden mellan ett verktyg som listar avvikelser och ett verktyg som förstår vad som avviker.</p>
 
         <div class="blog-article-cta">
-          <p>Fakturavalidering handlar inte om att jämföra fält. Det handlar om att förstå om det som faktureras verkligen är det som avtalades. <a href="../index.html#contact">Boka en demo</a> för att se hur den typen av kontroll fungerar i praktiken.</p>
+          <p>Attestro hanterar lager 2 och 3 i ramverket ovan: det identifierar vilket avtal eller offert som gäller för en faktura och avgör, via AI, om fakturaraden beskriver samma arbete som avtalsraden, även när orden skiljer sig. Det är ett verktyg för bygg-, transport- och projektintensiva verksamheter i Sverige, och integrerar med Fortnox. <a href="../index.html#contact">Boka en demo</a> och se hur semantisk matchning ser ut mot era egna fakturor och avtal.</p>
         </div>
 
         <div class="blog-trial-cta">
