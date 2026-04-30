@@ -71,9 +71,9 @@ A free trial is available: 25 pages at no cost over 30 days. No credit card requ
 
 ## Security and Data Handling
 
-Attestro takes data security seriously. All data is stored on servers within Sweden/EU using established cloud services with Swedish data centers, ensuring that customer data never leaves the country. All data transfer uses TLS encryption (HTTPS), and data is encrypted at rest using AES-256. Each customer's data is fully isolated, with access controlled per organization and user following the principle of least privilege.
+Attestro takes data security seriously. All data is stored within the EU on servers operated by Hetzner in Helsinki, Finland, ensuring that customer data never leaves the EU. All data transfer uses TLS encryption (HTTPS), and data is encrypted at rest using AES-256. Each customer's data is fully isolated, with access controlled per organization and user following the principle of least privilege.
 
-The platform is built for GDPR compliance. A Data Processing Agreement (DPA) is provided upon request. In the event of a personal data incident, the relevant supervisory authority is notified within 72 hours in accordance with GDPR Article 33. Customer data is regularly backed up and stored encrypted within Sweden/EU, with documented disaster recovery procedures.
+The platform is built for GDPR compliance. A Data Processing Agreement (DPA) is provided upon request. In the event of a personal data incident, the relevant supervisory authority is notified within 72 hours in accordance with GDPR Article 33. Customer data is regularly backed up and stored encrypted within the EU, with documented disaster recovery procedures.
 
 Attestro uses privacy-friendly analytics (Plausible) with no Google Analytics and no third-party data sharing. Self-hosted fonts ensure no external font loading that could compromise visitor privacy.
 
@@ -83,7 +83,7 @@ Attestro uses privacy-friendly analytics (Plausible) with no Google Analytics an
 - **Languages**: Swedish and English (both the application and the website)
 - **OCR engine**: Advanced OCR with support for Swedish characters, tables, and multi-page layouts with automatic per-supplier template identification
 - **Integration**: REST API for ERP and accounting system integration; native Fortnox integration; Excel export as standard
-- **Hosting**: Swedish/EU data centers with encrypted storage
+- **Hosting**: Hetzner data center in Helsinki, Finland (EU) with encrypted storage
 - **Compliance**: GDPR-compliant, encrypted in transit and at rest
 
 ## Company Information
