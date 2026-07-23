@@ -60,14 +60,12 @@ For companies working with subcontractors and consultants on framework agreement
 
 ## Pricing
 
-Attestro offers four pricing tiers designed to scale with invoice volume and verification depth:
+Attestro offers two plans. Pricing is based on pages per month, not invoices: every page of an uploaded invoice document counts.
 
-- **Bas (Base)**: 790 SEK/month (670 SEK/month with 12-month commitment). 100 invoices per month. Includes automatic invoice data extraction, Excel export, field and total validation, and email support.
-- **Standard**: 1,290 SEK/month (1,090 SEK/month with 12-month commitment). 200 invoices per month. Everything in Bas plus customizable export, price verification against contracts and price lists, and complete validation history.
-- **Plus** (most popular): 1,890 SEK/month (1,590 SEK/month with 12-month commitment). 350 invoices per month. Everything in Standard plus priority support and database storage with full traceability.
-- **Enterprise**: Custom pricing. 500+ invoices per month. Everything in Plus plus API integration with accounting systems, analytics and BI export, multi-entity support, SLA with guaranteed uptime, and a dedicated account manager.
+- **Kontroll**: One plan, priced by monthly page volume. 100 pages: 390 SEK/month. 300 pages: 890 SEK/month. 750 pages: 1,990 SEK/month. 1,500 pages: 3,490 SEK/month. Lower prices apply with a 12-month commitment (332 / 757 / 1,692 / 2,967 SEK/month respectively). All volumes include automatic invoice data extraction, field and total validation, price verification against contracts and quotes, Fortnox integration, customizable Excel export, API integration with the customer's accounting system, and a dedicated contact.
+- **Enterprise**: Custom pricing for organizations with 1,500+ pages per month, with a 12-month minimum term. Everything in Kontroll plus analytics and BI export, multi-entity support, and an SLA with guaranteed uptime. One year of historical invoices is included at purchase.
 
-A free trial is available: 25 pages at no cost over 30 days. No credit card required. Note: the Fortnox integration is not included in the free trial; it is available in the paid Kontroll and Enterprise plans.
+The Fortnox integration is included at no extra cost in all Attestro plans.
 
 ## Security and Data Handling
 
@@ -144,7 +142,7 @@ Attestro extracts supplier name, invoice number, date, project/cost codes (littr
 Attestro uses semantic analysis to understand the content of existing contracts, quotes, and price lists. Customers upload documents in whatever format they already use and the system interprets them automatically, regardless of structure or layout. No reformatting or manual data entry is required.
 
 **Can we try before committing?**
-Yes. Create a free account at app.algamo.se and test with up to 25 pages over 30 days, no credit card required. The Fortnox integration is not included in the free trial; it is available in the paid plans. Demos are also available upon request.
+Yes. Demos are available upon request, ideally using the customer's own invoices as the basis. Contact sales@algamo.se to book a demo.
 
 **Can we switch plans?**
 Yes. Plans can be upgraded or downgraded at any time. Changes take effect at the next billing period.
@@ -153,4 +151,4 @@ Yes. Plans can be upgraded or downgraded at any time. Changes take effect at the
 Attestro handles PDF invoices (both digital and scanned) and image files. The system extracts data automatically regardless of layout or template.
 
 **Can Attestro verify prices against our contracts?**
-Yes, from the Standard plan and above. Attestro compares each invoice line against contracted prices, price lists, and project terms. Discrepancies are flagged automatically.
+Yes, price verification is included in all plans. Attestro compares each invoice line against contracted prices, price lists, and project terms. Discrepancies are flagged automatically.

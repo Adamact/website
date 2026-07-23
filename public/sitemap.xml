@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://algamo.se/</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/" />
@@ -11,7 +11,7 @@
   </url>
   <url>
     <loc>https://algamo.se/pricing.html</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/pricing.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/pricing.html" />
@@ -19,7 +19,7 @@
   </url>
   <url>
     <loc>https://algamo.se/produkt.html</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/produkt.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/produkt.html" />
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://algamo.se/about.html</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/about.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/about.html" />
@@ -35,7 +35,7 @@
   </url>
   <url>
     <loc>https://algamo.se/security.html</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/security.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/security.html" />
@@ -43,7 +43,7 @@
   </url>
   <url>
     <loc>https://algamo.se/privacy.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/privacy.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/privacy.html" />
@@ -51,7 +51,7 @@
   </url>
   <url>
     <loc>https://algamo.se/ordlista-fakturahantering.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/ordlista-fakturahantering.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/ordlista-fakturahantering.html" />
@@ -59,7 +59,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/" />
@@ -67,7 +67,7 @@
   </url>
   <url>
     <loc>https://algamo.se/news/</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/news/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/news/" />
@@ -75,7 +75,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/vanliga-utmaningar-fakturahantering.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/vanliga-utmaningar-fakturahantering.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/vanliga-utmaningar-fakturahantering.html" />
@@ -83,7 +83,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/ocr-faktura.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/ocr-faktura.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/ocr-faktura.html" />
@@ -91,7 +91,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/what-is-invoice-processing.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/what-is-invoice-processing.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/what-is-invoice-processing.html" />
@@ -99,7 +99,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/bygg-transport-fakturor.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/bygg-transport-fakturor.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/bygg-transport-fakturor.html" />
@@ -107,7 +107,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/fakturaformat.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/fakturaformat.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/fakturaformat.html" />
@@ -115,7 +115,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/manuell-vs-automatiserad-fakturahantering.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/manuell-vs-automatiserad-fakturahantering.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/manuell-vs-automatiserad-fakturahantering.html" />
@@ -123,7 +123,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/upptacka-feldebitering.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/upptacka-feldebitering.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/upptacka-feldebitering.html" />
@@ -131,7 +131,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/automatiserad-fakturakontroll.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/automatiserad-fakturakontroll.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/automatiserad-fakturakontroll.html" />
@@ -139,7 +139,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/fakturaflode.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/fakturaflode.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/fakturaflode.html" />
@@ -147,7 +147,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/vanliga-fel-transportfakturor.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/vanliga-fel-transportfakturor.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/vanliga-fel-transportfakturor.html" />
@@ -155,7 +155,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/verifiera-leverantorsfakturor.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/verifiera-leverantorsfakturor.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/verifiera-leverantorsfakturor.html" />
@@ -163,7 +163,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/checklista-fakturakontroll.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/checklista-fakturakontroll.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/checklista-fakturakontroll.html" />
@@ -171,7 +171,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/excel-vs-automatiserad-fakturahantering.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/excel-vs-automatiserad-fakturahantering.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/excel-vs-automatiserad-fakturahantering.html" />
@@ -179,7 +179,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/fakturaattest.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/fakturaattest.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/fakturaattest.html" />
@@ -187,7 +187,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/roi-fakturaautomation.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/roi-fakturaautomation.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/roi-fakturaautomation.html" />
@@ -195,7 +195,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/minska-manuellt-arbete-fakturahantering.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/minska-manuellt-arbete-fakturahantering.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/minska-manuellt-arbete-fakturahantering.html" />
@@ -203,7 +203,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/overdebitering-leverantorer.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/overdebitering-leverantorer.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/overdebitering-leverantorer.html" />
@@ -211,7 +211,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/felaktig-leverantorsfaktura.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/felaktig-leverantorsfaktura.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/felaktig-leverantorsfaktura.html" />
@@ -219,7 +219,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/vanliga-fel-leverantorsfakturor.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/vanliga-fel-leverantorsfakturor.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/vanliga-fel-leverantorsfakturor.html" />
@@ -227,7 +227,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/transportavtal-prislistor-fakturor.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/transportavtal-prislistor-fakturor.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/transportavtal-prislistor-fakturor.html" />
@@ -235,7 +235,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/kontrollera-fakturor-mot-avtal.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/kontrollera-fakturor-mot-avtal.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/kontrollera-fakturor-mot-avtal.html" />
@@ -243,7 +243,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/fakturakontroll-entreprenadprojekt.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/fakturakontroll-entreprenadprojekt.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/fakturakontroll-entreprenadprojekt.html" />
@@ -251,7 +251,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/digital-dokumentanalys-fakturahantering.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/digital-dokumentanalys-fakturahantering.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/digital-document-analysis-invoice-processing.html" />
@@ -259,7 +259,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/ata-hantering-fakturakontroll.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/ata-hantering-fakturakontroll.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/ata-hantering-fakturakontroll.html" />
@@ -267,7 +267,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/fakturafel-projektbudget-lonsamhet.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/fakturafel-projektbudget-lonsamhet.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/fakturafel-projektbudget-lonsamhet.html" />
@@ -275,7 +275,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/erp-integration-fakturahantering.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/erp-integration-fakturahantering.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/erp-integration-fakturahantering.html" />
@@ -283,7 +283,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/digital-document-analysis-invoice-processing.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/digital-document-analysis-invoice-processing.html" />
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/digital-dokumentanalys-fakturahantering.html" />
@@ -291,7 +291,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/intern-kontroll-leverantorsfakturor.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/intern-kontroll-leverantorsfakturor.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/intern-kontroll-leverantorsfakturor.html" />
@@ -299,7 +299,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/upptacka-fakturabedrageri.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/upptacka-fakturabedrageri.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/upptacka-fakturabedrageri.html" />
@@ -307,7 +307,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/infora-automatiserad-fakturakontroll.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/infora-automatiserad-fakturakontroll.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/infora-automatiserad-fakturakontroll.html" />
@@ -315,7 +315,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/smart-prislista-matchning.html</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/smart-prislista-matchning.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/smart-prislista-matchning.html" />
@@ -323,7 +323,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/vad-innebar-kontrollera-faktura.html</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/vad-innebar-kontrollera-faktura.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/vad-innebar-kontrollera-faktura.html" />
@@ -331,7 +331,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/varfor-fakturamatchning-ar-trasig.html</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/varfor-fakturamatchning-ar-trasig.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/varfor-fakturamatchning-ar-trasig.html" />
@@ -339,7 +339,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/framtidens-fakturakontroll.html</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/framtidens-fakturakontroll.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/framtidens-fakturakontroll.html" />
@@ -347,7 +347,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/problemet-ar-inte-fakturor-utan-offerter.html</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/problemet-ar-inte-fakturor-utan-offerter.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/problemet-ar-inte-fakturor-utan-offerter.html" />
@@ -355,7 +355,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/varfor-erp-aldrig-loser-detta.html</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/varfor-erp-aldrig-loser-detta.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/varfor-erp-aldrig-loser-detta.html" />
@@ -363,7 +363,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/case-fakturan-sag-korrekt-ut.html</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/case-fakturan-sag-korrekt-ut.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/case-fakturan-sag-korrekt-ut.html" />
@@ -371,7 +371,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/human-in-the-loop-fakturakontroll.html</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/human-in-the-loop-fakturakontroll.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/human-in-the-loop-fakturakontroll.html" />
@@ -379,7 +379,7 @@
   </url>
   <url>
     <loc>https://algamo.se/blog/trevags-matchning.html</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/blog/trevags-matchning.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/blog/trevags-matchning.html" />
@@ -387,7 +387,7 @@
   </url>
   <url>
     <loc>https://algamo.se/integrationer/fortnox.html</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="sv" href="https://algamo.se/integrationer/fortnox.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://algamo.se/integrationer/fortnox.html" />
