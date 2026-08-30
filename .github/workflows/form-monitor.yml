@@ -1,0 +1,103 @@
+name: Form monitor
+
+# Daglig kontroll av att kontaktformuläret fungerar hela vägen till Web3Forms.
+# Vid fel skapas ett issue (label: form-monitor) => mejlnotis. Grönt igen => issuet stängs.
+
+on:
+  schedule:
+    - cron: "23 5 * * *"
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "URL att testa (default https://algamo.se/)"
+        required: false
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: form-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Statisk koll — formulär och Web3Forms-koppling i deployad kod
+        run: |
+          set -euo pipefail
+          URL="${{ inputs.url || 'https://algamo.se/' }}"
+          origin=$(echo "$URL" | grep -oE '^https?://[^/]+')
+          html=$(curl -fsSL --retry 3 "$URL")
+          echo "$html" | grep -q 'id="contact-form"' || { echo "::error::Kontaktformuläret saknas i HTML"; exit 1; }
+          echo "$html" | grep -q 'name="botcheck"'   || { echo "::error::Honeypot (botcheck) saknas i HTML"; exit 1; }
+          bundle=$(echo "$html" | grep -o 'assets/[^"]*\.js' | head -1)
+          [ -n "$bundle" ] || { echo "::error::Hittade ingen JS-bundle i HTML"; exit 1; }
+          js=$(curl -fsSL --retry 3 "$origin/$bundle")
+          echo "$js" | grep -q 'api.web3forms.com' || { echo "::error::Web3Forms-endpoint saknas i bundlen"; exit 1; }
+          echo "$js" | grep -q '3a30a16b-c957-4c5e-a0a4-a0ec12297c8a' || { echo "::error::Access-nyckeln saknas i bundlen"; exit 1; }
+          echo "Statisk koll OK ($bundle)"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Installera Playwright
+        run: |
+          npm i --no-save playwright
+          npx playwright install --with-deps chromium
+
+      - name: E2E — skicka testformulär via headless Chromium
+        env:
+          MONITOR_URL: ${{ inputs.url || 'https://algamo.se/' }}
+        run: node scripts/form-monitor.mjs
+
+      - name: Ladda upp skärmdump vid fel
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: form-monitor-failure
+          path: monitor-failure-*.png
+          if-no-files-found: ignore
+
+      - name: Flagga fel — skapa larm-issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh label create form-monitor --repo "$GITHUB_REPOSITORY" \
+            --color D93F0B --description "Automatisk övervakning av kontaktformuläret" --force
+          open=$(gh issue list --repo "$GITHUB_REPOSITORY" --label form-monitor --state open --json number --jq 'length')
+          if [ "$open" = "0" ]; then
+            {
+              echo "Den automatiska övervakningen av kontaktformuläret misslyckades $(date -u '+%Y-%m-%d %H:%M') UTC."
+              echo
+              echo "Möjliga orsaker: Web3Forms-nyckeln avaktiverad, månadskvoten (250 submissions) slut, Web3Forms/Cloudflare-driftstopp, eller trasig deploy/JS."
+              echo
+              echo "Körning med logg och skärmdump: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+              echo
+              echo "Leads kan gå förlorade tills detta är åtgärdat — kontrollera https://web3forms.com (dashboard/kvot) och testa formuläret manuellt på https://algamo.se."
+            } > /tmp/issue-body.md
+            gh issue create --repo "$GITHUB_REPOSITORY" \
+              --label form-monitor \
+              --title "🚨 Kontaktformuläret på algamo.se kan vara trasigt" \
+              --body-file /tmp/issue-body.md
+          else
+            echo "Öppet larm-issue finns redan — skapar inget nytt."
+          fi
+
+      - name: Stäng ev. öppet larm-issue när allt är grönt
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          for n in $(gh issue list --repo "$GITHUB_REPOSITORY" --label form-monitor --state open --json number --jq '.[].number'); do
+            gh issue close "$n" --repo "$GITHUB_REPOSITORY" \
+              --comment "Övervakningen är grön igen ($(date -u '+%Y-%m-%d %H:%M') UTC) — formuläret fungerar. Stänger automatiskt."
+          done
