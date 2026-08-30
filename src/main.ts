@@ -132,7 +132,10 @@ const translations: Translations = {
     formVolume4: "1 000+",
     formMessage: "Meddelande",
     formSubmit: "Skicka förfrågan",
-    formPrivacyNotice: "Formuläret öppnar ditt e-postprogram. Ingen data lagras på våra servrar.",
+    formSending: "Skickar…",
+    formSuccess: "Tack för din förfrågan! Vi återkommer inom en arbetsdag.",
+    formError: "Något gick fel. Försök igen, eller mejla oss direkt på sales@algamo.se.",
+    formPrivacyNotice: "Formuläret skickas säkert via vår formulärtjänst till sales@algamo.se. Läs mer i vår <a href=\"privacy.html\">integritetspolicy</a>.",
     // Trust strip
     trustSweden: "Data lagras i EU",
     trustGdpr: "GDPR-kompatibelt",
@@ -163,19 +166,19 @@ const translations: Translations = {
     privacyPageDescription: "Integritetspolicy för Attestro och algamo.se. Hur vi hanterar personuppgifter, vilka uppgifter vi behandlar och dina rättigheter enligt GDPR.",
     privacyTitle: "Integritetspolicy",
     privacyLead: "Här beskriver vi hur Älgamo Software AB behandlar personuppgifter på denna webbplats och i tjänsten Attestro.",
-    privacyLastUpdated: "Senast uppdaterad: 13 mars 2026",
+    privacyLastUpdated: "Senast uppdaterad: 30 augusti 2026",
     privacyControllerTitle: "Personuppgiftsansvarig",
     privacyControllerText: "Älgamo Software AB är personuppgiftsansvarig för behandlingen av personuppgifter på denna webbplats. Kontakta oss på <a href=\"mailto:support@algamo.se\">support@algamo.se</a> vid frågor om personuppgifter.",
     privacyDataTitle: "Vilka uppgifter vi behandlar",
-    privacyDataText: "<strong>Språkpreferens:</strong> Vi sparar ert språkval (svenska/engelska) lokalt i er webbläsare (localStorage). Detta är ingen personuppgift och skickas aldrig till våra servrar.<br><br><strong>Kontaktförfrågningar:</strong> När ni skickar en förfrågan via kontaktformuläret öppnas ert eget e-postprogram. Meddelandet skickas direkt från er e-postklient. Vi lagrar ingen data på våra servrar via formuläret. När vi tar emot ert e-postmeddelande behandlar vi er e-postadress, eventuellt namn och meddelandeinnehåll för att besvara er förfrågan.<br><br><strong>Webbplatsstatistik:</strong> Vi använder Plausible Analytics för anonym besöksstatistik. Plausible sätter inga cookies och samlar inte in personuppgifter. Data som samlas in inkluderar sidvisningar, hänvisningskälla och enhetstyp, men ingen information kan kopplas till enskilda besökare.<br><br><strong>Serverloggar:</strong> Webbplatsen hostas av GitHub Pages (se avsnittet Hosting nedan). GitHub kan behandla besökares IP-adresser i sina serverloggar i samband med leverans av webbplatsen.",
+    privacyDataText: "<strong>Språkpreferens:</strong> Vi sparar ert språkval (svenska/engelska) lokalt i er webbläsare (localStorage). Detta är ingen personuppgift och skickas aldrig till våra servrar.<br><br><strong>Kontaktförfrågningar:</strong> När ni skickar en förfrågan via kontaktformuläret överförs uppgifterna (företagsnamn, e-postadress, fakturavolym och meddelande) till oss per e-post (sales@algamo.se) via formulärtjänsten Web3Forms. Web3Forms behandlar uppgifterna som personuppgiftsbiträde enligt biträdesavtal och lagrar dem krypterat i högst 30 dagar, varefter de raderas automatiskt. När vi tar emot er förfrågan behandlar vi er e-postadress, eventuellt företagsnamn och meddelandeinnehåll för att besvara den.<br><br><strong>Webbplatsstatistik:</strong> Vi använder Plausible Analytics för anonym besöksstatistik. Plausible sätter inga cookies och samlar inte in personuppgifter. Data som samlas in inkluderar sidvisningar, hänvisningskälla och enhetstyp, men ingen information kan kopplas till enskilda besökare.<br><br><strong>Serverloggar:</strong> Webbplatsen hostas av GitHub Pages (se avsnittet Hosting nedan). GitHub kan behandla besökares IP-adresser i sina serverloggar i samband med leverans av webbplatsen.",
     privacyLegalBasisTitle: "Rättslig grund",
     privacyLegalBasisText: "<strong>Språkpreferens:</strong> Berättigat intresse (artikel 6.1 f GDPR) — för att förbättra användarupplevelsen.<br><br><strong>Kontaktförfrågningar:</strong> Åtgärder som föregår avtal på den registrerades begäran (artikel 6.1 b GDPR) — ni kontaktar oss om en potentiell affärsrelation. Ni kan när som helst begära att vi raderar era uppgifter.<br><br><strong>Webbplatsstatistik:</strong> Berättigat intresse (artikel 6.1 f GDPR) — för att förstå hur webbplatsen används. Plausible Analytics samlar inte in personuppgifter och sätter inga cookies.<br><br><strong>Hosting/serverloggar:</strong> Berättigat intresse (artikel 6.1 f GDPR) — nödvändigt för att leverera webbplatsen.",
     privacyRetentionTitle: "Lagringstid",
-    privacyRetentionText: "<strong>Språkpreferens:</strong> Lagras i er webbläsare tills ni rensar den eller byter webbläsare. Vi har ingen åtkomst till denna data.<br><br><strong>Kontaktförfrågningar:</strong> E-postmeddelanden bevaras så länge det är relevant för den pågående affärsdialogen och raderas därefter. Ni kan begära radering när som helst.<br><br><strong>Webbplatsstatistik:</strong> Plausible lagrar aggregerad statistik utan koppling till enskilda besökare. Ingen data lagras i besökarens webbläsare.<br><br><strong>Serverloggar:</strong> Hanteras av GitHub enligt deras integritetspolicy. Vi har ingen åtkomst till dessa loggar.",
+    privacyRetentionText: "<strong>Språkpreferens:</strong> Lagras i er webbläsare tills ni rensar den eller byter webbläsare. Vi har ingen åtkomst till denna data.<br><br><strong>Kontaktförfrågningar:</strong> E-postmeddelanden bevaras i högst 12 månader efter senaste kontakt, såvida inte en pågående affärsrelation motiverar längre lagring. Formulärtjänsten Web3Forms lagrar inskickade formulär i högst 30 dagar, därefter raderas de automatiskt. Ni kan begära radering när som helst.<br><br><strong>Webbplatsstatistik:</strong> Plausible lagrar aggregerad statistik utan koppling till enskilda besökare. Ingen data lagras i besökarens webbläsare.<br><br><strong>Serverloggar:</strong> Hanteras av GitHub enligt deras integritetspolicy. Vi har ingen åtkomst till dessa loggar.",
     privacyHostingTitle: "Hosting",
     privacyHostingText: "Webbplatsen hostas av GitHub Pages (GitHub, Inc., ett Microsoft-företag, USA). GitHub kan behandla besökares IP-adresser i sina serverloggar. GitHub är certifierat under EU-US Data Privacy Framework. Mer information finns i <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\" target=\"_blank\" rel=\"noopener noreferrer\">GitHubs integritetspolicy</a>.",
     privacyThirdPartyTitle: "Tredjepartsleverantörer",
-    privacyThirdPartyText: "Typsnitt är lokalt hostade. Vi laddar inga externa bilder från tredje part.<br><br><strong>GitHub Pages</strong> (GitHub, Inc., ett Microsoft-företag, USA) — hosting av webbplatsen. Se ovan.<br><br><strong>Plausible Analytics</strong> (Plausible Insights OÜ, Estland, EU) — cookiefri webbplatsstatistik. Ingen persondata behandlas. Mer information finns i <a href=\"https://plausible.io/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Plausibles integritetspolicy</a>.",
+    privacyThirdPartyText: "Typsnitt är lokalt hostade. Vi laddar inga externa bilder från tredje part.<br><br><strong>GitHub Pages</strong> (GitHub, Inc., ett Microsoft-företag, USA) — hosting av webbplatsen. Se ovan.<br><br><strong>Plausible Analytics</strong> (Plausible Insights OÜ, Estland, EU) — cookiefri webbplatsstatistik. Ingen persondata behandlas. Mer information finns i <a href=\"https://plausible.io/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Plausibles integritetspolicy</a>.<br><br><strong>Web3Forms</strong> (Web3Creative, Indien) — vidarebefordran av kontaktformulär via e-post. Inskickade uppgifter lagras krypterat i högst 30 dagar och raderas därefter automatiskt. Personuppgiftsbiträdesavtal (DPA) finns. Eftersom Indien saknar beslut om adekvat skyddsnivå sker överföringen med stöd av standardavtalsklausuler i biträdesavtalet. Mer information finns i <a href=\"https://web3forms.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Web3Forms integritetspolicy</a>.",
     privacyRightsTitle: "Dina rättigheter",
     privacyRightsText: "Enligt GDPR har du rätt att:<br>• begära tillgång till dina personuppgifter (artikel 15)<br>• begära rättelse av felaktiga uppgifter (artikel 16)<br>• begära radering av dina uppgifter (artikel 17)<br>• begära begränsning av behandling (artikel 18)<br>• begära dataportabilitet (artikel 20)<br>• invända mot behandling (artikel 21)<br>• återkalla samtycke när som helst, utan att det påverkar lagligheten av behandling som utförts innan återkallelsen (artikel 7.3)<br>• lämna klagomål till Integritetsskyddsmyndigheten (IMY), <a href=\"https://www.imy.se\" target=\"_blank\" rel=\"noopener noreferrer\">www.imy.se</a>, <a href=\"mailto:imy@imy.se\">imy@imy.se</a>",
     privacyContactTitle: "Kontakt",
@@ -426,10 +429,8 @@ const translations: Translations = {
     calcAssumption: "Uppskattning baserad på 60 % minskad granskningstid och 80 % minskad risk för att felaktiga fakturor passerar.",
     // Form validation
     formEmailRequired: "E-post krävs",
+    formEmailInvalid: "Ange en giltig e-postadress",
     contactEmailSubject: "Attestro förfrågan",
-    contactLabelCompany: "Företag",
-    contactLabelEmail: "E-post",
-    contactLabelVolume: "Fakturor/mån",
     blogAfkIntro: "Lär dig hur automatiserad fakturakontroll fungerar i praktiken. OCR, dokumentstrukturanalys och datavalidering förklarade steg för steg.",
     blogAfkTitle: "Automatiserad fakturakontroll i praktiken",
     blogBkeIntro: "Sena betalningar, förlorade kassarabatter och flaskhalsar i attestflödet. Hur fakturaprocessen påverkar kassaflödet och hur automatisering kan förbättra betalningsplanering.",
@@ -2535,7 +2536,10 @@ const translations: Translations = {
     formVolume4: "1,000+",
     formMessage: "Message",
     formSubmit: "Send inquiry",
-    formPrivacyNotice: "The form opens your email client. No data is stored on our servers.",
+    formSending: "Sending…",
+    formSuccess: "Thank you for your inquiry! We will get back to you within one business day.",
+    formError: "Something went wrong. Please try again, or email us directly at sales@algamo.se.",
+    formPrivacyNotice: "The form is sent securely via our form service to sales@algamo.se. Learn more in our <a href=\"privacy.html\">privacy policy</a>.",
     // Trust strip
     trustSweden: "Data stored in the EU",
     trustGdpr: "GDPR compliant",
@@ -2566,19 +2570,19 @@ const translations: Translations = {
     privacyPageDescription: "Privacy policy for Attestro and algamo.se. How we handle personal data, what data we process, and your rights under GDPR.",
     privacyTitle: "Privacy policy",
     privacyLead: "Here we describe how Älgamo Software AB processes personal data on this website and in the Attestro service.",
-    privacyLastUpdated: "Last updated: 13 March 2026",
+    privacyLastUpdated: "Last updated: 30 August 2026",
     privacyControllerTitle: "Data controller",
     privacyControllerText: "Älgamo Software AB is the data controller for personal data processing on this website. Contact us at <a href=\"mailto:support@algamo.se\">support@algamo.se</a> for questions about personal data.",
     privacyDataTitle: "What data we process",
-    privacyDataText: "<strong>Language preference:</strong> We store your language choice (Swedish/English) locally in your browser (localStorage). This is not personal data and is never sent to our servers.<br><br><strong>Contact inquiries:</strong> When you submit an inquiry via the contact form, your own email client opens. The message is sent directly from your email client. We do not store any data on our servers via the form. When we receive your email, we process your email address, any name provided, and message content in order to respond to your inquiry.<br><br><strong>Website statistics:</strong> We use Plausible Analytics for anonymous visitor statistics. Plausible does not set cookies and does not collect personal data. Data collected includes page views, referral source, and device type, but no information can be linked to individual visitors.<br><br><strong>Server logs:</strong> The website is hosted on GitHub Pages (see Hosting section below). GitHub may process visitor IP addresses in its server logs as part of delivering the website.",
+    privacyDataText: "<strong>Language preference:</strong> We store your language choice (Swedish/English) locally in your browser (localStorage). This is not personal data and is never sent to our servers.<br><br><strong>Contact inquiries:</strong> When you submit an inquiry via the contact form, the data (company name, email address, invoice volume, and message) is transmitted to us by email (sales@algamo.se) via the form service Web3Forms. Web3Forms processes the data as a data processor under a data processing agreement and stores it encrypted for a maximum of 30 days, after which it is automatically deleted. When we receive your inquiry, we process your email address, any company name provided, and message content in order to respond.<br><br><strong>Website statistics:</strong> We use Plausible Analytics for anonymous visitor statistics. Plausible does not set cookies and does not collect personal data. Data collected includes page views, referral source, and device type, but no information can be linked to individual visitors.<br><br><strong>Server logs:</strong> The website is hosted on GitHub Pages (see Hosting section below). GitHub may process visitor IP addresses in its server logs as part of delivering the website.",
     privacyLegalBasisTitle: "Legal basis",
     privacyLegalBasisText: "<strong>Language preference:</strong> Legitimate interest (Article 6.1 f GDPR) — to improve user experience.<br><br><strong>Contact inquiries:</strong> Pre-contractual measures at the data subject's request (Article 6.1 b GDPR) — you contact us about a potential business relationship. You may request deletion of your data at any time.<br><br><strong>Website statistics:</strong> Legitimate interest (Article 6.1 f GDPR) — to understand how the website is used. Plausible Analytics does not collect personal data and does not set cookies.<br><br><strong>Hosting/server logs:</strong> Legitimate interest (Article 6.1 f GDPR) — necessary to deliver the website.",
     privacyRetentionTitle: "Retention period",
-    privacyRetentionText: "<strong>Language preference:</strong> Stored in your browser until you clear it or switch browsers. We have no access to this data.<br><br><strong>Contact inquiries:</strong> Emails are retained as long as relevant to the ongoing business dialogue and deleted afterwards. You may request deletion at any time.<br><br><strong>Website statistics:</strong> Plausible stores aggregated statistics with no link to individual visitors. No data is stored in the visitor's browser.<br><br><strong>Server logs:</strong> Managed by GitHub according to their privacy policy. We have no access to these logs.",
+    privacyRetentionText: "<strong>Language preference:</strong> Stored in your browser until you clear it or switch browsers. We have no access to this data.<br><br><strong>Contact inquiries:</strong> Emails are retained for a maximum of 12 months after the last contact, unless an ongoing business relationship justifies longer retention. The form service Web3Forms stores submitted forms for a maximum of 30 days, after which they are automatically deleted. You may request deletion at any time.<br><br><strong>Website statistics:</strong> Plausible stores aggregated statistics with no link to individual visitors. No data is stored in the visitor's browser.<br><br><strong>Server logs:</strong> Managed by GitHub according to their privacy policy. We have no access to these logs.",
     privacyHostingTitle: "Hosting",
     privacyHostingText: "The website is hosted on GitHub Pages (GitHub, Inc., a Microsoft company, USA). GitHub may process visitor IP addresses in its server logs. GitHub is certified under the EU-US Data Privacy Framework. More information is available in <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub's privacy policy</a>.",
     privacyThirdPartyTitle: "Third-party providers",
-    privacyThirdPartyText: "Fonts are self-hosted. We load no external images from third parties.<br><br><strong>GitHub Pages</strong> (GitHub, Inc., a Microsoft company, USA) — website hosting. See above.<br><br><strong>Plausible Analytics</strong> (Plausible Insights OÜ, Estonia, EU) — cookie-free website statistics. No personal data is processed. More information is available in <a href=\"https://plausible.io/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Plausible's privacy policy</a>.",
+    privacyThirdPartyText: "Fonts are self-hosted. We load no external images from third parties.<br><br><strong>GitHub Pages</strong> (GitHub, Inc., a Microsoft company, USA) — website hosting. See above.<br><br><strong>Plausible Analytics</strong> (Plausible Insights OÜ, Estonia, EU) — cookie-free website statistics. No personal data is processed. More information is available in <a href=\"https://plausible.io/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Plausible's privacy policy</a>.<br><br><strong>Web3Forms</strong> (Web3Creative, India) — forwarding of contact form submissions by email. Submitted data is stored encrypted for a maximum of 30 days and then automatically deleted. A data processing agreement (DPA) is in place. As India lacks an adequacy decision, the transfer is based on standard contractual clauses in the DPA. More information is available in <a href=\"https://web3forms.com/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Web3Forms' privacy policy</a>.",
     privacyRightsTitle: "Your rights",
     privacyRightsText: "Under GDPR you have the right to:<br>• request access to your personal data (Article 15)<br>• request correction of inaccurate data (Article 16)<br>• request deletion of your data (Article 17)<br>• request restriction of processing (Article 18)<br>• request data portability (Article 20)<br>• object to processing (Article 21)<br>• withdraw consent at any time, without affecting the lawfulness of processing carried out before withdrawal (Article 7.3)<br>• file a complaint with the Swedish Authority for Privacy Protection (IMY), <a href=\"https://www.imy.se\" target=\"_blank\" rel=\"noopener noreferrer\">www.imy.se</a>, <a href=\"mailto:imy@imy.se\">imy@imy.se</a>",
     privacyContactTitle: "Contact",
@@ -2831,10 +2835,8 @@ const translations: Translations = {
     calcAssumption: "Estimate based on 60% reduced review time and 80% reduced risk of incorrect invoices passing through.",
     // Form validation
     formEmailRequired: "Email is required",
+    formEmailInvalid: "Please enter a valid email address",
     contactEmailSubject: "Attestro inquiry",
-    contactLabelCompany: "Company",
-    contactLabelEmail: "Email",
-    contactLabelVolume: "Invoices/month",
     blogAfkIntro: "Learn how automated invoice verification works in practice. OCR, document structure analysis, and data validation explained step by step.",
     blogAfkTitle: "Automated Invoice Verification in Practice",
     blogBkeIntro: "Late payments, lost cash discounts, and bottlenecks in the approval flow. How the invoice process affects cash flow and how automation can improve payment planning.",
@@ -5069,8 +5071,15 @@ function initContactForm(): void {
   const form = document.getElementById("contact-form") as HTMLFormElement | null;
   if (!form) return;
 
+  // Public by design — Web3Forms access keys are meant for client-side embeds.
+  // Abuse protection: the hidden botcheck honeypot, verified server-side by Web3Forms.
+  const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
+  const WEB3FORMS_ACCESS_KEY = "3a30a16b-c957-4c5e-a0a4-a0ec12297c8a";
+
   const emailInput = form.elements.namedItem("email") as HTMLInputElement;
   const emailError = document.getElementById("cf-email-error");
+  const statusEl = document.getElementById("cf-status");
+  const submitBtn = form.querySelector<HTMLButtonElement>(".btn-form-submit");
 
   if (emailInput) {
     emailInput.addEventListener("input", () => {
@@ -5079,35 +5088,59 @@ function initContactForm(): void {
     });
   }
 
-  form.addEventListener("submit", (e) => {
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
     const company = (form.elements.namedItem("company") as HTMLInputElement).value.trim();
     const email = emailInput.value.trim();
-    const volume = (form.elements.namedItem("volume") as HTMLSelectElement).value;
-    const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value.trim();
+    const t = translations[getLang()];
 
-    if (!email) {
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       emailInput.setAttribute("aria-invalid", "true");
       if (emailError) {
-        const lang = getLang();
-        emailError.textContent = translations[lang].formEmailRequired;
+        emailError.textContent = email ? t.formEmailInvalid : t.formEmailRequired;
       }
       emailInput.focus();
       return;
     }
 
-    const lang = getLang();
-    const t = translations[lang];
-    const subject = encodeURIComponent(t.contactEmailSubject + (company ? " — " + company : ""));
-    const bodyParts: string[] = [];
-    if (company) bodyParts.push(t.contactLabelCompany + ": " + company);
-    bodyParts.push(t.contactLabelEmail + ": " + email);
-    if (volume) bodyParts.push(t.contactLabelVolume + ": " + volume);
-    if (message) bodyParts.push("\n" + message);
+    if (statusEl) {
+      statusEl.textContent = "";
+      statusEl.classList.remove("is-success", "is-error");
+    }
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = t.formSending;
+    }
 
-    const body = encodeURIComponent(bodyParts.join("\n"));
-    window.location.href = "mailto:sales@algamo.se?subject=" + subject + "&body=" + body;
+    const formData = new FormData(form);
+    formData.append("access_key", WEB3FORMS_ACCESS_KEY);
+    formData.append("subject", t.contactEmailSubject + (company ? " — " + company : ""));
+    formData.append("from_name", company || email);
+
+    let success = false;
+    try {
+      const res = await fetch(WEB3FORMS_ENDPOINT, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+      const data = await res.json();
+      success = res.ok && data.success === true;
+    } catch {
+      success = false;
+    }
+
+    const tNow = translations[getLang()];
+    if (success) form.reset();
+    if (statusEl) {
+      statusEl.textContent = success ? tNow.formSuccess : tNow.formError;
+      statusEl.classList.add(success ? "is-success" : "is-error");
+    }
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = tNow.formSubmit;
+    }
   });
 }
 

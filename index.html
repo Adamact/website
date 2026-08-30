@@ -501,6 +501,7 @@
           <p class="cta-email">sales@algamo.se</p>
         </div>
         <form id="contact-form" class="contact-form" novalidate>
+          <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none;" />
           <div class="form-group">
             <label for="cf-company" data-i18n="formCompany">Företagsnamn</label>
             <input type="text" id="cf-company" name="company" autocomplete="organization" />
@@ -525,8 +526,9 @@
             <textarea id="cf-message" name="message" rows="4"></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-lg btn-form-submit" data-i18n="formSubmit">Skicka förfrågan</button>
+          <p class="form-status" id="cf-status" role="status" aria-live="polite"></p>
           <p class="form-next-step" data-i18n="formNextStep">Vi svarar inom en arbetsdag med en kort intro och förslag på demotid.</p>
-          <p class="form-privacy-notice" data-i18n="formPrivacyNotice">Formuläret öppnar ditt e-postprogram. Ingen data lagras på våra servrar.</p>
+          <p class="form-privacy-notice" data-i18n="formPrivacyNotice" data-i18n-html>Formuläret skickas säkert via vår formulärtjänst till sales@algamo.se. Läs mer i vår <a href="privacy.html">integritetspolicy</a>.</p>
         </form>
       </div>
     </section>

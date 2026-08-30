@@ -125,6 +125,7 @@
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
   --color-error: #d32f2f;
+  --color-success: #2e7d32;
   --color-heading: #1a2744;
   --color-surface: #f9fafb;
   --color-muted: #6b7280;
@@ -1899,6 +1900,11 @@ body > main {
   align-self: flex-start;
 }
 
+.btn-form-submit[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 @media (max-width: 768px) {
   .cta-contact {
     grid-template-columns: 1fr;
@@ -2079,6 +2085,15 @@ body > main {
   color: rgba(255, 255, 255, 0.75);
   margin: var(--space-xs) 0 0;
   line-height: 1.5;
+}
+
+.form-privacy-notice a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.form-privacy-notice a:hover {
+  color: rgba(255, 255, 255, 0.95);
 }
 
 /* Values section reuses audience-grid/audience-card */
@@ -2508,6 +2523,24 @@ body > main {
 
 .form-error-message:empty {
   display: none;
+}
+
+.form-status {
+  font-size: 0.875rem;
+  margin: var(--space-sm) 0 0;
+}
+
+.form-status:empty {
+  display: none;
+}
+
+/* The form sits on the dark CTA panel — lighter tints than the base tokens for contrast */
+.form-status.is-success {
+  color: #81c784;
+}
+
+.form-status.is-error {
+  color: #ef9a9a;
 }
 
 /* Blog page */
