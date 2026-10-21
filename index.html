@@ -92,8 +92,8 @@
       {
         "@type": "AggregateOffer",
         "priceCurrency": "SEK",
-        "lowPrice": "390",
-        "highPrice": "3490",
+        "lowPrice": "590",
+        "highPrice": "5290",
         "offerCount": "4",
         "availability": "https://schema.org/OnlineOnly"
       }
@@ -102,12 +102,10 @@
       "OCR-extraktion av fakturadata",
       "Validering mot avtal och projekt",
       "Automatisk prisverifiering mot avtalade priser",
-      "Kontering mot konto, projekt och kostnadsställe",
       "Första attest-godkännande",
       "Fortnox-integration",
       "Excel-export av strukturerad data",
       "Historik och spårbarhet",
-      "API-integration",
       "Multi-entity support"
     ],
     "image": "https://algamo.se/assets/logo.png",
@@ -186,7 +184,6 @@
           <a href="integrationer/fortnox.html" data-i18n="navIntegrations">Integrationer</a>
           <a href="#contact" data-i18n="navContact">Kontakt</a>
           <a href="news/" data-i18n="navNews">Nyheter</a>
-          <a href="blog/" data-i18n="navBlog">Blogg</a>
         </nav>
         <div class="lang-switcher" role="group" aria-label="Språk">
           <button type="button" class="lang-btn" data-lang-btn="sv" aria-pressed="true">Svenska</button>
@@ -388,7 +385,7 @@
             <span class="process-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></span>
             <span class="process-num" aria-hidden="true">1</span>
             <h3 class="process-title" data-i18n="process1Title">Läs in fakturan</h3>
-            <p class="process-desc" data-i18n="process1Desc">Ladda upp fakturan som PDF eller bild, eller integrera mot ert ekonomisystem. Attestro läser av leverantör, artikelrader, priser och projektkoppling.</p>
+            <p class="process-desc" data-i18n="process1Desc">Ladda upp fakturan som PDF eller bild, eller hämta den automatiskt från Fortnox. Attestro läser av leverantör, artikelrader, priser och projektkoppling.</p>
           </li>
           <li class="process-card" data-reveal>
             <span class="process-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
@@ -463,7 +460,7 @@
     <section class="section pricing-teaser">
       <div class="container pricing-teaser-inner" data-reveal>
         <div class="pricing-teaser-text">
-          <h2 class="pricing-teaser-title" data-i18n="pricingTeaserTitle">Från 390 kr/mån</h2>
+          <h2 class="pricing-teaser-title" data-i18n="pricingTeaserTitle">Från 590 kr/mån</h2>
           <p class="pricing-teaser-lead" data-i18n="pricingTeaserLead">Inga uppstartsavgifter. Välj den volym som passar ert team och betala bara för det ni behöver.</p>
         </div>
         <a href="pricing.html" class="btn btn-primary btn-lg btn-on-light" data-i18n="pricingTeaserCta">Se priser →</a>
@@ -512,16 +509,6 @@
             <span class="form-error-message" id="cf-email-error" aria-live="polite"></span>
           </div>
           <div class="form-group">
-            <label for="cf-volume" data-i18n="formVolume">Antal fakturor/mån</label>
-            <select id="cf-volume" name="volume">
-              <option value="" data-i18n="formVolumeDefault">Välj…</option>
-              <option value="<100" data-i18n="formVolume1">&lt;100</option>
-              <option value="100-500" data-i18n="formVolume2">100–500</option>
-              <option value="500-1000" data-i18n="formVolume3">500–1 000</option>
-              <option value="1000+" data-i18n="formVolume4">1 000+</option>
-            </select>
-          </div>
-          <div class="form-group">
             <label for="cf-message" data-i18n="formMessage">Meddelande</label>
             <textarea id="cf-message" name="message" rows="4"></textarea>
           </div>
@@ -533,30 +520,6 @@
       </div>
     </section>
 
-    <section class="section resources">
-      <div class="container">
-        <h2 class="section-title" data-reveal data-i18n="resourcesTitle">Resurser om fakturahantering</h2>
-        <p class="section-lead" data-reveal data-i18n="resourcesLead">Fördjupa dig i hur företag effektiviserar sin fakturakontroll.</p>
-        <div class="blog-related-grid resources-grid stagger">
-          <a href="blog/what-is-invoice-processing.html" class="blog-related-card" data-reveal>
-            <h3 data-i18n="resourcesCard1Title">Vad är fakturahantering?</h3>
-            <p data-i18n="resourcesCard1Desc">Komplett guide från manuell process till automatisering av leverantörsfakturor.</p>
-          </a>
-          <a href="blog/checklista-fakturakontroll.html" class="blog-related-card" data-reveal>
-            <h3 data-i18n="resourcesCard2Title">Checklista för fakturakontroll</h3>
-            <p data-i18n="resourcesCard2Desc">Sju kontrollpunkter att gå igenom innan varje faktura attesteras.</p>
-          </a>
-          <a href="blog/automatiserad-fakturakontroll.html" class="blog-related-card" data-reveal>
-            <h3 data-i18n="resourcesCard3Title">Automatiserad fakturakontroll i praktiken</h3>
-            <p data-i18n="resourcesCard3Desc">Hur automatisering förändrar fakturakontroll, från dataextraktion till avtalsmatchning.</p>
-          </a>
-          <a href="blog/verifiera-leverantorsfakturor.html" class="blog-related-card" data-reveal>
-            <h3 data-i18n="resourcesCard4Title">Verifiera leverantörsfakturor</h3>
-            <p data-i18n="resourcesCard4Desc">Steg-för-steg-guide till fakturakontrollens sex centrala moment.</p>
-          </a>
-        </div>
-      </div>
-    </section>
 
     <section id="faq" class="section faq">
       <div class="container">
@@ -605,7 +568,6 @@
         <p class="footer-support"><span data-i18n="footerSupport">Kundsupport:</span> <a href="mailto:support@algamo.se">support@algamo.se</a></p>
         <p class="footer-social"><a href="https://www.linkedin.com/company/%C3%A4lgamo-software-ab/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
         <p class="footer-news"><a href="news/" data-i18n="footerNews">Nyheter</a></p>
-        <p class="footer-blog"><a href="blog/" data-i18n="footerBlog">Blogg</a></p>
         <p class="footer-security"><a href="security.html" data-i18n="footerSecurity">Säkerhet</a></p>
         <p class="footer-privacy"><a href="privacy.html" data-i18n="footerPrivacy">Integritetspolicy</a></p>
       </div>

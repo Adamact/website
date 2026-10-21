@@ -51,6 +51,29 @@
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "headline": "Ny prismodell och uppdaterad webbplats",
+    "datePublished": "2026-10-21",
+    "author": {
+      "@type": "Organization",
+      "name": "Älgamo Software AB",
+      "url": "https://algamo.se"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Älgamo Software AB",
+      "url": "https://algamo.se",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://algamo.se/assets/logo.png"
+      }
+    },
+    "mainEntityOfPage": "https://algamo.se/news/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
     "headline": "Attestro är publicerad i Fortnox",
     "datePublished": "2026-04-28",
     "author": {
@@ -166,29 +189,6 @@
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "Bloggen är igång!",
-    "datePublished": "2026-03-13",
-    "author": {
-      "@type": "Organization",
-      "name": "Älgamo Software AB",
-      "url": "https://algamo.se"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Älgamo Software AB",
-      "url": "https://algamo.se",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://algamo.se/assets/logo.png"
-      }
-    },
-    "mainEntityOfPage": "https://algamo.se/news/"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
     "headline": "Webbplatsen är lanserad!",
     "datePublished": "2026-03-11",
     "author": {
@@ -230,7 +230,6 @@
           <a href="../integrationer/fortnox.html" data-i18n="navIntegrations">Integrationer</a>
           <a href="../index.html#contact" data-i18n="navContact">Kontakt</a>
           <a href="../news/" data-i18n="navNews">Nyheter</a>
-          <a href="../blog/" data-i18n="navBlog">Blogg</a>
         </nav>
         <div class="lang-switcher" role="group" aria-label="Språk">
           <button type="button" class="lang-btn" data-lang-btn="sv" aria-pressed="true">Svenska</button>
@@ -256,6 +255,12 @@
 
         <div class="blog-posts">
           <article class="blog-post-entry">
+            <time datetime="2026-10-21">2026-10-21</time>
+            <h2 data-i18n="newsPost10Title">Ny prismodell och uppdaterad webbplats</h2>
+            <p data-i18n="newsPost10Body" data-i18n-html>Vi har förenklat vår prismodell. Nu betalar ni per faktura i stället för per sida. Varje faktura räknas som en, oavsett hur många sidor den har, så en lång faktura med många rader kostar inte mer än en kort. Det gör det också enklare att förutse vad Attestro kostar varje månad. Samtidigt har vi uppdaterat webbplatsen med de nya priserna och ett enklare kontaktformulär. Se alla planer på vår <a href="/pricing.html">prissida</a>.</p>
+          </article>
+
+          <article class="blog-post-entry">
             <time datetime="2026-04-28">2026-04-28</time>
             <img src="../assets/fortnox-logo-green.png" alt="Fortnox" class="news-post-logo" loading="lazy" />
             <h2 data-i18n="newsPost9Title">Attestro är publicerad i Fortnox</h2>
@@ -266,7 +271,7 @@
             <time datetime="2026-04-02">2026-04-02</time>
             <img src="../assets/fortnox-logo-green.png" alt="Fortnox" class="news-post-logo" loading="lazy" />
             <h2 data-i18n="newsPost7Title">Attestro integreras med Fortnox</h2>
-            <p data-i18n="newsPost7Body" data-i18n-html>Attestro har nu en direkt integration med Fortnox. Det innebär att leverantörsfakturor kan hämtas från Fortnox, verifieras mot avtal och offerter i Attestro, och skickas tillbaka redo för bokföring. Ingen manuell export eller import behövs. Integrationen gör det enklare för ekonomiteam att fånga felaktiga fakturor innan de godkänns och bokförs. Läs mer på vår <a href="/integrationer/fortnox.html">Fortnox-integrationssida</a>.</p>
+            <p data-i18n="newsPost7Body" data-i18n-html>Attestro har nu en direkt integration med Fortnox. Det innebär att leverantörsfakturor hämtas automatiskt från Fortnox och verifieras mot avtal och offerter i Attestro. Ingen manuell export eller import behövs, och ingen data skrivs tillbaka till Fortnox. Integrationen gör det enklare för ekonomiteam att fånga felaktiga fakturor innan de attesteras i Fortnox. Läs mer på vår <a href="/integrationer/fortnox.html">Fortnox-integrationssida</a>.</p>
           </article>
 
           <article class="blog-post-entry">
@@ -285,12 +290,6 @@
             <time datetime="2026-03-17">2026-03-17</time>
             <h2 data-i18n="newsPost3Title">Attestro är live!</h2>
             <p data-i18n="newsPost3Body" data-i18n-html>Nu är appen tillgänglig. Attestro extraherar radnivådata från leverantörsfakturor och använder AI för att tolka avtal och offerter, sedan flaggas priser som avviker från avtalet, mängdavvikelser och rader som saknas i offerten, innan fakturan godkänns. Logga in på <a href="https://app.algamo.se">app.algamo.se</a> och testa med era egna fakturor.</p>
-          </article>
-
-          <article class="blog-post-entry">
-            <time datetime="2026-03-13">2026-03-13</time>
-            <h2 data-i18n="newsPost2Title">Bloggen är igång!</h2>
-            <p data-i18n="newsPost2Body">Nu har vi börjat lägga upp bloggartiklar om fakturakontroll, OCR och automatisering. Vi skriver för ekonomiteam och projektledare som vill förstå varför leverantörsfakturor ofta är krångliga att hantera, och hur det går att göra det enklare. Kika in på bloggsidan och läs våra första inlägg!</p>
           </article>
 
           <article class="blog-post-entry">
@@ -317,7 +316,6 @@
         <p class="footer-support"><span data-i18n="footerSupport">Kundsupport:</span> <a href="mailto:support@algamo.se">support@algamo.se</a></p>
         <p class="footer-social"><a href="https://www.linkedin.com/company/%C3%A4lgamo-software-ab/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
         <p class="footer-news"><a href="../news/" data-i18n="footerNews">Nyheter</a></p>
-        <p class="footer-blog"><a href="../blog/" data-i18n="footerBlog">Blogg</a></p>
         <p class="footer-security"><a href="../security.html" data-i18n="footerSecurity">Säkerhet</a></p>
         <p class="footer-privacy"><a href="../privacy.html" data-i18n="footerPrivacy">Integritetspolicy</a></p>
       </div>

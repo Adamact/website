@@ -2,7 +2,7 @@
 
 > Attestro is an automated invoice verification platform built for the Swedish construction, transport, and project-intensive industries. It transforms supplier invoices into structured, validated data by reading every line, comparing it against contracts and price lists, and flagging discrepancies before payment is approved.
 
-Attestro is developed and operated by Älgamo Software AB, a Swedish software company founded with a singular focus: building precise, reliable tools for invoice verification in industries where billing errors have a direct and measurable impact on project profitability. The company is headquartered in Sweden and all data is stored within Sweden/EU, ensuring full GDPR compliance.
+Attestro is developed and operated by Älgamo Software AB, a Swedish software company founded with a singular focus: building precise, reliable tools for invoice verification in industries where billing errors have a direct and measurable impact on project profitability. The company is headquartered in Sweden and all data is stored within the EU, in Helsinki, Finland, ensuring full GDPR compliance.
 
 ## What Attestro Does
 
@@ -10,7 +10,7 @@ Attestro solves one of the most persistent and costly operational problems in pr
 
 Attestro automates this entire process. The platform ingests supplier invoices in any common format -- PDF, scanned images, JPEG, PNG, or TIFF -- and uses advanced OCR and document analysis to extract every relevant data point: supplier identity, invoice number, date, line items, quantities, unit prices, project references, and cost codes (littra). It then validates each extracted line against the customer's own contracts, agreements, price lists, and project terms using semantic matching that understands the meaning of contract clauses rather than relying on exact field-name matching. When a discrepancy is found -- whether it is a price deviation, an incorrect quantity, a missing project reference, an unapproved change order, or a duplicate charge -- Attestro flags it immediately and provides a full audit trail explaining exactly what was checked and why the flag was raised.
 
-The result is verified, structured data that can be exported to Excel, fed into existing ERP and accounting systems via API, or reviewed directly in the Attestro web application. Every verification step is logged with complete traceability, so finance teams, project managers, and auditors can always see precisely what was controlled and what the outcome was.
+The result is verified, structured data that can be exported to Excel or reviewed directly in the Attestro web application. Every verification step is logged with complete traceability, so finance teams, project managers, and auditors can always see precisely what was controlled and what the outcome was.
 
 ## Core Capabilities
 
@@ -36,8 +36,7 @@ Unlike traditional invoice matching systems that require structured data inputs 
 ### Export and Integration
 - Excel export with fully structured, validated data
 - Customizable export templates to match existing workflows
-- REST API for integration with ERP systems and accounting software
-- Fortnox integration for automatic import and export of supplier invoices
+- Fortnox integration for automatic retrieval of supplier invoices (read-only, nothing is written back)
 - Dashboard and business intelligence export capabilities
 
 ### Traceability and Audit
@@ -60,10 +59,10 @@ For companies working with subcontractors and consultants on framework agreement
 
 ## Pricing
 
-Attestro offers two plans. Pricing is based on pages per month, not invoices: every page of an uploaded invoice document counts.
+Attestro offers two plans. Pricing is based on invoices per month: each uploaded invoice counts as one, regardless of page count.
 
-- **Kontroll**: One plan, priced by monthly page volume. 100 pages: 390 SEK/month. 300 pages: 890 SEK/month. 750 pages: 1,990 SEK/month. 1,500 pages: 3,490 SEK/month. Lower prices apply with a 12-month commitment (332 / 757 / 1,692 / 2,967 SEK/month respectively). All volumes include automatic invoice data extraction, field and total validation, price verification against contracts and quotes, Fortnox integration, customizable Excel export, API integration with the customer's accounting system, and a dedicated contact.
-- **Enterprise**: Custom pricing for organizations with 1,500+ pages per month, with a 12-month minimum term. Everything in Kontroll plus analytics and BI export, multi-entity support, and an SLA with guaranteed uptime. One year of historical invoices is included at purchase.
+- **Kontroll**: One plan, priced by monthly invoice volume. 100 invoices: 590 SEK/month. 300 invoices: 1,390 SEK/month. 750 invoices: 2,990 SEK/month. 1,500 invoices: 5,290 SEK/month. Lower prices apply with a 12-month commitment (490 / 1,190 / 2,490 / 4,490 SEK/month respectively). All volumes include automatic invoice data extraction, field and total validation, price verification against contracts and quotes, Fortnox integration, customizable Excel export, and a dedicated contact.
+- **Enterprise**: Custom pricing for organizations with 1,500+ invoices per month, with a 12-month minimum term. Everything in Kontroll plus analytics and BI export, multi-entity support, and an SLA with guaranteed uptime. One year of historical invoices is included at purchase.
 
 The Fortnox integration is included at no extra cost in all Attestro plans.
 
@@ -80,7 +79,7 @@ Attestro uses privacy-friendly analytics (Plausible) with no Google Analytics an
 - **Supported formats**: PDF (digital and scanned), JPEG, PNG, TIFF
 - **Languages**: Swedish and English (both the application and the website)
 - **OCR engine**: Advanced OCR with support for Swedish characters, tables, and multi-page layouts with automatic per-supplier template identification
-- **Integration**: REST API for ERP and accounting system integration; native Fortnox integration; Excel export as standard
+- **Integration**: Native Fortnox integration (read-only retrieval of supplier invoices); Excel export as standard
 - **Hosting**: Hetzner data center in Helsinki, Finland (EU) with encrypted storage
 - **Compliance**: GDPR-compliant, encrypted in transit and at rest
 
@@ -105,27 +104,7 @@ Attestro uses privacy-friendly analytics (Plausible) with no Google Analytics an
 - [Security](https://algamo.se/security.html)
 - [Privacy Policy](https://algamo.se/privacy.html)
 - [Fortnox Integration](https://algamo.se/integrationer/fortnox.html)
-- [Blog](https://algamo.se/blog/)
 - [News](https://algamo.se/news/)
-
-## Blog Topics
-
-The Attestro blog covers a wide range of topics related to invoice management, verification, and automation in Swedish industry, including:
-
-- Automated invoice control and its advantages over manual processes
-- How to detect overbilling and common supplier invoice errors
-- Invoice verification checklists and best practices
-- The role of OCR in modern invoice processing
-- ERP integration strategies for invoice handling
-- ATA (change order) management and invoice control in construction
-- Three-way matching and smart price list matching
-- The case for human-in-the-loop approaches in financial validation
-- Why ERP systems alone cannot solve invoice verification
-- ROI analysis of invoice automation
-- Digital document analysis for invoice processing
-- Internal controls for supplier invoices
-- Common challenges in transport invoice management
-- Excel vs. automated invoice handling comparisons
 
 ## Frequently Asked Questions
 

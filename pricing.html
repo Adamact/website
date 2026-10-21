@@ -59,59 +59,59 @@
       {
         "@type": "Offer",
         "name": "Kontroll 100",
-        "price": "390",
+        "price": "590",
         "priceCurrency": "SEK",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "price": "390",
+          "price": "590",
           "priceCurrency": "SEK",
           "billingDuration": "P1M"
         },
-        "description": "100 sidor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, Fortnox-integration, Excel-export, API-integration, dedikerad kontakt"
+        "description": "100 fakturor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, Fortnox-integration, Excel-export, dedikerad kontakt"
       },
       {
         "@type": "Offer",
         "name": "Kontroll 300",
-        "price": "890",
+        "price": "1390",
         "priceCurrency": "SEK",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "price": "890",
+          "price": "1390",
           "priceCurrency": "SEK",
           "billingDuration": "P1M"
         },
-        "description": "300 sidor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, Fortnox-integration, Excel-export, API-integration, dedikerad kontakt"
+        "description": "300 fakturor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, Fortnox-integration, Excel-export, dedikerad kontakt"
       },
       {
         "@type": "Offer",
         "name": "Kontroll 750",
-        "price": "1990",
+        "price": "2990",
         "priceCurrency": "SEK",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "price": "1990",
+          "price": "2990",
           "priceCurrency": "SEK",
           "billingDuration": "P1M"
         },
-        "description": "750 sidor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, Fortnox-integration, Excel-export, API-integration, dedikerad kontakt"
+        "description": "750 fakturor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, Fortnox-integration, Excel-export, dedikerad kontakt"
       },
       {
         "@type": "Offer",
         "name": "Kontroll 1500",
-        "price": "3490",
+        "price": "5290",
         "priceCurrency": "SEK",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "price": "3490",
+          "price": "5290",
           "priceCurrency": "SEK",
           "billingDuration": "P1M"
         },
-        "description": "1 500 sidor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, Fortnox-integration, Excel-export, API-integration, dedikerad kontakt"
+        "description": "1 500 fakturor/mån, automatisk fakturautläsning, validering, prisverifiering mot avtal, Fortnox-integration, Excel-export, dedikerad kontakt"
       },
       {
         "@type": "Offer",
         "name": "Enterprise",
-        "description": "1 500+ sidor/mån, allt i Kontroll, API-integration, analys- och BI-export, stöd för flera bolag, SLA med garanterad tillgänglighet, dedikerad kontakt"
+        "description": "1 500+ fakturor/mån, allt i Kontroll, analys- och BI-export, stöd för flera bolag, SLA med garanterad tillgänglighet, dedikerad kontakt"
       }
     ],
     "@id": "https://algamo.se/#software",
@@ -138,18 +138,10 @@
       },
       {
         "@type": "Question",
-        "name": "Vad händer om vi överskrider sidgränsen?",
+        "name": "Vad händer om vi överskrider fakturagränsen?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ni får en notifiering innan ni når er gräns. Sidor utöver er plans gräns kan debiteras per styck enligt en pay-as-you-go-modell, men endast efter ert aktiva godkännande. Inga dolda avgifter. Om ni regelbundet överskrider gränsen rekommenderar vi att uppgradera till nästa plan för ett lägre styckpris."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Hur räknas sidor?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Varje sida i ett uppladdat fakturadokument räknas. En faktura på fyra sidor räknas alltså som fyra sidor. Kreditfakturor och kopior räknas också."
+          "text": "Ni får en notifiering innan ni når er gräns. Fakturor utöver er plans gräns kan debiteras per styck enligt en pay-as-you-go-modell, men endast efter ert aktiva godkännande. Inga dolda avgifter. Om ni regelbundet överskrider gränsen rekommenderar vi att uppgradera till nästa plan för ett lägre styckpris."
         }
       },
       {
@@ -185,7 +177,6 @@
           <a href="integrationer/fortnox.html" data-i18n="navIntegrations">Integrationer</a>
           <a href="index.html#contact" data-i18n="navContact">Kontakt</a>
           <a href="news/" data-i18n="navNews">Nyheter</a>
-          <a href="blog/" data-i18n="navBlog">Blogg</a>
         </nav>
         <div class="lang-switcher" role="group" aria-label="Språk">
           <button type="button" class="lang-btn" data-lang-btn="sv" aria-pressed="true">Svenska</button>
@@ -215,11 +206,11 @@
             <h2 class="pricing-name" data-i18n="planFlexTitle">Kontroll</h2>
             <p class="pricing-subtitle" data-i18n="planFlexDesc">Välj den volym som passar ert team.</p>
             <div class="pricing-price-wrap">
-              <span class="pricing-price-default" id="pricing-flex-price-default">890 kr/mån</span>
+              <span class="pricing-price-default" id="pricing-flex-price-default">1 390 kr/mån</span>
             </div>
             <div class="pricing-slider-wrap">
-              <p class="pricing-volume-label" id="pricing-flex-volume">300 sidor / mån</p>
-              <input type="range" id="pricing-volume-slider" class="pricing-slider" min="0" max="3" step="1" value="1" aria-label="Antal sidor per månad" list="pricing-volume-ticks" />
+              <p class="pricing-volume-label" id="pricing-flex-volume">300 fakturor / mån</p>
+              <input type="range" id="pricing-volume-slider" class="pricing-slider" min="0" max="3" step="1" value="1" aria-label="Antal fakturor per månad" list="pricing-volume-ticks" />
               <datalist id="pricing-volume-ticks">
                 <option value="0" label="100"></option>
                 <option value="1" label="300"></option>
@@ -234,27 +225,25 @@
               </div>
             </div>
             <ul class="pricing-features">
-              <li id="pricing-flex-historical">Upp till 300 historiska sidor ingår vid&nbsp;köp</li>
+              <li id="pricing-flex-historical">Upp till 300 historiska fakturor ingår vid&nbsp;köp</li>
               <li data-i18n="featFlex1">Automatisk utläsning av fakturadata</li>
               <li data-i18n="featFlex2">Validering av fält och totalbelopp</li>
               <li data-i18n="featFlex3">Prisverifiering mot avtal och offerter</li>
               <li data-i18n="featFlex7">Fortnox-integration</li>
               <li data-i18n="featFlex4">Anpassningsbar Excel-export</li>
-              <li data-i18n="featFlex5">API-integration med ert ekonomisystem</li>
               <li data-i18n="featFlex6">Dedikerad kontakt</li>
             </ul>
-            <a href="mailto:sales@algamo.se?subject=Attestro%20-%20Boka%20demo" class="btn btn-primary pricing-cta" data-i18n="ctaHeader">Boka demo</a>
+            <a href="index.html#contact" class="btn btn-primary pricing-cta" data-i18n="ctaHeader">Boka demo</a>
           </li>
           <li class="pricing-card" data-reveal>
             <h2 class="pricing-name" data-i18n="planEnterprise">Enterprise</h2>
-            <p class="pricing-subtitle" data-i18n="planEnterpriseDesc">För organisationer med höga volymer och integrationsbehov.</p>
+            <p class="pricing-subtitle" data-i18n="planEnterpriseDesc">För organisationer med höga volymer.</p>
             <p class="pricing-price pricing-price-enterprise" data-i18n="priceEnterprise">Pris enligt offert</p>
             <p class="pricing-note" data-i18n="enterpriseNote">Minimiavtal på 12 månader</p>
             <ul class="pricing-features">
-              <li data-i18n="featEntVolume">1 500+ sidor / mån</li>
+              <li data-i18n="featEntVolume">1 500+ fakturor / mån</li>
               <li data-i18n="featEntHistorical">Ett års historiska fakturor ingår vid köp</li>
               <li data-i18n="featEnt1">Allt i Kontroll</li>
-              <li data-i18n="featEnt2">API-integration</li>
               <li data-i18n="featEnt3">Analys- och BI-export</li>
               <li data-i18n="featEnt4">Stöd för flera bolag</li>
               <li data-i18n="featEnt5">SLA med garanterad tillgänglighet</li>
@@ -276,12 +265,8 @@
             <div class="faq-answer"><p class="faq-answer-inner" data-i18n="pricingFaqA1">Ja. Ni kan uppgradera eller nedgradera er plan när som helst. Ändringen träder i kraft vid nästa faktureringsperiod.</p></div>
           </details>
           <details class="faq-item">
-            <summary class="faq-question" data-i18n="pricingFaqQ2">Vad händer om vi överskrider sidgränsen?</summary>
-            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="pricingFaqA2">Ni får en notifiering innan ni når er gräns. Sidor utöver er plans gräns kan debiteras per styck enligt en pay-as-you-go-modell, men endast efter ert aktiva godkännande. Inga dolda avgifter. Om ni regelbundet överskrider gränsen rekommenderar vi att uppgradera till nästa plan för ett lägre styckpris.</p></div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-question" data-i18n="pricingFaqQ4">Hur räknas sidor?</summary>
-            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="pricingFaqA4">Varje sida i ett uppladdat fakturadokument räknas. En faktura på fyra sidor räknas alltså som fyra sidor. Kreditfakturor och kopior räknas också.</p></div>
+            <summary class="faq-question" data-i18n="pricingFaqQ2">Vad händer om vi överskrider fakturagränsen?</summary>
+            <div class="faq-answer"><p class="faq-answer-inner" data-i18n="pricingFaqA2">Ni får en notifiering innan ni når er gräns. Fakturor utöver er plans gräns kan debiteras per styck enligt en pay-as-you-go-modell, men endast efter ert aktiva godkännande. Inga dolda avgifter. Om ni regelbundet överskrider gränsen rekommenderar vi att uppgradera till nästa plan för ett lägre styckpris.</p></div>
           </details>
           <details class="faq-item">
             <summary class="faq-question" data-i18n="pricingFaqQ6">Kan Attestro verifiera priser mot våra avtal?</summary>
@@ -317,7 +302,6 @@
         <p class="footer-support"><span data-i18n="footerSupport">Kundsupport:</span> <a href="mailto:support@algamo.se">support@algamo.se</a></p>
         <p class="footer-social"><a href="https://www.linkedin.com/company/%C3%A4lgamo-software-ab/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
         <p class="footer-news"><a href="news/" data-i18n="footerNews">Nyheter</a></p>
-        <p class="footer-blog"><a href="blog/" data-i18n="footerBlog">Blogg</a></p>
         <p class="footer-security"><a href="security.html" data-i18n="footerSecurity">Säkerhet</a></p>
         <p class="footer-privacy"><a href="privacy.html" data-i18n="footerPrivacy">Integritetspolicy</a></p>
       </div>
